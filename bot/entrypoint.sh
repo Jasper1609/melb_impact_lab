@@ -33,6 +33,11 @@ if [ -f /opt/hermes/cli-config.yaml.example ]; then
   chown 10000:10000 "$HERMES_HOME/config.yaml"
 fi
 
+if [ -f /opt/hermes/docker/SOUL.md ]; then
+  cp /opt/hermes/docker/SOUL.md "$HERMES_HOME/SOUL.md"
+  chown 10000:10000 "$HERMES_HOME/SOUL.md"
+fi
+
 if [ -d /opt/hermes/docker/skills ]; then
   rm -rf "$HERMES_HOME/skills"
   mkdir -p "$HERMES_HOME/skills"
