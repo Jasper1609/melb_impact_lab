@@ -45,7 +45,7 @@ WhatsApp (Baileys)  ──▶  Hermes Gateway  ──▶  Claude API (Anthropic)
 - **Skills define agent behaviour** via `SKILL.md` files with YAML frontmatter. Skills are the primary way to extend the agent.
 - **Community data is JSON files** seeded from `src/data/` to `/opt/data/data/` on first boot. Editable on the volume after that.
 - **User profiles** are stored as JSON on the Docker volume by the community-profiles skill.
-- **Voice notes are auto-transcribed** by Hermes's built-in faster-whisper. No additional configuration needed. Supports 99 languages.
+- **Voice notes are auto-transcribed** by faster-whisper running locally inside the container. Configured in `config.yaml.example` under `stt:` with provider `local` and model `base` (~150MB, auto-downloaded). Supports 99 languages. No external API key needed for transcription.
 - **LLM**: Claude Sonnet via Anthropic API (`ANTHROPIC_API_KEY`).
 - **WhatsApp**: plain text responses only. No markdown rendering. Limited emoji. Keep messages short for mobile.
 
@@ -77,4 +77,5 @@ Each entry should include: name, description, key demographics, public transport
 - **`auth_state` on the volume** contains WhatsApp encryption keys. Back up the volume after first pairing. If lost, you must re-pair.
 - **If the Hermes base image updates** break things, pin a specific tag in the Dockerfile instead of `:latest`.
 - **Community data is seeded once.** The entrypoint only copies `community.json` and `neighbourhoods.json` to the volume if they don't already exist. To force a re-seed, delete the files from `/opt/data/data/` and restart.
-- **Voice transcription** happens automatically for audio messages. The transcribed text is passed to the agent as if the user typed it. No language detection config is needed.
+- **Voice transcription** happens automatically for audio messages via local faster-whisper. The transcribed text is passed to the agent as if the user typed it. No language detection config needed. Model auto-downloads on first voice message (~150MB for `base`). Upgrade to `small` or `medium` in `config.yaml` if transcription quality is poor.
+- **Whisper hallucination filtering** is built into Hermes. Silent or near-silent voice notes produce phrases like "Thank you" or "Subscribe" — these are caught and filtered automatically.

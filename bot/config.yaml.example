@@ -10,6 +10,20 @@ whatsapp:
   unauthorized_dm_behavior: ignore
   reply_prefix: ""
 
+display:
+  platforms:
+    whatsapp:
+      tool_progress: "off"
+      show_reasoning: false
+      tool_preview_length: 0
+  busy_input_mode: queue
+
+stt:
+  enabled: true
+  provider: local
+  local:
+    model: base
+
 session_reset:
   mode: idle
   idle_minutes: 1440
@@ -19,12 +33,14 @@ memory:
   user_char_limit: 2750
 
 skills:
-  creation_nudge_interval: 10
+  creation_nudge_interval: 0
 
 agent:
   max_turns: 80
   reasoning_effort: medium
 
-cron:
-  enabled: false
-  delivery_platform: whatsapp
+onboarding:
+  seen:
+    busy_input_prompt: true
+    tool_progress_hint: true
+    sethome_hint: true

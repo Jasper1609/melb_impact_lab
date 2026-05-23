@@ -1,12 +1,12 @@
 # Tapestry
 
-An AI-powered WhatsApp companion that helps newcomers and migrants settle into Melbourne. Built for the Melbourne Impact Lab hackathon.
+An AI-powered WhatsApp companion that helps newcomers and migrants settle into Melbourne. Built for a community-focused hackathon.
 
 Send a voice message in any language and get connected to community resources, groups, events, and local knowledge in your neighbourhood.
 
 ## Features
 
-- **Multilingual voice support** -- send a voice note in any of 99 languages and get a response in English (or your language)
+- **Multilingual voice support** -- send a voice note in any of 99 languages and get a response in your language, powered by local faster-whisper transcription
 - **Melbourne community knowledge base** -- 50+ curated resources covering employment, housing, language support, health, legal, education, and social groups
 - **Neighbourhood profiles** -- detailed guides for 10 key Melbourne areas including transport, services, and community character
 - **Natural onboarding conversation** -- the bot learns your language, neighbourhood, and interests through conversation, not forms
@@ -101,6 +101,16 @@ This bot uses [Baileys](https://github.com/WhiskeySockets/Baileys), an unofficia
 - **Start slow** with a small number of conversations per day
 - **Never run two bot instances** against the same WhatsApp session
 
+## How voice messages work
+
+1. User sends a voice note in any language on WhatsApp
+2. Hermes downloads the audio (OGG/Opus format)
+3. faster-whisper transcribes it locally (no cloud API needed)
+4. The transcribed text is passed to Claude as if the user typed it
+5. Claude responds in the detected language
+
+Voice transcription runs entirely inside the Docker container. No OpenAI API key or external transcription service is required. The base model (~150MB, auto-downloaded on first voice message) handles 99 languages.
+
 ## Tech stack
 
 | Component | Role |
@@ -108,12 +118,12 @@ This bot uses [Baileys](https://github.com/WhiskeySockets/Baileys), an unofficia
 | [Hermes Agent](https://hermes-agent.nousresearch.com) | WhatsApp gateway, skill system, memory, session management |
 | [Baileys](https://github.com/WhiskeySockets/Baileys) | WhatsApp Web bridge (built into Hermes) |
 | [Claude Sonnet](https://www.anthropic.com) (Anthropic) | LLM for conversation and reasoning |
-| [faster-whisper](https://github.com/SYSTRAN/faster-whisper) | Voice note transcription (99 languages, built into Hermes) |
+| [faster-whisper](https://github.com/SYSTRAN/faster-whisper) | Local voice transcription (99 languages, runs inside Docker) |
 | [Docker](https://www.docker.com) | Container runtime |
 
 ## Hackathon context
 
-This project was built for the [Melbourne Impact Lab](https://www.melbourneimpactlab.org/) hackathon. The problem: newcomers and migrants arriving in Melbourne face isolation, language barriers, and difficulty navigating unfamiliar systems -- housing, employment, healthcare, transport, and social connections.
+This project was built for a community-focused hackathon. The problem: newcomers and migrants arriving in Melbourne face isolation, language barriers, and difficulty navigating unfamiliar systems -- housing, employment, healthcare, transport, and social connections.
 
 Inspired by Shaun Tan's wordless graphic novel [*The Arrival*](https://www.shauntan.net/arrival-book) -- which depicts the disorientation, loneliness, and eventual human connection of an immigrant in a strange new city -- Tapestry is designed to be that first small act of connection. Like the book's wordless format that transcends language, voice-first design means literacy and language are not barriers.
 

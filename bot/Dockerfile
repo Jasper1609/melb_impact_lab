@@ -1,6 +1,7 @@
 FROM nousresearch/hermes-agent:latest
 
 RUN cd /opt/hermes/scripts/whatsapp-bridge && npm install --omit=dev
+RUN uv pip install --python /opt/hermes/.venv/bin/python faster-whisper
 
 COPY entrypoint.sh /opt/hermes/docker/custom-entrypoint.sh
 RUN chmod +x /opt/hermes/docker/custom-entrypoint.sh
