@@ -1,4 +1,5 @@
-import { useState } from 'react';
+import { router } from "expo-router";
+import { useState } from "react";
 import {
   KeyboardAvoidingView,
   Platform,
@@ -8,16 +9,15 @@ import {
   TextInput,
   TouchableOpacity,
   View,
-} from 'react-native';
-import { SafeAreaView } from 'react-native-safe-area-context';
-import { router } from 'expo-router';
-import { shared, colors, fonts } from '@/constants/onboarding-styles';
+} from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
+import { colors, fonts, shared } from "@/constants/onboarding-styles";
 
 const DUMMY_TRANSCRIPT =
   "I just moved to Kensington from Hong Kong with my partner and two kids. We don't really know anyone here yet, so we're looking to meet people in the area. I'd love to find a good school nearby and connect with other families. We also need to set up a bank account and figure out public transport.";
 
 export default function BioScreen() {
-  const [bio, setBio] = useState('');
+  const [bio, setBio] = useState("");
   const [isRecording, setIsRecording] = useState(false);
   const [hasRecorded, setHasRecorded] = useState(false);
 
@@ -36,19 +36,17 @@ export default function BioScreen() {
     <SafeAreaView style={shared.safe}>
       <KeyboardAvoidingView
         style={{ flex: 1 }}
-        behavior={Platform.OS === 'ios' ? 'padding' : undefined}
+        behavior={Platform.OS === "ios" ? "padding" : undefined}
       >
-        <ScrollView
-          contentContainerStyle={styles.scroll}
-          keyboardShouldPersistTaps="handled"
-        >
+        <ScrollView contentContainerStyle={styles.scroll} keyboardShouldPersistTaps="handled">
           <View style={styles.badge}>
             <Text style={styles.badgeText}>Step 1</Text>
           </View>
 
-          <Text style={styles.title}>Tell us about{'\n'}yourself</Text>
+          <Text style={styles.title}>Tell us about{"\n"}yourself</Text>
           <Text style={styles.subtitle}>
-            This helps us connect you with the right people and resources. Are you moving alone, with a partner, or with family?
+            This helps us connect you with the right people and resources. Are you moving alone,
+            with a partner, or with family?
           </Text>
 
           <TextInput
@@ -76,21 +74,31 @@ export default function BioScreen() {
             onPress={handleVoicePress}
             activeOpacity={0.7}
           >
-            <View style={[
-              styles.micCircle,
-              isRecording && styles.micCircleActive,
-              hasRecorded && !isRecording && styles.micCircleDone,
-            ]}>
+            <View
+              style={[
+                styles.micCircle,
+                isRecording && styles.micCircleActive,
+                hasRecorded && !isRecording && styles.micCircleDone,
+              ]}
+            >
               <Text style={styles.micIcon}>
-                {isRecording ? '\u23F9' : hasRecorded ? '\u2713' : '\uD83C\uDF99\uFE0F'}
+                {isRecording ? "\u23F9" : hasRecorded ? "\u2713" : "\uD83C\uDF99\uFE0F"}
               </Text>
             </View>
             <View style={styles.voiceTextWrap}>
               <Text style={styles.voiceLabel}>
-                {isRecording ? 'Recording...' : hasRecorded ? 'Transcribed' : 'Tell us in your own words'}
+                {isRecording
+                  ? "Recording..."
+                  : hasRecorded
+                    ? "Transcribed"
+                    : "Tell us in your own words"}
               </Text>
               <Text style={styles.voiceDesc}>
-                {isRecording ? 'Tap to stop' : hasRecorded ? 'Tap to re-record' : 'Tap to record a voice message'}
+                {isRecording
+                  ? "Tap to stop"
+                  : hasRecorded
+                    ? "Tap to re-record"
+                    : "Tap to record a voice message"}
               </Text>
             </View>
           </TouchableOpacity>
@@ -98,13 +106,7 @@ export default function BioScreen() {
           {isRecording && (
             <View style={styles.waveform}>
               {Array.from({ length: 20 }).map((_, i) => (
-                <View
-                  key={i}
-                  style={[
-                    styles.waveBar,
-                    { height: 8 + Math.random() * 24 },
-                  ]}
-                />
+                <View key={i} style={[styles.waveBar, { height: 8 + Math.random() * 24 }]} />
               ))}
             </View>
           )}
@@ -114,15 +116,10 @@ export default function BioScreen() {
           <TouchableOpacity
             style={[shared.button, !bio.trim() && shared.buttonDisabled]}
             disabled={!bio.trim()}
-            onPress={() => router.push('/profiles')}
+            onPress={() => router.push("/profiles")}
             activeOpacity={0.8}
           >
-            <Text
-              style={[
-                shared.buttonText,
-                !bio.trim() && shared.buttonTextDisabled,
-              ]}
-            >
+            <Text style={[shared.buttonText, !bio.trim() && shared.buttonTextDisabled]}>
               Continue
             </Text>
           </TouchableOpacity>
@@ -139,7 +136,7 @@ const styles = StyleSheet.create({
     paddingBottom: 16,
   },
   badge: {
-    alignSelf: 'flex-start',
+    alignSelf: "flex-start",
     backgroundColor: colors.text,
     borderRadius: 9999,
     paddingHorizontal: 14,
@@ -148,13 +145,13 @@ const styles = StyleSheet.create({
   },
   badgeText: {
     fontSize: 13,
-    fontWeight: '500',
-    color: '#fdfcfc',
+    fontWeight: "500",
+    color: "#fdfcfc",
     letterSpacing: 0.1,
   },
   title: {
     fontSize: 36,
-    fontWeight: '300',
+    fontWeight: "300",
     fontFamily: fonts.display,
     color: colors.text,
     letterSpacing: -0.72,
@@ -178,15 +175,15 @@ const styles = StyleSheet.create({
     lineHeight: 24,
     letterSpacing: 0.1,
     // Hairline shadow instead of border
-    shadowColor: '#000',
+    shadowColor: "#000",
     shadowOffset: { width: 0, height: 0 },
     shadowOpacity: 0.08,
     shadowRadius: 1,
     elevation: 1,
   },
   divider: {
-    flexDirection: 'row',
-    alignItems: 'center',
+    flexDirection: "row",
+    alignItems: "center",
     gap: 12,
     marginVertical: 20,
   },
@@ -200,13 +197,13 @@ const styles = StyleSheet.create({
     color: colors.textTertiary,
   },
   voiceButton: {
-    flexDirection: 'row',
-    alignItems: 'center',
+    flexDirection: "row",
+    alignItems: "center",
     backgroundColor: colors.cardBg,
     borderRadius: 16,
     padding: 16,
     gap: 14,
-    shadowColor: '#000',
+    shadowColor: "#000",
     shadowOffset: { width: 0, height: 0 },
     shadowOpacity: 0.08,
     shadowRadius: 1,
@@ -214,8 +211,8 @@ const styles = StyleSheet.create({
   },
   voiceButtonActive: {
     borderWidth: 1,
-    borderColor: '#E53935',
-    backgroundColor: '#FFF5F5',
+    borderColor: "#E53935",
+    backgroundColor: "#FFF5F5",
   },
   voiceButtonDone: {
     borderWidth: 1,
@@ -227,11 +224,11 @@ const styles = StyleSheet.create({
     height: 48,
     borderRadius: 24,
     backgroundColor: colors.selectedBg,
-    alignItems: 'center',
-    justifyContent: 'center',
+    alignItems: "center",
+    justifyContent: "center",
   },
   micCircleActive: {
-    backgroundColor: '#FFCDD2',
+    backgroundColor: "#FFCDD2",
   },
   micCircleDone: {
     backgroundColor: colors.text,
@@ -245,7 +242,7 @@ const styles = StyleSheet.create({
   },
   voiceLabel: {
     fontSize: 15,
-    fontWeight: '500',
+    fontWeight: "500",
     color: colors.text,
     letterSpacing: 0.1,
   },
@@ -255,9 +252,9 @@ const styles = StyleSheet.create({
     letterSpacing: 0.1,
   },
   waveform: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'center',
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "center",
     gap: 3,
     marginTop: 16,
     height: 40,
@@ -265,7 +262,7 @@ const styles = StyleSheet.create({
   waveBar: {
     width: 3,
     borderRadius: 2,
-    backgroundColor: '#E53935',
+    backgroundColor: "#E53935",
     opacity: 0.6,
   },
   footer: {

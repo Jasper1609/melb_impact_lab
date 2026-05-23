@@ -1,8 +1,8 @@
-import { Image, StyleSheet, View, type StyleProp, type ViewStyle } from 'react-native';
-import { LinearGradient } from 'expo-linear-gradient';
-import type { GradientPreset } from '@/constants/gradients';
+import { LinearGradient } from "expo-linear-gradient";
+import { Image, type StyleProp, StyleSheet, View, type ViewStyle } from "react-native";
+import type { GradientPreset } from "@/constants/gradients";
 
-const noiseTexture = require('@/assets/images/noise-texture.png');
+const noiseTexture = require("@/assets/images/noise-texture.png");
 
 type Props = {
   preset: GradientPreset;
@@ -16,12 +16,7 @@ type Props = {
  * Layers a tiled grain texture over a multi-stop linear gradient
  * for that analog, tactile quality inspired by ElevenLabs.
  */
-export function NoiseGradient({
-  preset,
-  style,
-  noiseOpacity = 0.06,
-  borderRadius = 0,
-}: Props) {
+export function NoiseGradient({ preset, style, noiseOpacity = 0.06, borderRadius = 0 }: Props) {
   return (
     <View style={[styles.container, { borderRadius }, style]}>
       <LinearGradient
@@ -66,6 +61,6 @@ export function GradientOrb({
 
 const styles = StyleSheet.create({
   container: {
-    overflow: 'hidden',
+    overflow: "hidden",
   },
 });

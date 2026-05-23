@@ -1,4 +1,5 @@
-import { useEffect, useRef, useState } from 'react';
+import { router } from "expo-router";
+import { useEffect, useRef, useState } from "react";
 import {
   Animated,
   Easing,
@@ -8,46 +9,45 @@ import {
   TextInput,
   TouchableOpacity,
   View,
-} from 'react-native';
-import { SafeAreaView } from 'react-native-safe-area-context';
-import { router } from 'expo-router';
-import { colors, fonts, shared } from '@/constants/onboarding-styles';
+} from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
+import { colors, shared } from "@/constants/onboarding-styles";
 
 const DEMO_MESSAGES = [
   {
-    role: 'user' as const,
-    content: 'How do I enrol my kids in school nearby?',
+    role: "user" as const,
+    content: "How do I enrol my kids in school nearby?",
     delay: 800,
   },
   {
-    role: 'assistant' as const,
+    role: "assistant" as const,
     content:
-      'Great question! Based on your location in Kensington, here are your options:\n\n' +
-      'Kensington Primary School is closest and currently accepting enrolments for Term 3. ' +
-      'They have an open morning on Tue 10 June.\n\n' +
+      "Great question! Based on your location in Kensington, here are your options:\n\n" +
+      "Kensington Primary School is closest and currently accepting enrolments for Term 3. " +
+      "They have an open morning on Tue 10 June.\n\n" +
       "You'll need:\n" +
-      '\u2022 Proof of address (utility bill or lease)\n' +
+      "\u2022 Proof of address (utility bill or lease)\n" +
       "\u2022 Your child's birth certificate\n" +
-      '\u2022 Immunisation records\n\n' +
-      'Would you like me to draft an email to the school?',
+      "\u2022 Immunisation records\n\n" +
+      "Would you like me to draft an email to the school?",
     delay: 2800,
   },
   {
-    role: 'user' as const,
-    content: 'Yes, can you draft the email?',
+    role: "user" as const,
+    content: "Yes, can you draft the email?",
     delay: 5200,
   },
   {
-    role: 'assistant' as const,
+    role: "assistant" as const,
     content:
       "Here's a draft for you:\n\n" +
-      'Subject: Enrolment enquiry \u2014 new to the area\n\n' +
-      'Hi,\n\n' +
+      "Subject: Enrolment enquiry \u2014 new to the area\n\n" +
+      "Hi,\n\n" +
       "We've recently moved to Kensington from Hong Kong and would like to enquire about enrolling our two children " +
       "at Kensington Primary. We'd love to attend the open morning on 10 June if possible.\n\n" +
-      'Could you let us know what documents we need to bring?\n\n' +
-      'Thank you!\n\n' +
-      'Shall I send this, or would you like to edit it first?',
+      "Could you let us know what documents we need to bring?\n\n" +
+      "Thank you!\n\n" +
+      "Shall I send this, or would you like to edit it first?",
     delay: 7500,
   },
 ];
@@ -78,16 +78,14 @@ function TypingIndicator({ visible }: { visible: boolean }) {
     } else {
       pulse.setValue(0.3);
     }
-  }, [visible]);
+  }, [visible, pulse]);
 
   if (!visible) return null;
 
   return (
     <View style={[styles.bubble, styles.assistantBubble]}>
       <Text style={styles.senderLabel}>Tapestry</Text>
-      <Animated.Text style={[styles.typingDots, { opacity: pulse }]}>
-        • • •
-      </Animated.Text>
+      <Animated.Text style={[styles.typingDots, { opacity: pulse }]}>• • •</Animated.Text>
     </View>
   );
 }
@@ -103,14 +101,11 @@ export default function ConciergeScreen() {
 
     DEMO_MESSAGES.forEach((msg, i) => {
       // Show typing indicator before assistant messages
-      if (msg.role === 'assistant') {
+      if (msg.role === "assistant") {
         timeouts.push(
           setTimeout(() => {
             setTyping(true);
-            setTimeout(
-              () => scrollRef.current?.scrollToEnd({ animated: true }),
-              50,
-            );
+            setTimeout(() => scrollRef.current?.scrollToEnd({ animated: true }), 50);
           }, msg.delay - 1400),
         );
       }
@@ -124,16 +119,13 @@ export default function ConciergeScreen() {
             duration: 250,
             useNativeDriver: true,
           }).start();
-          setTimeout(
-            () => scrollRef.current?.scrollToEnd({ animated: true }),
-            50,
-          );
+          setTimeout(() => scrollRef.current?.scrollToEnd({ animated: true }), 50);
         }, msg.delay),
       );
     });
 
     return () => timeouts.forEach(clearTimeout);
-  }, []);
+  }, [fadeAnims]);
 
   return (
     <SafeAreaView style={shared.safe}>
@@ -145,7 +137,7 @@ export default function ConciergeScreen() {
             activeOpacity={0.7}
             style={styles.backBtn}
           >
-            <Text style={styles.backIcon}>{'\u2039'}</Text>
+            <Text style={styles.backIcon}>{"\u2039"}</Text>
           </TouchableOpacity>
           <Text style={styles.headerTitle}>Tapestry</Text>
           <View style={{ width: 36 }} />
@@ -162,18 +154,12 @@ export default function ConciergeScreen() {
               key={i}
               style={[
                 styles.bubble,
-                msg.role === 'user' ? styles.userBubble : styles.assistantBubble,
+                msg.role === "user" ? styles.userBubble : styles.assistantBubble,
                 { opacity: fadeAnims[i] },
               ]}
             >
-              {msg.role === 'assistant' && (
-                <Text style={styles.senderLabel}>Tapestry</Text>
-              )}
-              <Text
-                style={
-                  msg.role === 'user' ? styles.userText : styles.assistantText
-                }
-              >
+              {msg.role === "assistant" && <Text style={styles.senderLabel}>Tapestry</Text>}
+              <Text style={msg.role === "user" ? styles.userText : styles.assistantText}>
                 {msg.content}
               </Text>
             </Animated.View>
@@ -191,7 +177,7 @@ export default function ConciergeScreen() {
               editable={false}
             />
             <View style={styles.sendBtn}>
-              <Text style={styles.sendArrow}>{'\u2191'}</Text>
+              <Text style={styles.sendArrow}>{"\u2191"}</Text>
             </View>
           </View>
         </View>
@@ -202,9 +188,9 @@ export default function ConciergeScreen() {
 
 const styles = StyleSheet.create({
   header: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'space-between',
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-between",
     paddingHorizontal: 20,
     height: 48,
     borderBottomWidth: 1,
@@ -214,7 +200,7 @@ const styles = StyleSheet.create({
   backIcon: { fontSize: 32, color: colors.text, lineHeight: 32 },
   headerTitle: {
     fontSize: 17,
-    fontWeight: '600',
+    fontWeight: "600",
     color: colors.text,
     letterSpacing: 0.1,
   },
@@ -224,34 +210,34 @@ const styles = StyleSheet.create({
     paddingBottom: 8,
   },
   bubble: {
-    maxWidth: '82%',
+    maxWidth: "82%",
     borderRadius: 20,
     paddingHorizontal: 16,
     paddingVertical: 12,
     marginBottom: 10,
   },
   userBubble: {
-    alignSelf: 'flex-end',
+    alignSelf: "flex-end",
     backgroundColor: colors.text,
     borderBottomRightRadius: 6,
   },
   assistantBubble: {
-    alignSelf: 'flex-start',
+    alignSelf: "flex-start",
     backgroundColor: colors.selectedBg,
     borderBottomLeftRadius: 6,
   },
   senderLabel: {
     fontSize: 11,
-    fontWeight: '600',
+    fontWeight: "600",
     color: colors.textSecondary,
     letterSpacing: 0.3,
-    textTransform: 'uppercase',
+    textTransform: "uppercase",
     marginBottom: 4,
   },
   userText: {
     fontSize: 15,
     lineHeight: 22,
-    color: '#fdfcfc',
+    color: "#fdfcfc",
     letterSpacing: 0.1,
   },
   assistantText: {
@@ -273,8 +259,8 @@ const styles = StyleSheet.create({
     backgroundColor: colors.bg,
   },
   inputRow: {
-    flexDirection: 'row',
-    alignItems: 'center',
+    flexDirection: "row",
+    alignItems: "center",
     backgroundColor: colors.cardBg,
     borderRadius: 24,
     borderWidth: 1,
@@ -294,12 +280,12 @@ const styles = StyleSheet.create({
     height: 32,
     borderRadius: 16,
     backgroundColor: colors.text,
-    alignItems: 'center',
-    justifyContent: 'center',
+    alignItems: "center",
+    justifyContent: "center",
   },
   sendArrow: {
     fontSize: 18,
-    color: '#fdfcfc',
-    fontWeight: '600',
+    color: "#fdfcfc",
+    fontWeight: "600",
   },
 });

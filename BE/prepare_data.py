@@ -22,8 +22,9 @@ from __future__ import annotations
 import json
 import re
 from collections import OrderedDict
+from collections.abc import Iterable
 from pathlib import Path
-from typing import Any, Iterable
+from typing import Any
 
 # ---------------------------------------------------------------------------
 # paths
@@ -34,9 +35,15 @@ REPO_ROOT = BE_DIR.parent
 RAW_DIR = REPO_ROOT / "data" / "datasets"
 OUT_DIR = BE_DIR / "data"
 
-RAW_BUSINESSES = RAW_DIR / "local_businesses_shops" / "business-establishments-with-address-and-industry-classification.json"
+RAW_BUSINESSES = (
+    RAW_DIR / "local_businesses_shops" / "business-establishments-with-address-and-industry-classification.json"
+)
 RAW_CAFES = RAW_DIR / "food_hospitality" / "cafes-and-restaurants-with-seating-capacity.json"
-RAW_LANDMARKS = RAW_DIR / "community_facilities" / "landmarks-and-places-of-interest-including-schools-theatres-health-services-spor.json"
+RAW_LANDMARKS = (
+    RAW_DIR
+    / "community_facilities"
+    / "landmarks-and-places-of-interest-including-schools-theatres-health-services-spor.json"
+)
 
 OUT_BUSINESSES = OUT_DIR / "businesses.json"
 OUT_CAFES = OUT_DIR / "cafes.json"
@@ -55,6 +62,7 @@ LATEST_CENSUS_YEAR = "2024"
 # ---------------------------------------------------------------------------
 # small helpers
 # ---------------------------------------------------------------------------
+
 
 def _slugify(text: str) -> str:
     return re.sub(r"[^a-z0-9]+", "_", (text or "").lower()).strip("_")[:60]
@@ -115,7 +123,9 @@ def _types_from_anzsic(desc: str) -> list[str]:
     return [t for t in tags if not (t in seen or seen.add(t))]
 
 
-def _parse_coord(record: dict[str, Any], lat_key: str = "latitude", lng_key: str = "longitude") -> tuple[float, float] | None:
+def _parse_coord(
+    record: dict[str, Any], lat_key: str = "latitude", lng_key: str = "longitude"
+) -> tuple[float, float] | None:
     """Pull lat/lng out of a record. Returns None if either is missing/invalid."""
     try:
         lat = float(record[lat_key])
@@ -149,6 +159,7 @@ def _parse_coord_object(value: Any) -> tuple[float, float] | None:
 # projectors
 # ---------------------------------------------------------------------------
 
+
 def project_businesses(records: Iterable[dict[str, Any]]) -> list[dict[str, Any]]:
     out: list[dict[str, Any]] = []
     seen_keys: set[str] = set()
@@ -174,33 +185,35 @@ def project_businesses(records: Iterable[dict[str, Any]]) -> list[dict[str, Any]
             continue
         seen_keys.add(dedupe_key)
 
-        out.append({
-            "place_id": f"com_clue_{_slugify(name)}_{r.get('block_id', '')}_{r.get('property_id', '')}",
-            "name": name,
-            "formatted_address": addr,
-            "geometry": {"location": {"lat": lat, "lng": lng}},
-            "types": _types_from_anzsic(industry_desc),
-            "rating": None,
-            "user_ratings_total": None,
-            "business_status": "OPERATIONAL",
-            "opening_hours": None,
-            "formatted_phone_number": None,
-            "website": None,
-            "price_level": None,
-            "editorial_summary": {"overview": f"{industry_desc} in {r.get('clue_small_area', 'inner Melbourne')}."},
-            "industry_anzsic4_code": r.get("industry_anzsic4_code"),
-            "industry_anzsic4_description": industry_desc,
-            "clue_small_area": r.get("clue_small_area"),
-            "census_year": r.get("census_year"),
-            "source": "CoM CLUE - business-establishments-with-address-and-industry-classification",
-        })
+        out.append(
+            {
+                "place_id": f"com_clue_{_slugify(name)}_{r.get('block_id', '')}_{r.get('property_id', '')}",
+                "name": name,
+                "formatted_address": addr,
+                "geometry": {"location": {"lat": lat, "lng": lng}},
+                "types": _types_from_anzsic(industry_desc),
+                "rating": None,
+                "user_ratings_total": None,
+                "business_status": "OPERATIONAL",
+                "opening_hours": None,
+                "formatted_phone_number": None,
+                "website": None,
+                "price_level": None,
+                "editorial_summary": {"overview": f"{industry_desc} in {r.get('clue_small_area', 'inner Melbourne')}."},
+                "industry_anzsic4_code": r.get("industry_anzsic4_code"),
+                "industry_anzsic4_description": industry_desc,
+                "clue_small_area": r.get("clue_small_area"),
+                "census_year": r.get("census_year"),
+                "source": "CoM CLUE - business-establishments-with-address-and-industry-classification",
+            }
+        )
     return out
 
 
 def project_cafes(records: Iterable[dict[str, Any]]) -> list[dict[str, Any]]:
     """Cafes have one record per seating_type — collapse so each business
     appears once with indoor+outdoor seat totals summed."""
-    by_key: "OrderedDict[tuple[str, str], dict[str, Any]]" = OrderedDict()
+    by_key: OrderedDict[tuple[str, str], dict[str, Any]] = OrderedDict()
     for r in records:
         if r.get("census_year") != LATEST_CENSUS_YEAR:
             continue
@@ -254,15 +267,17 @@ def project_landmarks(records: Iterable[dict[str, Any]]) -> list[dict[str, Any]]
         if coord is None:
             continue
         lat, lng = coord
-        out.append({
-            "id": f"landmark_{idx:04d}_{_slugify(name)}",
-            "feature_name": name,
-            "theme": r.get("theme"),
-            "sub_theme": r.get("sub_theme"),
-            "lat": lat,
-            "lng": lng,
-            "source": "CoM Landmarks and Places of Interest",
-        })
+        out.append(
+            {
+                "id": f"landmark_{idx:04d}_{_slugify(name)}",
+                "feature_name": name,
+                "theme": r.get("theme"),
+                "sub_theme": r.get("sub_theme"),
+                "lat": lat,
+                "lng": lng,
+                "source": "CoM Landmarks and Places of Interest",
+            }
+        )
     return out
 
 
@@ -270,12 +285,10 @@ def project_landmarks(records: Iterable[dict[str, Any]]) -> list[dict[str, Any]]
 # main
 # ---------------------------------------------------------------------------
 
+
 def _load(path: Path) -> list[dict[str, Any]]:
     if not path.exists():
-        raise FileNotFoundError(
-            f"Raw CoM dataset not found: {path}\n"
-            f"Run `python data/fetch_datasets.py` first."
-        )
+        raise FileNotFoundError(f"Raw CoM dataset not found: {path}\nRun `python data/fetch_datasets.py` first.")
     return json.loads(path.read_text())
 
 

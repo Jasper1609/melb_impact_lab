@@ -1,20 +1,26 @@
-import { useEffect, useState } from 'react';
-import { Animated, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
-import { SafeAreaView } from 'react-native-safe-area-context';
-import { router } from 'expo-router';
-import { colors, fonts } from '@/constants/onboarding-styles';
-import { GradientOrb } from '@/components/NoiseGradient';
-import { iridescent } from '@/constants/gradients';
+import { router } from "expo-router";
+import { useEffect, useState } from "react";
+import { Animated, StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
+import { GradientOrb } from "@/components/NoiseGradient";
+import { iridescent } from "@/constants/gradients";
+import { colors, fonts } from "@/constants/onboarding-styles";
 
 const greetings = [
-  { welcome: 'Welcome', cta: 'Get Started' },
-  { welcome: '\u6B22\u8FCE', cta: '\u5F00\u59CB' },
-  { welcome: '\u0623\u0647\u0644\u0627\u064B \u0648\u0633\u0647\u0644\u0627\u064B', cta: '\u0627\u0628\u062F\u0623' },
-  { welcome: 'Ch\u00E0o m\u1EEBng', cta: 'B\u1EAFt \u0111\u1EA7u' },
-  { welcome: '\u0938\u094D\u0935\u093E\u0917\u0924', cta: '\u0936\u0941\u0930\u0942 \u0915\u0930\u0947\u0902' },
-  { welcome: 'Bienvenido', cta: 'Comenzar' },
-  { welcome: 'Maligayang pagdating', cta: 'Magsimula' },
-  { welcome: '\uD658\uC601\uD569\uB2C8\uB2E4', cta: '\uC2DC\uC791\uD558\uAE30' },
+  { welcome: "Welcome", cta: "Get Started" },
+  { welcome: "\u6B22\u8FCE", cta: "\u5F00\u59CB" },
+  {
+    welcome: "\u0623\u0647\u0644\u0627\u064B \u0648\u0633\u0647\u0644\u0627\u064B",
+    cta: "\u0627\u0628\u062F\u0623",
+  },
+  { welcome: "Ch\u00E0o m\u1EEBng", cta: "B\u1EAFt \u0111\u1EA7u" },
+  {
+    welcome: "\u0938\u094D\u0935\u093E\u0917\u0924",
+    cta: "\u0936\u0941\u0930\u0942 \u0915\u0930\u0947\u0902",
+  },
+  { welcome: "Bienvenido", cta: "Comenzar" },
+  { welcome: "Maligayang pagdating", cta: "Magsimula" },
+  { welcome: "\uD658\uC601\uD569\uB2C8\uB2E4", cta: "\uC2DC\uC791\uD558\uAE30" },
 ];
 
 export default function WelcomeScreen() {
@@ -54,8 +60,8 @@ export default function WelcomeScreen() {
             {current.welcome}
           </Animated.Text>
           <Text style={styles.subtitle}>
-            Connect with your new community.{'\n'}
-            Find friends, events, and resources{'\n'}
+            Connect with your new community.{"\n"}
+            Find friends, events, and resources{"\n"}
             in your neighbourhood.
           </Text>
         </View>
@@ -63,7 +69,7 @@ export default function WelcomeScreen() {
         <View style={styles.buttonGroup}>
           <TouchableOpacity
             style={styles.button}
-            onPress={() => router.push('/onboarding/language')}
+            onPress={() => router.push("/onboarding/language")}
             activeOpacity={0.8}
           >
             <Animated.Text style={[styles.buttonText, { opacity: fadeAnim }]}>
@@ -83,13 +89,13 @@ const styles = StyleSheet.create({
   },
   container: {
     flex: 1,
-    justifyContent: 'space-between',
+    justifyContent: "space-between",
     paddingHorizontal: 24,
     paddingTop: 120,
     paddingBottom: 32,
   },
   orbContainer: {
-    position: 'absolute',
+    position: "absolute",
     top: -100,
     right: -140,
     opacity: 0.5,
@@ -100,15 +106,15 @@ const styles = StyleSheet.create({
   },
   brand: {
     fontSize: 14,
-    fontWeight: '500',
+    fontWeight: "500",
     color: colors.textSecondary,
     letterSpacing: 0.7,
-    textTransform: 'uppercase',
+    textTransform: "uppercase",
     marginBottom: 8,
   },
   welcome: {
     fontSize: 48,
-    fontWeight: '300',
+    fontWeight: "300",
     fontFamily: fonts.display,
     color: colors.text,
     letterSpacing: -0.96,
@@ -128,12 +134,12 @@ const styles = StyleSheet.create({
     borderRadius: 9999,
     paddingVertical: 14,
     paddingHorizontal: 24,
-    alignItems: 'center',
+    alignItems: "center",
   },
   buttonText: {
     fontSize: 15,
-    fontWeight: '500',
-    color: '#fdfcfc',
+    fontWeight: "500",
+    color: "#fdfcfc",
     letterSpacing: 0.1,
   },
   dashboardButton: {
@@ -143,11 +149,11 @@ const styles = StyleSheet.create({
     borderRadius: 9999,
     paddingVertical: 12,
     paddingHorizontal: 24,
-    alignItems: 'center',
+    alignItems: "center",
   },
   dashboardButtonText: {
     fontSize: 15,
-    fontWeight: '500',
+    fontWeight: "500",
     color: colors.text,
     letterSpacing: 0.1,
   },

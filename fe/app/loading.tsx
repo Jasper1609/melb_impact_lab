@@ -1,15 +1,15 @@
-import { useEffect, useRef, useState } from 'react';
-import { Animated, Easing, StyleSheet, Text, View } from 'react-native';
-import { SafeAreaView } from 'react-native-safe-area-context';
-import { router } from 'expo-router';
-import { colors, fonts } from '@/constants/onboarding-styles';
-import { GradientOrb } from '@/components/NoiseGradient';
-import { softDawn } from '@/constants/gradients';
+import { router } from "expo-router";
+import { useEffect, useRef, useState } from "react";
+import { Animated, Easing, StyleSheet, Text, View } from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
+import { GradientOrb } from "@/components/NoiseGradient";
+import { softDawn } from "@/constants/gradients";
+import { colors, fonts } from "@/constants/onboarding-styles";
 
 const steps = [
-  'Analysing your interests...',
-  'Finding your neighbourhood...',
-  'Building your plan...',
+  "Analysing your interests...",
+  "Finding your neighbourhood...",
+  "Building your plan...",
 ];
 
 export default function LoadingScreen() {
@@ -25,7 +25,7 @@ export default function LoadingScreen() {
         duration: 1000,
         easing: Easing.linear,
         useNativeDriver: true,
-      })
+      }),
     ).start();
 
     Animated.loop(
@@ -42,7 +42,7 @@ export default function LoadingScreen() {
           easing: Easing.inOut(Easing.ease),
           useNativeDriver: true,
         }),
-      ])
+      ]),
     ).start();
 
     const stepTimer = setInterval(() => {
@@ -53,7 +53,7 @@ export default function LoadingScreen() {
     }, 1200);
 
     const navTimer = setTimeout(() => {
-      router.replace('/bio');
+      router.replace("/bio");
     }, 3800);
 
     return () => {
@@ -62,9 +62,9 @@ export default function LoadingScreen() {
     };
   }, [spinAnim, pulseAnim]);
 
-  const spin = spinAnim.interpolate({
+  const _spin = spinAnim.interpolate({
     inputRange: [0, 1],
-    outputRange: ['0deg', '360deg'],
+    outputRange: ["0deg", "360deg"],
   });
 
   return (
@@ -76,7 +76,8 @@ export default function LoadingScreen() {
             {
               opacity: pulseAnim,
               transform: [
-                { scale: pulseAnim.interpolate({
+                {
+                  scale: pulseAnim.interpolate({
                     inputRange: [0.6, 1],
                     outputRange: [0.92, 1.05],
                   }),
@@ -102,8 +103,8 @@ const styles = StyleSheet.create({
   },
   container: {
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
+    justifyContent: "center",
+    alignItems: "center",
     paddingHorizontal: 24,
     gap: 20,
   },
@@ -112,7 +113,7 @@ const styles = StyleSheet.create({
   },
   title: {
     fontSize: 32,
-    fontWeight: '300',
+    fontWeight: "300",
     fontFamily: fonts.display,
     color: colors.text,
     letterSpacing: -0.64,

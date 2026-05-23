@@ -9,10 +9,10 @@ Usage:
     python fetch_datasets.py
 """
 
+import json
 import os
 import sys
 import time
-import json
 
 # --- CONFIGURATION ---
 # Your Melbourne Open Data API Key
@@ -49,6 +49,7 @@ def download_dataset(dataset_id, format_type, api_key, dest_dir):
 
     # Construct complete URL with parameters
     import urllib.parse
+
     query_string = urllib.parse.urlencode(params)
     full_url = f"{url}?{query_string}"
 
@@ -67,27 +68,28 @@ def download_dataset(dataset_id, format_type, api_key, dest_dir):
 
     # Try downloading using requests (preferred) or fall back to urllib
     try:
-        import requests
+        import requests  # noqa: F401
+
         success = _download_with_requests(full_url, filepath)
     except ImportError:
         success = _download_with_urllib(full_url, filepath)
-    
+
     return success
 
 
 def _download_with_requests(url, filepath):
     """Downloads a file using the requests library with a visual progress bar."""
     import requests
-    
+
     start_time = time.time()
     try:
         response = requests.get(url, stream=True)
-        
+
         if response.status_code == 200:
-            total_size = int(response.headers.get('content-length', 0))
+            total_size = int(response.headers.get("content-length", 0))
             block_size = 1024 * 64  # 64 KB chunks
-            
-            with open(filepath, 'wb') as f:
+
+            with open(filepath, "wb") as f:
                 downloaded = 0
                 for chunk in response.iter_content(chunk_size=block_size):
                     if chunk:
@@ -96,24 +98,30 @@ def _download_with_requests(url, filepath):
                         if total_size > 0:
                             percent = (downloaded / total_size) * 100
                             bar = "#" * int(percent / 5) + "-" * (20 - int(percent / 5))
-                            sys.stdout.write(f"\r      [{bar}] {percent:.1f}% ({downloaded / (1024*1024):.2f} MB)")
+                            sys.stdout.write(
+                                f"\r      [{bar}] {percent:.1f}% ({downloaded / (1024 * 1024):.2f} MB)"
+                            )
                             sys.stdout.flush()
                         else:
-                            sys.stdout.write(f"\r      Downloaded: {downloaded / (1024*1024):.2f} MB")
+                            sys.stdout.write(
+                                f"\r      Downloaded: {downloaded / (1024 * 1024):.2f} MB"
+                            )
                             sys.stdout.flush()
-            
+
             duration = time.time() - start_time
             print(f"\n      \033[1;32m✓ Success!\033[0m Completed in {duration:.2f}s")
             return True
         else:
-            print(f"      \033[1;31m✗ Failed.\033[0m HTTP Status Code: {response.status_code}")
+            print(
+                f"      \033[1;31m✗ Failed.\033[0m HTTP Status Code: {response.status_code}"
+            )
             try:
                 error_msg = response.json()
                 print(f"      Error details: {error_msg}")
             except Exception:
                 print(f"      Response text: {response.text[:200]}")
             return False
-            
+
     except Exception as e:
         print(f"      \033[1;31m✗ Connection Error:\033[0m {str(e)}")
         # Clean up partial file if it was created
@@ -124,22 +132,21 @@ def _download_with_requests(url, filepath):
 
 def _download_with_urllib(url, filepath):
     """Downloads a file using the standard urllib library as a fallback."""
-    import urllib.request
     import urllib.error
-    
+    import urllib.request
+
     print("      (Using standard urllib fallback...)")
     start_time = time.time()
-    
+
     try:
         req = urllib.request.Request(
-            url, 
-            headers={"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"}
+            url, headers={"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"}
         )
         with urllib.request.urlopen(req) as response:
-            total_size = int(response.info().get('Content-Length', 0))
+            total_size = int(response.info().get("Content-Length", 0))
             block_size = 1024 * 64  # 64 KB
-            
-            with open(filepath, 'wb') as f:
+
+            with open(filepath, "wb") as f:
                 downloaded = 0
                 while True:
                     chunk = response.read(block_size)
@@ -150,20 +157,24 @@ def _download_with_urllib(url, filepath):
                     if total_size > 0:
                         percent = (downloaded / total_size) * 100
                         bar = "#" * int(percent / 5) + "-" * (20 - int(percent / 5))
-                        sys.stdout.write(f"\r      [{bar}] {percent:.1f}% ({downloaded / (1024*1024):.2f} MB)")
+                        sys.stdout.write(
+                            f"\r      [{bar}] {percent:.1f}% ({downloaded / (1024 * 1024):.2f} MB)"
+                        )
                         sys.stdout.flush()
                     else:
-                        sys.stdout.write(f"\r      Downloaded: {downloaded / (1024*1024):.2f} MB")
+                        sys.stdout.write(
+                            f"\r      Downloaded: {downloaded / (1024 * 1024):.2f} MB"
+                        )
                         sys.stdout.flush()
-            
+
             duration = time.time() - start_time
             print(f"\n      \033[1;32m✓ Success!\033[0m Completed in {duration:.2f}s")
             return True
-            
+
     except urllib.error.HTTPError as e:
         print(f"      \033[1;31m✗ HTTP Error {e.code}:\033[0m {e.reason}")
         try:
-            error_content = e.read().decode('utf-8')
+            error_content = e.read().decode("utf-8")
             print(f"      Error details: {error_content[:500]}")
         except Exception:
             pass
@@ -189,13 +200,15 @@ def main():
 
     # 2. Check if datalist.json exists
     if not os.path.exists(DATALIST_PATH):
-        print(f"\033[1;31mError: Configuration file '{DATALIST_PATH}' not found.\033[0m")
+        print(
+            f"\033[1;31mError: Configuration file '{DATALIST_PATH}' not found.\033[0m"
+        )
         print("Please ensure datalist.json is in the same directory as this script.")
         sys.exit(1)
 
     # 3. Read datalist.json
     try:
-        with open(DATALIST_PATH, "r", encoding="utf-8") as f:
+        with open(DATALIST_PATH, encoding="utf-8") as f:
             config = json.load(f)
     except Exception as e:
         print(f"\033[1;31mError parsing '{DATALIST_PATH}':\033[0m {e}")
@@ -204,25 +217,31 @@ def main():
     # 4. Extract datasets grouped by category
     categories = config.get("categories", [])
     if not categories:
-        print(f"\033[1;33mWarning: No categories or datasets found in {DATALIST_PATH}.\033[0m")
+        print(
+            f"\033[1;33mWarning: No categories or datasets found in {DATALIST_PATH}.\033[0m"
+        )
         sys.exit(0)
 
     # Count total datasets that match filter
     filtered_datasets_count = 0
     total_datasets_count = 0
-    
+
     for category in categories:
         for ds in category.get("datasets", []):
             total_datasets_count += 1
             priority = ds.get("priority", "medium").lower()
-            if PRIORITY_FILTER is None or priority in [p.lower() for p in PRIORITY_FILTER]:
+            if PRIORITY_FILTER is None or priority in [
+                p.lower() for p in PRIORITY_FILTER
+            ]:
                 filtered_datasets_count += 1
 
     print(f"Project:         \033[1m{config.get('project', 'Unknown')}\033[0m")
     print(f"Export Format:   \033[1;32m{EXPORT_FORMAT}\033[0m")
     print(f"Total in Config: {total_datasets_count} datasets")
-    print(f"To Download:     {filtered_datasets_count} datasets" + 
-          (f" (filtered by priority: {PRIORITY_FILTER})" if PRIORITY_FILTER else ""))
+    print(
+        f"To Download:     {filtered_datasets_count} datasets"
+        + (f" (filtered by priority: {PRIORITY_FILTER})" if PRIORITY_FILTER else "")
+    )
     print(f"Output Directory: \033[34m{OUTPUT_DIR}\033[0m")
     print("-" * 70)
 
@@ -242,14 +261,18 @@ def main():
         active_datasets = []
         for ds in datasets:
             priority = ds.get("priority", "medium").lower()
-            if PRIORITY_FILTER is None or priority in [p.lower() for p in PRIORITY_FILTER]:
+            if PRIORITY_FILTER is None or priority in [
+                p.lower() for p in PRIORITY_FILTER
+            ]:
                 active_datasets.append(ds)
 
         if not active_datasets:
             continue
 
-        print(f"\n{category_emoji} \033[1;35mCategory: {category_label} ({category_id})\033[0m")
-        
+        print(
+            f"\n{category_emoji} \033[1;35mCategory: {category_label} ({category_id})\033[0m"
+        )
+
         # Create category subdirectory inside OUTPUT_DIR
         category_dir = os.path.join(OUTPUT_DIR, category_id)
         if not os.path.exists(category_dir):
@@ -261,14 +284,22 @@ def main():
             ds_title = ds.get("title", ds_id)
             ds_priority = ds.get("priority", "medium")
 
-            print(f"\n   [{current_index}/{filtered_datasets_count}] \033[1m{ds_title}\033[0m (Priority: {ds_priority})")
-            
+            print(
+                f"\n   [{current_index}/{filtered_datasets_count}] \033[1m{ds_title}\033[0m (Priority: {ds_priority})"
+            )
+
             # Check if it already exists to count as skipped or download
             filename = f"{ds_id}.{EXPORT_FORMAT}"
             filepath = os.path.join(category_dir, filename)
-            
-            if os.path.exists(filepath) and not FORCE_REDOWNLOAD and os.path.getsize(filepath) > 0:
-                print(f"      \033[33m⚡ Skipped (already downloaded):\033[0m {filename}")
+
+            if (
+                os.path.exists(filepath)
+                and not FORCE_REDOWNLOAD
+                and os.path.getsize(filepath) > 0
+            ):
+                print(
+                    f"      \033[33m⚡ Skipped (already downloaded):\033[0m {filename}"
+                )
                 skipped_count += 1
                 continue
 

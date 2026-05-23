@@ -1,51 +1,42 @@
-import {
-  ScrollView,
-  StyleSheet,
-  Text,
-  TouchableOpacity,
-  View,
-} from 'react-native';
-import { SafeAreaView } from 'react-native-safe-area-context';
-import { router } from 'expo-router';
-import { colors, fonts } from '@/constants/onboarding-styles';
-import { CATEGORIES } from '@/constants/plan-data';
-import { NoiseGradient } from '@/components/NoiseGradient';
-import { categoryGradients, warmGlow } from '@/constants/gradients';
+import { router } from "expo-router";
+import { ScrollView, StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
+import { NoiseGradient } from "@/components/NoiseGradient";
+import { categoryGradients, warmGlow } from "@/constants/gradients";
+import { colors, fonts } from "@/constants/onboarding-styles";
+import { CATEGORIES } from "@/constants/plan-data";
 
 const NEXT_STEPS = [
   {
-    icon: '1',
-    label: 'Reach out to Mei-Ling Chan',
-    detail: 'Also from Hong Kong, lives 2 streets away',
-    categoryId: 'people',
+    icon: "1",
+    label: "Reach out to Mei-Ling Chan",
+    detail: "Also from Hong Kong, lives 2 streets away",
+    categoryId: "people",
   },
   {
-    icon: '2',
-    label: 'Attend Welcome Morning Tea',
-    detail: 'Sat 7 June, 10:00am \u2014 Kensington Town Hall',
-    categoryId: 'events',
+    icon: "2",
+    label: "Attend Welcome Morning Tea",
+    detail: "Sat 7 June, 10:00am \u2014 Kensington Town Hall",
+    categoryId: "events",
   },
   {
-    icon: '3',
-    label: 'Join HK Families Melbourne',
-    detail: '520 members on Facebook',
-    categoryId: 'communities',
+    icon: "3",
+    label: "Join HK Families Melbourne",
+    detail: "520 members on Facebook",
+    categoryId: "communities",
   },
   {
-    icon: '4',
-    label: 'Start school enrolment',
-    detail: 'Step-by-step guide on vic.gov.au',
-    categoryId: 'requests',
+    icon: "4",
+    label: "Start school enrolment",
+    detail: "Step-by-step guide on vic.gov.au",
+    categoryId: "requests",
   },
 ];
 
 export default function DashboardScreen() {
   return (
     <SafeAreaView style={styles.safe}>
-      <ScrollView
-        contentContainerStyle={styles.scroll}
-        showsVerticalScrollIndicator={false}
-      >
+      <ScrollView contentContainerStyle={styles.scroll} showsVerticalScrollIndicator={false}>
         <Text style={styles.greeting}>Your plan</Text>
         <Text style={styles.subtitle}>
           Here's what Tapestry found for you and your family, Jesse.
@@ -54,15 +45,13 @@ export default function DashboardScreen() {
         {/* AI Concierge */}
         <TouchableOpacity
           style={styles.conciergeBar}
-          onPress={() => router.push('/concierge')}
+          onPress={() => router.push("/concierge")}
           activeOpacity={0.7}
         >
-          <Text style={styles.conciergeSparkle}>{'\u2728'}</Text>
-          <Text style={styles.conciergePlaceholder}>
-            Ask Tapestry anything...
-          </Text>
+          <Text style={styles.conciergeSparkle}>{"\u2728"}</Text>
+          <Text style={styles.conciergePlaceholder}>Ask Tapestry anything...</Text>
           <View style={styles.conciergeSend}>
-            <Text style={styles.conciergeSendIcon}>{'\u2191'}</Text>
+            <Text style={styles.conciergeSendIcon}>{"\u2191"}</Text>
           </View>
         </TouchableOpacity>
 
@@ -76,8 +65,8 @@ export default function DashboardScreen() {
               activeOpacity={0.7}
               onPress={() =>
                 router.push({
-                  pathname: '/plan/[id]',
-                  params: { id: step.categoryId, from: 'dashboard' },
+                  pathname: "/plan/[id]",
+                  params: { id: step.categoryId, from: "dashboard" },
                 })
               }
             >
@@ -88,7 +77,7 @@ export default function DashboardScreen() {
                 <Text style={styles.stepLabel}>{step.label}</Text>
                 <Text style={styles.stepDetail}>{step.detail}</Text>
               </View>
-              <Text style={styles.stepArrow}>{'\u203A'}</Text>
+              <Text style={styles.stepArrow}>{"\u203A"}</Text>
             </TouchableOpacity>
           ))}
         </View>
@@ -103,7 +92,7 @@ export default function DashboardScreen() {
               activeOpacity={0.7}
               onPress={() =>
                 router.push({
-                  pathname: '/explore/[id]',
+                  pathname: "/explore/[id]",
                   params: { id: cat.id },
                 })
               }
@@ -137,7 +126,7 @@ const styles = StyleSheet.create({
   },
   greeting: {
     fontSize: 36,
-    fontWeight: '300',
+    fontWeight: "300",
     fontFamily: fonts.display,
     color: colors.text,
     letterSpacing: -0.72,
@@ -153,8 +142,8 @@ const styles = StyleSheet.create({
   },
   // Concierge bar
   conciergeBar: {
-    flexDirection: 'row',
-    alignItems: 'center',
+    flexDirection: "row",
+    alignItems: "center",
     backgroundColor: colors.cardBg,
     borderRadius: 24,
     borderWidth: 1,
@@ -179,17 +168,17 @@ const styles = StyleSheet.create({
     height: 34,
     borderRadius: 17,
     backgroundColor: colors.text,
-    alignItems: 'center',
-    justifyContent: 'center',
+    alignItems: "center",
+    justifyContent: "center",
   },
   conciergeSendIcon: {
     fontSize: 18,
-    color: '#fdfcfc',
-    fontWeight: '600',
+    color: "#fdfcfc",
+    fontWeight: "600",
   },
   sectionTitle: {
     fontSize: 14,
-    fontWeight: '400',
+    fontWeight: "400",
     color: colors.textSecondary,
     marginBottom: 12,
   },
@@ -199,14 +188,14 @@ const styles = StyleSheet.create({
     marginBottom: 32,
   },
   stepCard: {
-    flexDirection: 'row',
-    alignItems: 'center',
+    flexDirection: "row",
+    alignItems: "center",
     backgroundColor: colors.cardBg,
     borderRadius: 16,
     padding: 16,
     gap: 14,
     // Hairline shadow
-    shadowColor: '#000',
+    shadowColor: "#000",
     shadowOffset: { width: 0, height: 0 },
     shadowOpacity: 0.08,
     shadowRadius: 1,
@@ -217,20 +206,20 @@ const styles = StyleSheet.create({
     height: 32,
     borderRadius: 16,
     backgroundColor: colors.text,
-    alignItems: 'center',
-    justifyContent: 'center',
+    alignItems: "center",
+    justifyContent: "center",
   },
   stepNumberText: {
     fontSize: 14,
-    fontWeight: '500',
-    color: '#fdfcfc',
+    fontWeight: "500",
+    color: "#fdfcfc",
   },
   stepContent: {
     flex: 1,
   },
   stepLabel: {
     fontSize: 15,
-    fontWeight: '500',
+    fontWeight: "500",
     color: colors.text,
     marginBottom: 2,
     letterSpacing: 0.1,
@@ -247,25 +236,25 @@ const styles = StyleSheet.create({
   },
   // Category grid
   categoryGrid: {
-    flexDirection: 'row',
-    flexWrap: 'wrap',
+    flexDirection: "row",
+    flexWrap: "wrap",
     gap: 12,
   },
   categoryCard: {
-    width: '47%',
+    width: "47%",
     backgroundColor: colors.cardBg,
     borderRadius: 16,
     padding: 16,
-    overflow: 'hidden',
+    overflow: "hidden",
     // Hairline shadow
-    shadowColor: '#000',
+    shadowColor: "#000",
     shadowOffset: { width: 0, height: 0 },
     shadowOpacity: 0.08,
     shadowRadius: 1,
     elevation: 1,
   },
   categoryGradientStrip: {
-    position: 'absolute',
+    position: "absolute",
     top: 0,
     left: 0,
     right: 0,
@@ -277,7 +266,7 @@ const styles = StyleSheet.create({
   },
   categoryTitle: {
     fontSize: 16,
-    fontWeight: '500',
+    fontWeight: "500",
     color: colors.text,
     marginBottom: 4,
     letterSpacing: 0.1,

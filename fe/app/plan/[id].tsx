@@ -1,16 +1,9 @@
-import { useState } from 'react';
-import { useLocalSearchParams, router } from 'expo-router';
-import {
-  Linking,
-  ScrollView,
-  StyleSheet,
-  Text,
-  TouchableOpacity,
-  View,
-} from 'react-native';
-import { SafeAreaView } from 'react-native-safe-area-context';
-import { shared, colors, fonts } from '@/constants/onboarding-styles';
-import { CATEGORIES, type PlanItem } from '@/constants/plan-data';
+import { router, useLocalSearchParams } from "expo-router";
+import { useState } from "react";
+import { Linking, ScrollView, StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
+import { colors, fonts, shared } from "@/constants/onboarding-styles";
+import { CATEGORIES, type PlanItem } from "@/constants/plan-data";
 
 /* ──────────────────────────────────────────────
    People — expandable email draft + mailto:
@@ -27,8 +20,8 @@ function PersonCard({
 }) {
   const openMail = () => {
     const mailto = `mailto:${item.email}?subject=${encodeURIComponent(
-      item.emailSubject || ''
-    )}&body=${encodeURIComponent(item.emailBody || '')}`;
+      item.emailSubject || "",
+    )}&body=${encodeURIComponent(item.emailBody || "")}`;
     Linking.openURL(mailto);
   };
 
@@ -44,14 +37,8 @@ function PersonCard({
       </View>
       <Text style={styles.itemDetail}>{item.detail}</Text>
 
-      <TouchableOpacity
-        style={styles.actionButton}
-        onPress={onToggle}
-        activeOpacity={0.7}
-      >
-        <Text style={styles.actionButtonText}>
-          {expanded ? 'Hide draft' : 'Connect via email'}
-        </Text>
+      <TouchableOpacity style={styles.actionButton} onPress={onToggle} activeOpacity={0.7}>
+        <Text style={styles.actionButtonText}>{expanded ? "Hide draft" : "Connect via email"}</Text>
       </TouchableOpacity>
 
       {expanded && (
@@ -89,7 +76,7 @@ function EventCard({ item }: { item: PlanItem }) {
       <Text style={styles.itemLabel}>{item.label}</Text>
       <View style={styles.eventMeta}>
         <Text style={styles.eventDate}>{item.date}</Text>
-        <Text style={styles.eventDot}>{'\u2022'}</Text>
+        <Text style={styles.eventDot}>{"\u2022"}</Text>
         <Text style={styles.eventLocation}>{item.location}</Text>
       </View>
       <Text style={styles.itemDetail}>{item.detail}</Text>
@@ -103,9 +90,7 @@ function EventCard({ item }: { item: PlanItem }) {
         onPress={() => item.eventUrl && Linking.openURL(item.eventUrl)}
         activeOpacity={0.7}
       >
-        <Text style={styles.actionButtonText}>
-          View on {item.source}
-        </Text>
+        <Text style={styles.actionButtonText}>View on {item.source}</Text>
       </TouchableOpacity>
     </View>
   );
@@ -177,22 +162,20 @@ export default function PlanDetailScreen() {
 
   const renderItem = (item: PlanItem, i: number) => {
     switch (category.id) {
-      case 'people':
+      case "people":
         return (
           <PersonCard
             key={i}
             item={item}
             expanded={expandedIndex === i}
-            onToggle={() =>
-              setExpandedIndex(expandedIndex === i ? null : i)
-            }
+            onToggle={() => setExpandedIndex(expandedIndex === i ? null : i)}
           />
         );
-      case 'events':
+      case "events":
         return <EventCard key={i} item={item} />;
-      case 'communities':
+      case "communities":
         return <CommunityCard key={i} item={item} />;
-      case 'requests':
+      case "requests":
         return <RequestCard key={i} item={item} />;
       default:
         return null;
@@ -208,44 +191,39 @@ export default function PlanDetailScreen() {
             activeOpacity={0.7}
             style={styles.backButton}
           >
-            <Text style={styles.backText}>{'\u2039'}</Text>
+            <Text style={styles.backText}>{"\u2039"}</Text>
           </TouchableOpacity>
         </View>
 
-        <ScrollView
-          contentContainerStyle={styles.scroll}
-          showsVerticalScrollIndicator={false}
-        >
+        <ScrollView contentContainerStyle={styles.scroll} showsVerticalScrollIndicator={false}>
           <Text style={styles.icon}>{category.icon}</Text>
           <Text style={styles.title}>{category.title}</Text>
           <Text style={styles.summary}>{category.summary}</Text>
 
-          <View style={styles.itemList}>
-            {category.items.map(renderItem)}
-          </View>
+          <View style={styles.itemList}>{category.items.map(renderItem)}</View>
         </ScrollView>
 
-        {from !== 'dashboard' && (
+        {from !== "dashboard" && (
           <View style={styles.footer}>
             {nextCategory ? (
               <TouchableOpacity
                 style={shared.button}
                 onPress={() =>
                   router.replace({
-                    pathname: '/plan/[id]',
+                    pathname: "/plan/[id]",
                     params: { id: nextCategory.id },
                   })
                 }
                 activeOpacity={0.8}
               >
                 <Text style={shared.buttonText}>
-                  Next: {nextCategory.title} {'\u2192'}
+                  Next: {nextCategory.title} {"\u2192"}
                 </Text>
               </TouchableOpacity>
             ) : (
               <TouchableOpacity
                 style={shared.button}
-                onPress={() => router.replace('/dashboard')}
+                onPress={() => router.replace("/dashboard")}
                 activeOpacity={0.8}
               >
                 <Text style={shared.buttonText}>Finish your plan</Text>
@@ -262,10 +240,10 @@ const styles = StyleSheet.create({
   header: {
     paddingHorizontal: 20,
     height: 48,
-    justifyContent: 'center',
+    justifyContent: "center",
   },
   backButton: {
-    alignSelf: 'flex-start',
+    alignSelf: "flex-start",
     padding: 4,
   },
   backText: {
@@ -283,7 +261,7 @@ const styles = StyleSheet.create({
   },
   title: {
     fontSize: 36,
-    fontWeight: '300',
+    fontWeight: "300",
     fontFamily: fonts.display,
     color: colors.text,
     letterSpacing: -0.72,
@@ -304,7 +282,7 @@ const styles = StyleSheet.create({
     backgroundColor: colors.cardBg,
     borderRadius: 16,
     padding: 16,
-    shadowColor: '#000',
+    shadowColor: "#000",
     shadowOffset: { width: 0, height: 0 },
     shadowOpacity: 0.08,
     shadowRadius: 1,
@@ -312,7 +290,7 @@ const styles = StyleSheet.create({
   },
   itemLabel: {
     fontSize: 16,
-    fontWeight: '500',
+    fontWeight: "500",
     color: colors.text,
     marginBottom: 4,
     letterSpacing: 0.1,
@@ -324,21 +302,21 @@ const styles = StyleSheet.create({
     letterSpacing: 0.1,
   },
   personHeader: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'space-between',
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-between",
     marginBottom: 4,
   },
   contactBadge: {
-    backgroundColor: '#e8f5e9',
+    backgroundColor: "#e8f5e9",
     borderRadius: 9999,
     paddingHorizontal: 8,
     paddingVertical: 3,
   },
   contactBadgeText: {
     fontSize: 11,
-    fontWeight: '500',
-    color: '#2e7d32',
+    fontWeight: "500",
+    color: "#2e7d32",
     letterSpacing: 0.1,
   },
   actionButton: {
@@ -348,12 +326,12 @@ const styles = StyleSheet.create({
     borderRadius: 9999,
     paddingHorizontal: 16,
     paddingVertical: 8,
-    alignSelf: 'flex-start',
+    alignSelf: "flex-start",
     marginTop: 12,
   },
   actionButtonText: {
     fontSize: 13,
-    fontWeight: '500',
+    fontWeight: "500",
     color: colors.text,
     letterSpacing: 0.1,
   },
@@ -374,7 +352,7 @@ const styles = StyleSheet.create({
     letterSpacing: 0.1,
   },
   emailFieldLabel: {
-    fontWeight: '500',
+    fontWeight: "500",
     color: colors.text,
   },
   emailDivider: {
@@ -394,14 +372,14 @@ const styles = StyleSheet.create({
 
   // Event meta
   eventMeta: {
-    flexDirection: 'row',
-    alignItems: 'center',
+    flexDirection: "row",
+    alignItems: "center",
     gap: 6,
     marginBottom: 8,
   },
   eventDate: {
     fontSize: 13,
-    fontWeight: '500',
+    fontWeight: "500",
     color: colors.text,
   },
   eventDot: {
@@ -419,7 +397,7 @@ const styles = StyleSheet.create({
     marginBottom: 2,
   },
   sourceBadge: {
-    alignSelf: 'flex-start',
+    alignSelf: "flex-start",
     backgroundColor: colors.selectedBg,
     borderRadius: 9999,
     paddingHorizontal: 10,
@@ -428,7 +406,7 @@ const styles = StyleSheet.create({
   sourceBadgeText: {
     fontSize: 12,
     color: colors.textSecondary,
-    fontWeight: '500',
+    fontWeight: "500",
   },
 
   footer: {

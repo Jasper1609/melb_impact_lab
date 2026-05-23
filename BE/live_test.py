@@ -14,13 +14,12 @@ Usage:
 from __future__ import annotations
 
 import sys
-from pathlib import Path
 
 from dotenv import find_dotenv, load_dotenv
 
 load_dotenv(find_dotenv(usecwd=False))
 
-from agent import answer
+from agent import answer  # noqa: E402
 
 # Asker profile — populated as it would be after onboarding via main.py
 ASKER_PROFILE = {
@@ -28,7 +27,7 @@ ASKER_PROFILE = {
     "suburb": "Kensington / Flemington",
     "name": "Reza",
     "country_of_origin": "Afghanistan",
-    "languages": ["en", "fa", "ps"],          # English, Farsi, Pashto
+    "languages": ["en", "fa", "ps"],  # English, Farsi, Pashto
     "occupation": "mechanical engineer (currently driving rideshare)",
     "looking_for": (
         "Help getting back into mechanical engineering — Engineers Australia "

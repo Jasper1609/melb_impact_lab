@@ -51,10 +51,7 @@ TOOL_SCHEMAS: list[dict[str, Any]] = [
                 },
                 "user_postcode": {
                     "type": "string",
-                    "description": (
-                        "The asker's 4-digit Australian postcode. Required for "
-                        "distance filtering."
-                    ),
+                    "description": ("The asker's 4-digit Australian postcode. Required for distance filtering."),
                 },
                 "radius_km": {
                     "type": "number",
@@ -125,10 +122,7 @@ TOOL_SCHEMAS: list[dict[str, Any]] = [
                 },
                 "radius_km": {
                     "type": "number",
-                    "description": (
-                        "Search radius in kilometres. Default 5. Expand to 15 "
-                        "or 30 on retry."
-                    ),
+                    "description": ("Search radius in kilometres. Default 5. Expand to 15 or 30 on retry."),
                     "default": 5,
                 },
                 "business_type": {
@@ -332,6 +326,7 @@ TOOL_SCHEMAS: list[dict[str, Any]] = [
 # ---------------------------------------------------------------------------
 # handlers — keyed by tool name so the agent loop can dispatch
 # ---------------------------------------------------------------------------
+
 
 def _handle_search_community_profiles(args: dict[str, Any]) -> dict[str, Any]:
     results = db.search_profiles(

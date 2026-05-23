@@ -25,9 +25,9 @@ Usage:
     python3 extract_kensington.py
 """
 
+import glob
 import json
 import os
-import glob
 import re
 from pathlib import Path
 
@@ -42,11 +42,12 @@ POSTCODE = "3031"
 
 # ── Helpers ────────────────────────────────────────────────────────────────────
 
+
 def _matches_kensington(value: str) -> bool:
     """Return True if the string value strongly indicates Kensington suburb."""
     v = value.strip()
     # Exact suburb name (case-insensitive)
-    if re.search(r'\bkensington\b', v, re.IGNORECASE):
+    if re.search(r"\bkensington\b", v, re.IGNORECASE):
         return True
     return False
 
@@ -60,15 +61,18 @@ def _address_matches(value: str) -> bool:
     """
     v = value.upper()
     # Postcode 3031 strongly implies Kensington / Flemington
-    if re.search(r'\b3031\b', v):
+    if re.search(r"\b3031\b", v):
         return True
     # Suburb token KENSINGTON (not part of a road name — road names are
     # typically followed by a street type token like RD/ROAD/ST/etc.)
-    if re.search(r'\bKENSINGTON\b', v):
+    if re.search(r"\bKENSINGTON\b", v):
         # Exclude "KENSINGTON ROAD" when KENSINGTON is acting as a street name
         # (those addresses end with a different suburb, e.g. WEST MELBOURNE)
         # Heuristic: if the next token after KENSINGTON is ROAD/RD, skip.
-        if re.search(r'\bKENSINGTON\s+(ROAD|RD|ST|STREET|AVE|AVENUE|DR|DRIVE|PL|PLACE|CT|COURT|LANE|LN)\b', v):
+        if re.search(
+            r"\bKENSINGTON\s+(ROAD|RD|ST|STREET|AVE|AVENUE|DR|DRIVE|PL|PLACE|CT|COURT|LANE|LN)\b",
+            v,
+        ):
             return False
         return True
     return False
@@ -99,7 +103,6 @@ DATASET_RULES = {
     "workers-profile-2016": [
         {"field": "profile", "strategy": "exact"},
     ],
-
     # food_hospitality
     "cafes-and-restaurants-with-seating-capacity": [
         {"field": "clue_small_area", "strategy": "exact"},
@@ -109,7 +112,6 @@ DATASET_RULES = {
         {"field": "clue_small_area", "strategy": "exact"},
         {"field": "building_address", "strategy": "address"},
     ],
-
     # local_businesses_shops
     "business-establishments-with-address-and-industry-classification": [
         {"field": "clue_small_area", "strategy": "exact"},
@@ -124,7 +126,6 @@ DATASET_RULES = {
         {"field": "name", "strategy": "contains"},
         {"field": "address", "strategy": "address"},
     ],
-
     # community_facilities
     "landmarks-and-places-of-interest-including-schools-theatres-health-services-spor": [
         {"field": "clue_small_area", "strategy": "exact"},
@@ -140,7 +141,6 @@ DATASET_RULES = {
         {"field": "suburb", "strategy": "exact"},
         {"field": "address", "strategy": "address"},
     ],
-
     # green_outdoor
     "playgrounds": [
         {"field": "suburb", "strategy": "exact"},
@@ -160,7 +160,6 @@ DATASET_RULES = {
     "trees-with-species-and-dimensions-urban-forest": [
         {"field": "precinct", "strategy": "exact"},
     ],
-
     # arts_culture_events
     "outdoor-artworks": [
         {"field": "clue_small_area", "strategy": "exact"},
@@ -183,7 +182,6 @@ DATASET_RULES = {
         {"field": "title", "strategy": "contains"},
         {"field": "location", "strategy": "contains"},
     ],
-
     # demographics
     "families-with-children-profile-2016-aged-0-12-years": [
         {"field": "small_area", "strategy": "exact"},
@@ -193,7 +191,6 @@ DATASET_RULES = {
         {"field": "small_area", "strategy": "exact"},
         {"field": "geography", "strategy": "exact"},
     ],
-
     # transport_navigation
     "bus-stops": [
         {"field": "suburb", "strategy": "exact"},
@@ -209,7 +206,6 @@ DATASET_RULES = {
         {"field": "clue_small_area", "strategy": "exact"},
         {"field": "suburb", "strategy": "exact"},
     ],
-
     # housing_property
     "house-prices-by-small-area-sale-year": [
         {"field": "small_area", "strategy": "exact"},
@@ -260,6 +256,7 @@ def extract_from_file(filepath: str, rules: list[dict]) -> list[dict]:
 
 # ── Main ───────────────────────────────────────────────────────────────────────
 
+
 def main():
     print("=" * 65)
     print("         KENSINGTON SUBURB DATA EXTRACTOR")
@@ -286,7 +283,10 @@ def main():
         if rules is None:
             # Fallback: generic scan of all string fields for "Kensington"
             print(f"\n⚠  No rule defined for '{dataset_id}' — using generic scan")
-            rules = [{"field": k, "strategy": "contains"} for k in ["clue_small_area", "suburb", "geography", "precinct"]]
+            rules = [
+                {"field": k, "strategy": "contains"}
+                for k in ["clue_small_area", "suburb", "geography", "precinct"]
+            ]
 
         try:
             matched = extract_from_file(filepath, rules)
@@ -332,7 +332,9 @@ def main():
             saved_datasets += 1
 
     print("-" * 65)
-    print(f"  {'TOTAL':<{col_w - 2}} {total_records:>8,}  ({saved_datasets} datasets with data)")
+    print(
+        f"  {'TOTAL':<{col_w - 2}} {total_records:>8,}  ({saved_datasets} datasets with data)"
+    )
     print("=" * 65)
     print(f"\nKensington data saved to: {os.path.abspath(OUTPUT_DIR)}/")
 

@@ -36,8 +36,7 @@ def _get_client() -> Anthropic:
         api_key = os.environ.get("CLAUDE_API_KEY") or os.environ.get("ANTHROPIC_API_KEY")
         if not api_key:
             raise RuntimeError(
-                "CLAUDE_API_KEY (or ANTHROPIC_API_KEY) is not set. "
-                "Copy .env.example to .env and fill it in."
+                "CLAUDE_API_KEY (or ANTHROPIC_API_KEY) is not set. Copy .env.example to .env and fill it in."
             )
         _client = Anthropic(api_key=api_key)
     return _client
@@ -78,9 +77,7 @@ def _system_prompt(asker_profile: dict[str, Any]) -> str:
     profile_block = _format_asker_profile(asker_profile)
     has_postcode = bool(asker_profile.get("postcode"))
     name_hint = (
-        f"Address the asker as {asker_profile['name']} if it feels natural."
-        if asker_profile.get("name")
-        else ""
+        f"Address the asker as {asker_profile['name']} if it feels natural." if asker_profile.get("name") else ""
     )
 
     if not has_postcode:
@@ -196,10 +193,7 @@ def answer(
 
         if response.stop_reason != "tool_use":
             # Something unexpected (max_tokens, stop_sequence, etc.).
-            return (
-                f"[agent] Stopped unexpectedly: {response.stop_reason}. "
-                f"Try rephrasing or extending max_tokens."
-            )
+            return f"[agent] Stopped unexpectedly: {response.stop_reason}. Try rephrasing or extending max_tokens."
 
         # Execute every tool_use block in the assistant turn, then loop.
         tool_results: list[dict[str, Any]] = []
@@ -207,20 +201,17 @@ def answer(
             if block.type != "tool_use":
                 continue
             if verbose:
-                print(
-                    f"[tool] {block.name} <- {json.dumps(block.input, ensure_ascii=False)}"
-                )
+                print(f"[tool] {block.name} <- {json.dumps(block.input, ensure_ascii=False)}")
             result = dispatch(block.name, block.input)
             if verbose:
-                print(
-                    f"[tool] {block.name} -> count={result.get('count', '-')} "
-                    f"err={result.get('error', '-')}"
-                )
-            tool_results.append({
-                "type": "tool_result",
-                "tool_use_id": block.id,
-                "content": json.dumps(result, ensure_ascii=False, default=str),
-            })
+                print(f"[tool] {block.name} -> count={result.get('count', '-')} err={result.get('error', '-')}")
+            tool_results.append(
+                {
+                    "type": "tool_result",
+                    "tool_use_id": block.id,
+                    "content": json.dumps(result, ensure_ascii=False, default=str),
+                }
+            )
 
         history.append({"role": "user", "content": tool_results})
 

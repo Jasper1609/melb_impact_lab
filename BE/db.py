@@ -19,10 +19,9 @@ from __future__ import annotations
 
 import json
 import math
-import os
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
-from typing import Any, Iterable
+from typing import Any
 
 import numpy as np
 
@@ -63,6 +62,7 @@ _landmark_embeddings: np.ndarray | None = None
 # ---------------------------------------------------------------------------
 # narrative builders — what text actually gets embedded
 # ---------------------------------------------------------------------------
+
 
 def _profile_narrative(p: dict[str, Any]) -> str:
     """Build a profile narrative in *query register*.
@@ -189,11 +189,7 @@ def _event_narrative(e: dict[str, Any]) -> str:
     venue = e.get("venue", {}).get("name", "")
     suburb = e.get("venue", {}).get("suburb", "")
     cost_str = "Free." if e.get("is_free") else f"Cost: AUD {e.get('cost_aud', 0)}."
-    reg_str = (
-        "Registration required."
-        if e.get("registration_required")
-        else "No registration needed."
-    )
+    reg_str = "Registration required." if e.get("registration_required") else "No registration needed."
     return (
         f"HELPS WITH: {e['description']}\n"
         f"TYPE OF EVENT: {cats}. Open to: {audience}\n"
@@ -210,6 +206,7 @@ def _event_narrative(e: dict[str, Any]) -> str:
 # ---------------------------------------------------------------------------
 # load / embed / cache
 # ---------------------------------------------------------------------------
+
 
 def _record_key(r: dict[str, Any]) -> str:
     """Return the unique key for a record — `id` for profiles/events/cafes/landmarks, `place_id` for businesses."""
@@ -255,7 +252,9 @@ def _load_or_embed(
         except (json.JSONDecodeError, KeyError):
             pass  # fall through and rebuild
 
-    print(f"[db] Embedding {len(raw_records)} records from {raw_path.name} (one-time, narrative={_NARRATIVE_VERSION})...")
+    print(
+        f"[db] Embedding {len(raw_records)} records from {raw_path.name} (one-time, narrative={_NARRATIVE_VERSION})..."
+    )
     embedded = _embed_records(raw_records, narrative_fn)
     cached_path.write_text(json.dumps(embedded, indent=2))
     return embedded
@@ -286,6 +285,7 @@ def _ensure_loaded() -> None:
 # ---------------------------------------------------------------------------
 # geographic + similarity helpers
 # ---------------------------------------------------------------------------
+
 
 def _haversine_km(lat1: float, lng1: float, lat2: float, lng2: float) -> float:
     """Great-circle distance between two points in km."""
@@ -321,13 +321,13 @@ _POSTCODE_CENTROIDS: dict[str, tuple[float, float]] = {
     "3003": (-37.80810, 144.94770),  # West Melbourne
     "3032": (-37.77730, 144.91680),  # Ascot Vale / Travancore
     # Other Melbourne postcodes (kept for flexibility)
-    "3000": (-37.8136, 144.9631),    # Melbourne CBD
-    "3011": (-37.8005, 144.9000),    # Footscray
-    "3053": (-37.7995, 144.9685),    # Carlton
-    "3056": (-37.7670, 144.9580),    # Brunswick
-    "3121": (-37.8197, 145.0000),    # Richmond
-    "3171": (-37.9489, 145.1469),    # Springvale
-    "3175": (-37.9874, 145.2148),    # Dandenong
+    "3000": (-37.8136, 144.9631),  # Melbourne CBD
+    "3011": (-37.8005, 144.9000),  # Footscray
+    "3053": (-37.7995, 144.9685),  # Carlton
+    "3056": (-37.7670, 144.9580),  # Brunswick
+    "3121": (-37.8197, 145.0000),  # Richmond
+    "3171": (-37.9489, 145.1469),  # Springvale
+    "3175": (-37.9874, 145.2148),  # Dandenong
 }
 
 
@@ -346,6 +346,7 @@ def resolve_postcode(postcode: str) -> tuple[float, float]:
 # ---------------------------------------------------------------------------
 # phone normalisation + profile-by-phone lookup
 # ---------------------------------------------------------------------------
+
 
 def normalise_phone(raw: str) -> str:
     """Normalise a phone-ish string to digits-only international form (no `+`).
@@ -398,8 +399,31 @@ def lookup_profile_by_phone(phone: str) -> dict[str, Any] | None:
 
 
 # ---------------------------------------------------------------------------
+# shared rank-and-render helper
+# ---------------------------------------------------------------------------
+
+
+def _rank_and_render(
+    semantic_query: str,
+    surviving: list[tuple[int, dict[str, Any], float]],
+    embeddings: np.ndarray,
+    render_fn,
+    limit: int,
+) -> list[dict[str, Any]]:
+    """Embed the query, rank candidates by cosine similarity, render the top results."""
+    if not surviving:
+        return []
+    q_emb = np.array(embed_one(semantic_query), dtype=np.float32)
+    candidate_vecs = np.stack([embeddings[i] for i, _, _ in surviving])
+    sims = _cosine_sim(q_emb, candidate_vecs)
+    ranked = sorted(zip(surviving, sims), key=lambda pair: pair[1], reverse=True)[:limit]
+    return [render_fn(record, dist, float(sim)) for (_, record, dist), sim in ranked]
+
+
+# ---------------------------------------------------------------------------
 # public search functions — the body of the tool handlers
 # ---------------------------------------------------------------------------
+
 
 def search_profiles(
     *,
@@ -449,21 +473,7 @@ def search_profiles(
 
         surviving.append((idx, p, dist))
 
-    if not surviving:
-        return []
-
-    # ----- semantic rank -----
-    q_emb = np.array(embed_one(semantic_query), dtype=np.float32)
-    candidate_vecs = np.stack([_profile_embeddings[i] for i, _, _ in surviving])
-    sims = _cosine_sim(q_emb, candidate_vecs)
-
-    ranked = sorted(
-        zip(surviving, sims),
-        key=lambda pair: pair[1],
-        reverse=True,
-    )[:limit]
-
-    return [_render_profile(p, dist, float(sim)) for (_, p, dist), sim in ranked]
+    return _rank_and_render(semantic_query, surviving, _profile_embeddings, _render_profile, limit)
 
 
 def search_businesses(
@@ -493,20 +503,7 @@ def search_businesses(
 
         surviving.append((idx, b, dist))
 
-    if not surviving:
-        return []
-
-    q_emb = np.array(embed_one(semantic_query), dtype=np.float32)
-    candidate_vecs = np.stack([_business_embeddings[i] for i, _, _ in surviving])
-    sims = _cosine_sim(q_emb, candidate_vecs)
-
-    ranked = sorted(
-        zip(surviving, sims),
-        key=lambda pair: pair[1],
-        reverse=True,
-    )[:limit]
-
-    return [_render_business(b, dist, float(sim)) for (_, b, dist), sim in ranked]
+    return _rank_and_render(semantic_query, surviving, _business_embeddings, _render_business, limit)
 
 
 def search_cafes(
@@ -539,15 +536,7 @@ def search_cafes(
             continue
         surviving.append((idx, c, dist))
 
-    if not surviving:
-        return []
-
-    q_emb = np.array(embed_one(semantic_query), dtype=np.float32)
-    candidate_vecs = np.stack([_cafe_embeddings[i] for i, _, _ in surviving])
-    sims = _cosine_sim(q_emb, candidate_vecs)
-
-    ranked = sorted(zip(surviving, sims), key=lambda pair: pair[1], reverse=True)[:limit]
-    return [_render_cafe(c, dist, float(sim)) for (_, c, dist), sim in ranked]
+    return _rank_and_render(semantic_query, surviving, _cafe_embeddings, _render_cafe, limit)
 
 
 def search_landmarks(
@@ -585,15 +574,7 @@ def search_landmarks(
                 continue
         surviving.append((idx, l, dist))
 
-    if not surviving:
-        return []
-
-    q_emb = np.array(embed_one(semantic_query), dtype=np.float32)
-    candidate_vecs = np.stack([_landmark_embeddings[i] for i, _, _ in surviving])
-    sims = _cosine_sim(q_emb, candidate_vecs)
-
-    ranked = sorted(zip(surviving, sims), key=lambda pair: pair[1], reverse=True)[:limit]
-    return [_render_landmark(l, dist, float(sim)) for (_, l, dist), sim in ranked]
+    return _rank_and_render(semantic_query, surviving, _landmark_embeddings, _render_landmark, limit)
 
 
 def search_events(
@@ -683,6 +664,7 @@ def search_events(
 # ---------------------------------------------------------------------------
 # renderers — strip internal fields, add presentation fields
 # ---------------------------------------------------------------------------
+
 
 def _render_profile(p: dict[str, Any], distance_km: float, similarity: float) -> dict[str, Any]:
     return {

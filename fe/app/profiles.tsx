@@ -1,14 +1,8 @@
-import { useState } from 'react';
-import {
-  ScrollView,
-  StyleSheet,
-  Text,
-  TouchableOpacity,
-  View,
-} from 'react-native';
-import { SafeAreaView } from 'react-native-safe-area-context';
-import { router } from 'expo-router';
-import { shared, colors, fonts } from '@/constants/onboarding-styles';
+import { router } from "expo-router";
+import { useState } from "react";
+import { ScrollView, StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
+import { colors, fonts, shared } from "@/constants/onboarding-styles";
 
 interface Profile {
   id: string;
@@ -21,35 +15,35 @@ interface Profile {
 
 const EXTRACTED_PROFILES: Profile[] = [
   {
-    id: '1',
-    name: 'Jesse',
-    relation: 'Primary',
-    detail: 'Recently moved from Hong Kong, looking for community',
-    initials: 'JE',
+    id: "1",
+    name: "Jesse",
+    relation: "Primary",
+    detail: "Recently moved from Hong Kong, looking for community",
+    initials: "JE",
     photo: null,
   },
   {
-    id: '2',
-    name: 'Partner',
-    relation: 'Partner',
-    detail: 'Moving together, settling into Kensington',
-    initials: 'P',
+    id: "2",
+    name: "Partner",
+    relation: "Partner",
+    detail: "Moving together, settling into Kensington",
+    initials: "P",
     photo: null,
   },
   {
-    id: '3',
-    name: 'Child 1',
-    relation: 'Child',
-    detail: 'Needs primary school enrolment',
-    initials: 'C1',
+    id: "3",
+    name: "Child 1",
+    relation: "Child",
+    detail: "Needs primary school enrolment",
+    initials: "C1",
     photo: null,
   },
   {
-    id: '4',
-    name: 'Child 2',
-    relation: 'Child',
-    detail: 'Needs primary school enrolment',
-    initials: 'C2',
+    id: "4",
+    name: "Child 2",
+    relation: "Child",
+    detail: "Needs primary school enrolment",
+    initials: "C2",
     photo: null,
   },
 ];
@@ -58,23 +52,16 @@ export default function ProfilesScreen() {
   const [profiles, setProfiles] = useState<Profile[]>(EXTRACTED_PROFILES);
 
   const handleAddPhoto = (id: string) => {
-    setProfiles((prev) =>
-      prev.map((p) =>
-        p.id === id ? { ...p, photo: 'placeholder' } : p
-      )
-    );
+    setProfiles((prev) => prev.map((p) => (p.id === id ? { ...p, photo: "placeholder" } : p)));
   };
 
   return (
     <SafeAreaView style={shared.safe}>
       <View style={{ flex: 1 }}>
-        <ScrollView
-          contentContainerStyle={styles.scroll}
-          showsVerticalScrollIndicator={false}
-        >
+        <ScrollView contentContainerStyle={styles.scroll} showsVerticalScrollIndicator={false}>
           <View style={shared.header}>
             <TouchableOpacity style={shared.backButton} onPress={() => router.back()}>
-              <Text style={shared.backText}>{'\u2190'}</Text>
+              <Text style={shared.backText}>{"\u2190"}</Text>
             </TouchableOpacity>
           </View>
 
@@ -84,8 +71,8 @@ export default function ProfilesScreen() {
 
           <Text style={styles.title}>Your household</Text>
           <Text style={styles.subtitle}>
-            We found {profiles.length} people from your description. Add a photo
-            to each profile to help your community recognise you.
+            We found {profiles.length} people from your description. Add a photo to each profile to
+            help your community recognise you.
           </Text>
 
           <View style={styles.profileList}>
@@ -98,7 +85,7 @@ export default function ProfilesScreen() {
                 >
                   {profile.photo ? (
                     <View style={[styles.avatar, styles.avatarDone]}>
-                      <Text style={styles.avatarCheck}>{'\u2713'}</Text>
+                      <Text style={styles.avatarCheck}>{"\u2713"}</Text>
                     </View>
                   ) : (
                     <View style={styles.avatar}>
@@ -106,7 +93,9 @@ export default function ProfilesScreen() {
                     </View>
                   )}
                   <View style={styles.cameraButton}>
-                    <Text style={styles.cameraIcon}>{profile.photo ? '\u270E' : '\uD83D\uDCF7'}</Text>
+                    <Text style={styles.cameraIcon}>
+                      {profile.photo ? "\u270E" : "\uD83D\uDCF7"}
+                    </Text>
                   </View>
                 </TouchableOpacity>
 
@@ -127,7 +116,7 @@ export default function ProfilesScreen() {
         <View style={styles.footer}>
           <TouchableOpacity
             style={shared.button}
-            onPress={() => router.push('/plan')}
+            onPress={() => router.push("/plan")}
             activeOpacity={0.8}
           >
             <Text style={shared.buttonText}>Next</Text>
@@ -145,7 +134,7 @@ const styles = StyleSheet.create({
     paddingBottom: 16,
   },
   badge: {
-    alignSelf: 'flex-start',
+    alignSelf: "flex-start",
     backgroundColor: colors.text,
     borderRadius: 9999,
     paddingHorizontal: 14,
@@ -154,13 +143,13 @@ const styles = StyleSheet.create({
   },
   badgeText: {
     fontSize: 13,
-    fontWeight: '500',
-    color: '#fdfcfc',
+    fontWeight: "500",
+    color: "#fdfcfc",
     letterSpacing: 0.1,
   },
   title: {
     fontSize: 36,
-    fontWeight: '300',
+    fontWeight: "300",
     fontFamily: fonts.display,
     color: colors.text,
     letterSpacing: -0.72,
@@ -178,20 +167,20 @@ const styles = StyleSheet.create({
     gap: 12,
   },
   profileCard: {
-    flexDirection: 'row',
-    alignItems: 'center',
+    flexDirection: "row",
+    alignItems: "center",
     backgroundColor: colors.cardBg,
     borderRadius: 16,
     padding: 16,
     gap: 16,
-    shadowColor: '#000',
+    shadowColor: "#000",
     shadowOffset: { width: 0, height: 0 },
     shadowOpacity: 0.08,
     shadowRadius: 1,
     elevation: 1,
   },
   avatarWrap: {
-    position: 'relative',
+    position: "relative",
   },
   avatar: {
     width: 64,
@@ -200,8 +189,8 @@ const styles = StyleSheet.create({
     backgroundColor: colors.selectedBg,
     borderWidth: 1,
     borderColor: colors.border,
-    alignItems: 'center',
-    justifyContent: 'center',
+    alignItems: "center",
+    justifyContent: "center",
   },
   avatarDone: {
     backgroundColor: colors.text,
@@ -209,42 +198,42 @@ const styles = StyleSheet.create({
   },
   avatarInitials: {
     fontSize: 18,
-    fontWeight: '500',
+    fontWeight: "500",
     color: colors.textSecondary,
   },
   avatarCheck: {
     fontSize: 24,
-    color: '#fdfcfc',
+    color: "#fdfcfc",
   },
   cameraButton: {
-    position: 'absolute',
+    position: "absolute",
     bottom: -2,
     right: -2,
     width: 26,
     height: 26,
     borderRadius: 13,
     backgroundColor: colors.text,
-    alignItems: 'center',
-    justifyContent: 'center',
+    alignItems: "center",
+    justifyContent: "center",
     borderWidth: 2,
     borderColor: colors.cardBg,
   },
   cameraIcon: {
     fontSize: 12,
-    color: '#fdfcfc',
+    color: "#fdfcfc",
   },
   profileInfo: {
     flex: 1,
     gap: 4,
   },
   profileHeader: {
-    flexDirection: 'row',
-    alignItems: 'center',
+    flexDirection: "row",
+    alignItems: "center",
     gap: 8,
   },
   profileName: {
     fontSize: 16,
-    fontWeight: '500',
+    fontWeight: "500",
     color: colors.text,
     letterSpacing: 0.1,
   },
@@ -256,7 +245,7 @@ const styles = StyleSheet.create({
   },
   relationText: {
     fontSize: 12,
-    fontWeight: '500',
+    fontWeight: "500",
     color: colors.textSecondary,
   },
   profileDetail: {

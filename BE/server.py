@@ -25,9 +25,6 @@ Run with:
 
 from __future__ import annotations
 
-import os
-from pathlib import Path
-
 # Load .env from BE/ or repo root before importing anything that needs keys.
 try:
     from dotenv import find_dotenv, load_dotenv
@@ -36,14 +33,13 @@ try:
 except ImportError:  # pragma: no cover
     pass
 
-from typing import Any, Optional
+from typing import Any
 
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel, Field
 
 from agent import answer
 from db import lookup_profile_by_phone, normalise_phone
-
 
 app = FastAPI(
     title="Melb Impact Lab — BE Retrieval Service",
@@ -60,9 +56,10 @@ app = FastAPI(
 # request / response models
 # ---------------------------------------------------------------------------
 
+
 class ChatRequest(BaseModel):
     message: str = Field(..., description="The user's natural-language message.")
-    phone: Optional[str] = Field(
+    phone: str | None = Field(
         None,
         description=(
             "The user's phone number, in any reasonable format. WhatsApp JIDs "
@@ -72,7 +69,7 @@ class ChatRequest(BaseModel):
             "treated as anonymous and onboarded conversationally."
         ),
     )
-    asker_profile_override: Optional[dict] = Field(
+    asker_profile_override: dict | None = Field(
         None,
         description=(
             "Optional explicit profile to use, bypassing the phone lookup. "
@@ -84,28 +81,29 @@ class ChatRequest(BaseModel):
 class ChatResponse(BaseModel):
     reply: str
     asker_known: bool
-    asker_name: Optional[str] = None
-    asker_phone_normalised: Optional[str] = None
+    asker_name: str | None = None
+    asker_phone_normalised: str | None = None
 
 
 class ProfileResponse(BaseModel):
     id: str
     name: str
-    email: Optional[str] = None
-    phone_number: Optional[str] = None
+    email: str | None = None
+    phone_number: str | None = None
     postcode: str
     suburb: str
-    country_of_origin: Optional[str] = None
+    country_of_origin: str | None = None
     languages: list
-    occupation: Optional[str] = None
-    background: Optional[str] = None
-    interests: Optional[str] = None
-    offering: Optional[str] = None
+    occupation: str | None = None
+    background: str | None = None
+    interests: str | None = None
+    offering: str | None = None
 
 
 # ---------------------------------------------------------------------------
 # endpoints
 # ---------------------------------------------------------------------------
+
 
 @app.get("/health")
 def health() -> dict[str, str]:

@@ -1,4 +1,5 @@
-import { useCallback, useEffect, useRef, useState } from 'react';
+import { router } from "expo-router";
+import { useCallback, useEffect, useRef, useState } from "react";
 import {
   Animated,
   Easing,
@@ -7,15 +8,14 @@ import {
   Text,
   TouchableOpacity,
   View,
-} from 'react-native';
-import { SafeAreaView } from 'react-native-safe-area-context';
-import { router } from 'expo-router';
-import { shared, colors, fonts } from '@/constants/onboarding-styles';
-import { CATEGORIES, type PlanCategory } from '@/constants/plan-data';
-import { NoiseGradient } from '@/components/NoiseGradient';
-import { categoryGradients, warmGlow } from '@/constants/gradients';
+} from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
+import { NoiseGradient } from "@/components/NoiseGradient";
+import { categoryGradients, warmGlow } from "@/constants/gradients";
+import { colors, fonts, shared } from "@/constants/onboarding-styles";
+import { CATEGORIES, type PlanCategory } from "@/constants/plan-data";
 
-type CardState = 'empty' | 'working' | 'complete';
+type CardState = "empty" | "working" | "complete";
 
 const STAGGER_MS = 1200;
 const WORK_DURATION_MS = 1800;
@@ -29,7 +29,7 @@ function PlanCard({
   index: number;
   onComplete: () => void;
 }) {
-  const [state, setState] = useState<CardState>('empty');
+  const [state, setState] = useState<CardState>("empty");
   const pulseAnim = useRef(new Animated.Value(0.3)).current;
   const revealAnim = useRef(new Animated.Value(0)).current;
 
@@ -37,7 +37,7 @@ function PlanCard({
     const startDelay = index * STAGGER_MS;
 
     const workTimer = setTimeout(() => {
-      setState('working');
+      setState("working");
       Animated.loop(
         Animated.sequence([
           Animated.timing(pulseAnim, {
@@ -52,12 +52,12 @@ function PlanCard({
             easing: Easing.inOut(Easing.ease),
             useNativeDriver: true,
           }),
-        ])
+        ]),
       ).start();
     }, startDelay);
 
     const completeTimer = setTimeout(() => {
-      setState('complete');
+      setState("complete");
       pulseAnim.stopAnimation();
       Animated.timing(revealAnim, {
         toValue: 1,
@@ -77,30 +77,28 @@ function PlanCard({
   return (
     <TouchableOpacity
       style={styles.card}
-      onPress={() =>
-        router.push({ pathname: '/plan/[id]', params: { id: category.id } })
-      }
-      activeOpacity={state === 'complete' ? 0.7 : 1}
-      disabled={state !== 'complete'}
+      onPress={() => router.push({ pathname: "/plan/[id]", params: { id: category.id } })}
+      activeOpacity={state === "complete" ? 0.7 : 1}
+      disabled={state !== "complete"}
     >
       <View style={styles.cardHeader}>
         <Text style={styles.cardIcon}>{category.icon}</Text>
         <Text style={styles.cardTitle}>{category.title}</Text>
-        {state === 'complete' && (
+        {state === "complete" && (
           <View style={styles.doneBadge}>
-            <Text style={styles.doneBadgeText}>{'\u2713'}</Text>
+            <Text style={styles.doneBadgeText}>{"\u2713"}</Text>
           </View>
         )}
       </View>
 
-      {state === 'empty' && (
+      {state === "empty" && (
         <View style={styles.emptyBody}>
           <View style={styles.emptyLine} />
-          <View style={[styles.emptyLine, { width: '60%' }]} />
+          <View style={[styles.emptyLine, { width: "60%" }]} />
         </View>
       )}
 
-      {state === 'working' && (
+      {state === "working" && (
         <View style={styles.workingBody}>
           <Animated.View style={[styles.workingBar, { opacity: pulseAnim }]}>
             <NoiseGradient
@@ -114,12 +112,12 @@ function PlanCard({
         </View>
       )}
 
-      {state === 'complete' && (
+      {state === "complete" && (
         <Animated.View style={[styles.completeBody, { opacity: revealAnim }]}>
           <Text style={styles.summaryText}>{category.summary}</Text>
           <View style={styles.exploreRow}>
             <Text style={styles.exploreText}>Explore</Text>
-            <Text style={styles.exploreArrow}>{'\u203A'}</Text>
+            <Text style={styles.exploreArrow}>{"\u203A"}</Text>
           </View>
         </Animated.View>
       )}
@@ -150,28 +148,19 @@ export default function PlanScreen() {
   return (
     <SafeAreaView style={shared.safe}>
       <View style={{ flex: 1 }}>
-        <ScrollView
-          contentContainerStyle={styles.scroll}
-          showsVerticalScrollIndicator={false}
-        >
+        <ScrollView contentContainerStyle={styles.scroll} showsVerticalScrollIndicator={false}>
           <View style={styles.badge}>
             <Text style={styles.badgeText}>Step 3</Text>
           </View>
 
-          <Text style={styles.title}>Building your{'\n'}plan</Text>
+          <Text style={styles.title}>Building your{"\n"}plan</Text>
           <Text style={styles.subtitle}>
-            We're scanning your neighbourhood to find the best matches for you
-            and your family.
+            We're scanning your neighbourhood to find the best matches for you and your family.
           </Text>
 
           <View style={styles.cardList}>
             {CATEGORIES.map((cat, i) => (
-              <PlanCard
-                key={cat.id}
-                category={cat}
-                index={i}
-                onComplete={handleCardComplete}
-              />
+              <PlanCard key={cat.id} category={cat} index={i} onComplete={handleCardComplete} />
             ))}
           </View>
         </ScrollView>
@@ -197,7 +186,7 @@ export default function PlanScreen() {
               style={shared.button}
               onPress={() =>
                 router.push({
-                  pathname: '/plan/[id]',
+                  pathname: "/plan/[id]",
                   params: { id: CATEGORIES[0].id },
                 })
               }
@@ -219,7 +208,7 @@ const styles = StyleSheet.create({
     paddingBottom: 24,
   },
   badge: {
-    alignSelf: 'flex-start',
+    alignSelf: "flex-start",
     backgroundColor: colors.text,
     borderRadius: 9999,
     paddingHorizontal: 14,
@@ -228,13 +217,13 @@ const styles = StyleSheet.create({
   },
   badgeText: {
     fontSize: 13,
-    fontWeight: '500',
-    color: '#fdfcfc',
+    fontWeight: "500",
+    color: "#fdfcfc",
     letterSpacing: 0.1,
   },
   title: {
     fontSize: 36,
-    fontWeight: '300',
+    fontWeight: "300",
     fontFamily: fonts.display,
     color: colors.text,
     letterSpacing: -0.72,
@@ -255,15 +244,15 @@ const styles = StyleSheet.create({
     backgroundColor: colors.cardBg,
     borderRadius: 16,
     padding: 20,
-    shadowColor: '#000',
+    shadowColor: "#000",
     shadowOffset: { width: 0, height: 0 },
     shadowOpacity: 0.08,
     shadowRadius: 1,
     elevation: 1,
   },
   cardHeader: {
-    flexDirection: 'row',
-    alignItems: 'center',
+    flexDirection: "row",
+    alignItems: "center",
     gap: 10,
     marginBottom: 12,
   },
@@ -272,7 +261,7 @@ const styles = StyleSheet.create({
   },
   cardTitle: {
     fontSize: 16,
-    fontWeight: '500',
+    fontWeight: "500",
     color: colors.text,
     flex: 1,
     letterSpacing: 0.1,
@@ -282,13 +271,13 @@ const styles = StyleSheet.create({
     height: 24,
     borderRadius: 12,
     backgroundColor: colors.text,
-    alignItems: 'center',
-    justifyContent: 'center',
+    alignItems: "center",
+    justifyContent: "center",
   },
   doneBadgeText: {
-    color: '#fdfcfc',
+    color: "#fdfcfc",
     fontSize: 14,
-    fontWeight: '500',
+    fontWeight: "500",
   },
   emptyBody: {
     gap: 8,
@@ -297,7 +286,7 @@ const styles = StyleSheet.create({
     height: 12,
     borderRadius: 6,
     backgroundColor: colors.selectedBg,
-    width: '80%',
+    width: "80%",
   },
   workingBody: {
     gap: 10,
@@ -305,30 +294,30 @@ const styles = StyleSheet.create({
   workingBar: {
     height: 3,
     borderRadius: 2,
-    overflow: 'hidden',
+    overflow: "hidden",
   },
   workingLabel: {
     fontSize: 14,
     color: colors.textSecondary,
-    fontStyle: 'italic',
+    fontStyle: "italic",
     letterSpacing: 0.1,
   },
   completeBody: {},
   summaryText: {
     fontSize: 15,
-    fontWeight: '500',
+    fontWeight: "500",
     color: colors.text,
     marginBottom: 8,
     letterSpacing: 0.1,
   },
   exploreRow: {
-    flexDirection: 'row',
-    alignItems: 'center',
+    flexDirection: "row",
+    alignItems: "center",
     gap: 4,
   },
   exploreText: {
     fontSize: 14,
-    fontWeight: '500',
+    fontWeight: "500",
     color: colors.textSecondary,
   },
   exploreArrow: {

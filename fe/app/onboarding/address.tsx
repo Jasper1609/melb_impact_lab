@@ -1,4 +1,5 @@
-import { useState } from 'react';
+import { router } from "expo-router";
+import { useState } from "react";
 import {
   KeyboardAvoidingView,
   Platform,
@@ -8,35 +9,32 @@ import {
   TextInput,
   TouchableOpacity,
   View,
-} from 'react-native';
-import { SafeAreaView } from 'react-native-safe-area-context';
-import { router } from 'expo-router';
-import { shared, colors } from '@/constants/onboarding-styles';
+} from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
+import { colors, shared } from "@/constants/onboarding-styles";
 
 export default function AddressScreen() {
-  const [street, setStreet] = useState('');
-  const [unit, setUnit] = useState('');
+  const [street, setStreet] = useState("");
+  const [unit, setUnit] = useState("");
 
   return (
     <SafeAreaView style={shared.safe}>
       <KeyboardAvoidingView
         style={{ flex: 1 }}
-        behavior={Platform.OS === 'ios' ? 'padding' : undefined}
+        behavior={Platform.OS === "ios" ? "padding" : undefined}
       >
-        <ScrollView
-          contentContainerStyle={styles.scroll}
-          keyboardShouldPersistTaps="handled"
-        >
+        <ScrollView contentContainerStyle={styles.scroll} keyboardShouldPersistTaps="handled">
           <View style={shared.header}>
             <TouchableOpacity style={shared.backButton} onPress={() => router.back()}>
-              <Text style={shared.backText}>{'\u2190'}</Text>
+              <Text style={shared.backText}>{"\u2190"}</Text>
             </TouchableOpacity>
           </View>
           <View style={shared.content}>
             <Text style={shared.stepLabel}>Step 5 of 7</Text>
-            <Text style={shared.title}>Where do{'\n'}you live?</Text>
+            <Text style={shared.title}>Where do{"\n"}you live?</Text>
             <Text style={shared.subtitle}>
-              Your address remains private. It's used to serve you local content and verify you to the neighbourhood.
+              Your address remains private. It's used to serve you local content and verify you to
+              the neighbourhood.
             </Text>
 
             <View style={styles.fieldGroup}>
@@ -75,7 +73,7 @@ export default function AddressScreen() {
           <TouchableOpacity
             style={[shared.button, !street.trim() && shared.buttonDisabled]}
             disabled={!street.trim()}
-            onPress={() => router.push('/onboarding/neighbourhood')}
+            onPress={() => router.push("/onboarding/neighbourhood")}
             activeOpacity={0.8}
           >
             <Text style={[shared.buttonText, !street.trim() && shared.buttonTextDisabled]}>
@@ -99,7 +97,7 @@ const styles = StyleSheet.create({
   },
   label: {
     fontSize: 14,
-    fontWeight: '400',
+    fontWeight: "400",
     color: colors.textSecondary,
     marginTop: 8,
     letterSpacing: 0.1,

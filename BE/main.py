@@ -18,7 +18,6 @@ from __future__ import annotations
 import argparse
 import os
 import sys
-from pathlib import Path
 
 # Load .env (find_dotenv walks UP from here so the file can be in BE/ or the
 # project root).
@@ -93,6 +92,7 @@ def _normalise_languages(raw: str) -> list[str]:
 # onboarding
 # ---------------------------------------------------------------------------
 
+
 def _banner() -> None:
     print("=" * 64)
     print(" Melb Impact Lab — community connector (BE)")
@@ -134,9 +134,7 @@ def _onboard() -> dict:
 
     name = _ask("Your first name (optional): ")
     country = _ask("Country of origin (optional): ")
-    languages_raw = _ask(
-        "Languages you speak — comma-separated, e.g. 'English, Farsi, Pashto' (optional): "
-    )
+    languages_raw = _ask("Languages you speak — comma-separated, e.g. 'English, Farsi, Pashto' (optional): ")
     occupation = _ask("Your occupation (optional): ")
     looking_for = _ask("What are you looking for help with right now? (optional, one line): ")
 
@@ -189,6 +187,7 @@ _SUBURB_HINTS = {
 # ---------------------------------------------------------------------------
 # REPL
 # ---------------------------------------------------------------------------
+
 
 def _read_user_input() -> str | None:
     try:

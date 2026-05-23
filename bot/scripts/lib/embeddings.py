@@ -9,7 +9,7 @@ text-embedding-ada-002 model or any other compatible model.
 from __future__ import annotations
 
 import os
-from typing import Sequence
+from collections.abc import Sequence
 
 from openai import OpenAI
 
