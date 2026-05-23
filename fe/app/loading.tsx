@@ -3,6 +3,8 @@ import { Animated, Easing, StyleSheet, Text, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { router } from 'expo-router';
 import { colors, fonts } from '@/constants/onboarding-styles';
+import { GradientOrb } from '@/components/NoiseGradient';
+import { softDawn } from '@/constants/gradients';
 
 const steps = [
   'Analysing your interests...',
@@ -14,6 +16,8 @@ export default function LoadingScreen() {
   const spinAnim = useRef(new Animated.Value(0)).current;
   const [stepIndex, setStepIndex] = useState(0);
 
+  const pulseAnim = useRef(new Animated.Value(0.6)).current;
+
   useEffect(() => {
     Animated.loop(
       Animated.timing(spinAnim, {
@@ -22,6 +26,23 @@ export default function LoadingScreen() {
         easing: Easing.linear,
         useNativeDriver: true,
       })
+    ).start();
+
+    Animated.loop(
+      Animated.sequence([
+        Animated.timing(pulseAnim, {
+          toValue: 1,
+          duration: 1400,
+          easing: Easing.inOut(Easing.ease),
+          useNativeDriver: true,
+        }),
+        Animated.timing(pulseAnim, {
+          toValue: 0.6,
+          duration: 1400,
+          easing: Easing.inOut(Easing.ease),
+          useNativeDriver: true,
+        }),
+      ])
     ).start();
 
     const stepTimer = setInterval(() => {
@@ -39,7 +60,7 @@ export default function LoadingScreen() {
       clearInterval(stepTimer);
       clearTimeout(navTimer);
     };
-  }, [spinAnim]);
+  }, [spinAnim, pulseAnim]);
 
   const spin = spinAnim.interpolate({
     inputRange: [0, 1],
@@ -49,8 +70,22 @@ export default function LoadingScreen() {
   return (
     <SafeAreaView style={styles.safe}>
       <View style={styles.container}>
-        <Animated.View style={[styles.spinner, { transform: [{ rotate: spin }] }]}>
-          <View style={styles.spinnerArc} />
+        <Animated.View
+          style={[
+            styles.orbWrapper,
+            {
+              opacity: pulseAnim,
+              transform: [
+                { scale: pulseAnim.interpolate({
+                    inputRange: [0.6, 1],
+                    outputRange: [0.92, 1.05],
+                  }),
+                },
+              ],
+            },
+          ]}
+        >
+          <GradientOrb preset={softDawn} size={120} />
         </Animated.View>
 
         <Text style={styles.title}>Creating your next steps</Text>
@@ -72,18 +107,8 @@ const styles = StyleSheet.create({
     paddingHorizontal: 24,
     gap: 20,
   },
-  spinner: {
-    width: 48,
-    height: 48,
-    marginBottom: 12,
-  },
-  spinnerArc: {
-    width: 48,
-    height: 48,
-    borderRadius: 24,
-    borderWidth: 2,
-    borderColor: colors.border,
-    borderTopColor: colors.text,
+  orbWrapper: {
+    marginBottom: 24,
   },
   title: {
     fontSize: 32,

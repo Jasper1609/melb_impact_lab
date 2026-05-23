@@ -3,6 +3,8 @@ import { Animated, StyleSheet, Text, TouchableOpacity, View } from 'react-native
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { router } from 'expo-router';
 import { colors, fonts } from '@/constants/onboarding-styles';
+import { GradientOrb } from '@/components/NoiseGradient';
+import { iridescent } from '@/constants/gradients';
 
 const greetings = [
   { welcome: 'Welcome', cta: 'Get Started' },
@@ -43,6 +45,9 @@ export default function WelcomeScreen() {
   return (
     <SafeAreaView style={styles.safe}>
       <View style={styles.container}>
+        <View style={styles.orbContainer}>
+          <GradientOrb preset={iridescent} size={280} style={styles.orb} />
+        </View>
         <View style={styles.content}>
           <Text style={styles.brand}>Tapestry</Text>
           <Animated.Text style={[styles.welcome, { opacity: fadeAnim }]}>
@@ -90,6 +95,13 @@ const styles = StyleSheet.create({
     paddingTop: 120,
     paddingBottom: 32,
   },
+  orbContainer: {
+    position: 'absolute',
+    top: -40,
+    right: -100,
+    opacity: 0.45,
+  },
+  orb: {},
   content: {
     gap: 16,
   },

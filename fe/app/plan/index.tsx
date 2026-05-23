@@ -12,6 +12,8 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import { router } from 'expo-router';
 import { shared, colors, fonts } from '@/constants/onboarding-styles';
 import { CATEGORIES, type PlanCategory } from '@/constants/plan-data';
+import { NoiseGradient } from '@/components/NoiseGradient';
+import { categoryGradients, warmGlow } from '@/constants/gradients';
 
 type CardState = 'empty' | 'working' | 'complete';
 
@@ -100,7 +102,14 @@ function PlanCard({
 
       {state === 'working' && (
         <View style={styles.workingBody}>
-          <Animated.View style={[styles.workingBar, { opacity: pulseAnim }]} />
+          <Animated.View style={[styles.workingBar, { opacity: pulseAnim }]}>
+            <NoiseGradient
+              preset={categoryGradients[category.id] ?? warmGlow}
+              borderRadius={2}
+              noiseOpacity={0.04}
+              style={{ flex: 1 }}
+            />
+          </Animated.View>
           <Text style={styles.workingLabel}>{category.scanLabel}</Text>
         </View>
       )}
@@ -296,7 +305,7 @@ const styles = StyleSheet.create({
   workingBar: {
     height: 3,
     borderRadius: 2,
-    backgroundColor: colors.text,
+    overflow: 'hidden',
   },
   workingLabel: {
     fontSize: 14,

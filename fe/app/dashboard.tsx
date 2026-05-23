@@ -9,6 +9,8 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import { router } from 'expo-router';
 import { colors, fonts } from '@/constants/onboarding-styles';
 import { CATEGORIES } from '@/constants/plan-data';
+import { NoiseGradient } from '@/components/NoiseGradient';
+import { categoryGradients, warmGlow } from '@/constants/gradients';
 
 const NEXT_STEPS = [
   {
@@ -48,6 +50,21 @@ export default function DashboardScreen() {
         <Text style={styles.subtitle}>
           Here's what Tapestry found for you and your family.
         </Text>
+
+        {/* AI Concierge */}
+        <TouchableOpacity
+          style={styles.conciergeBar}
+          onPress={() => router.push('/concierge')}
+          activeOpacity={0.7}
+        >
+          <Text style={styles.conciergeSparkle}>{'\u2728'}</Text>
+          <Text style={styles.conciergePlaceholder}>
+            Ask Tapestry anything...
+          </Text>
+          <View style={styles.conciergeSend}>
+            <Text style={styles.conciergeSendIcon}>{'\u2191'}</Text>
+          </View>
+        </TouchableOpacity>
 
         {/* Next Steps */}
         <Text style={styles.sectionTitle}>Next steps</Text>
@@ -91,6 +108,12 @@ export default function DashboardScreen() {
                 })
               }
             >
+              <NoiseGradient
+                preset={categoryGradients[cat.id] ?? warmGlow}
+                borderRadius={16}
+                style={styles.categoryGradientStrip}
+                noiseOpacity={0.04}
+              />
               <Text style={styles.categoryIcon}>{cat.icon}</Text>
               <Text style={styles.categoryTitle}>{cat.title}</Text>
               <Text style={styles.categorySummary}>{cat.summary}</Text>
@@ -127,6 +150,42 @@ const styles = StyleSheet.create({
     lineHeight: 24,
     letterSpacing: 0.1,
     marginBottom: 20,
+  },
+  // Concierge bar
+  conciergeBar: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    backgroundColor: colors.cardBg,
+    borderRadius: 24,
+    borderWidth: 1,
+    borderColor: colors.border,
+    paddingLeft: 16,
+    paddingRight: 6,
+    height: 48,
+    marginBottom: 28,
+  },
+  conciergeSparkle: {
+    fontSize: 16,
+    marginRight: 10,
+  },
+  conciergePlaceholder: {
+    flex: 1,
+    fontSize: 15,
+    color: colors.textTertiary,
+    letterSpacing: 0.1,
+  },
+  conciergeSend: {
+    width: 34,
+    height: 34,
+    borderRadius: 17,
+    backgroundColor: colors.text,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  conciergeSendIcon: {
+    fontSize: 18,
+    color: '#fdfcfc',
+    fontWeight: '600',
   },
   sectionTitle: {
     fontSize: 14,
@@ -197,12 +256,20 @@ const styles = StyleSheet.create({
     backgroundColor: colors.cardBg,
     borderRadius: 16,
     padding: 16,
+    overflow: 'hidden',
     // Hairline shadow
     shadowColor: '#000',
     shadowOffset: { width: 0, height: 0 },
     shadowOpacity: 0.08,
     shadowRadius: 1,
     elevation: 1,
+  },
+  categoryGradientStrip: {
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    right: 0,
+    height: 4,
   },
   categoryIcon: {
     fontSize: 28,
