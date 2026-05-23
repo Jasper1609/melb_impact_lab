@@ -1,0 +1,509 @@
+{
+  "project": "Melbourne Immigrant Community App — Claude Impact Hackathon",
+  "base_api_url": "https://data.melbourne.vic.gov.au/api/v2/catalog/datasets",
+  "export_url_template": "{base_api_url}/{dataset_id}/exports/json",
+  "records_url_template": "{base_api_url}/{dataset_id}/records?limit=100",
+  "license": "CC BY 4.0 — City of Melbourne Open Data",
+  "total_datasets": 30,
+  "categories": [
+    {
+      "id": "community_identity",
+      "label": "Community & cultural identity",
+      "emoji": "🌏",
+      "priority": 1,
+      "datasets": [
+        {
+          "id": "multicultural-community-profile-2016",
+          "title": "Multicultural Community Profile 2016",
+          "why": "Core dataset — country of birth, language, income, employment by Melbourne small area. Foundation of the 'find your people' feature.",
+          "key_fields": [
+            "small_area",
+            "country_of_birth",
+            "residents",
+            "median_age",
+            "median_weekly_income",
+            "language_spoken_at_home",
+            "english_proficiency",
+            "year_of_arrival_range"
+          ],
+          "join_key": "small_area",
+          "priority": "critical"
+        },
+        {
+          "id": "residents-profiles-by-clue-small-area",
+          "title": "Residents Profiles by CLUE Small Area",
+          "why": "Household demographics by neighbourhood — complements multicultural profile with housing type, family composition.",
+          "key_fields": [
+            "small_area",
+            "total_population",
+            "households",
+            "median_age",
+            "dwelling_structure"
+          ],
+          "join_key": "small_area",
+          "priority": "high"
+        },
+        {
+          "id": "social-indicators-for-city-of-melbourne-residents-2023",
+          "title": "Social Indicators for Residents 2023 (most recent)",
+          "why": "Diversity, food security, health, sense of belonging, participation in activities — neighbourhood liveability scoring.",
+          "key_fields": ["indicator", "value", "year", "small_area"],
+          "join_key": "small_area",
+          "priority": "high"
+        },
+        {
+          "id": "city-of-melbourne-liveability-and-social-indicators",
+          "title": "City of Melbourne Liveability and Social Indicators",
+          "why": "ISO 37120 standardised city quality-of-life scores — useful for comparing Melbourne to other global cities immigrants may have lived in.",
+          "key_fields": ["indicator_name", "value", "year", "category"],
+          "join_key": null,
+          "priority": "medium"
+        },
+        {
+          "id": "workers-profile-2016",
+          "title": "Workers Profile 2016",
+          "why": "Employment demographics by small area — helps immigrants understand job market composition and where professional communities cluster.",
+          "key_fields": [
+            "small_area",
+            "industry",
+            "occupation",
+            "income_range",
+            "country_of_birth"
+          ],
+          "join_key": "small_area",
+          "priority": "medium"
+        }
+      ]
+    },
+    {
+      "id": "food_hospitality",
+      "label": "Food, cafes & hospitality",
+      "emoji": "🍜",
+      "priority": 2,
+      "datasets": [
+        {
+          "id": "cafes-and-restaurants-with-seating-capacity",
+          "title": "Café, restaurant & bistro seats",
+          "why": "Every café and restaurant with trading name, address, geo coords, indoor/outdoor seats (2002–2024). Claude classifies cuisine from trading_name to build ethnic food hub map.",
+          "key_fields": [
+            "trading_name",
+            "street_address",
+            "clue_small_area",
+            "seating_type",
+            "number_of_seats",
+            "geo_point_2d",
+            "census_year"
+          ],
+          "join_key": "clue_small_area",
+          "priority": "critical",
+          "ai_enrichment": "Classify cuisine type from trading_name using Claude API"
+        },
+        {
+          "id": "bars-and-pubs-with-patron-capacity",
+          "title": "Bar, tavern & pub patron capacity",
+          "why": "Social venues with capacity — useful for immigrants seeking social nightlife or sports-watching communities.",
+          "key_fields": [
+            "trading_name",
+            "street_address",
+            "clue_small_area",
+            "patron_capacity",
+            "geo_point_2d",
+            "census_year"
+          ],
+          "join_key": "clue_small_area",
+          "priority": "medium"
+        }
+      ]
+    },
+    {
+      "id": "local_businesses_shops",
+      "label": "Local businesses & shops",
+      "emoji": "🏪",
+      "priority": 3,
+      "datasets": [
+        {
+          "id": "business-establishments-with-address-and-industry-classification",
+          "title": "Business establishments — full location & industry classification",
+          "why": "THE key dataset for local shops. Every registered business with address, ANZSIC4 industry code, geo coordinates. Filter by ANZSIC to find: grocery stores (4110), pharmacies (4231), hair/beauty (9511), religious organisations (8601), travel agents (7220), financial services, etc.",
+          "key_fields": [
+            "trading_name",
+            "street_address",
+            "clue_small_area",
+            "industry_anzsic4_code",
+            "industry_anzsic4_description",
+            "geo_point_2d",
+            "x_coordinate",
+            "y_coordinate",
+            "census_year"
+          ],
+          "join_key": "clue_small_area",
+          "priority": "critical",
+          "anzsic_filters": {
+            "grocery_supermarket": "4110",
+            "specialty_food": "4120-4130",
+            "pharmacy": "4231",
+            "hair_beauty": "9511-9512",
+            "religious_organisations": "8601",
+            "travel_agents": "7220",
+            "financial_services": "6211-6230",
+            "medical_gp": "8511",
+            "legal_services": "6921",
+            "education_tutoring": "8010-8020",
+            "community_services": "8790"
+          }
+        },
+        {
+          "id": "coworking-spaces",
+          "title": "Coworking spaces",
+          "why": "Immigrant entrepreneurs and remote workers find professional community and networking here.",
+          "key_fields": [
+            "trading_name",
+            "street_address",
+            "geo_point_2d",
+            "clue_small_area"
+          ],
+          "join_key": "clue_small_area",
+          "priority": "medium"
+        },
+        {
+          "id": "childcare-centres",
+          "title": "Childcare centres",
+          "why": "Essential for immigrant families — Australia's childcare system is complex and unfamiliar to new arrivals.",
+          "key_fields": [
+            "centre_name",
+            "street_address",
+            "geo_point_2d",
+            "clue_small_area"
+          ],
+          "join_key": "clue_small_area",
+          "priority": "high"
+        }
+      ]
+    },
+    {
+      "id": "community_facilities",
+      "label": "Community facilities & services",
+      "emoji": "🏛️",
+      "priority": 4,
+      "datasets": [
+        {
+          "id": "landmarks-and-places-of-interest-including-schools-theatres-health-services-spor",
+          "title": "Landmarks & places of interest (incl. worship, schools, health, sport, galleries)",
+          "why": "Single most important community infrastructure dataset — covers places of worship, community centres, schools, hospitals, sports facilities and cultural venues.",
+          "key_fields": [
+            "feature_name",
+            "feature_class",
+            "street_address",
+            "geo_point_2d",
+            "clue_small_area"
+          ],
+          "join_key": "clue_small_area",
+          "priority": "critical",
+          "filter_classes": [
+            "Place of worship",
+            "Community centre",
+            "School",
+            "Library",
+            "Hospital",
+            "Sports facility",
+            "Gallery",
+            "Museum"
+          ]
+        },
+        {
+          "id": "free-and-cheap-support-services-with-opening-hours-public-transport-and-parking-",
+          "title": "Free & cheap support services (Helping Out)",
+          "why": "Food, shelter, welfare, legal aid with opening hours and transport options — critical for vulnerable new arrivals.",
+          "key_fields": [
+            "service_name",
+            "service_type",
+            "street_address",
+            "geo_point_2d",
+            "opening_hours",
+            "transport_options"
+          ],
+          "join_key": null,
+          "priority": "high"
+        },
+        {
+          "id": "venues-for-event-bookings",
+          "title": "Venues for event bookings",
+          "why": "Bookable council venues — immigrant community groups can organise cultural events, language classes and meetups.",
+          "key_fields": [
+            "venue_name",
+            "street_address",
+            "geo_point_2d",
+            "capacity",
+            "booking_info"
+          ],
+          "join_key": null,
+          "priority": "medium"
+        }
+      ]
+    },
+    {
+      "id": "green_outdoor",
+      "label": "Parks, outdoors & public spaces",
+      "emoji": "🌳",
+      "priority": 5,
+      "datasets": [
+        {
+          "id": "playgrounds",
+          "title": "Playgrounds",
+          "why": "Families with children use playgrounds as natural first social spaces — helps parents find their initial community.",
+          "key_fields": [
+            "feature_name",
+            "street_address",
+            "geo_point_2d",
+            "clue_small_area",
+            "equipment_type"
+          ],
+          "join_key": "clue_small_area",
+          "priority": "high"
+        },
+        {
+          "id": "public-barbecues",
+          "title": "Public barbecues",
+          "why": "A uniquely Australian social tradition unfamiliar to most immigrants — free, inclusive community gathering spaces in parks.",
+          "key_fields": ["asset_description", "street_address", "geo_point_2d"],
+          "join_key": null,
+          "priority": "medium"
+        },
+        {
+          "id": "public-toilets",
+          "title": "Public toilets",
+          "why": "Practical safety data for people unfamiliar with the city — especially families with children navigating new areas.",
+          "key_fields": [
+            "facility_name",
+            "street_address",
+            "geo_point_2d",
+            "accessibility"
+          ],
+          "join_key": null,
+          "priority": "low"
+        },
+        {
+          "id": "trees-with-species-and-dimensions-urban-forest",
+          "title": "Trees & urban forest",
+          "why": "Green space quality data — immigrants from tropical climates appreciate knowing where canopy cover and parks are concentrated.",
+          "key_fields": [
+            "common_name",
+            "genus",
+            "geo_point_2d",
+            "clue_small_area",
+            "diameter_breast_height"
+          ],
+          "join_key": "clue_small_area",
+          "priority": "low"
+        }
+      ]
+    },
+    {
+      "id": "arts_culture_events",
+      "label": "Arts, culture & events",
+      "emoji": "🎭",
+      "priority": 6,
+      "datasets": [
+        {
+          "id": "outdoor-artworks",
+          "title": "Outdoor artworks",
+          "why": "Public sculpture and street art — cultural orientation for newcomers discovering Melbourne's identity.",
+          "key_fields": [
+            "title",
+            "artist",
+            "artwork_type",
+            "geo_point_2d",
+            "street_address"
+          ],
+          "join_key": null,
+          "priority": "medium"
+        },
+        {
+          "id": "public-artworks-fountains-and-monuments",
+          "title": "Public artworks, fountains & monuments",
+          "why": "Landmarks and memorials — helps immigrants learn Melbourne's cultural narrative through a self-guided discovery walk.",
+          "key_fields": [
+            "title",
+            "artist",
+            "type",
+            "geo_point_2d",
+            "clue_small_area"
+          ],
+          "join_key": null,
+          "priority": "medium"
+        },
+        {
+          "id": "live-music-venues",
+          "title": "Live music venues",
+          "why": "Music is a powerful cultural connector — helps immigrants find scenes aligned with their musical background.",
+          "key_fields": [
+            "trading_name",
+            "street_address",
+            "geo_point_2d",
+            "venue_type",
+            "clue_small_area"
+          ],
+          "join_key": "clue_small_area",
+          "priority": "medium"
+        },
+        {
+          "id": "self-guided-walks",
+          "title": "Self guided walks",
+          "why": "Official curated walking itineraries — low-barrier, free orientation tool for the first weeks after arrival.",
+          "key_fields": [
+            "walk_name",
+            "description",
+            "distance_km",
+            "start_point",
+            "geo_point_2d"
+          ],
+          "join_key": null,
+          "priority": "medium"
+        },
+        {
+          "id": "event-permits-2014-2018-including-film-shoots-photo-shoots-weddings-christmas-pa",
+          "title": "Event permits 2014–2018 (festivals, fun runs, public events)",
+          "why": "Historical event data reveals Melbourne's multicultural festival calendar — what events happen and where.",
+          "key_fields": [
+            "event_name",
+            "event_type",
+            "street_address",
+            "geo_point_2d",
+            "event_date",
+            "organiser"
+          ],
+          "join_key": null,
+          "priority": "low"
+        }
+      ]
+    },
+    {
+      "id": "transport_navigation",
+      "label": "Getting around — transport & navigation",
+      "emoji": "🚌",
+      "priority": 7,
+      "datasets": [
+        {
+          "id": "bus-stops",
+          "title": "Bus stops",
+          "why": "Public transport is the primary mode for immigrants new to the city — bus stop locations for route planning.",
+          "key_fields": [
+            "stop_id",
+            "stop_name",
+            "street_address",
+            "geo_point_2d",
+            "routes"
+          ],
+          "join_key": null,
+          "priority": "medium"
+        },
+        {
+          "id": "bicycle-routes-including-informal-on-road-and-off-road-routes",
+          "title": "Bicycle routes (on-road & off-road)",
+          "why": "Cycling is affordable and social — helps immigrants discover the city and connect with cycling communities.",
+          "key_fields": ["route_name", "route_type", "surface", "geo_shape"],
+          "join_key": null,
+          "priority": "low"
+        },
+        {
+          "id": "pedestrian-counting-system-monthly-counts-per-hour",
+          "title": "Pedestrian counting system (hourly counts)",
+          "why": "Foot traffic data by location and time — shows immigrants which areas are lively and when, for safe and social exploration.",
+          "key_fields": [
+            "sensor_id",
+            "location_description",
+            "date_time",
+            "hourly_counts",
+            "geo_point_2d"
+          ],
+          "join_key": null,
+          "priority": "low"
+        },
+        {
+          "id": "footpaths",
+          "title": "Footpaths",
+          "why": "Walkability data with surface type and width — useful for accessibility needs and walking route planning.",
+          "key_fields": [
+            "footpath_id",
+            "street_name",
+            "surface_type",
+            "width",
+            "geo_shape"
+          ],
+          "join_key": null,
+          "priority": "low"
+        }
+      ]
+    },
+    {
+      "id": "housing_property",
+      "label": "Housing & property",
+      "emoji": "🏠",
+      "priority": 8,
+      "datasets": [
+        {
+          "id": "residential-dwellings",
+          "title": "Residential dwellings",
+          "why": "Dwelling types and counts by block — helps immigrants understand density and housing character of different areas.",
+          "key_fields": [
+            "clue_small_area",
+            "dwelling_type",
+            "number_of_dwellings",
+            "census_year"
+          ],
+          "join_key": "clue_small_area",
+          "priority": "medium"
+        },
+        {
+          "id": "house-prices-by-small-area-sale-year",
+          "title": "House prices by small area (by sale year)",
+          "why": "Median house prices by neighbourhood — essential context for immigrants making housing decisions.",
+          "key_fields": [
+            "clue_small_area",
+            "sale_year",
+            "median_price",
+            "property_type"
+          ],
+          "join_key": "clue_small_area",
+          "priority": "medium"
+        }
+      ]
+    },
+    {
+      "id": "demographics",
+      "label": "Population & demographic profiles",
+      "emoji": "👨‍👩‍👧",
+      "priority": 9,
+      "datasets": [
+        {
+          "id": "families-with-children-profile-2016-aged-0-12-years",
+          "title": "Families with Children Profile 2016 (0–12 years)",
+          "why": "Helps immigrant families with young children identify child-friendly neighbourhoods with schools and services.",
+          "key_fields": [
+            "small_area",
+            "family_type",
+            "number_of_children",
+            "income_range",
+            "country_of_birth"
+          ],
+          "join_key": "small_area",
+          "priority": "medium"
+        },
+        {
+          "id": "tertiary-students-profile-2019",
+          "title": "Tertiary Students Profile 2019",
+          "why": "International students are the largest immigrant cohort — this profiles their distribution, income, housing and origin.",
+          "key_fields": [
+            "small_area",
+            "institution",
+            "country_of_birth",
+            "age_group",
+            "living_arrangement"
+          ],
+          "join_key": "small_area",
+          "priority": "high"
+        }
+      ]
+    }
+  ]
+}
