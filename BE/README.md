@@ -1,34 +1,48 @@
 # Melb Impact Lab — BE
 
-Terminal-based community-connector for Melbourne. A newcomer asks a question in
-natural language; Claude calls hybrid (filter + semantic) retrieval tools over
-local seed data and answers.
+Community-connector backend for Melbourne. A newcomer asks a question in
+natural language; Claude calls hybrid (filter + semantic) retrieval tools
+over real City of Melbourne open data and a curated profile database.
+
+Has two entry points:
+
+- **`main.py`** — terminal REPL with rich onboarding (postcode, name,
+  languages, country, occupation, looking_for).
+- **`server.py`** — FastAPI HTTP service exposing `/chat` and
+  `/profile/by-phone/{phone}`. Used by the WhatsApp bot (`bot/`).
 
 ## Architecture
 
 ```
-main.py  -- terminal REPL (asks for postcode, loops on questions)
-   |
-   v
-agent.py -- Claude agent loop with tool use
-   |
-   v
-tools.py -- three tools:
-             search_community_profiles(...)
-             search_local_businesses(...)
-             search_community_events(...)
-   |
-   v
-db.py    -- in-memory store loaded from data/*.json
-            - on first run, embeds all profiles + businesses + events with OpenAI
-            - caches embeddings in data/*.embedded.json
-            - hybrid search: structured filter (radius, language, occupation,
-              category, date-window, free-only), then cosine-similarity rank
+   main.py  (CLI)              server.py  (HTTP)              ← entry points
+        \                         /
+         \                       /
+          v                     v
+   agent.py -- Claude agent loop with tool use
+        |
+        v
+   tools.py -- FIVE tools:
+                search_community_profiles(...)
+                search_local_businesses(...)        ← CoM CLUE register, ~1,800
+                search_cafes_restaurants(...)       ← CoM CLUE + seat counts
+                search_landmarks_places(...)        ← CoM places of interest
+                search_community_events(...)        ← curated local events
+        |
+        v
+   db.py    -- in-memory store from data/*.json
+                - lookup_profile_by_phone(phone): WhatsApp JID → profile
+                - hybrid search: structured filter (radius, language
+                  INTERSECTION, occupation, category, theme, seats, date)
+                  + cosine-similarity rank over query-register narratives
+                - embedding cache auto-invalidates on _NARRATIVE_VERSION bump
 
 embeddings.py -- OpenAI text-embedding-3-small wrapper
 ```
 
 No database server required. Everything lives in JSON + in-memory NumPy arrays.
+
+No external database required. Everything lives in JSON + in-memory NumPy
+arrays.
 
 ## Setup
 
@@ -38,18 +52,46 @@ python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
 cp .env.example .env
-# edit .env and paste in ANTHROPIC_API_KEY and OPENAI_API_KEY
+# edit .env and paste in CLAUDE_API_KEY (or ANTHROPIC_API_KEY) and OPENAI_API_KEY
 ```
 
-## Run
+## Data preparation (one-time)
+
+The real CoM datasets are downloaded by the script at `../data/fetch_datasets.py`.
+After they're on disk, run:
+
+```bash
+python prepare_data.py
+```
+
+This filters the raw 413k-record CoM business register down to ~1,800
+Kensington-cluster records, dedupes cafes, and projects into `BE/data/*.json`.
+Re-run any time the raw CoM data refreshes.
+
+## Run — CLI
 
 ```bash
 python main.py
 ```
 
-First run will embed the seed data (one-time, ~10 sec, costs a fraction of a cent).
-Subsequent runs reuse the cached `data/profiles.embedded.json` and
-`data/businesses.embedded.json`.
+First run embeds the seed data (~30 sec for 2,200 records, ~$0.005). Cached
+to `data/*.embedded.json`. Re-embed automatically if `_NARRATIVE_VERSION` in
+`db.py` is bumped.
+
+## Run — HTTP server (for the WhatsApp bot)
+
+```bash
+uvicorn server:app --host 0.0.0.0 --port 8765 --reload
+```
+
+Endpoints:
+- `GET  /health` — liveness
+- `GET  /profile/by-phone/{phone}` — accepts JIDs / +61 / 04xx formats
+- `POST /chat` — body `{message, phone, asker_profile_override?}`, returns
+  `{reply, asker_known, asker_name, asker_phone_normalised}`
+
+See `../bot/skills/tapestry-retrieval/SKILL.md` for how the WhatsApp bot
+calls this service.
 
 You'll be prompted once for your postcode (try `3011` for Footscray or `3171`
 for Springvale to match the seed data), then you can ask questions like:

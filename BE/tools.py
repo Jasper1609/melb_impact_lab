@@ -144,6 +144,98 @@ TOOL_SCHEMAS: list[dict[str, Any]] = [
         },
     },
     {
+        "name": "search_cafes_restaurants",
+        "description": (
+            "Search nearby cafes, restaurants, and takeaway venues. Data comes "
+            "from the City of Melbourne CLUE (Census of Land Use and "
+            "Employment) register, which includes seating capacity — so this "
+            "tool is the right pick for both 'where can I grab a coffee near "
+            "me' and 'I need a venue big enough for our community group of "
+            "40 people'. Returns up to 5 ranked matches with name, address, "
+            "seat counts (indoor + outdoor), and distance."
+        ),
+        "input_schema": {
+            "type": "object",
+            "properties": {
+                "semantic_query": {
+                    "type": "string",
+                    "description": (
+                        "Natural-language description of what the user wants. "
+                        "Examples: 'family-friendly restaurant for a group "
+                        "dinner', 'coffee place where I can meet someone for "
+                        "a one-on-one chat', 'cheap takeaway near home'."
+                    ),
+                },
+                "user_postcode": {
+                    "type": "string",
+                    "description": "The asker's 4-digit Australian postcode.",
+                },
+                "radius_km": {
+                    "type": "number",
+                    "description": "Search radius in kilometres. Default 5.",
+                    "default": 5,
+                },
+                "min_seats": {
+                    "type": "integer",
+                    "description": (
+                        "Optional minimum total seating capacity. Pass when "
+                        "the user mentions group size — e.g. 30 for a small "
+                        "meetup, 80+ for a community event."
+                    ),
+                },
+            },
+            "required": ["semantic_query", "user_postcode"],
+        },
+    },
+    {
+        "name": "search_landmarks_places",
+        "description": (
+            "Search the City of Melbourne register of landmarks and places of "
+            "interest — a curated list of ~240 places including PLACES OF "
+            "WORSHIP, EDUCATION CENTRES, HEALTH SERVICES, COMMUNITY USE "
+            "venues, PLACES OF ASSEMBLY, leisure/recreation, and transport "
+            "hubs. Use this tool whenever a user is asking about community "
+            "infrastructure that supports newcomer integration — churches, "
+            "mosques, temples, community halls, schools, clinics, libraries, "
+            "sports fields. Returns up to 5 ranked matches with theme, "
+            "sub-theme, and distance."
+        ),
+        "input_schema": {
+            "type": "object",
+            "properties": {
+                "semantic_query": {
+                    "type": "string",
+                    "description": (
+                        "Natural-language description of what the user wants. "
+                        "Examples: 'place to pray on Friday', 'community hall "
+                        "for a multicultural gathering', 'school for my "
+                        "primary-aged kids'."
+                    ),
+                },
+                "user_postcode": {
+                    "type": "string",
+                    "description": "The asker's 4-digit Australian postcode.",
+                },
+                "radius_km": {
+                    "type": "number",
+                    "description": "Search radius in kilometres. Default 5.",
+                    "default": 5,
+                },
+                "theme": {
+                    "type": "string",
+                    "description": (
+                        "Optional theme filter. Known themes in this dataset: "
+                        "'Place of Worship', 'Education Centre', 'Health "
+                        "Services', 'Community Use', 'Place of Assembly', "
+                        "'Leisure/Recreation', 'Transport', 'Office', 'Mixed "
+                        "Use', 'Retail'. Case-insensitive substring match."
+                    ),
+                },
+            },
+            "required": ["semantic_query", "user_postcode"],
+        },
+    },
+    {
         "name": "search_community_events",
         "description": (
             "Search UPCOMING community events near a location — workshops, "
@@ -275,9 +367,32 @@ def _handle_search_community_events(args: dict[str, Any]) -> dict[str, Any]:
     return {"count": len(results), "results": results}
 
 
+def _handle_search_cafes_restaurants(args: dict[str, Any]) -> dict[str, Any]:
+    min_seats = args.get("min_seats")
+    results = db.search_cafes(
+        semantic_query=args["semantic_query"],
+        user_postcode=args["user_postcode"],
+        radius_km=float(args.get("radius_km", 5)),
+        min_seats=int(min_seats) if min_seats is not None else None,
+    )
+    return {"count": len(results), "results": results}
+
+
+def _handle_search_landmarks_places(args: dict[str, Any]) -> dict[str, Any]:
+    results = db.search_landmarks(
+        semantic_query=args["semantic_query"],
+        user_postcode=args["user_postcode"],
+        radius_km=float(args.get("radius_km", 5)),
+        theme=args.get("theme"),
+    )
+    return {"count": len(results), "results": results}
+
+
 HANDLERS = {
     "search_community_profiles": _handle_search_community_profiles,
     "search_local_businesses": _handle_search_local_businesses,
+    "search_cafes_restaurants": _handle_search_cafes_restaurants,
+    "search_landmarks_places": _handle_search_landmarks_places,
     "search_community_events": _handle_search_community_events,
 }
 

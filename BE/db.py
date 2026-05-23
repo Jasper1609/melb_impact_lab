@@ -32,13 +32,17 @@ _DATA_DIR = Path(__file__).parent / "data"
 _PROFILES_RAW = _DATA_DIR / "profiles.json"
 _BUSINESSES_RAW = _DATA_DIR / "businesses.json"
 _EVENTS_RAW = _DATA_DIR / "events.json"
+_CAFES_RAW = _DATA_DIR / "cafes.json"
+_LANDMARKS_RAW = _DATA_DIR / "landmarks.json"
 _PROFILES_EMBEDDED = _DATA_DIR / "profiles.embedded.json"
 _BUSINESSES_EMBEDDED = _DATA_DIR / "businesses.embedded.json"
 _EVENTS_EMBEDDED = _DATA_DIR / "events.embedded.json"
+_CAFES_EMBEDDED = _DATA_DIR / "cafes.embedded.json"
+_LANDMARKS_EMBEDDED = _DATA_DIR / "landmarks.embedded.json"
 
 # Bump this any time the narrative shape changes. Cached embeddings tagged with
 # a different version are discarded and rebuilt automatically.
-_NARRATIVE_VERSION = "v2-query-register"
+_NARRATIVE_VERSION = "v3-clue-cafes-landmarks"
 
 # Melbourne is AEST (UTC+10). The seed events use +10:00 offsets.
 _MELBOURNE_TZ = timezone(timedelta(hours=10))
@@ -50,6 +54,10 @@ _businesses: list[dict[str, Any]] = []
 _business_embeddings: np.ndarray | None = None
 _events: list[dict[str, Any]] = []
 _event_embeddings: np.ndarray | None = None
+_cafes: list[dict[str, Any]] = []
+_cafe_embeddings: np.ndarray | None = None
+_landmarks: list[dict[str, Any]] = []
+_landmark_embeddings: np.ndarray | None = None
 
 
 # ---------------------------------------------------------------------------
@@ -105,6 +113,70 @@ def _business_narrative(b: dict[str, Any]) -> str:
     )
 
 
+def _cafe_narrative(c: dict[str, Any]) -> str:
+    """Build a cafe/restaurant narrative in query register."""
+    industry_desc = c.get("industry_anzsic4_description") or "cafe or restaurant"
+    suburb = c.get("clue_small_area") or "inner Melbourne"
+    seats_total = c.get("seats_total") or 0
+    seats_in = c.get("seats_indoor") or 0
+    seats_out = c.get("seats_outdoor") or 0
+    capacity_hint = ""
+    if seats_total >= 80:
+        capacity_hint = "Large venue suitable for community events and gatherings."
+    elif seats_total >= 30:
+        capacity_hint = "Medium-size venue, good for small group meetups."
+    elif seats_total > 0:
+        capacity_hint = "Small venue, intimate setting."
+    return (
+        f"HELPS WITH: somewhere to eat, meet people, or gather a group near "
+        f"{suburb}. {capacity_hint}\n"
+        f"TYPE OF PLACE: {industry_desc}. "
+        f"Capacity: {seats_in} indoor seats + {seats_out} outdoor = {seats_total} total.\n"
+        f"\n"
+        f"IDENTITY: {c['name']} at {c['formatted_address']}. In {suburb}.\n"
+        f"\n"
+        f"SEARCHABLE TOPICS: cafe, restaurant, food, meeting place, community "
+        f"gathering, {suburb} food, eating out, {industry_desc}."
+    )
+
+
+def _landmark_narrative(l: dict[str, Any]) -> str:
+    """Build a landmark/place-of-interest narrative in query register."""
+    theme = l.get("theme") or "place"
+    sub_theme = l.get("sub_theme") or ""
+
+    # Translate the dataset's themes into a human-friendly "helps with" phrase
+    theme_lower = (theme or "").lower()
+    sub_lower = (sub_theme or "").lower()
+    helps_with = ""
+    if "worship" in theme_lower or "worship" in sub_lower:
+        helps_with = "religious practice and faith community connection"
+    elif "education" in theme_lower:
+        helps_with = "schooling and learning"
+    elif "health" in theme_lower:
+        helps_with = "medical care and health services"
+    elif "community" in theme_lower:
+        helps_with = "community gatherings, meetings, and group activities"
+    elif "leisure" in theme_lower or "recreation" in theme_lower:
+        helps_with = "leisure, sport, and recreation"
+    elif "place of assembly" in theme_lower:
+        helps_with = "public gatherings, ceremonies, and events"
+    elif "transport" in theme_lower:
+        helps_with = "moving around the city"
+    else:
+        helps_with = f"local {theme.lower() if theme else 'community'} infrastructure"
+
+    return (
+        f"HELPS WITH: {helps_with}.\n"
+        f"TYPE OF PLACE: {theme}. {sub_theme}.\n"
+        f"\n"
+        f"IDENTITY: {l['feature_name']} (City of Melbourne landmark).\n"
+        f"\n"
+        f"SEARCHABLE TOPICS: {theme}, {sub_theme}, community infrastructure, "
+        f"newcomer-relevant places, public amenities, landmarks."
+    )
+
+
 def _event_narrative(e: dict[str, Any]) -> str:
     """Build an event narrative in *query register*.
 
@@ -140,8 +212,8 @@ def _event_narrative(e: dict[str, Any]) -> str:
 # ---------------------------------------------------------------------------
 
 def _record_key(r: dict[str, Any]) -> str:
-    """Return the unique key for a record — `id` for profiles/events, `place_id` for businesses."""
-    return r.get("id") or r["place_id"]
+    """Return the unique key for a record — `id` for profiles/events/cafes/landmarks, `place_id` for businesses."""
+    return r.get("id") or r.get("place_id") or r.get("feature_name") or ""
 
 
 def _embed_records(records: list[dict[str, Any]], narrative_fn) -> list[dict[str, Any]]:
@@ -193,16 +265,22 @@ def _ensure_loaded() -> None:
     global _profiles, _profile_embeddings
     global _businesses, _business_embeddings
     global _events, _event_embeddings
-    if _profiles and _businesses and _events:
+    global _cafes, _cafe_embeddings
+    global _landmarks, _landmark_embeddings
+    if _profiles and _businesses and _events and _cafes and _landmarks:
         return
 
     _profiles = _load_or_embed(_PROFILES_RAW, _PROFILES_EMBEDDED, _profile_narrative)
     _businesses = _load_or_embed(_BUSINESSES_RAW, _BUSINESSES_EMBEDDED, _business_narrative)
     _events = _load_or_embed(_EVENTS_RAW, _EVENTS_EMBEDDED, _event_narrative)
+    _cafes = _load_or_embed(_CAFES_RAW, _CAFES_EMBEDDED, _cafe_narrative)
+    _landmarks = _load_or_embed(_LANDMARKS_RAW, _LANDMARKS_EMBEDDED, _landmark_narrative)
 
     _profile_embeddings = np.array([p["_embedding"] for p in _profiles], dtype=np.float32)
     _business_embeddings = np.array([b["_embedding"] for b in _businesses], dtype=np.float32)
     _event_embeddings = np.array([e["_embedding"] for e in _events], dtype=np.float32)
+    _cafe_embeddings = np.array([c["_embedding"] for c in _cafes], dtype=np.float32)
+    _landmark_embeddings = np.array([l["_embedding"] for l in _landmarks], dtype=np.float32)
 
 
 # ---------------------------------------------------------------------------
@@ -258,6 +336,53 @@ def resolve_postcode(postcode: str) -> tuple[float, float]:
             f"Add it to _POSTCODE_CENTROIDS in db.py."
         )
     return centroid
+
+
+# ---------------------------------------------------------------------------
+# phone normalisation + profile-by-phone lookup
+# ---------------------------------------------------------------------------
+
+def normalise_phone(raw: str) -> str:
+    """Normalise a phone-ish string to digits-only international form (no `+`).
+
+    Accepts and converts:
+      - WhatsApp JIDs:  61400123456@s.whatsapp.net  -> 61400123456
+      - international:  +61 400 123 456             -> 61400123456
+      - Australian local: 0400 123 456              -> 61400123456
+      - already-normalised: 61400123456             -> 61400123456
+
+    Any other input is reduced to its digits. Returns "" if no digits found.
+    """
+    if not raw:
+        return ""
+    # strip WhatsApp suffix early so trailing `s.whatsapp.net` digits aren't kept
+    head = raw.split("@", 1)[0]
+    digits = "".join(ch for ch in head if ch.isdigit())
+    # Australian local 04xxxxxxxx → 614xxxxxxxx
+    if digits.startswith("04") and len(digits) == 10:
+        digits = "61" + digits[1:]
+    return digits
+
+
+def lookup_profile_by_phone(phone: str) -> dict[str, Any] | None:
+    """Find a profile whose phone_number matches the given phone string.
+
+    Both sides are normalised via `normalise_phone` so any reasonable input
+    format (raw JID, +61..., 04..., etc.) resolves to the same key.
+
+    Returns the full raw profile record (without internal `_narrative` /
+    `_embedding` fields), or None if no match.
+    """
+    _ensure_loaded()
+    target = normalise_phone(phone)
+    if not target:
+        return None
+    for p in _profiles:
+        stored = normalise_phone(p.get("phone_number", ""))
+        if stored and stored == target:
+            # strip internal fields the caller shouldn't see
+            return {k: v for k, v in p.items() if not k.startswith("_")}
+    return None
 
 
 # ---------------------------------------------------------------------------
@@ -370,6 +495,93 @@ def search_businesses(
     )[:limit]
 
     return [_render_business(b, dist, float(sim)) for (_, b, dist), sim in ranked]
+
+
+def search_cafes(
+    *,
+    semantic_query: str,
+    user_postcode: str,
+    radius_km: float = 5.0,
+    min_seats: int | None = None,
+    limit: int = 5,
+) -> list[dict[str, Any]]:
+    """Hybrid search over cafes / restaurants from the CoM CLUE register.
+
+    Pre-filter: radius + (optional) min_seats (useful for "venue large enough
+    to host my group"). Rank by cosine similarity against the embedded
+    cafe narrative.
+    """
+    _ensure_loaded()
+    user_lat, user_lng = resolve_postcode(user_postcode)
+
+    surviving: list[tuple[int, dict[str, Any], float]] = []
+    for idx, c in enumerate(_cafes):
+        loc = c.get("geometry", {}).get("location", {})
+        c_lat, c_lng = loc.get("lat"), loc.get("lng")
+        if c_lat is None or c_lng is None:
+            continue
+        dist = _haversine_km(user_lat, user_lng, c_lat, c_lng)
+        if dist > radius_km:
+            continue
+        if min_seats is not None and (c.get("seats_total") or 0) < min_seats:
+            continue
+        surviving.append((idx, c, dist))
+
+    if not surviving:
+        return []
+
+    q_emb = np.array(embed_one(semantic_query), dtype=np.float32)
+    candidate_vecs = np.stack([_cafe_embeddings[i] for i, _, _ in surviving])
+    sims = _cosine_sim(q_emb, candidate_vecs)
+
+    ranked = sorted(zip(surviving, sims), key=lambda pair: pair[1], reverse=True)[:limit]
+    return [_render_cafe(c, dist, float(sim)) for (_, c, dist), sim in ranked]
+
+
+def search_landmarks(
+    *,
+    semantic_query: str,
+    user_postcode: str,
+    radius_km: float = 5.0,
+    theme: str | None = None,
+    limit: int = 5,
+) -> list[dict[str, Any]]:
+    """Hybrid search over CoM landmarks / places of interest.
+
+    The landmark dataset is small (~242 city-wide records) and richly themed
+    (Place of Worship, Health Services, Education Centre, Community Use, etc.)
+    — perfect for the migrant integration story.
+
+    Pre-filter: radius + (optional) theme. Rank: cosine similarity.
+    """
+    _ensure_loaded()
+    user_lat, user_lng = resolve_postcode(user_postcode)
+    theme_lower = theme.lower() if theme else None
+
+    surviving: list[tuple[int, dict[str, Any], float]] = []
+    for idx, l in enumerate(_landmarks):
+        l_lat, l_lng = l.get("lat"), l.get("lng")
+        if l_lat is None or l_lng is None:
+            continue
+        dist = _haversine_km(user_lat, user_lng, l_lat, l_lng)
+        if dist > radius_km:
+            continue
+        if theme_lower:
+            t = (l.get("theme") or "").lower()
+            st = (l.get("sub_theme") or "").lower()
+            if theme_lower not in t and theme_lower not in st:
+                continue
+        surviving.append((idx, l, dist))
+
+    if not surviving:
+        return []
+
+    q_emb = np.array(embed_one(semantic_query), dtype=np.float32)
+    candidate_vecs = np.stack([_landmark_embeddings[i] for i, _, _ in surviving])
+    sims = _cosine_sim(q_emb, candidate_vecs)
+
+    ranked = sorted(zip(surviving, sims), key=lambda pair: pair[1], reverse=True)[:limit]
+    return [_render_landmark(l, dist, float(sim)) for (_, l, dist), sim in ranked]
 
 
 def search_events(
@@ -493,6 +705,34 @@ def _render_business(b: dict[str, Any], distance_km: float, similarity: float) -
         "editorial_summary": b.get("editorial_summary", {}).get("overview"),
         "distance_km": round(distance_km, 2),
         "similarity": round(similarity, 4),
+    }
+
+
+def _render_cafe(c: dict[str, Any], distance_km: float, similarity: float) -> dict[str, Any]:
+    return {
+        "id": c["id"],
+        "name": c["name"],
+        "formatted_address": c["formatted_address"],
+        "industry_anzsic4_description": c.get("industry_anzsic4_description"),
+        "clue_small_area": c.get("clue_small_area"),
+        "seats_indoor": c.get("seats_indoor"),
+        "seats_outdoor": c.get("seats_outdoor"),
+        "seats_total": c.get("seats_total"),
+        "distance_km": round(distance_km, 2),
+        "similarity": round(similarity, 4),
+        "source": c.get("source"),
+    }
+
+
+def _render_landmark(l: dict[str, Any], distance_km: float, similarity: float) -> dict[str, Any]:
+    return {
+        "id": l["id"],
+        "feature_name": l["feature_name"],
+        "theme": l.get("theme"),
+        "sub_theme": l.get("sub_theme"),
+        "distance_km": round(distance_km, 2),
+        "similarity": round(similarity, 4),
+        "source": l.get("source"),
     }
 
 

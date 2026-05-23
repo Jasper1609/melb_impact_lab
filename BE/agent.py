@@ -46,11 +46,20 @@ def _get_client() -> Anthropic:
 def _format_asker_profile(p: dict[str, Any]) -> str:
     """Render the asker's profile as a clearly-delimited block for the system prompt.
 
-    Only includes fields that were actually filled in (the user can skip
-    most fields at signup). Always shows postcode (required).
+    If the profile is empty/unknown (e.g. a WhatsApp message from a phone
+    number we don't recognise), renders an explicit 'no profile' block so the
+    LLM knows it needs to onboard the user before running retrieval tools.
     """
     lines = ["=== ASKER PROFILE ==="]
-    lines.append(f"Postcode: {p['postcode']} ({p.get('suburb', 'Melbourne')})")
+    if not p:
+        lines.append("(No profile on file for this user yet.)")
+        lines.append("=== END ASKER PROFILE ===")
+        return "\n".join(lines)
+
+    if p.get("postcode"):
+        lines.append(f"Postcode: {p['postcode']} ({p.get('suburb', 'Melbourne')})")
+    else:
+        lines.append("Postcode: UNKNOWN (must be gathered before tool use)")
     if p.get("name"):
         lines.append(f"Name: {p['name']}")
     if p.get("country_of_origin"):
@@ -67,11 +76,31 @@ def _format_asker_profile(p: dict[str, Any]) -> str:
 
 def _system_prompt(asker_profile: dict[str, Any]) -> str:
     profile_block = _format_asker_profile(asker_profile)
+    has_postcode = bool(asker_profile.get("postcode"))
     name_hint = (
         f"Address the asker as {asker_profile['name']} if it feels natural."
         if asker_profile.get("name")
         else ""
     )
+
+    if not has_postcode:
+        # Anonymous / pre-onboarding mode. Tools need a postcode so refuse to
+        # call them and gather info conversationally instead.
+        return (
+            "You are a warm, practical assistant helping newcomers and "
+            "residents connect with each other, with services, and with "
+            "what's happening in Melbourne, Australia.\n\n"
+            f"{profile_block}\n\n"
+            "Because this user has no profile yet, your only job this turn "
+            "is to onboard them warmly through conversation. Ask their "
+            "postcode/area first — politely, in one short message. Without "
+            "a postcode you cannot run the retrieval tools, so DO NOT call "
+            "any tools yet. Also gently invite them to share their name, "
+            "languages, and what they're looking for help with, but make it "
+            "feel like a chat, not a form. Once they reply with at least a "
+            "postcode, you'll be able to start helping in earnest."
+        )
+
     return (
         "You are a warm, practical assistant helping newcomers and residents "
         "connect with each other, with services, and with what's happening in "
@@ -86,20 +115,28 @@ def _system_prompt(asker_profile: dict[str, Any]) -> str:
         f"full Languages list above — it gates whether profiles/events that "
         f"share at least one language with the asker are returned. "
         f"{name_hint}\n\n"
-        "Tool selection:\n"
-        "  • Use search_community_profiles when the user wants a PERSON "
-        "(mentor, peer, someone who speaks their language, someone who has "
-        "navigated the same journey).\n"
-        "  • Use search_local_businesses when the user wants a PLACE "
-        "(library, community centre, settlement service, tool library, "
-        "support service). Businesses are NOT language-tagged in our data, "
-        "so do not pass asker_languages to this tool.\n"
-        "  • Use search_community_events when the user wants something "
-        "HAPPENING SOON (workshops, info sessions, cultural festivals, "
-        "language circles, repair cafes, markets) or asks 'what's on'.\n"
-        "  • If the user's need plausibly involves two or three of these, "
-        "CALL MULTIPLE TOOLS in the same turn. Stitching them together is "
-        "the most valuable thing you can do.\n\n"
+        "Tool selection (we have five tools):\n"
+        "  • search_community_profiles — PEOPLE (mentors, peers, someone who "
+        "speaks the asker's language, someone who has navigated the same "
+        "journey).\n"
+        "  • search_local_businesses — every kind of registered business near "
+        "the asker, sourced from the City of Melbourne CLUE register. Use "
+        "for: 'where can I get my hair cut', 'is there an accountant near me', "
+        "'find me a local plumber', or any specific industry the user names. "
+        "NOT language-tagged — don't pass asker_languages here.\n"
+        "  • search_cafes_restaurants — cafes/restaurants/takeaway with seat "
+        "counts. Use when the user wants somewhere to eat, meet, or host a "
+        "group. If they mention group size, pass min_seats.\n"
+        "  • search_landmarks_places — the curated CoM landmarks list: places "
+        "of worship, schools, health services, community halls, sports "
+        "facilities. Use for religious practice, schooling, healthcare, "
+        "community infrastructure questions.\n"
+        "  • search_community_events — things HAPPENING SOON (workshops, info "
+        "sessions, cultural festivals, language circles, repair cafes, "
+        "markets) or 'what's on'.\n\n"
+        "  • If the user's need plausibly involves multiple categories, CALL "
+        "MULTIPLE TOOLS in the same turn. Stitching them together is the most "
+        "valuable thing you can do.\n\n"
         "Retry behaviour: if a tool returns count=0, retry once with a larger "
         "radius (5 → 15 → 30 km for profiles/businesses; 10 → 25 → 50 km for "
         "events) before telling the user nothing was found.\n\n"

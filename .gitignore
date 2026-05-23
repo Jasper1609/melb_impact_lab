@@ -216,3 +216,9 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Tapestry — derived/cached data that any consumer can regenerate locally.
+# Embedded JSONs are recomputed on first run after a _NARRATIVE_VERSION bump
+# (see BE/db.py). The raw CoM datasets are downloaded by data/fetch_datasets.py.
+BE/data/*.embedded.json
+data/datasets/
