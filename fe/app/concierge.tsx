@@ -22,13 +22,13 @@ const DEMO_MESSAGES = [
   {
     role: 'assistant' as const,
     content:
-      'Great question! Based on your location, here are your options:\n\n' +
-      'Westfield Primary School is closest and currently accepting enrolments for Term 3. ' +
+      'Great question! Based on your location in Kensington, here are your options:\n\n' +
+      'Kensington Primary School is closest and currently accepting enrolments for Term 3. ' +
       'They have an open morning on Tue 10 June.\n\n' +
       "You'll need:\n" +
-      '• Proof of address (utility bill or lease)\n' +
-      "• Your child's birth certificate\n" +
-      '• Immunisation records\n\n' +
+      '\u2022 Proof of address (utility bill or lease)\n' +
+      "\u2022 Your child's birth certificate\n" +
+      '\u2022 Immunisation records\n\n' +
       'Would you like me to draft an email to the school?',
     delay: 2800,
   },
@@ -41,10 +41,10 @@ const DEMO_MESSAGES = [
     role: 'assistant' as const,
     content:
       "Here's a draft for you:\n\n" +
-      'Subject: Enrolment enquiry — new to the area\n\n' +
+      'Subject: Enrolment enquiry \u2014 new to the area\n\n' +
       'Hi,\n\n' +
-      "We've recently moved to the area and would like to enquire about enrolling our children " +
-      "at Westfield Primary. We'd love to attend the open morning on 10 June if possible.\n\n" +
+      "We've recently moved to Kensington from Hong Kong and would like to enquire about enrolling our two children " +
+      "at Kensington Primary. We'd love to attend the open morning on 10 June if possible.\n\n" +
       'Could you let us know what documents we need to bring?\n\n' +
       'Thank you!\n\n' +
       'Shall I send this, or would you like to edit it first?',

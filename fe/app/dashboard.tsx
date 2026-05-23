@@ -15,20 +15,20 @@ import { categoryGradients, warmGlow } from '@/constants/gradients';
 const NEXT_STEPS = [
   {
     icon: '1',
-    label: 'Reach out to Minh Tran',
-    detail: 'Your closest neighbour from Vietnam',
+    label: 'Reach out to Mei-Ling Chan',
+    detail: 'Also from Hong Kong, lives 2 streets away',
     categoryId: 'people',
   },
   {
     icon: '2',
     label: 'Attend Welcome Morning Tea',
-    detail: 'Sat 7 June, 10:00am — Melbourne Town Hall',
+    detail: 'Sat 7 June, 10:00am \u2014 Kensington Town Hall',
     categoryId: 'events',
   },
   {
     icon: '3',
-    label: 'Join Vietnamese Families Melbourne',
-    detail: '320 members on Facebook',
+    label: 'Join HK Families Melbourne',
+    detail: '520 members on Facebook',
     categoryId: 'communities',
   },
   {
@@ -48,7 +48,7 @@ export default function DashboardScreen() {
       >
         <Text style={styles.greeting}>Your plan</Text>
         <Text style={styles.subtitle}>
-          Here's what Tapestry found for you and your family.
+          Here's what Tapestry found for you and your family, Jesse.
         </Text>
 
         {/* AI Concierge */}

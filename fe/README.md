@@ -4,6 +4,10 @@ A mobile app that helps newly arrived residents connect with their local communi
 
 Tapestry walks users through onboarding, learns about their household and needs, then generates a personalized "settlement plan" with people to meet, events to attend, community groups to join, and resources to help them settle in.
 
+## Demo Persona: Jesse
+
+The app is currently built around Jesse's story. She recently moved from Hong Kong with her partner and two kids to Kensington. Moving to a new suburb has been challenging — she has to start from the ground up with no established contacts. The app demonstrates how Tapestry helps someone like Jesse find community, enrol her kids in school, and navigate settling into a new neighbourhood.
+
 ## How It Works (User Flow)
 
 ### 1. Welcome
@@ -110,18 +114,19 @@ This is the primary mock data file. It defines 4 categories with all their items
 
 | Category | Dummy Items | Key Fields |
 |----------|------------|------------|
-| **People** (5) | Minh Tran, Sarah Chen, David Nguyen, Priya Sharma, Tom Wilson | `label`, `detail`, `isContact`, `email`, `emailSubject`, `emailBody` |
-| **Events** (3) | Welcome Morning Tea, School Open Morning, Multicultural Picnic | `label`, `detail`, `source`, `eventUrl`, `date`, `location` |
-| **Communities** (4) | Vietnamese Families Melbourne, Westfield School Parents, New to Melbourne, Local Sports & Play | `label`, `detail`, `platform`, `groupUrl` |
+| **People** (5) | Mei-Ling Chan, Sarah Chen, David Wong, Priya Sharma, Tom Wilson | `label`, `detail`, `isContact`, `email`, `emailSubject`, `emailBody` |
+| **Events** (3) | Welcome Morning Tea, Kensington Primary Open Morning, Multicultural Families Picnic | `label`, `detail`, `source`, `eventUrl`, `date`, `location` |
+| **Communities** (4) | HK Families Melbourne, Kensington Primary Parents, Kensington Neighbours, New to Melbourne | `label`, `detail`, `platform`, `groupUrl` |
 | **Requests** (3) | School enrolment, Bank account, Public transport (Myki) | `label`, `detail`, `provider`, `resourceUrl` |
 
 ### `app/bio.tsx` — Dummy voice transcript
 
 ```
-"I just moved to Melbourne from Vietnam with my wife and two kids.
-We're looking for a good primary school nearby, and I'd love to find
-a local community group where we can meet other families. I also need
-help setting up a bank account and understanding public transport."
+"I just moved to Kensington from Hong Kong with my partner and two kids.
+We don't really know anyone here yet, so we're looking to meet people
+in the area. I'd love to find a good school nearby and connect with
+other families. We also need to set up a bank account and figure out
+public transport."
 ```
 
 Used as a fake transcription result when the user "records" a voice message.
@@ -130,8 +135,8 @@ Used as a fake transcription result when the user "records" a voice message.
 
 | Name | Relation | Detail |
 |------|----------|--------|
-| You | Primary | Recently moved from Vietnam, looking for community |
-| Wife | Partner | Moving together, family support |
+| Jesse | Primary | Recently moved from Hong Kong, looking for community |
+| Partner | Partner | Moving together, settling into Kensington |
 | Child 1 | Child | Needs primary school enrolment |
 | Child 2 | Child | Needs primary school enrolment |
 
@@ -139,26 +144,26 @@ Used as a fake transcription result when the user "records" a voice message.
 
 | Name | Detail |
 |------|--------|
-| Minh Tran | Mobile |
+| Mei-Ling Chan | Mobile |
 | Sarah Chen | Mobile |
 | Priya Sharma | Mobile, Email |
 
-### `app/onboarding/neighbourhood.tsx` — Local demographics
+### `app/onboarding/neighbourhood.tsx` — Local demographics (Kensington)
 
 | Stat | Value |
 |------|-------|
-| People nearby | 12,340 |
-| Households | 4,820 |
-| Median age | 34 |
-| Born overseas | 42% |
+| People nearby | 10,830 |
+| Households | 5,240 |
+| Median age | 33 |
+| Born overseas | 38% |
 
 ### `app/dashboard.tsx` — Next steps
 
-4 hardcoded next-step cards (one per category), e.g. "Reach out to Minh Tran", "Attend Welcome Morning Tea".
+4 hardcoded next-step cards (one per category): "Reach out to Mei-Ling Chan", "Attend Welcome Morning Tea", "Join HK Families Melbourne", "Start school enrolment".
 
 ### `app/concierge.tsx` — Demo chat messages
 
-4 hardcoded messages simulating a conversation about school enrolment, including a drafted email.
+4 hardcoded messages simulating a conversation about school enrolment at Kensington Primary, including a drafted email mentioning the move from Hong Kong.
 
 ### `app/onboarding/phone.tsx` — Default phone number
 

@@ -14,7 +14,7 @@ import { colors, fonts } from '@/constants/onboarding-styles';
 
 /* ── Fake contacts that "sync" ── */
 const FOUND_CONTACTS = [
-  { name: 'Minh Tran', detail: 'Mobile' },
+  { name: 'Mei-Ling Chan', detail: 'Mobile' },
   { name: 'Sarah Chen', detail: 'Mobile' },
   { name: 'Priya Sharma', detail: 'Mobile, Email' },
 ];

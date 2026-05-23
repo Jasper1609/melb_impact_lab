@@ -70,13 +70,6 @@ export default function WelcomeScreen() {
               {current.cta}
             </Animated.Text>
           </TouchableOpacity>
-          <TouchableOpacity
-            style={styles.dashboardButton}
-            onPress={() => router.push('/dashboard')}
-            activeOpacity={0.8}
-          >
-            <Text style={styles.dashboardButtonText}>Dashboard</Text>
-          </TouchableOpacity>
         </View>
       </View>
     </SafeAreaView>
@@ -97,9 +90,9 @@ const styles = StyleSheet.create({
   },
   orbContainer: {
     position: 'absolute',
-    top: -40,
-    right: -100,
-    opacity: 0.45,
+    top: -100,
+    right: -140,
+    opacity: 0.5,
   },
   orb: {},
   content: {

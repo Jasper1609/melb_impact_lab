@@ -22,18 +22,18 @@ interface Profile {
 const EXTRACTED_PROFILES: Profile[] = [
   {
     id: '1',
-    name: 'You',
+    name: 'Jesse',
     relation: 'Primary',
-    detail: 'Recently moved from Vietnam, looking for community',
-    initials: 'ME',
+    detail: 'Recently moved from Hong Kong, looking for community',
+    initials: 'JE',
     photo: null,
   },
   {
     id: '2',
-    name: 'Wife',
+    name: 'Partner',
     relation: 'Partner',
-    detail: 'Moving together, family support',
-    initials: 'W',
+    detail: 'Moving together, settling into Kensington',
+    initials: 'P',
     photo: null,
   },
   {

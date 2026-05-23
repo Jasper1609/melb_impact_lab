@@ -4,10 +4,10 @@ import { router } from 'expo-router';
 import { shared, colors, fonts } from '@/constants/onboarding-styles';
 
 const stats = [
-  { label: 'People nearby', value: '12,340' },
-  { label: 'Households', value: '4,820' },
-  { label: 'Median age', value: '34' },
-  { label: 'Born overseas', value: '42%' },
+  { label: 'People nearby', value: '10,830' },
+  { label: 'Households', value: '5,240' },
+  { label: 'Median age', value: '33' },
+  { label: 'Born overseas', value: '38%' },
 ];
 
 export default function NeighbourhoodScreen() {

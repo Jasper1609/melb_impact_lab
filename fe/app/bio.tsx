@@ -14,7 +14,7 @@ import { router } from 'expo-router';
 import { shared, colors, fonts } from '@/constants/onboarding-styles';
 
 const DUMMY_TRANSCRIPT =
-  "I just moved to Melbourne from Vietnam with my wife and two kids. We're looking for a good primary school nearby, and I'd love to find a local community group where we can meet other families. I also need help setting up a bank account and understanding public transport.";
+  "I just moved to Kensington from Hong Kong with my partner and two kids. We don't really know anyone here yet, so we're looking to meet people in the area. I'd love to find a good school nearby and connect with other families. We also need to set up a bank account and figure out public transport.";
 
 export default function BioScreen() {
   const [bio, setBio] = useState('');
@@ -53,7 +53,7 @@ export default function BioScreen() {
 
           <TextInput
             style={styles.textArea}
-            placeholder="I just moved to Melbourne with my family. We're looking for..."
+            placeholder="I just moved to Kensington with my family. We're looking for..."
             placeholderTextColor={colors.textTertiary}
             value={bio}
             onChangeText={setBio}
