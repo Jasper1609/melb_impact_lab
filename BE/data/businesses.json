@@ -1,0 +1,282 @@
+[
+  {
+    "place_id": "com_clue_kensington_jv_recruitment",
+    "name": "JV Recruitment Pty Ltd",
+    "formatted_address": "Level 2, 345 Arden Street, Kensington VIC 3031, Australia",
+    "geometry": {
+      "location": {
+        "lat": -37.79958542,
+        "lng": 144.93335672
+      }
+    },
+    "types": ["recruitment", "employment_services", "professional_services"],
+    "rating": null,
+    "user_ratings_total": null,
+    "business_status": "OPERATIONAL",
+    "opening_hours": null,
+    "formatted_phone_number": null,
+    "international_phone_number": null,
+    "website": null,
+    "price_level": null,
+    "editorial_summary": {
+      "overview": "Employment placement and recruitment agency operating from 345 Arden Street, Kensington. Listed in the City of Melbourne CLUE register under ANZSIC industry code 7211 (Employment Placement and Recruitment Services). Could be a useful starting point for newly-arrived skilled migrants seeking local employment connections, though credentials may apply."
+    },
+    "industry_anzsic4_code": "7211",
+    "industry_anzsic4_description": "Employment Placement and Recruitment Services",
+    "clue_small_area": "Kensington",
+    "census_year": 2024,
+    "source": "City of Melbourne CLUE 2024 - business-establishments-with-address-and-industry-classification"
+  },
+  {
+    "place_id": "com_clue_kensington_acquita_accountants",
+    "name": "Acquita Accountants",
+    "formatted_address": "Level 3, 345 Arden Street, Kensington VIC 3031, Australia",
+    "geometry": {
+      "location": {
+        "lat": -37.79958542,
+        "lng": 144.93335672
+      }
+    },
+    "types": ["accounting", "professional_services", "finance"],
+    "rating": null,
+    "user_ratings_total": null,
+    "business_status": "OPERATIONAL",
+    "opening_hours": null,
+    "formatted_phone_number": null,
+    "international_phone_number": null,
+    "website": null,
+    "price_level": null,
+    "editorial_summary": {
+      "overview": "Accounting practice in Kensington offering accounting services to local businesses and individuals. Listed in the City of Melbourne CLUE register under ANZSIC industry code 6932 (Accounting Services). Practices like this are typically the first port of call for migrants setting up an ABN, lodging a first BAS, or registering a small business."
+    },
+    "industry_anzsic4_code": "6932",
+    "industry_anzsic4_description": "Accounting Services",
+    "clue_small_area": "Kensington",
+    "census_year": 2024,
+    "source": "City of Melbourne CLUE 2024 - business-establishments-with-address-and-industry-classification"
+  },
+  {
+    "place_id": "com_clue_kensington_y_omo_gluten_free",
+    "name": "Y Omo Gluten Free",
+    "formatted_address": "102 Bakehouse Road, Kensington VIC 3031, Australia",
+    "geometry": {
+      "location": {
+        "lat": -37.79956864,
+        "lng": 144.93036435
+      }
+    },
+    "types": ["bakery", "food_manufacturing", "food"],
+    "rating": null,
+    "user_ratings_total": null,
+    "business_status": "OPERATIONAL",
+    "opening_hours": null,
+    "formatted_phone_number": null,
+    "international_phone_number": null,
+    "website": null,
+    "price_level": null,
+    "editorial_summary": {
+      "overview": "Small-scale (non-factory) gluten-free bakery on Bakehouse Road, Kensington. Listed in the CLUE register under ANZSIC code 1174. Part of the Bakehouse Road precinct which has been Kensington's food manufacturing strip since the 1970s."
+    },
+    "industry_anzsic4_code": "1174",
+    "industry_anzsic4_description": "Bakery Product Manufacturing (Non-factory based)",
+    "clue_small_area": "Kensington",
+    "census_year": 2024,
+    "source": "City of Melbourne CLUE 2024 - business-establishments-with-address-and-industry-classification"
+  },
+  {
+    "place_id": "com_clue_kensington_morgans_bakery",
+    "name": "Morgans Bakery Pty Ltd",
+    "formatted_address": "55 Bakehouse Road, Kensington VIC 3031, Australia",
+    "geometry": {
+      "location": {
+        "lat": -37.79956864,
+        "lng": 144.93036435
+      }
+    },
+    "types": ["bakery", "food_manufacturing", "food", "wholesale"],
+    "rating": null,
+    "user_ratings_total": null,
+    "business_status": "OPERATIONAL",
+    "opening_hours": null,
+    "formatted_phone_number": null,
+    "international_phone_number": null,
+    "website": null,
+    "price_level": null,
+    "editorial_summary": {
+      "overview": "Long-standing factory bakery on Bakehouse Road, the heritage industrial street that gives Kensington its bread-baking identity. Listed under ANZSIC code 1171 (Bread Manufacturing - Factory based)."
+    },
+    "industry_anzsic4_code": "1171",
+    "industry_anzsic4_description": "Bread Manufacturing (Factory based)",
+    "clue_small_area": "Kensington",
+    "census_year": 2024,
+    "source": "City of Melbourne CLUE 2024 - business-establishments-with-address-and-industry-classification"
+  },
+  {
+    "place_id": "com_clue_kensington_devour_it_catering",
+    "name": "Devour It Catering",
+    "formatted_address": "51-53 Elizabeth Street, Kensington VIC 3031, Australia",
+    "geometry": {
+      "location": {
+        "lat": -37.79847396,
+        "lng": 144.933538547
+      }
+    },
+    "types": ["catering", "food", "hospitality"],
+    "rating": null,
+    "user_ratings_total": null,
+    "business_status": "OPERATIONAL",
+    "opening_hours": null,
+    "formatted_phone_number": null,
+    "international_phone_number": null,
+    "website": null,
+    "price_level": null,
+    "editorial_summary": {
+      "overview": "Catering business on Elizabeth Street, Kensington. Listed under ANZSIC code 4513 (Catering Services). Caterers like this are common entry-level employers for newcomers with hospitality experience while they seek credential recognition in their primary field."
+    },
+    "industry_anzsic4_code": "4513",
+    "industry_anzsic4_description": "Catering Services",
+    "clue_small_area": "Kensington",
+    "census_year": 2024,
+    "source": "City of Melbourne CLUE 2024 - business-establishments-with-address-and-industry-classification"
+  },
+  {
+    "place_id": "com_clue_kensington_famished_wolf",
+    "name": "The Famished Wolf",
+    "formatted_address": "330 Arden Street, Kensington VIC 3031, Australia",
+    "geometry": {
+      "location": {
+        "lat": -37.79900382,
+        "lng": 144.934941083
+      }
+    },
+    "types": ["takeaway", "food", "restaurant", "third_place"],
+    "rating": null,
+    "user_ratings_total": null,
+    "business_status": "OPERATIONAL",
+    "opening_hours": null,
+    "formatted_phone_number": null,
+    "international_phone_number": null,
+    "website": null,
+    "price_level": null,
+    "editorial_summary": {
+      "overview": "Takeaway food venue on Arden Street, Kensington. Listed under ANZSIC code 4512. The kind of local takeaway that becomes a meeting point for new arrivals and long-term residents alike."
+    },
+    "industry_anzsic4_code": "4512",
+    "industry_anzsic4_description": "Takeaway Food Services",
+    "clue_small_area": "Kensington",
+    "census_year": 2024,
+    "source": "City of Melbourne CLUE 2024 - business-establishments-with-address-and-industry-classification"
+  },
+  {
+    "place_id": "com_clue_kensington_henry_street_brewhouse",
+    "name": "Henry Street Brewhouse",
+    "formatted_address": "Unit 5, 38 Barrett Street, Kensington VIC 3031, Australia",
+    "geometry": {
+      "location": {
+        "lat": -37.79811158,
+        "lng": 144.934323802
+      }
+    },
+    "types": ["pub", "bar", "drink", "third_place", "social"],
+    "rating": null,
+    "user_ratings_total": null,
+    "business_status": "OPERATIONAL",
+    "opening_hours": null,
+    "formatted_phone_number": null,
+    "international_phone_number": null,
+    "website": null,
+    "price_level": null,
+    "editorial_summary": {
+      "overview": "Independent brewery and pub on Barrett Street, Kensington. Listed under ANZSIC code 4520 (Pubs, Taverns and Bars). Functions as one of the suburb's social gathering spots — a 'third place' beyond home and work."
+    },
+    "industry_anzsic4_code": "4520",
+    "industry_anzsic4_description": "Pubs, Taverns and Bars",
+    "clue_small_area": "Kensington",
+    "census_year": 2024,
+    "source": "City of Melbourne CLUE 2024 - business-establishments-with-address-and-industry-classification"
+  },
+  {
+    "place_id": "com_clue_kensington_wah_lien_trading",
+    "name": "Wah Lien Trading Pty Ltd",
+    "formatted_address": "5-7 Fink Street, Kensington VIC 3031, Australia",
+    "geometry": {
+      "location": {
+        "lat": -37.79716191,
+        "lng": 144.93347101
+      }
+    },
+    "types": ["grocery", "wholesale", "food", "multicultural"],
+    "rating": null,
+    "user_ratings_total": null,
+    "business_status": "OPERATIONAL",
+    "opening_hours": null,
+    "formatted_phone_number": null,
+    "international_phone_number": null,
+    "website": null,
+    "price_level": null,
+    "editorial_summary": {
+      "overview": "Grocery wholesaling business on Fink Street, Kensington. Listed under ANZSIC code 3609 (Other Grocery Wholesaling). Wholesalers like this often supply the network of Asian and African grocers across Melbourne's inner west."
+    },
+    "industry_anzsic4_code": "3609",
+    "industry_anzsic4_description": "Other Grocery Wholesaling",
+    "clue_small_area": "Kensington",
+    "census_year": 2024,
+    "source": "City of Melbourne CLUE 2024 - business-establishments-with-address-and-industry-classification"
+  },
+  {
+    "place_id": "com_clue_kensington_irisintegration",
+    "name": "IRISINTEGRATION Pty Ltd",
+    "formatted_address": "65-67 Bakehouse Road, Kensington VIC 3031, Australia",
+    "geometry": {
+      "location": {
+        "lat": -37.79956864,
+        "lng": 144.93036435
+      }
+    },
+    "types": ["engineering", "professional_services", "consulting"],
+    "rating": null,
+    "user_ratings_total": null,
+    "business_status": "OPERATIONAL",
+    "opening_hours": null,
+    "formatted_phone_number": null,
+    "international_phone_number": null,
+    "website": null,
+    "price_level": null,
+    "editorial_summary": {
+      "overview": "Engineering design and consulting practice on Bakehouse Road, Kensington. Listed under ANZSIC code 6923 (Engineering Design and Engineering Consulting Services). Boutique engineering consultancies are a realistic landing spot for migrant engineers post-CDR, especially those open to graduate-level re-entry roles."
+    },
+    "industry_anzsic4_code": "6923",
+    "industry_anzsic4_description": "Engineering Design and Engineering Consulting Services",
+    "clue_small_area": "Kensington",
+    "census_year": 2024,
+    "source": "City of Melbourne CLUE 2024 - business-establishments-with-address-and-industry-classification"
+  },
+  {
+    "place_id": "com_clue_kensington_planet_plumbing",
+    "name": "Planet Plumbing (Vic) Pty Ltd",
+    "formatted_address": "17 McClure Road, Kensington VIC 3031, Australia",
+    "geometry": {
+      "location": {
+        "lat": -37.79956864,
+        "lng": 144.93036435
+      }
+    },
+    "types": ["plumbing", "trade_services", "home_services"],
+    "rating": null,
+    "user_ratings_total": null,
+    "business_status": "OPERATIONAL",
+    "opening_hours": null,
+    "formatted_phone_number": null,
+    "international_phone_number": null,
+    "website": null,
+    "price_level": null,
+    "editorial_summary": {
+      "overview": "Plumbing services business on McClure Road, Kensington. Listed under ANZSIC code 3231 (Plumbing Services). A practical contact for renters and first-home buyers in the suburb who need a tradesperson without having local references yet."
+    },
+    "industry_anzsic4_code": "3231",
+    "industry_anzsic4_description": "Plumbing Services",
+    "clue_small_area": "Kensington",
+    "census_year": 2024,
+    "source": "City of Melbourne CLUE 2024 - business-establishments-with-address-and-industry-classification"
+  }
+]
