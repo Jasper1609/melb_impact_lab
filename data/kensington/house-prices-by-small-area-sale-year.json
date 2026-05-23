@@ -1,0 +1,240 @@
+[
+  {
+    "sale_year": "2014",
+    "small_area": "Kensington",
+    "type": "Residential Apartment",
+    "median_price": 415000.0,
+    "transaction_count": 136
+  },
+  {
+    "sale_year": "2000",
+    "small_area": "Kensington",
+    "type": "Residential Apartment",
+    "median_price": 232500.0,
+    "transaction_count": 46
+  },
+  {
+    "sale_year": "2002",
+    "small_area": "Kensington",
+    "type": "Residential Apartment",
+    "median_price": 285000.0,
+    "transaction_count": 121
+  },
+  {
+    "sale_year": "2008",
+    "small_area": "Kensington",
+    "type": "House/Townhouse",
+    "median_price": 493000.0,
+    "transaction_count": 213
+  },
+  {
+    "sale_year": "2000",
+    "small_area": "Kensington",
+    "type": "House/Townhouse",
+    "median_price": 215250.0,
+    "transaction_count": 258
+  },
+  {
+    "sale_year": "2011",
+    "small_area": "Kensington",
+    "type": "House/Townhouse",
+    "median_price": 620500.0,
+    "transaction_count": 216
+  },
+  {
+    "sale_year": "2013",
+    "small_area": "Kensington",
+    "type": "Residential Apartment",
+    "median_price": 416500.0,
+    "transaction_count": 110
+  },
+  {
+    "sale_year": "2016",
+    "small_area": "Kensington",
+    "type": "House/Townhouse",
+    "median_price": 818750.0,
+    "transaction_count": 172
+  },
+  {
+    "sale_year": "2003",
+    "small_area": "Kensington",
+    "type": "Residential Apartment",
+    "median_price": 0.0,
+    "transaction_count": 288
+  },
+  {
+    "sale_year": "2009",
+    "small_area": "Kensington",
+    "type": "House/Townhouse",
+    "median_price": 550000.0,
+    "transaction_count": 221
+  },
+  {
+    "sale_year": "2006",
+    "small_area": "Kensington",
+    "type": "House/Townhouse",
+    "median_price": 421000.0,
+    "transaction_count": 143
+  },
+  {
+    "sale_year": "2004",
+    "small_area": "Kensington",
+    "type": "Residential Apartment",
+    "median_price": 295500.0,
+    "transaction_count": 118
+  },
+  {
+    "sale_year": "2007",
+    "small_area": "Kensington",
+    "type": "Residential Apartment",
+    "median_price": 349000.0,
+    "transaction_count": 157
+  },
+  {
+    "sale_year": "2009",
+    "small_area": "Kensington",
+    "type": "Residential Apartment",
+    "median_price": 378000.0,
+    "transaction_count": 239
+  },
+  {
+    "sale_year": "2011",
+    "small_area": "Kensington",
+    "type": "Residential Apartment",
+    "median_price": 420000.0,
+    "transaction_count": 158
+  },
+  {
+    "sale_year": "2012",
+    "small_area": "Kensington",
+    "type": "Residential Apartment",
+    "median_price": 410000.0,
+    "transaction_count": 117
+  },
+  {
+    "sale_year": "2015",
+    "small_area": "Kensington",
+    "type": "House/Townhouse",
+    "median_price": 770000.0,
+    "transaction_count": 176
+  },
+  {
+    "sale_year": "2015",
+    "small_area": "Kensington",
+    "type": "Residential Apartment",
+    "median_price": 435000.0,
+    "transaction_count": 115
+  },
+  {
+    "sale_year": "2016",
+    "small_area": "Kensington",
+    "type": "Residential Apartment",
+    "median_price": 430000.0,
+    "transaction_count": 128
+  },
+  {
+    "sale_year": "2014",
+    "small_area": "Kensington",
+    "type": "House/Townhouse",
+    "median_price": 662000.0,
+    "transaction_count": 187
+  },
+  {
+    "sale_year": "2002",
+    "small_area": "Kensington",
+    "type": "House/Townhouse",
+    "median_price": 342050.0,
+    "transaction_count": 197
+  },
+  {
+    "sale_year": "2004",
+    "small_area": "Kensington",
+    "type": "House/Townhouse",
+    "median_price": 355000.0,
+    "transaction_count": 194
+  },
+  {
+    "sale_year": "2005",
+    "small_area": "Kensington",
+    "type": "House/Townhouse",
+    "median_price": 400000.0,
+    "transaction_count": 152
+  },
+  {
+    "sale_year": "2005",
+    "small_area": "Kensington",
+    "type": "Residential Apartment",
+    "median_price": 300750.0,
+    "transaction_count": 96
+  },
+  {
+    "sale_year": "2007",
+    "small_area": "Kensington",
+    "type": "House/Townhouse",
+    "median_price": 502000.0,
+    "transaction_count": 191
+  },
+  {
+    "sale_year": "2010",
+    "small_area": "Kensington",
+    "type": "House/Townhouse",
+    "median_price": 640500.0,
+    "transaction_count": 218
+  },
+  {
+    "sale_year": "2013",
+    "small_area": "Kensington",
+    "type": "House/Townhouse",
+    "median_price": 663370.0,
+    "transaction_count": 211
+  },
+  {
+    "sale_year": "2001",
+    "small_area": "Kensington",
+    "type": "House/Townhouse",
+    "median_price": 282750.0,
+    "transaction_count": 315
+  },
+  {
+    "sale_year": "2001",
+    "small_area": "Kensington",
+    "type": "Residential Apartment",
+    "median_price": 270000.0,
+    "transaction_count": 211
+  },
+  {
+    "sale_year": "2003",
+    "small_area": "Kensington",
+    "type": "House/Townhouse",
+    "median_price": 358500.0,
+    "transaction_count": 208
+  },
+  {
+    "sale_year": "2006",
+    "small_area": "Kensington",
+    "type": "Residential Apartment",
+    "median_price": 296250.0,
+    "transaction_count": 92
+  },
+  {
+    "sale_year": "2008",
+    "small_area": "Kensington",
+    "type": "Residential Apartment",
+    "median_price": 362500.0,
+    "transaction_count": 169
+  },
+  {
+    "sale_year": "2010",
+    "small_area": "Kensington",
+    "type": "Residential Apartment",
+    "median_price": 446000.0,
+    "transaction_count": 210
+  },
+  {
+    "sale_year": "2012",
+    "small_area": "Kensington",
+    "type": "House/Townhouse",
+    "median_price": 609500.0,
+    "transaction_count": 194
+  }
+]

@@ -1,0 +1,138 @@
+[
+  {
+    "geo_point_2d": {
+      "lon": 144.924306747344,
+      "lat": -37.79662907585139
+    },
+    "geo_shape": {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          144.924306747344,
+          -37.79662907585139
+        ],
+        "type": "Point"
+      },
+      "properties": {}
+    },
+    "road_segment": null,
+    "location": "J J Holland Park approximately 51m SW of Kensington Community Recreation Centre, Kensington Community Centre, 111 Altona Street, Kensington, 3031",
+    "latitude": 144.924306747344,
+    "asset_id": 1517306,
+    "history": null,
+    "owner_type": "Owned",
+    "description": "Four-metre eels modelled on the Southern Shortfin Eel, a species native to the Yarra River so with special relevance to Melbourne. Originally they formed the two sides of a single work. Made by Mother''''s Art.<br><br>A series of 71 large artworks depicting fish was created for the opening ceremony of the 2006 Melbourne Commonwealth Games. Each representing a nation of the Commonwealth, the fish sculptures were sited along the centre of the Yarra River, where they remained for the duration of the Games. They were such a `hit' with the public that after the games the sculptures were distributed to local governments and other not for profit bodies throughout Victoria. In early 2008, this component of the series was brought back into public life with its relocation to the Kensington Community Recreation Centre; here the two eels that comprise the work serve as mascots for the junior swimming squads.",
+    "object_type": "Sculpture",
+    "art_date": "2006",
+    "inscription": null,
+    "longitude": -37.79662907585139,
+    "company": "City of Melbourne",
+    "service_manager": null,
+    "makers": "Mothers Art Productions",
+    "property": "J J Holland Park",
+    "classification": "Sculpture",
+    "title": "Commonwealth Games Aquatic Sculptures - Eels"
+  },
+  {
+    "geo_point_2d": {
+      "lon": 144.92687427968494,
+      "lat": -37.79627940870039
+    },
+    "geo_shape": {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          144.92687427968494,
+          -37.79627940870039
+        ],
+        "type": "Point"
+      },
+      "properties": {}
+    },
+    "road_segment": null,
+    "location": "Warun Biik Park approximately 39m SW of 34 Derby Street, Kensington, 3031",
+    "latitude": 144.92687427968494,
+    "asset_id": 1638161,
+    "history": null,
+    "owner_type": "Owned",
+    "description": "Created by artist Julie Gorman this sculpture depicts faces in profile taken from art works from all over the world and assembled around a steel pole. The work, suggesting a kind of world globe, responds to the idea of people from all over the world living together in one shared space. Each face is painted a different colour to create a visual effect. Passers-by can clearly see each distinct profile standing out from the others. The work was created to form part of a series of artworks located in the Kensington development.",
+    "object_type": "Sculpture",
+    "art_date": "2012",
+    "inscription": null,
+    "longitude": -37.79627940870039,
+    "company": "City of Melbourne",
+    "service_manager": null,
+    "makers": "GORMAN, Julia<br>",
+    "property": "Warun Biik Park",
+    "classification": "Sculpture",
+    "title": "Faces"
+  },
+  {
+    "geo_point_2d": {
+      "lon": 144.92393918797248,
+      "lat": -37.79020534335677
+    },
+    "geo_shape": {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          144.92393918797248,
+          -37.79020534335677
+        ],
+        "type": "Point"
+      },
+      "properties": {}
+    },
+    "road_segment": "Epsom Road between Westbourne Road and Smithfield Road",
+    "location": "Epsom Road between Westbourne Road and Smithfield Road approximately 48m North of 2 Coopers Lane, Kensington, 3031",
+    "latitude": 144.92393918797248,
+    "asset_id": 1091168,
+    "history": null,
+    "owner_type": "Owned",
+    "description": "The mural depicts the stockmen with their horses and dogs, driving sheep and cattle to market as they did for many years. <br><br>In 1992, Elizabeth MacKinnon was commissioned to create a public artwork for the old Newmarket saleyards, transformed into a residential neighbourhood as part of the state government Lynch's Bridge Project. Commissioned at a key juncture in the site's life, the mosaic recollects the saleyards' past and acknowledges its future through its two pictorially distinct parts. The mosaic mural was gifted to the City of Melbourne by the Victorian state government. Before its official unveiling at Epsom Road underpass in 1998, it toured to towns in country Victoria and was displayed at Footscray's Living Museum of the West. <br><br>The Epsom Road underpass was known as `the back gate' during the saleyards' 126-year history. The back gate was where all livestock passed following its auction, each beast counted so a fee could be levied for the City Council. It is here that the mural is sited. <br>During MacKinnon's research for the part known as `In Memory of the Newmarket Saleyards' she consulted with former stockmen and older community members to pay homage to the saleyards and to those whose working lives were structured by it. <br><br>MacKinnon worked closely with members of the new Lynch's Bridge community to devise the 12 panels comprising `To the Future'. This section of the mural expresses a sense of place for residents, ranging over their cultural and migratory heritage and referencing the history of the area's natural environment.<br>",
+    "object_type": "Mural",
+    "art_date": "1990-92",
+    "inscription": null,
+    "longitude": -37.79020534335677,
+    "company": "City of Melbourne",
+    "service_manager": "Arts & Culture Branch",
+    "makers": "McKinnon, Elizabeth",
+    "property": null,
+    "classification": "Sculpture",
+    "title": "Lynch''''s Bridge Mosaic Mural"
+  },
+  {
+    "geo_point_2d": {
+      "lon": 144.93020538561703,
+      "lat": -37.79405884375063
+    },
+    "geo_shape": {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          144.93020538561703,
+          -37.79405884375063
+        ],
+        "type": "Point"
+      },
+      "properties": {}
+    },
+    "road_segment": "Bellair Street between Macaulay Road and Wight Street",
+    "location": "Bellair Street between Macaulay Road and Wight Street approximately 3m SE of Spinifex Cafe, 192 Bellair Street, Kensington, 3031",
+    "latitude": 144.93020538561703,
+    "asset_id": 1638159,
+    "history": "The Bellair Street mosaics celebrate Kensington's strong community identity, diversity and its proud history. The mosaics were the product of a community art project undertaken in 1996 as part of a Jobskills program and led by artists Helen Bodycomb and Paul Robinson. The fifteen participants were involved in  community consultation, design, construction and laying of the mosaic tiles.",
+    "owner_type": "Owned",
+    "description": "Consists of twelve colourful circular mosaics located in the pavement of Bellair Street, Kensington representing the themes of local architecture and landmarks, cars and cows, Indigenous people,  new migrants, Flemington Racetrack, wartime in Kensington, Newmarket Saleyards, the goldrush, Maribyrnong River, local flora, fauna and the future.<br>",
+    "object_type": "Sculpture",
+    "art_date": "1996",
+    "inscription": null,
+    "longitude": -37.79405884375063,
+    "company": "City of Melbourne",
+    "service_manager": null,
+    "makers": "Helen Bodycomb, Paul Robinson and fifteen participants",
+    "property": null,
+    "classification": "Ceramic",
+    "title": "Bellair Street Mosaics"
+  }
+]

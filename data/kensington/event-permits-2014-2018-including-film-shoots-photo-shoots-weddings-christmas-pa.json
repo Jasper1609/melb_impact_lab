@@ -1,0 +1,34 @@
+[
+  {
+    "title": "Kensington Community Festival",
+    "event_start": "2017-04-01",
+    "event_end": "2017-04-02",
+    "category_1": "Public Event - Non-ticketed",
+    "category_2": null,
+    "location": "Holland Park, HP - Cricket Nets, HP - Running Track, Inner Suburb Locations"
+  },
+  {
+    "title": "Kensington Australia Day Festival",
+    "event_start": "2016-01-26",
+    "event_end": "2016-01-26",
+    "category_1": "Public Event - Non-ticketed",
+    "category_2": null,
+    "location": "Inner Suburb Locations"
+  },
+  {
+    "title": "Kensington Australia Day Festival",
+    "event_start": "2014-01-26",
+    "event_end": "2014-01-26",
+    "category_1": "Public Event - Non-ticketed",
+    "category_2": null,
+    "location": "Inner Suburb Locations"
+  },
+  {
+    "title": "Kensington Australia Day Festival",
+    "event_start": "2015-01-26",
+    "event_end": "2015-01-27",
+    "category_1": "Public Event - Non-ticketed",
+    "category_2": null,
+    "location": "Inner Suburb Locations"
+  }
+]

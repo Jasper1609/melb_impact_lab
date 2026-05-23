@@ -1,0 +1,16 @@
+[
+  {
+    "name": "Public Toilet - Toilet 173 - JJ Holland Park, Skate Park (113 Kensington Road)",
+    "female": "yes",
+    "male": "yes",
+    "wheelchair": "yes",
+    "operator": "City of Melbourne",
+    "baby_facil": "no",
+    "lat": -37.798064023886866,
+    "lon": 144.92110584392117,
+    "location": {
+      "lon": 144.92110584392117,
+      "lat": -37.798064023886866
+    }
+  }
+]

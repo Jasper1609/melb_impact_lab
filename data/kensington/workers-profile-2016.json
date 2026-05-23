@@ -1,0 +1,1602 @@
+[
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Age",
+    "sub_category": "40-49 years",
+    "sub_order": 4,
+    "value": 1229
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Age",
+    "sub_category": "70-79 years",
+    "sub_order": 7,
+    "value": 88
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Age and gender",
+    "sub_category": "Female 15-19 years",
+    "sub_order": 11,
+    "value": 71
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Age and gender",
+    "sub_category": "Female 70-79 years",
+    "sub_order": 17,
+    "value": 33
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Age and gender",
+    "sub_category": "Female 100 years and over",
+    "sub_order": 20,
+    "value": 0
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Country of birth - detailed",
+    "sub_category": "England",
+    "sub_order": 4,
+    "value": 169
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Country of birth - detailed",
+    "sub_category": "Sri Lanka",
+    "sub_order": 9,
+    "value": 53
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Country of birth - detailed",
+    "sub_category": "Indonesia",
+    "sub_order": 17,
+    "value": 23
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Country of birth - detailed",
+    "sub_category": "Italy",
+    "sub_order": 9,
+    "value": 53
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Language spoken at home - detailed",
+    "sub_category": "Hindi",
+    "sub_order": 7,
+    "value": 90
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Industry",
+    "sub_category": "Manufacturing",
+    "sub_order": 6,
+    "value": 414
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Industry",
+    "sub_category": "Information Media and Telecommunications",
+    "sub_order": 13,
+    "value": 88
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Industry",
+    "sub_category": "Professional, Scientific and Technical Services",
+    "sub_order": 2,
+    "value": 773
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Occupation",
+    "sub_category": "Not stated",
+    "sub_order": 10,
+    "value": 37
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Personal weekly income - detailed",
+    "sub_category": "Nil income",
+    "sub_order": 2,
+    "value": 21
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Personal weekly income - detailed",
+    "sub_category": "$500 - $649",
+    "sub_order": 7,
+    "value": 462
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Single mode of travel to work",
+    "sub_category": "Tram",
+    "sub_order": 6,
+    "value": 44
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Single mode of travel to work",
+    "sub_category": "Taxi",
+    "sub_order": 10,
+    "value": 11
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Single mode of travel to work",
+    "sub_category": "Other",
+    "sub_order": 12,
+    "value": 29
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Single mode of travel to work",
+    "sub_category": "Not applicable",
+    "sub_order": 16,
+    "value": 0
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Multiple modes of travel to work",
+    "sub_category": "Car, as passenger",
+    "sub_order": 4,
+    "value": 185
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Population",
+    "sub_category": "Total workers",
+    "sub_order": 1,
+    "value": 5713
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Age",
+    "sub_category": "90-99 years",
+    "sub_order": 9,
+    "value": 0
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Age and gender",
+    "sub_category": "Male 15-19 years",
+    "sub_order": 1,
+    "value": 72
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Age and gender",
+    "sub_category": "Male 50-59 years",
+    "sub_order": 5,
+    "value": 538
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Age and gender",
+    "sub_category": "Female 40-49 years",
+    "sub_order": 14,
+    "value": 539
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Country of birth - detailed",
+    "sub_category": "Pakistan",
+    "sub_order": 11,
+    "value": 33
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Country of birth - overview",
+    "sub_category": "Overseas",
+    "sub_order": 2,
+    "value": 2148
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Personal weekly income - overview",
+    "sub_category": "Less than $500 (Low)",
+    "sub_order": 1,
+    "value": 909
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Age and gender",
+    "sub_category": "Female 20-29 years",
+    "sub_order": 12,
+    "value": 597
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Country of birth - detailed",
+    "sub_category": "Singapore",
+    "sub_order": 18,
+    "value": 18
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Country of birth - detailed",
+    "sub_category": "Other countries",
+    "sub_order": 21,
+    "value": 628
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Country of birth - detailed",
+    "sub_category": "Not stated",
+    "sub_order": 23,
+    "value": 67
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Language spoken at home - detailed",
+    "sub_category": "Italian",
+    "sub_order": 4,
+    "value": 137
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Language spoken at home - detailed",
+    "sub_category": "Punjabi",
+    "sub_order": 6,
+    "value": 103
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Industry",
+    "sub_category": "Electricity, Gas, Water and Waste Services",
+    "sub_order": 17,
+    "value": 4
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Industry",
+    "sub_category": "Transport, Postal and Warehousing",
+    "sub_order": 8,
+    "value": 266
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Industry",
+    "sub_category": "Education and Training",
+    "sub_order": 11,
+    "value": 207
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Occupation",
+    "sub_category": "Machinery Operators and Drivers",
+    "sub_order": 8,
+    "value": 285
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Personal weekly income - detailed",
+    "sub_category": "$150 - $299",
+    "sub_order": 4,
+    "value": 232
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Personal weekly income - detailed",
+    "sub_category": "$650 - $799",
+    "sub_order": 8,
+    "value": 589
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Personal weekly income - detailed",
+    "sub_category": "$1,000 - $1,249",
+    "sub_order": 10,
+    "value": 860
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Level of education",
+    "sub_category": "Diploma Level",
+    "sub_order": 10,
+    "value": 393
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Single mode of travel to work",
+    "sub_category": "Not stated",
+    "sub_order": 15,
+    "value": 56
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Multiple modes of travel to work",
+    "sub_category": "Tram",
+    "sub_order": 6,
+    "value": 55
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Indigenous status",
+    "sub_category": "Torres Strait Islander",
+    "sub_order": 3,
+    "value": 0
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Age",
+    "sub_category": "20-29 years",
+    "sub_order": 2,
+    "value": 1305
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Age and gender",
+    "sub_category": "Male 80-89 years",
+    "sub_order": 8,
+    "value": 3
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Country of birth - detailed",
+    "sub_category": "Australia",
+    "sub_order": 1,
+    "value": 3492
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Country of birth - detailed",
+    "sub_category": "New Zealand",
+    "sub_order": 6,
+    "value": 151
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Country of birth - detailed",
+    "sub_category": "United States of America",
+    "sub_order": 13,
+    "value": 29
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Country of birth - detailed",
+    "sub_category": "Nepal",
+    "sub_order": 18,
+    "value": 18
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Language spoken at home - detailed",
+    "sub_category": "Korean",
+    "sub_order": 20,
+    "value": 7
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Language spoken at home - detailed",
+    "sub_category": "Not stated",
+    "sub_order": 22,
+    "value": 20
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Industry",
+    "sub_category": "Agriculture, Forestry and Fishing",
+    "sub_order": 15,
+    "value": 42
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Industry",
+    "sub_category": "Construction",
+    "sub_order": 7,
+    "value": 297
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Industry",
+    "sub_category": "Other Services",
+    "sub_order": 19,
+    "value": 220
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Occupation",
+    "sub_category": "Clerical and Administrative Workers",
+    "sub_order": 4,
+    "value": 759
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Personal weekly income - detailed",
+    "sub_category": "$1 - $149",
+    "sub_order": 3,
+    "value": 142
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Level of education",
+    "sub_category": "Certificate Level, nfd",
+    "sub_order": 11,
+    "value": 108
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Single mode of travel to work",
+    "sub_category": "Train",
+    "sub_order": 2,
+    "value": 379
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Single mode of travel to work",
+    "sub_category": "Bus",
+    "sub_order": 6,
+    "value": 44
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Single mode of travel to work",
+    "sub_category": "Car, as driver",
+    "sub_order": 1,
+    "value": 3589
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Single mode of travel to work",
+    "sub_category": "Did not go to work",
+    "sub_order": 14,
+    "value": 511
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Indigenous status",
+    "sub_category": "Non-Indigenous",
+    "sub_order": 1,
+    "value": 5676
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Personal weekly income - overview",
+    "sub_category": "Not stated",
+    "sub_order": 4,
+    "value": 92
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Country of birth - overview",
+    "sub_category": "Australia",
+    "sub_order": 1,
+    "value": 3492
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Gender",
+    "sub_category": "Male",
+    "sub_order": 1,
+    "value": 3204
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Age",
+    "sub_category": "100 years and over",
+    "sub_order": 10,
+    "value": 0
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Age and gender",
+    "sub_category": "Male 20-29 years",
+    "sub_order": 2,
+    "value": 706
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Age and gender",
+    "sub_category": "Male 60-69 years",
+    "sub_order": 6,
+    "value": 252
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Country of birth - detailed",
+    "sub_category": "Inadequately described",
+    "sub_order": 22,
+    "value": 3
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Language spoken at home - detailed",
+    "sub_category": "Tamil",
+    "sub_order": 19,
+    "value": 18
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Language spoken at home - detailed",
+    "sub_category": "Arabic",
+    "sub_order": 9,
+    "value": 74
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Language spoken at home - detailed",
+    "sub_category": "French",
+    "sub_order": 18,
+    "value": 21
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Proficiency in English",
+    "sub_category": "Speaks other language and speaks English: Not at all",
+    "sub_order": 5,
+    "value": 11
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Industry",
+    "sub_category": "Retail Trade",
+    "sub_order": 4,
+    "value": 508
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Industry",
+    "sub_category": "Administrative and Support Services",
+    "sub_order": 9,
+    "value": 220
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Industry",
+    "sub_category": "Public Administration and Safety",
+    "sub_order": 12,
+    "value": 169
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Industry",
+    "sub_category": "Inadequately described",
+    "sub_order": 20,
+    "value": 249
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Occupation",
+    "sub_category": "Managers",
+    "sub_order": 3,
+    "value": 843
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Occupation",
+    "sub_category": "Professionals",
+    "sub_order": 1,
+    "value": 1128
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Personal weekly income - detailed",
+    "sub_category": "Negative income",
+    "sub_order": 1,
+    "value": 8
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Personal weekly income - detailed",
+    "sub_category": "$300 - $399",
+    "sub_order": 5,
+    "value": 234
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Personal weekly income - detailed",
+    "sub_category": "$400 - $499",
+    "sub_order": 6,
+    "value": 272
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Personal weekly income - detailed",
+    "sub_category": "Not stated",
+    "sub_order": 16,
+    "value": 92
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Level of education",
+    "sub_category": "Graduate Certificate Level",
+    "sub_order": 6,
+    "value": 20
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Level of education",
+    "sub_category": "Advanced Diploma and Associate Degree Level",
+    "sub_order": 9,
+    "value": 285
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Single mode of travel to work",
+    "sub_category": "Walked only",
+    "sub_order": 3,
+    "value": 200
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Multiple modes of travel to work",
+    "sub_category": "Motorbike/ scooter",
+    "sub_order": 8,
+    "value": 21
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Multiple modes of travel to work",
+    "sub_category": "Worked at home",
+    "sub_order": 10,
+    "value": 208
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Language spoken at home - overview",
+    "sub_category": "Not stated",
+    "sub_order": 3,
+    "value": 20
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Labour force status - detailed",
+    "sub_category": "Employed, worked full-time",
+    "sub_order": 1,
+    "value": 3660
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Age",
+    "sub_category": "30-39 years",
+    "sub_order": 3,
+    "value": 1538
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Age",
+    "sub_category": "60-69 years",
+    "sub_order": 6,
+    "value": 423
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Age and gender",
+    "sub_category": "Male 90-99 years",
+    "sub_order": 9,
+    "value": 0
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Age and gender",
+    "sub_category": "Female 80-89 years",
+    "sub_order": 18,
+    "value": 0
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Country of birth - detailed",
+    "sub_category": "Malaysia",
+    "sub_order": 8,
+    "value": 56
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Country of birth - detailed",
+    "sub_category": "Korea, Republic of (South)",
+    "sub_order": 20,
+    "value": 13
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Proficiency in English",
+    "sub_category": "Speaks other language and speaks English: Not well",
+    "sub_order": 4,
+    "value": 120
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Proficiency in English",
+    "sub_category": "Not stated - both language and proficiency not stated",
+    "sub_order": 6,
+    "value": 7
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Industry",
+    "sub_category": "Wholesale Trade",
+    "sub_order": 10,
+    "value": 213
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Industry",
+    "sub_category": "Financial and Insurance Services",
+    "sub_order": 16,
+    "value": 28
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Industry",
+    "sub_category": "Arts and Recreation Services",
+    "sub_order": 1,
+    "value": 894
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Industry",
+    "sub_category": "Not stated",
+    "sub_order": 21,
+    "value": 63
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Occupation",
+    "sub_category": "Technicians and Trades Workers",
+    "sub_order": 2,
+    "value": 899
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Occupation",
+    "sub_category": "Inadequately described",
+    "sub_order": 9,
+    "value": 60
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Personal weekly income - detailed",
+    "sub_category": "$3,000 or more",
+    "sub_order": 15,
+    "value": 241
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Level of education",
+    "sub_category": "Graduate Diploma Level",
+    "sub_order": 5,
+    "value": 120
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Single mode of travel to work",
+    "sub_category": "Motorbike/scooter",
+    "sub_order": 9,
+    "value": 21
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Single mode of travel to work",
+    "sub_category": "Bicycle",
+    "sub_order": 5,
+    "value": 108
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Single mode of travel to work",
+    "sub_category": "Worked at home",
+    "sub_order": 13,
+    "value": 208
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Multiple modes of travel to work",
+    "sub_category": "Train",
+    "sub_order": 2,
+    "value": 630
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Multiple modes of travel to work",
+    "sub_category": "Car, as driver",
+    "sub_order": 1,
+    "value": 3625
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Multiple modes of travel to work",
+    "sub_category": "Walked only",
+    "sub_order": 3,
+    "value": 200
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Age and gender",
+    "sub_category": "Male 30-39 years",
+    "sub_order": 3,
+    "value": 884
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Age and gender",
+    "sub_category": "Male 40-49 years",
+    "sub_order": 4,
+    "value": 683
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Age and gender",
+    "sub_category": "Male 70-79 years",
+    "sub_order": 7,
+    "value": 59
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Country of birth - detailed",
+    "sub_category": "China (excludes SARs and Taiwan)",
+    "sub_order": 5,
+    "value": 162
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Country of birth - detailed",
+    "sub_category": "Philippines",
+    "sub_order": 7,
+    "value": 112
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Language spoken at home - detailed",
+    "sub_category": "Mandarin",
+    "sub_order": 3,
+    "value": 171
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Language spoken at home - detailed",
+    "sub_category": "Vietnamese",
+    "sub_order": 2,
+    "value": 208
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Language spoken at home - detailed",
+    "sub_category": "Telugu",
+    "sub_order": 12,
+    "value": 36
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Language spoken at home - detailed",
+    "sub_category": "Filipino",
+    "sub_order": 16,
+    "value": 27
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Need for assistance with core activities",
+    "sub_category": "Not stated",
+    "sub_order": 3,
+    "value": 54
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Industry",
+    "sub_category": "Mining",
+    "sub_order": 18,
+    "value": 3
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Industry",
+    "sub_category": "Health Care and Social Assistance",
+    "sub_order": 3,
+    "value": 519
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Level of education",
+    "sub_category": "Postgraduate Degree Level, nfd",
+    "sub_order": 1,
+    "value": 6
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Level of education",
+    "sub_category": "Bachelor Degree Level",
+    "sub_order": 7,
+    "value": 1428
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Level of education",
+    "sub_category": "Level of education not stated",
+    "sub_order": 15,
+    "value": 102
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Level of education",
+    "sub_category": "Not applicable",
+    "sub_order": 16,
+    "value": 1801
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Multiple modes of travel to work",
+    "sub_category": "Bus",
+    "sub_order": 7,
+    "value": 47
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Multiple modes of travel to work",
+    "sub_category": "Did not go to work",
+    "sub_order": 11,
+    "value": 511
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Indigenous status",
+    "sub_category": "Both Aboriginal and Torres Strait Islander",
+    "sub_order": 4,
+    "value": 3
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Language spoken at home - overview",
+    "sub_category": "English",
+    "sub_order": 1,
+    "value": 3829
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Personal weekly income - overview",
+    "sub_category": "$500 - $1,749 (Moderate)",
+    "sub_order": 2,
+    "value": 3781
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Personal weekly income - overview",
+    "sub_category": "$1,750 or more (High)",
+    "sub_order": 3,
+    "value": 930
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Gender",
+    "sub_category": "Female",
+    "sub_order": 2,
+    "value": 2507
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Age",
+    "sub_category": "80-89 years",
+    "sub_order": 8,
+    "value": 3
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Country of birth - detailed",
+    "sub_category": "India",
+    "sub_order": 2,
+    "value": 315
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Country of birth - detailed",
+    "sub_category": "Vietnam",
+    "sub_order": 3,
+    "value": 208
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Language spoken at home - detailed",
+    "sub_category": "Spanish",
+    "sub_order": 10,
+    "value": 73
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Language spoken at home - detailed",
+    "sub_category": "Indonesian",
+    "sub_order": 17,
+    "value": 24
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Proficiency in English",
+    "sub_category": "Not stated - language stated, proficiency not stated",
+    "sub_order": 7,
+    "value": 16
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Industry",
+    "sub_category": "Accommodation and Food Services",
+    "sub_order": 5,
+    "value": 449
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Occupation",
+    "sub_category": "Not applicable",
+    "sub_order": 11,
+    "value": 0
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Level of education",
+    "sub_category": "Doctoral Degree Level",
+    "sub_order": 2,
+    "value": 48
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Level of education",
+    "sub_category": "Graduate Diploma and Graduate Certificate Level, nfd",
+    "sub_order": 4,
+    "value": 8
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Single mode of travel to work",
+    "sub_category": "Truck",
+    "sub_order": 8,
+    "value": 23
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Multiple modes of travel to work",
+    "sub_category": "Bicycle",
+    "sub_order": 5,
+    "value": 108
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Age and gender",
+    "sub_category": "Male 100 years and over",
+    "sub_order": 10,
+    "value": 0
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Country of birth - detailed",
+    "sub_category": "South Africa",
+    "sub_order": 16,
+    "value": 25
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Country of birth - detailed",
+    "sub_category": "Hong Kong (SAR of China)",
+    "sub_order": 12,
+    "value": 30
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Country of birth - detailed",
+    "sub_category": "Scotland",
+    "sub_order": 14,
+    "value": 26
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Language spoken at home - detailed",
+    "sub_category": "Tagalog",
+    "sub_order": 11,
+    "value": 65
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Language spoken at home - detailed",
+    "sub_category": "Urdu",
+    "sub_order": 14,
+    "value": 35
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Need for assistance with core activities",
+    "sub_category": "Has need for assistance with core activities",
+    "sub_order": 1,
+    "value": 47
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Need for assistance with core activities",
+    "sub_category": "Does not have need for assistance with core activities",
+    "sub_order": 2,
+    "value": 5617
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Occupation",
+    "sub_category": "Labourers",
+    "sub_order": 5,
+    "value": 696
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Personal weekly income - detailed",
+    "sub_category": "$1,250 - $1,499",
+    "sub_order": 11,
+    "value": 613
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Single mode of travel to work",
+    "sub_category": "Ferry",
+    "sub_order": 11,
+    "value": 0
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Multiple modes of travel to work",
+    "sub_category": "Other transport method combinations",
+    "sub_order": 9,
+    "value": 63
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Indigenous status",
+    "sub_category": "Not stated",
+    "sub_order": 5,
+    "value": 20
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Age and gender",
+    "sub_category": "Female 50-59 years",
+    "sub_order": 15,
+    "value": 440
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Language spoken at home - detailed",
+    "sub_category": "English",
+    "sub_order": 1,
+    "value": 3829
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Language spoken at home - detailed",
+    "sub_category": "Gujarati",
+    "sub_order": 14,
+    "value": 35
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Industry",
+    "sub_category": "Not applicable",
+    "sub_order": 22,
+    "value": 0
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Level of education",
+    "sub_category": "Certificate I & II Level",
+    "sub_order": 13,
+    "value": 55
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Country of birth - overview",
+    "sub_category": "Not stated/ inadequately described",
+    "sub_order": 3,
+    "value": 70
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Age",
+    "sub_category": "15-19 years",
+    "sub_order": 1,
+    "value": 144
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Age",
+    "sub_category": "50-59 years",
+    "sub_order": 5,
+    "value": 975
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Age and gender",
+    "sub_category": "Female 30-39 years",
+    "sub_order": 13,
+    "value": 654
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Age and gender",
+    "sub_category": "Female 60-69 years",
+    "sub_order": 16,
+    "value": 172
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Age and gender",
+    "sub_category": "Female 90-99 years",
+    "sub_order": 19,
+    "value": 0
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Country of birth - detailed",
+    "sub_category": "Ireland",
+    "sub_order": 14,
+    "value": 26
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Language spoken at home - detailed",
+    "sub_category": "Cantonese",
+    "sub_order": 5,
+    "value": 133
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Language spoken at home - detailed",
+    "sub_category": "Greek",
+    "sub_order": 7,
+    "value": 90
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Language spoken at home - detailed",
+    "sub_category": "Sinhalese",
+    "sub_order": 14,
+    "value": 35
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Language spoken at home - detailed",
+    "sub_category": "Other languages",
+    "sub_order": 21,
+    "value": 426
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Proficiency in English",
+    "sub_category": "Speaks English only",
+    "sub_order": 1,
+    "value": 3829
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Proficiency in English",
+    "sub_category": "Speaks other language and speaks English: Very well",
+    "sub_order": 2,
+    "value": 1146
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Proficiency in English",
+    "sub_category": "Speaks other language and speaks English: Well",
+    "sub_order": 3,
+    "value": 586
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Industry",
+    "sub_category": "Rental, Hiring and Real Estate Services",
+    "sub_order": 14,
+    "value": 76
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Occupation",
+    "sub_category": "Community and Personal Service Workers",
+    "sub_order": 6,
+    "value": 622
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Occupation",
+    "sub_category": "Sales Workers",
+    "sub_order": 7,
+    "value": 375
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Personal weekly income - detailed",
+    "sub_category": "$800 - $999",
+    "sub_order": 9,
+    "value": 804
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Personal weekly income - detailed",
+    "sub_category": "$1,500 - $1,749",
+    "sub_order": 12,
+    "value": 453
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Personal weekly income - detailed",
+    "sub_category": "$1,750 - $1,999",
+    "sub_order": 13,
+    "value": 257
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Personal weekly income - detailed",
+    "sub_category": "$2,000 - $2,999",
+    "sub_order": 14,
+    "value": 432
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Personal weekly income - detailed",
+    "sub_category": "Not applicable",
+    "sub_order": 17,
+    "value": 0
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Level of education",
+    "sub_category": "Master Degree Level",
+    "sub_order": 3,
+    "value": 418
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Level of education",
+    "sub_category": "Advanced Diploma and Diploma Level, nfd",
+    "sub_order": 8,
+    "value": 3
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Level of education",
+    "sub_category": "Certificate III & IV Level",
+    "sub_order": 12,
+    "value": 863
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Level of education",
+    "sub_category": "Level of education inadequately described",
+    "sub_order": 14,
+    "value": 55
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Single mode of travel to work",
+    "sub_category": "Car, as passenger",
+    "sub_order": 4,
+    "value": 185
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Multiple modes of travel to work",
+    "sub_category": "Not stated",
+    "sub_order": 12,
+    "value": 56
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Indigenous status",
+    "sub_category": "Aboriginal",
+    "sub_order": 2,
+    "value": 15
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Language spoken at home - overview",
+    "sub_category": "Non-English language",
+    "sub_order": 2,
+    "value": 1808
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Labour force status - detailed",
+    "sub_category": "Employed, worked part-time",
+    "sub_order": 2,
+    "value": 1794
+  },
+  {
+    "profile": "Kensington",
+    "census_year": "2016",
+    "category": "Labour force status - detailed",
+    "sub_category": "Employed, away from work",
+    "sub_order": 3,
+    "value": 261
+  }
+]

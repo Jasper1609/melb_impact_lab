@@ -1,0 +1,843 @@
+[
+  {
+    "census_year": "2008",
+    "block_id": 2530,
+    "property_id": "616160",
+    "base_property_id": "616160",
+    "building_address": "265-271 Racecourse Road KENSINGTON 3031",
+    "clue_small_area": "Kensington",
+    "trading_name": "The Quiet Man Irish Pub",
+    "business_address": "265-271 Racecourse Road KENSINGTON 3031",
+    "number_of_patrons": 400,
+    "longitude": 144.932355877,
+    "latitude": -37.78860982,
+    "location": {
+      "lon": 144.932355877,
+      "lat": -37.78860982
+    }
+  },
+  {
+    "census_year": "2010",
+    "block_id": 2530,
+    "property_id": "616160",
+    "base_property_id": "616160",
+    "building_address": "265-271 Racecourse Road KENSINGTON 3031",
+    "clue_small_area": "Kensington",
+    "trading_name": "The Quiet Man Irish Pub",
+    "business_address": "265-271 Racecourse Road KENSINGTON 3031",
+    "number_of_patrons": 400,
+    "longitude": 144.932355877,
+    "latitude": -37.78860982,
+    "location": {
+      "lon": 144.932355877,
+      "lat": -37.78860982
+    }
+  },
+  {
+    "census_year": "2012",
+    "block_id": 2530,
+    "property_id": "616160",
+    "base_property_id": "616160",
+    "building_address": "265-271 Racecourse Road KENSINGTON 3031",
+    "clue_small_area": "Kensington",
+    "trading_name": "The Quiet Man Irish Pub",
+    "business_address": "265-271 Racecourse Road KENSINGTON 3031",
+    "number_of_patrons": 400,
+    "longitude": 144.932355877,
+    "latitude": -37.78860982,
+    "location": {
+      "lon": 144.932355877,
+      "lat": -37.78860982
+    }
+  },
+  {
+    "census_year": "2013",
+    "block_id": 2530,
+    "property_id": "616125",
+    "base_property_id": "616125",
+    "building_address": "25-27 Rankins Road KENSINGTON 3031",
+    "clue_small_area": "Kensington",
+    "trading_name": "Flemington & Kensington RSL Club",
+    "business_address": "25-27 Rankins Road KENSINGTON 3031",
+    "number_of_patrons": 90,
+    "longitude": 144.932195285,
+    "latitude": -37.78932218,
+    "location": {
+      "lon": 144.932195285,
+      "lat": -37.78932218
+    }
+  },
+  {
+    "census_year": "2013",
+    "block_id": 2530,
+    "property_id": "616160",
+    "base_property_id": "616160",
+    "building_address": "265-271 Racecourse Road KENSINGTON 3031",
+    "clue_small_area": "Kensington",
+    "trading_name": "The Quiet Man Irish Pub",
+    "business_address": "265-271 Racecourse Road KENSINGTON 3031",
+    "number_of_patrons": 400,
+    "longitude": 144.932355877,
+    "latitude": -37.78860982,
+    "location": {
+      "lon": 144.932355877,
+      "lat": -37.78860982
+    }
+  },
+  {
+    "census_year": "2014",
+    "block_id": 2530,
+    "property_id": "616160",
+    "base_property_id": "616160",
+    "building_address": "265-271 Racecourse Road KENSINGTON 3031",
+    "clue_small_area": "Kensington",
+    "trading_name": "The Quiet Man Irish Pub",
+    "business_address": "265-271 Racecourse Road KENSINGTON 3031",
+    "number_of_patrons": 400,
+    "longitude": 144.932355877,
+    "latitude": -37.78860982,
+    "location": {
+      "lon": 144.932355877,
+      "lat": -37.78860982
+    }
+  },
+  {
+    "census_year": "2015",
+    "block_id": 2530,
+    "property_id": "616125",
+    "base_property_id": "616125",
+    "building_address": "25-27 Rankins Road KENSINGTON 3031",
+    "clue_small_area": "Kensington",
+    "trading_name": "Flemington & Kensington RSL Club",
+    "business_address": "25-27 Rankins Road KENSINGTON 3031",
+    "number_of_patrons": 90,
+    "longitude": 144.932195285,
+    "latitude": -37.78932218,
+    "location": {
+      "lon": 144.932195285,
+      "lat": -37.78932218
+    }
+  },
+  {
+    "census_year": "2017",
+    "block_id": 508,
+    "property_id": "100820",
+    "base_property_id": "100820",
+    "building_address": "38-44 Barrett Street KENSINGTON 3031",
+    "clue_small_area": "Kensington",
+    "trading_name": "Henry St Brewhouse",
+    "business_address": "Unit 5, 38 Barrett Street KENSINGTON 3031",
+    "number_of_patrons": 75,
+    "longitude": 144.934323842,
+    "latitude": -37.79811158,
+    "location": {
+      "lon": 144.934323842,
+      "lat": -37.79811158
+    }
+  },
+  {
+    "census_year": "2018",
+    "block_id": 508,
+    "property_id": "100820",
+    "base_property_id": "100820",
+    "building_address": "38-44 Barrett Street KENSINGTON 3031",
+    "clue_small_area": "Kensington",
+    "trading_name": "Henry St Brewhouse",
+    "business_address": "Unit 5, 38 Barrett Street KENSINGTON 3031",
+    "number_of_patrons": 75,
+    "longitude": 144.934323842,
+    "latitude": -37.79811158,
+    "location": {
+      "lon": 144.934323842,
+      "lat": -37.79811158
+    }
+  },
+  {
+    "census_year": "2018",
+    "block_id": 2530,
+    "property_id": "616160",
+    "base_property_id": "616160",
+    "building_address": "265-271 Racecourse Road KENSINGTON 3031",
+    "clue_small_area": "Kensington",
+    "trading_name": "The Quiet Man Irishman  Pub",
+    "business_address": "265-271 Racecourse Road KENSINGTON 3031",
+    "number_of_patrons": 400,
+    "longitude": 144.932355877,
+    "latitude": -37.78860982,
+    "location": {
+      "lon": 144.932355877,
+      "lat": -37.78860982
+    }
+  },
+  {
+    "census_year": "2019",
+    "block_id": 2538,
+    "property_id": "616156",
+    "base_property_id": "616156",
+    "building_address": "40-48 Stubbs Street KENSINGTON VIC 3031",
+    "clue_small_area": "Kensington",
+    "trading_name": "Bonehead Brewing",
+    "business_address": "86 Parsons Street KENSINGTON VIC 3031",
+    "number_of_patrons": 80,
+    "longitude": 144.935190465,
+    "latitude": -37.79045392,
+    "location": {
+      "lon": 144.935190465,
+      "lat": -37.79045392
+    }
+  },
+  {
+    "census_year": "2020",
+    "block_id": 2538,
+    "property_id": "616156",
+    "base_property_id": "616156",
+    "building_address": "40-48 Stubbs Street KENSINGTON VIC 3031",
+    "clue_small_area": "Kensington",
+    "trading_name": "Bonehead Brewing",
+    "business_address": "86 Parsons Street KENSINGTON VIC 3031",
+    "number_of_patrons": 80,
+    "longitude": 144.935190465,
+    "latitude": -37.79045392,
+    "location": {
+      "lon": 144.935190465,
+      "lat": -37.79045392
+    }
+  },
+  {
+    "census_year": "2021",
+    "block_id": 508,
+    "property_id": "100820",
+    "base_property_id": "100820",
+    "building_address": "38-44 Barrett Street KENSINGTON VIC 3031",
+    "clue_small_area": "Kensington",
+    "trading_name": "Henry St Brewhouse",
+    "business_address": "Unit 5, 38 Barrett Street KENSINGTON VIC 3031",
+    "number_of_patrons": 75,
+    "longitude": 144.934323842,
+    "latitude": -37.79811158,
+    "location": {
+      "lon": 144.934323842,
+      "lat": -37.79811158
+    }
+  },
+  {
+    "census_year": "2021",
+    "block_id": 2530,
+    "property_id": "616125",
+    "base_property_id": "616125",
+    "building_address": "RSL 25-27 Rankins Road KENSINGTON VIC 3031",
+    "clue_small_area": "Kensington",
+    "trading_name": "Flemington & Kensington RSL Club",
+    "business_address": "RSL 25-27 Rankins Road KENSINGTON VIC 3031",
+    "number_of_patrons": 90,
+    "longitude": 144.932195285,
+    "latitude": -37.78932218,
+    "location": {
+      "lon": 144.932195285,
+      "lat": -37.78932218
+    }
+  },
+  {
+    "census_year": "2021",
+    "block_id": 2538,
+    "property_id": "616156",
+    "base_property_id": "616156",
+    "building_address": "40-48 Stubbs Street KENSINGTON VIC 3031",
+    "clue_small_area": "Kensington",
+    "trading_name": "Bonehead Brewing",
+    "business_address": "86 Parsons Street KENSINGTON VIC 3031",
+    "number_of_patrons": 80,
+    "longitude": 144.935190465,
+    "latitude": -37.79045392,
+    "location": {
+      "lon": 144.935190465,
+      "lat": -37.79045392
+    }
+  },
+  {
+    "census_year": "2022",
+    "block_id": 508,
+    "property_id": "100820",
+    "base_property_id": "100820",
+    "building_address": "38-44 Barrett Street KENSINGTON VIC 3031",
+    "clue_small_area": "Kensington",
+    "trading_name": "Henry St Brewhouse",
+    "business_address": "Unit 5, 38 Barrett Street KENSINGTON VIC 3031",
+    "number_of_patrons": 75,
+    "longitude": 144.934323842,
+    "latitude": -37.79811158,
+    "location": {
+      "lon": 144.934323842,
+      "lat": -37.79811158
+    }
+  },
+  {
+    "census_year": "2022",
+    "block_id": 2530,
+    "property_id": "616125",
+    "base_property_id": "616125",
+    "building_address": "RSL 25-27 Rankins Road KENSINGTON VIC 3031",
+    "clue_small_area": "Kensington",
+    "trading_name": "Flemington & Kensington RSL Club",
+    "business_address": "RSL 25-27 Rankins Road KENSINGTON VIC 3031",
+    "number_of_patrons": 90,
+    "longitude": 144.932195285,
+    "latitude": -37.78932218,
+    "location": {
+      "lon": 144.932195285,
+      "lat": -37.78932218
+    }
+  },
+  {
+    "census_year": "2023",
+    "block_id": 2530,
+    "property_id": "616125",
+    "base_property_id": "616125",
+    "building_address": "RSL 25-27 Rankins Road KENSINGTON VIC 3031",
+    "clue_small_area": "Kensington",
+    "trading_name": "Flemington & Kensington RSL Club",
+    "business_address": "RSL 25-27 Rankins Road KENSINGTON VIC 3031",
+    "number_of_patrons": 90,
+    "longitude": 144.93219524,
+    "latitude": -37.78932218,
+    "location": {
+      "lon": 144.93219524,
+      "lat": -37.78932218
+    }
+  },
+  {
+    "census_year": "2023",
+    "block_id": 2538,
+    "property_id": "616156",
+    "base_property_id": "616156",
+    "building_address": "40-48 Stubbs Street KENSINGTON VIC 3031",
+    "clue_small_area": "Kensington",
+    "trading_name": "Bonehead Brewing",
+    "business_address": "86-90 Parsons Street KENSINGTON VIC 3031",
+    "number_of_patrons": 80,
+    "longitude": 144.935190416,
+    "latitude": -37.79045391,
+    "location": {
+      "lon": 144.935190416,
+      "lat": -37.79045391
+    }
+  },
+  {
+    "census_year": "2024",
+    "block_id": 2530,
+    "property_id": "616125",
+    "base_property_id": "616125",
+    "building_address": "RSL 25-27 Rankins Road KENSINGTON VIC 3031",
+    "clue_small_area": "Kensington",
+    "trading_name": "Flemington & Kensington RSL Club",
+    "business_address": "RSL 25-27 Rankins Road KENSINGTON VIC 3031",
+    "number_of_patrons": 90,
+    "longitude": 144.93219524,
+    "latitude": -37.78932218,
+    "location": {
+      "lon": 144.93219524,
+      "lat": -37.78932218
+    }
+  },
+  {
+    "census_year": "2024",
+    "block_id": 2530,
+    "property_id": "616160",
+    "base_property_id": "616160",
+    "building_address": "The Quiet Man Hotel 265-271 Racecourse Road KENSINGTON VIC 3031",
+    "clue_small_area": "Kensington",
+    "trading_name": "The Quiet Man Irishman Pub",
+    "business_address": "The Quiet Man Hotel 265-271 Racecourse Road KENSINGTON VIC 3031",
+    "number_of_patrons": 400,
+    "longitude": 144.932355831,
+    "latitude": -37.78860982,
+    "location": {
+      "lon": 144.932355831,
+      "lat": -37.78860982
+    }
+  },
+  {
+    "census_year": "2009",
+    "block_id": 2530,
+    "property_id": "616160",
+    "base_property_id": "616160",
+    "building_address": "265-271 Racecourse Road KENSINGTON 3031",
+    "clue_small_area": "Kensington",
+    "trading_name": "The Quiet Man Irish Pub",
+    "business_address": "265-271 Racecourse Road KENSINGTON 3031",
+    "number_of_patrons": 400,
+    "longitude": 144.932355877,
+    "latitude": -37.78860982,
+    "location": {
+      "lon": 144.932355877,
+      "lat": -37.78860982
+    }
+  },
+  {
+    "census_year": "2010",
+    "block_id": 2530,
+    "property_id": "616125",
+    "base_property_id": "616125",
+    "building_address": "25-27 Rankins Road KENSINGTON 3031",
+    "clue_small_area": "Kensington",
+    "trading_name": "Flemington & Kensington RSL Club",
+    "business_address": "25-27 Rankins Road KENSINGTON 3031",
+    "number_of_patrons": 90,
+    "longitude": 144.932195285,
+    "latitude": -37.78932218,
+    "location": {
+      "lon": 144.932195285,
+      "lat": -37.78932218
+    }
+  },
+  {
+    "census_year": "2011",
+    "block_id": 2530,
+    "property_id": "616125",
+    "base_property_id": "616125",
+    "building_address": "25-27 Rankins Road KENSINGTON 3031",
+    "clue_small_area": "Kensington",
+    "trading_name": "Flemington & Kensington RSL Club",
+    "business_address": "25-27 Rankins Road KENSINGTON 3031",
+    "number_of_patrons": 90,
+    "longitude": 144.932195285,
+    "latitude": -37.78932218,
+    "location": {
+      "lon": 144.932195285,
+      "lat": -37.78932218
+    }
+  },
+  {
+    "census_year": "2012",
+    "block_id": 2530,
+    "property_id": "616125",
+    "base_property_id": "616125",
+    "building_address": "25-27 Rankins Road KENSINGTON 3031",
+    "clue_small_area": "Kensington",
+    "trading_name": "Flemington & Kensington RSL Club",
+    "business_address": "25-27 Rankins Road KENSINGTON 3031",
+    "number_of_patrons": 90,
+    "longitude": 144.932195285,
+    "latitude": -37.78932218,
+    "location": {
+      "lon": 144.932195285,
+      "lat": -37.78932218
+    }
+  },
+  {
+    "census_year": "2015",
+    "block_id": 2523,
+    "property_id": "614830",
+    "base_property_id": "614830",
+    "building_address": "524 Macaulay Road KENSINGTON 3031",
+    "clue_small_area": "Kensington",
+    "trading_name": "Lost and Found",
+    "business_address": "524 Macaulay Road KENSINGTON 3031",
+    "number_of_patrons": 40,
+    "longitude": 144.92863306,
+    "latitude": -37.79404162,
+    "location": {
+      "lon": 144.92863306,
+      "lat": -37.79404162
+    }
+  },
+  {
+    "census_year": "2015",
+    "block_id": 2530,
+    "property_id": "616160",
+    "base_property_id": "616160",
+    "building_address": "265-271 Racecourse Road KENSINGTON 3031",
+    "clue_small_area": "Kensington",
+    "trading_name": "The Quiet Man Irish Pub",
+    "business_address": "265-271 Racecourse Road KENSINGTON 3031",
+    "number_of_patrons": 400,
+    "longitude": 144.932355877,
+    "latitude": -37.78860982,
+    "location": {
+      "lon": 144.932355877,
+      "lat": -37.78860982
+    }
+  },
+  {
+    "census_year": "2019",
+    "block_id": 508,
+    "property_id": "100820",
+    "base_property_id": "100820",
+    "building_address": "38-44 Barrett Street KENSINGTON VIC 3031",
+    "clue_small_area": "Kensington",
+    "trading_name": "Henry St Brewhouse",
+    "business_address": "Unit 5, 38 Barrett Street KENSINGTON VIC 3031",
+    "number_of_patrons": 75,
+    "longitude": 144.934323842,
+    "latitude": -37.79811158,
+    "location": {
+      "lon": 144.934323842,
+      "lat": -37.79811158
+    }
+  },
+  {
+    "census_year": "2020",
+    "block_id": 2530,
+    "property_id": "616125",
+    "base_property_id": "616125",
+    "building_address": "RSL 25-27 Rankins Road KENSINGTON VIC 3031",
+    "clue_small_area": "Kensington",
+    "trading_name": "Flemington & Kensington RSL Club",
+    "business_address": "RSL 25-27 Rankins Road KENSINGTON VIC 3031",
+    "number_of_patrons": 90,
+    "longitude": 144.932195285,
+    "latitude": -37.78932218,
+    "location": {
+      "lon": 144.932195285,
+      "lat": -37.78932218
+    }
+  },
+  {
+    "census_year": "2021",
+    "block_id": 2530,
+    "property_id": "616160",
+    "base_property_id": "616160",
+    "building_address": "The Quiet Man Hotel 265-271 Racecourse Road KENSINGTON VIC 3031",
+    "clue_small_area": "Kensington",
+    "trading_name": "The Quiet Man Irish Pub",
+    "business_address": "The Quiet Man Hotel 265-271 Racecourse Road KENSINGTON VIC 3031",
+    "number_of_patrons": 400,
+    "longitude": 144.932355877,
+    "latitude": -37.78860982,
+    "location": {
+      "lon": 144.932355877,
+      "lat": -37.78860982
+    }
+  },
+  {
+    "census_year": "2023",
+    "block_id": 508,
+    "property_id": "100820",
+    "base_property_id": "100820",
+    "building_address": "38-44 Barrett Street KENSINGTON VIC 3031",
+    "clue_small_area": "Kensington",
+    "trading_name": "Henry Street Brewhouse",
+    "business_address": "Unit 5, 38 Barrett Street KENSINGTON VIC 3031",
+    "number_of_patrons": 75,
+    "longitude": 144.934323802,
+    "latitude": -37.79811158,
+    "location": {
+      "lon": 144.934323802,
+      "lat": -37.79811158
+    }
+  },
+  {
+    "census_year": "2024",
+    "block_id": 508,
+    "property_id": "100820",
+    "base_property_id": "100820",
+    "building_address": "38-44 Barrett Street KENSINGTON VIC 3031",
+    "clue_small_area": "Kensington",
+    "trading_name": "Henry Street Brewhouse",
+    "business_address": "Unit 5, 38 Barrett Street KENSINGTON VIC 3031",
+    "number_of_patrons": 75,
+    "longitude": 144.934323802,
+    "latitude": -37.79811158,
+    "location": {
+      "lon": 144.934323802,
+      "lat": -37.79811158
+    }
+  },
+  {
+    "census_year": "2008",
+    "block_id": 2530,
+    "property_id": "616125",
+    "base_property_id": "616125",
+    "building_address": "25-27 Rankins Road KENSINGTON 3031",
+    "clue_small_area": "Kensington",
+    "trading_name": "Flemington & Kensington RSL Club",
+    "business_address": "25-27 Rankins Road KENSINGTON 3031",
+    "number_of_patrons": 90,
+    "longitude": 144.932195285,
+    "latitude": -37.78932218,
+    "location": {
+      "lon": 144.932195285,
+      "lat": -37.78932218
+    }
+  },
+  {
+    "census_year": "2009",
+    "block_id": 2530,
+    "property_id": "616125",
+    "base_property_id": "616125",
+    "building_address": "25-27 Rankins Road KENSINGTON 3031",
+    "clue_small_area": "Kensington",
+    "trading_name": "Flemington & Kensington RSL Club",
+    "business_address": "25-27 Rankins Road KENSINGTON 3031",
+    "number_of_patrons": 90,
+    "longitude": 144.932195285,
+    "latitude": -37.78932218,
+    "location": {
+      "lon": 144.932195285,
+      "lat": -37.78932218
+    }
+  },
+  {
+    "census_year": "2011",
+    "block_id": 2530,
+    "property_id": "616160",
+    "base_property_id": "616160",
+    "building_address": "265-271 Racecourse Road KENSINGTON 3031",
+    "clue_small_area": "Kensington",
+    "trading_name": "The Quiet Man Irish Pub",
+    "business_address": "265-271 Racecourse Road KENSINGTON 3031",
+    "number_of_patrons": 400,
+    "longitude": 144.932355877,
+    "latitude": -37.78860982,
+    "location": {
+      "lon": 144.932355877,
+      "lat": -37.78860982
+    }
+  },
+  {
+    "census_year": "2014",
+    "block_id": 2530,
+    "property_id": "616125",
+    "base_property_id": "616125",
+    "building_address": "25-27 Rankins Road KENSINGTON 3031",
+    "clue_small_area": "Kensington",
+    "trading_name": "Flemington & Kensington RSL Club",
+    "business_address": "25-27 Rankins Road KENSINGTON 3031",
+    "number_of_patrons": 90,
+    "longitude": 144.932195285,
+    "latitude": -37.78932218,
+    "location": {
+      "lon": 144.932195285,
+      "lat": -37.78932218
+    }
+  },
+  {
+    "census_year": "2016",
+    "block_id": 2523,
+    "property_id": "614830",
+    "base_property_id": "614830",
+    "building_address": "524 Macaulay Road KENSINGTON 3031",
+    "clue_small_area": "Kensington",
+    "trading_name": "Lost and Found",
+    "business_address": "524 Macaulay Road KENSINGTON 3031",
+    "number_of_patrons": 40,
+    "longitude": null,
+    "latitude": null,
+    "location": null
+  },
+  {
+    "census_year": "2016",
+    "block_id": 2530,
+    "property_id": "616125",
+    "base_property_id": "616125",
+    "building_address": "25-27 Rankins Road KENSINGTON 3031",
+    "clue_small_area": "Kensington",
+    "trading_name": "Flemington & Kensington RSL Club",
+    "business_address": "25-27 Rankins Road KENSINGTON 3031",
+    "number_of_patrons": 90,
+    "longitude": null,
+    "latitude": null,
+    "location": null
+  },
+  {
+    "census_year": "2016",
+    "block_id": 2530,
+    "property_id": "616160",
+    "base_property_id": "616160",
+    "building_address": "265-271 Racecourse Road KENSINGTON 3031",
+    "clue_small_area": "Kensington",
+    "trading_name": "The Quiet Man Irish Pub",
+    "business_address": "265-271 Racecourse Road KENSINGTON 3031",
+    "number_of_patrons": 400,
+    "longitude": null,
+    "latitude": null,
+    "location": null
+  },
+  {
+    "census_year": "2017",
+    "block_id": 2530,
+    "property_id": "616125",
+    "base_property_id": "616125",
+    "building_address": "25-27 Rankins Road KENSINGTON 3031",
+    "clue_small_area": "Kensington",
+    "trading_name": "Flemington & Kensington RSL Club",
+    "business_address": "25-27 Rankins Road KENSINGTON 3031",
+    "number_of_patrons": 90,
+    "longitude": 144.932195285,
+    "latitude": -37.78932218,
+    "location": {
+      "lon": 144.932195285,
+      "lat": -37.78932218
+    }
+  },
+  {
+    "census_year": "2017",
+    "block_id": 2530,
+    "property_id": "616160",
+    "base_property_id": "616160",
+    "building_address": "265-271 Racecourse Road KENSINGTON 3031",
+    "clue_small_area": "Kensington",
+    "trading_name": "The Quiet Man Irishman  Pub",
+    "business_address": "265-271 Racecourse Road KENSINGTON 3031",
+    "number_of_patrons": 400,
+    "longitude": 144.932355877,
+    "latitude": -37.78860982,
+    "location": {
+      "lon": 144.932355877,
+      "lat": -37.78860982
+    }
+  },
+  {
+    "census_year": "2018",
+    "block_id": 2530,
+    "property_id": "616125",
+    "base_property_id": "616125",
+    "building_address": "25-27 Rankins Road KENSINGTON 3031",
+    "clue_small_area": "Kensington",
+    "trading_name": "Flemington & Kensington RSL Club",
+    "business_address": "25-27 Rankins Road KENSINGTON 3031",
+    "number_of_patrons": 90,
+    "longitude": 144.932195285,
+    "latitude": -37.78932218,
+    "location": {
+      "lon": 144.932195285,
+      "lat": -37.78932218
+    }
+  },
+  {
+    "census_year": "2019",
+    "block_id": 2530,
+    "property_id": "616125",
+    "base_property_id": "616125",
+    "building_address": "RSL 25-27 Rankins Road KENSINGTON VIC 3031",
+    "clue_small_area": "Kensington",
+    "trading_name": "Flemington & Kensington RSL Club",
+    "business_address": "RSL 25-27 Rankins Road KENSINGTON VIC 3031",
+    "number_of_patrons": 90,
+    "longitude": 144.932195285,
+    "latitude": -37.78932218,
+    "location": {
+      "lon": 144.932195285,
+      "lat": -37.78932218
+    }
+  },
+  {
+    "census_year": "2019",
+    "block_id": 2530,
+    "property_id": "616160",
+    "base_property_id": "616160",
+    "building_address": "The Quiet Man Hotel 265-271 Racecourse Road KENSINGTON VIC 3031",
+    "clue_small_area": "Kensington",
+    "trading_name": "The Quiet Man Irishman  Pub",
+    "business_address": "The Quiet Man Hotel 265-271 Racecourse Road KENSINGTON VIC 3031",
+    "number_of_patrons": 400,
+    "longitude": 144.932355877,
+    "latitude": -37.78860982,
+    "location": {
+      "lon": 144.932355877,
+      "lat": -37.78860982
+    }
+  },
+  {
+    "census_year": "2020",
+    "block_id": 508,
+    "property_id": "100820",
+    "base_property_id": "100820",
+    "building_address": "38-44 Barrett Street KENSINGTON VIC 3031",
+    "clue_small_area": "Kensington",
+    "trading_name": "Henry St Brewhouse",
+    "business_address": "Unit 5, 38 Barrett Street KENSINGTON VIC 3031",
+    "number_of_patrons": 75,
+    "longitude": 144.934323842,
+    "latitude": -37.79811158,
+    "location": {
+      "lon": 144.934323842,
+      "lat": -37.79811158
+    }
+  },
+  {
+    "census_year": "2020",
+    "block_id": 2530,
+    "property_id": "616160",
+    "base_property_id": "616160",
+    "building_address": "The Quiet Man Hotel 265-271 Racecourse Road KENSINGTON VIC 3031",
+    "clue_small_area": "Kensington",
+    "trading_name": "The Quiet Man Irishman  Pub",
+    "business_address": "The Quiet Man Hotel 265-271 Racecourse Road KENSINGTON VIC 3031",
+    "number_of_patrons": 400,
+    "longitude": 144.932355877,
+    "latitude": -37.78860982,
+    "location": {
+      "lon": 144.932355877,
+      "lat": -37.78860982
+    }
+  },
+  {
+    "census_year": "2022",
+    "block_id": 2530,
+    "property_id": "616160",
+    "base_property_id": "616160",
+    "building_address": "The Quiet Man Hotel 265-271 Racecourse Road KENSINGTON VIC 3031",
+    "clue_small_area": "Kensington",
+    "trading_name": "The Quiet Man Irish Pub",
+    "business_address": "The Quiet Man Hotel 265-271 Racecourse Road KENSINGTON VIC 3031",
+    "number_of_patrons": 400,
+    "longitude": 144.932355877,
+    "latitude": -37.78860982,
+    "location": {
+      "lon": 144.932355877,
+      "lat": -37.78860982
+    }
+  },
+  {
+    "census_year": "2022",
+    "block_id": 2538,
+    "property_id": "616156",
+    "base_property_id": "616156",
+    "building_address": "40-48 Stubbs Street KENSINGTON VIC 3031",
+    "clue_small_area": "Kensington",
+    "trading_name": "Bonehead Brewing",
+    "business_address": "86 Parsons Street KENSINGTON VIC 3031",
+    "number_of_patrons": 80,
+    "longitude": 144.935190465,
+    "latitude": -37.79045392,
+    "location": {
+      "lon": 144.935190465,
+      "lat": -37.79045392
+    }
+  },
+  {
+    "census_year": "2023",
+    "block_id": 2530,
+    "property_id": "616160",
+    "base_property_id": "616160",
+    "building_address": "The Quiet Man Hotel 265-271 Racecourse Road KENSINGTON VIC 3031",
+    "clue_small_area": "Kensington",
+    "trading_name": "The Quiet Man Irishman Pub",
+    "business_address": "The Quiet Man Hotel 265-271 Racecourse Road KENSINGTON VIC 3031",
+    "number_of_patrons": 400,
+    "longitude": 144.932355831,
+    "latitude": -37.78860982,
+    "location": {
+      "lon": 144.932355831,
+      "lat": -37.78860982
+    }
+  },
+  {
+    "census_year": "2024",
+    "block_id": 2538,
+    "property_id": "616156",
+    "base_property_id": "616156",
+    "building_address": "40-48 Stubbs Street KENSINGTON VIC 3031",
+    "clue_small_area": "Kensington",
+    "trading_name": "Bonehead Brewing",
+    "business_address": "86-90 Parsons Street KENSINGTON VIC 3031",
+    "number_of_patrons": 80,
+    "longitude": 144.935190416,
+    "latitude": -37.79045391,
+    "location": {
+      "lon": 144.935190416,
+      "lat": -37.79045391
+    }
+  }
+]

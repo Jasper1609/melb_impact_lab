@@ -1,0 +1,38 @@
+[
+  {
+    "theme": "Transport",
+    "sub_theme": "Railway Station",
+    "feature_name": "South Kensington Railway Station",
+    "co_ordinates": {
+      "lon": 144.925837749713,
+      "lat": -37.7997270537735
+    }
+  },
+  {
+    "theme": "Education Centre",
+    "sub_theme": "Primary Schools",
+    "feature_name": "Kensington Primary School",
+    "co_ordinates": {
+      "lon": 144.927108735461,
+      "lat": -37.7925235045455
+    }
+  },
+  {
+    "theme": "Transport",
+    "sub_theme": "Railway Station",
+    "feature_name": "Kensington Railway Station",
+    "co_ordinates": {
+      "lon": 144.930710207518,
+      "lat": -37.7939140126373
+    }
+  },
+  {
+    "theme": "Place of Worship",
+    "sub_theme": "Church",
+    "feature_name": "Christ Church Kensington",
+    "co_ordinates": {
+      "lon": 144.92729572288,
+      "lat": -37.7932109480553
+    }
+  }
+]

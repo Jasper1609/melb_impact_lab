@@ -1,0 +1,40 @@
+[
+  {
+    "asset_type": "Art",
+    "name": "Commonwealth Games Aquatic Sculptures - Eels",
+    "xorg": "City of Melbourne",
+    "xsource": "MCC - Ground Ortho Image March 2008",
+    "address_point": "Kensington Community Recreation Centre, KENSINGTON",
+    "artist": "unknown",
+    "alternate_name": null,
+    "art_date": "2006",
+    "mel_way_ref": "42, J3",
+    "respective_author": "City Of Melbourne",
+    "structure": "Painted steel sculptures",
+    "co_ordinates": {
+      "lon": 144.924306764698,
+      "lat": -37.7966290593729
+    },
+    "easting": 317247.51149,
+    "northing": 5814719.73186
+  },
+  {
+    "asset_type": "Art",
+    "name": "Lynch's Bridge Mosaic Mural",
+    "xorg": "City of Melbourne",
+    "xsource": "MCC - Ground Ortho Image March 2008",
+    "address_point": "Epsom Road Underpass, KENSINGTON",
+    "artist": "Elizabeth MacKinnon",
+    "alternate_name": "The Black Gate",
+    "art_date": "1998",
+    "mel_way_ref": "42,_J2",
+    "respective_author": "City of Melbourne",
+    "structure": "Ceramic tile mural",
+    "co_ordinates": {
+      "lon": 144.92393918587,
+      "lat": -37.7902053576258
+    },
+    "easting": 317199.30985,
+    "northing": 5815431.82841
+  }
+]

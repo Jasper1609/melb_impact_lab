@@ -1,0 +1,22 @@
+[
+  {
+    "ref": 563554,
+    "name": "Kensington Community Children's Co-Operative",
+    "contact_ph": "03 9376 4565",
+    "url": "http://www.kccc.org.au",
+    "coordinates": {
+      "lon": 144.92552634,
+      "lat": -37.79710602
+    }
+  },
+  {
+    "ref": 616152,
+    "name": "Kids Club Kensington Early Learning Centre",
+    "contact_ph": "13 0054 3725",
+    "url": null,
+    "coordinates": {
+      "lon": 144.93548036,
+      "lat": -37.79120041
+    }
+  }
+]

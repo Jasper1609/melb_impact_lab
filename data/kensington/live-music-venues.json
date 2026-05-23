@@ -1,0 +1,30 @@
+[
+  {
+    "property_number": 616043,
+    "venue_name": "White Rabbit Record Bar",
+    "venue_address": "176 Bellair Street, Kensington, 3031",
+    "space_type": "Bar",
+    "website": "http://www.whiterabbitrecords.com.au/White_Rabbit_Record_Bar/home.html",
+    "lat": -37.79363079251513,
+    "lon": 144.9300832037398,
+    "location": "POINT (144.93008320374 -37.793630792515)",
+    "geolocation": {
+      "lon": 144.9300832037398,
+      "lat": -37.79363079251513
+    }
+  },
+  {
+    "property_number": 106329,
+    "venue_name": "Hardimans Hotel",
+    "venue_address": "521 Macaulay Road, Kensington, 3031",
+    "space_type": "Hotel",
+    "website": "http://www.hardimans.com.au/",
+    "lat": -37.79436125976925,
+    "lon": 144.92860315925475,
+    "location": "POINT (144.928603159255 -37.794361259769)",
+    "geolocation": {
+      "lon": 144.92860315925475,
+      "lat": -37.79436125976925
+    }
+  }
+]
