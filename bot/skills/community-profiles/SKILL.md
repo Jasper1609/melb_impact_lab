@@ -13,6 +13,8 @@ metadata:
 
 # Community Profiles
 
+**DEPRECATED: Use the `tapestry-retrieval` skill instead.** Profile lookup is handled by the Tapestry BE service via the `/profile/by-phone` endpoint. Do not read or write local `/opt/data/profiles.json`. The BE service is the source of truth for user profiles.
+
 Manages user profiles that are built up naturally through conversation. Profiles allow Tapestry to personalise recommendations and remember context across sessions.
 
 ## Storage

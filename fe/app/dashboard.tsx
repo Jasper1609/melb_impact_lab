@@ -1,5 +1,4 @@
 import {
-  Linking,
   ScrollView,
   StyleSheet,
   Text,
@@ -10,9 +9,6 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import { router } from 'expo-router';
 import { colors, fonts } from '@/constants/onboarding-styles';
 import { CATEGORIES } from '@/constants/plan-data';
-
-const WHATSAPP_NUMBER = '61456455551';
-const WHATSAPP_PREFILL = "Hi, I'm Matthew from Kensington. I just set up Tapestry.";
 
 const NEXT_STEPS = [
   {
@@ -52,21 +48,6 @@ export default function DashboardScreen() {
         <Text style={styles.subtitle}>
           Here's what Tapestry found for you and your family.
         </Text>
-
-        {/* WhatsApp CTA */}
-        <TouchableOpacity
-          style={styles.whatsappBar}
-          onPress={() => {
-            const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(WHATSAPP_PREFILL)}`;
-            Linking.openURL(url);
-          }}
-          activeOpacity={0.7}
-        >
-          <Text style={styles.whatsappLabel}>Message Tapestry on WhatsApp</Text>
-          <View style={styles.conciergeSend}>
-            <Text style={styles.conciergeSendIcon}>{'\u2191'}</Text>
-          </View>
-        </TouchableOpacity>
 
         {/* Next Steps */}
         <Text style={styles.sectionTitle}>Next steps</Text>
@@ -146,37 +127,6 @@ const styles = StyleSheet.create({
     lineHeight: 24,
     letterSpacing: 0.1,
     marginBottom: 20,
-  },
-  // WhatsApp bar
-  whatsappBar: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    backgroundColor: '#25D366',
-    borderRadius: 24,
-    paddingLeft: 16,
-    paddingRight: 6,
-    height: 48,
-    marginBottom: 28,
-  },
-  whatsappLabel: {
-    flex: 1,
-    fontSize: 15,
-    fontWeight: '500',
-    color: '#ffffff',
-    letterSpacing: 0.1,
-  },
-  conciergeSend: {
-    width: 34,
-    height: 34,
-    borderRadius: 17,
-    backgroundColor: colors.text,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  conciergeSendIcon: {
-    fontSize: 18,
-    color: '#fdfcfc',
-    fontWeight: '600',
   },
   sectionTitle: {
     fontSize: 14,

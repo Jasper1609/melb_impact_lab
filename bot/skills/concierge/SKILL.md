@@ -13,6 +13,8 @@ metadata:
 
 # Tapestry Community Companion
 
+**DEPRECATED: Use the `tapestry-retrieval` skill instead.** All user messages should be delegated to the Tapestry BE service via HTTP. Do not use this skill or its local JSON file lookups. The BE service handles profile lookup, onboarding, and retrieval with real City of Melbourne data.
+
 Helps newcomers and migrants to Melbourne discover community resources, groups, events, and practical local knowledge through WhatsApp.
 
 ## Reference files
