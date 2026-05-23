@@ -107,5 +107,23 @@
     "interests": "Helping migrant families navigate the Victorian school system, homework club, Vietnamese-Australian community history, dragon boat racing at Albert Park.",
     "offering": "Free guidance for migrant parents on enrolling kids in Victorian primary/secondary schools, navigating NAPLAN, accessing free tutoring. Vietnamese and English. Open invitation to the Saturday homework club at Kensington Library \u2014 bring your kids.",
     "opt_in_matching": true
+  },
+  {
+    "id": "k6f9bdd7-7a6c-4b8f-cj1i-6f7a8b9c0d1e",
+    "name": "Fiona Lai",
+    "email": "fiona.lai@example.com",
+    "phone_number": "61456455551",
+    "age": 33,
+    "postcode": "3031",
+    "suburb": "Kensington",
+    "lat": -37.7940,
+    "lng": 144.9270,
+    "country_of_origin": "Hong Kong",
+    "languages": ["en", "zh", "yue"],
+    "occupation": "Graphic designer (freelance, rebuilding client base)",
+    "background": "Moved to Kensington six weeks ago from Hong Kong with her husband and daughter (age 6). Worked as a senior graphic designer at a branding agency in Wan Chai for 8 years. Now freelancing remotely for Hong Kong clients while building a local portfolio. Daughter starting at Kensington Primary next term. Speaks fluent English, Cantonese, and Mandarin.",
+    "interests": "Enrolling daughter in primary school, finding local design and creative community, weekend markets, Cantonese-speaking families nearby, good dim sum.",
+    "offering": "Graphic design and branding help for small businesses or community groups. Cantonese and Mandarin translation. Would love to run calligraphy workshops if there's interest.",
+    "opt_in_matching": true
   }
 ]

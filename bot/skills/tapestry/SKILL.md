@@ -186,9 +186,9 @@ prose — never paste raw JSON back to the user.
 - **Voice messages** are auto-transcribed by faster-whisper. Treat the
   transcribed text exactly like a typed message. If transcription is empty
   or garbled, ask once if they meant to send something.
-- **Non-English messages** — reply in the user's language. The Python
-  tools embed English narratives, so phrase the `--query` in English even
-  if the user wrote in Vietnamese.
+- **Non-English messages** — always reply in English. The Python tools
+  embed English narratives, so phrase the `--query` in English regardless
+  of what language the user wrote in.
 - **Unknown postcode** — if `upsert_profile.py` gets a postcode not in our
   centroid lookup, it stores it without lat/lng. Search tools will still
   fail until a known postcode is captured. Default known postcodes:
