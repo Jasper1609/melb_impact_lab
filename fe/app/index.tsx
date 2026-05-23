@@ -1,0 +1,117 @@
+import { useEffect, useState } from 'react';
+import { Animated, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
+import { router } from 'expo-router';
+import { colors } from '@/constants/onboarding-styles';
+
+const greetings = [
+  { welcome: 'Welcome', cta: 'Get Started' },
+  { welcome: '\u6B22\u8FCE', cta: '\u5F00\u59CB' },
+  { welcome: '\u0623\u0647\u0644\u0627\u064B \u0648\u0633\u0647\u0644\u0627\u064B', cta: '\u0627\u0628\u062F\u0623' },
+  { welcome: 'Ch\u00E0o m\u1EEBng', cta: 'B\u1EAFt \u0111\u1EA7u' },
+  { welcome: '\u0938\u094D\u0935\u093E\u0917\u0924', cta: '\u0936\u0941\u0930\u0942 \u0915\u0930\u0947\u0902' },
+  { welcome: 'Bienvenido', cta: 'Comenzar' },
+  { welcome: 'Maligayang pagdating', cta: 'Magsimula' },
+  { welcome: '\uD658\uC601\uD569\uB2C8\uB2E4', cta: '\uC2DC\uC791\uD558\uAE30' },
+];
+
+export default function WelcomeScreen() {
+  const [index, setIndex] = useState(0);
+  const [fadeAnim] = useState(() => new Animated.Value(1));
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      Animated.timing(fadeAnim, {
+        toValue: 0,
+        duration: 300,
+        useNativeDriver: true,
+      }).start(() => {
+        setIndex((prev) => (prev + 1) % greetings.length);
+        Animated.timing(fadeAnim, {
+          toValue: 1,
+          duration: 300,
+          useNativeDriver: true,
+        }).start();
+      });
+    }, 2500);
+
+    return () => clearInterval(interval);
+  }, [fadeAnim]);
+
+  const current = greetings[index];
+
+  return (
+    <SafeAreaView style={styles.safe}>
+      <View style={styles.container}>
+        <View style={styles.content}>
+          <Text style={styles.brand}>Impact</Text>
+          <Animated.Text style={[styles.welcome, { opacity: fadeAnim }]}>
+            {current.welcome}
+          </Animated.Text>
+          <Text style={styles.subtitle}>
+            Connect with your new community.{'\n'}
+            Find friends, events, and resources{'\n'}
+            in your neighbourhood.
+          </Text>
+        </View>
+
+        <TouchableOpacity
+          style={styles.button}
+          onPress={() => router.push('/onboarding/language')}
+          activeOpacity={0.8}
+        >
+          <Animated.Text style={[styles.buttonText, { opacity: fadeAnim }]}>
+            {current.cta}
+          </Animated.Text>
+        </TouchableOpacity>
+      </View>
+    </SafeAreaView>
+  );
+}
+
+const styles = StyleSheet.create({
+  safe: {
+    flex: 1,
+    backgroundColor: colors.bg,
+  },
+  container: {
+    flex: 1,
+    justifyContent: 'space-between',
+    paddingHorizontal: 24,
+    paddingTop: 120,
+    paddingBottom: 32,
+  },
+  content: {
+    gap: 16,
+  },
+  brand: {
+    fontSize: 17,
+    fontWeight: '600',
+    color: colors.textTertiary,
+    textTransform: 'uppercase',
+    letterSpacing: 2,
+    marginBottom: 8,
+  },
+  welcome: {
+    fontSize: 48,
+    fontWeight: '700',
+    color: colors.text,
+    letterSpacing: -1,
+  },
+  subtitle: {
+    fontSize: 19,
+    color: colors.textSecondary,
+    lineHeight: 28,
+  },
+  button: {
+    backgroundColor: colors.buttonActive,
+    borderRadius: 14,
+    paddingVertical: 16,
+    alignItems: 'center',
+  },
+  buttonText: {
+    fontSize: 17,
+    fontWeight: '600',
+    color: '#fff',
+  },
+});
