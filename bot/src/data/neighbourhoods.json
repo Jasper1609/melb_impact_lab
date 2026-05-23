@@ -88,5 +88,14 @@
     "keySpots": ["Hampshire Road shopping precinct", "Sunshine Marketplace", "Brimbank City Council offices", "Sunshine Leisure Centre", "Kororoit Creek Trail"],
     "communityGroups": ["Brimbank City Council multicultural programs", "Sunshine Neighbourhood Centre", "Visy Cares Hub", "Brimbank Bicycle User Group"],
     "demographics": "Established Vietnamese, Indian, Filipino, and South Sudanese communities. One of Melbourne's most diverse areas with residents from over 150 countries. Growing young professional population."
+  },
+  {
+    "name": "Kensington",
+    "description": "A quiet inner-west suburb with tree-lined streets, close to the CBD and Flemington Racecourse. Small but tight-knit community with a mix of young families and long-term residents. Easy access to the city via train.",
+    "vibe": "Quiet, family-friendly, village feel, close to everything",
+    "transport": "Kensington station on the Craigieburn/Sunbury line. Tram 57 runs along Racecourse Road. Short train ride to Southern Cross and the CBD. Good cycling paths along the Moonee Ponds Creek trail.",
+    "keySpots": ["Kensington Village shops", "Macaulay Road cafes", "Flemington Racecourse", "Moonee Ponds Creek trail", "JJ Holland Park", "Kensington Community Recreation Centre"],
+    "communityGroups": ["Kensington Neighbourhood House", "Kensington Community Children's Co-operative", "Flemington and Kensington Community Legal Centre"],
+    "demographics": "Mix of young families, professionals, and established residents. Growing African and Middle Eastern communities. Close proximity to Flemington's large Horn of Africa community."
   }
 ]

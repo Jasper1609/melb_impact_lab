@@ -84,15 +84,16 @@ Rules:
 - Use `*asterisks*` for bold (resource names).
 - Use line breaks between resources.
 - Don't use markdown headers, links, or bullet points — they won't render.
-- Keep each message under 1000 characters. Split into multiple messages for longer lists.
+- Keep each message under 600 characters where possible. 1000 characters is the hard max. Split into multiple messages for longer lists.
 - Group by category with a plain text heading when listing 4+ resources.
+- Description is one sentence. No preamble before listings.
 
 ## How many to recommend
 
 | Situation | How many |
 |-----------|----------|
 | User has a specific need ("English classes in Footscray") | 1-3 best matches |
-| User is exploring ("what groups can I join") | 3-5, grouped by type |
+| User is exploring ("what groups can I join") | 2-4, grouped by type |
 | User is browsing ("what's available in my area") | Up to 5, across categories |
 | User asks for everything | List by category, max 3 per category |
 

@@ -101,6 +101,16 @@ Profiles are built up through conversation, not through a form. Extract informat
 
 Don't ask for information you don't need. Only ask for profile details when they would help you give better recommendations.
 
+## Collecting skills deliberately
+
+The `skills` field captures what a person can offer to the community, not just what they need. This is central to how Tapestry works -- newcomers are contributors, not just recipients.
+
+**Passive collection.** Extract skills from organic conversation as they come up. "I used to teach maths" -> `["maths-tutoring"]`. "I speak Arabic and English" -> `["arabic-translation"]`. "I'm a plumber" -> `["plumbing"]`. Even informal skills count: "I make great pho" -> `["cooking"]`.
+
+**Active collection.** After the bot has helped the user with at least one concrete thing (a recommendation, a resource, an answer), it can ask the skills question directly. Do not ask this during the first or second message. Frame it as community contribution: "Is there anything you enjoy doing that you'd be happy to share with people in your area?" If they decline, accept it. Do not push. Revisit naturally in a future session.
+
+**Storage format.** Store skills as short lowercase slugs: `["cooking", "maths-tutoring", "graphic-design", "arabic-translation"]`. One skill per thing they mention.
+
 ## Routing
 
 | User says | Action |
@@ -112,6 +122,8 @@ Don't ask for information you don't need. Only ask for profile details when they
 | "Forget me" / "delete my data" | Remove their profile entry (confirm first) |
 | "I speak [language]" | Update `language` field |
 | "I'm interested in [topic]" | Append to `interests` array |
+| "I can help with [topic]" / "I'm a [profession]" / "I enjoy [activity]" | Append to `skills` array as a lowercase slug |
+| "I used to [professional skill]" / "I know how to [skill]" | Append to `skills` array |
 
 ## Gotchas
 

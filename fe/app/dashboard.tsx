@@ -1,4 +1,5 @@
 import {
+  Linking,
   ScrollView,
   StyleSheet,
   Text,
@@ -9,6 +10,9 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import { router } from 'expo-router';
 import { colors, fonts } from '@/constants/onboarding-styles';
 import { CATEGORIES } from '@/constants/plan-data';
+
+const WHATSAPP_NUMBER = '61456455551';
+const WHATSAPP_PREFILL = "Hi, I'm Matthew from Kensington. I just set up Tapestry.";
 
 const NEXT_STEPS = [
   {
@@ -49,16 +53,16 @@ export default function DashboardScreen() {
           Here's what Tapestry found for you and your family.
         </Text>
 
-        {/* AI Concierge */}
+        {/* WhatsApp CTA */}
         <TouchableOpacity
-          style={styles.conciergeBar}
-          onPress={() => router.push('/concierge')}
+          style={styles.whatsappBar}
+          onPress={() => {
+            const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(WHATSAPP_PREFILL)}`;
+            Linking.openURL(url);
+          }}
           activeOpacity={0.7}
         >
-          <Text style={styles.conciergeSparkle}>{'\u2728'}</Text>
-          <Text style={styles.conciergePlaceholder}>
-            Ask Tapestry anything...
-          </Text>
+          <Text style={styles.whatsappLabel}>Message Tapestry on WhatsApp</Text>
           <View style={styles.conciergeSend}>
             <Text style={styles.conciergeSendIcon}>{'\u2191'}</Text>
           </View>
@@ -143,27 +147,22 @@ const styles = StyleSheet.create({
     letterSpacing: 0.1,
     marginBottom: 20,
   },
-  // Concierge bar
-  conciergeBar: {
+  // WhatsApp bar
+  whatsappBar: {
     flexDirection: 'row',
     alignItems: 'center',
-    backgroundColor: colors.cardBg,
+    backgroundColor: '#25D366',
     borderRadius: 24,
-    borderWidth: 1,
-    borderColor: colors.border,
     paddingLeft: 16,
     paddingRight: 6,
     height: 48,
     marginBottom: 28,
   },
-  conciergeSparkle: {
-    fontSize: 16,
-    marginRight: 10,
-  },
-  conciergePlaceholder: {
+  whatsappLabel: {
     flex: 1,
     fontSize: 15,
-    color: colors.textTertiary,
+    fontWeight: '500',
+    color: '#ffffff',
     letterSpacing: 0.1,
   },
   conciergeSend: {
