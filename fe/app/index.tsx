@@ -44,7 +44,7 @@ export default function WelcomeScreen() {
     <SafeAreaView style={styles.safe}>
       <View style={styles.container}>
         <View style={styles.content}>
-          <Text style={styles.brand}>Impact</Text>
+          <Text style={styles.brand}>Tapestry</Text>
           <Animated.Text style={[styles.welcome, { opacity: fadeAnim }]}>
             {current.welcome}
           </Animated.Text>
@@ -55,15 +55,24 @@ export default function WelcomeScreen() {
           </Text>
         </View>
 
-        <TouchableOpacity
-          style={styles.button}
-          onPress={() => router.push('/onboarding/language')}
-          activeOpacity={0.8}
-        >
-          <Animated.Text style={[styles.buttonText, { opacity: fadeAnim }]}>
-            {current.cta}
-          </Animated.Text>
-        </TouchableOpacity>
+        <View style={styles.buttonGroup}>
+          <TouchableOpacity
+            style={styles.button}
+            onPress={() => router.push('/onboarding/language')}
+            activeOpacity={0.8}
+          >
+            <Animated.Text style={[styles.buttonText, { opacity: fadeAnim }]}>
+              {current.cta}
+            </Animated.Text>
+          </TouchableOpacity>
+          <TouchableOpacity
+            style={styles.dashboardButton}
+            onPress={() => router.push('/dashboard')}
+            activeOpacity={0.8}
+          >
+            <Text style={styles.dashboardButtonText}>Dashboard</Text>
+          </TouchableOpacity>
+        </View>
       </View>
     </SafeAreaView>
   );
@@ -103,6 +112,9 @@ const styles = StyleSheet.create({
     color: colors.textSecondary,
     lineHeight: 28,
   },
+  buttonGroup: {
+    gap: 12,
+  },
   button: {
     backgroundColor: colors.buttonActive,
     borderRadius: 14,
@@ -113,5 +125,17 @@ const styles = StyleSheet.create({
     fontSize: 17,
     fontWeight: '600',
     color: '#fff',
+  },
+  dashboardButton: {
+    borderWidth: 1.5,
+    borderColor: colors.border,
+    borderRadius: 14,
+    paddingVertical: 14,
+    alignItems: 'center',
+  },
+  dashboardButtonText: {
+    fontSize: 15,
+    fontWeight: '600',
+    color: colors.textSecondary,
   },
 });

@@ -10,6 +10,7 @@ import {
   View,
 } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
+import { router } from 'expo-router';
 import { shared, colors } from '@/constants/onboarding-styles';
 
 const DUMMY_TRANSCRIPT =
@@ -114,9 +115,7 @@ export default function BioScreen() {
           <TouchableOpacity
             style={[shared.button, !bio.trim() && shared.buttonDisabled]}
             disabled={!bio.trim()}
-            onPress={() => {
-              // TODO: save bio and show detailed plan
-            }}
+            onPress={() => router.push('/profiles')}
             activeOpacity={0.8}
           >
             <Text

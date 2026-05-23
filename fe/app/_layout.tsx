@@ -9,6 +9,9 @@ export default function RootLayout() {
         <Stack.Screen name="onboarding" />
         <Stack.Screen name="loading" options={{ animation: 'fade', gestureEnabled: false }} />
         <Stack.Screen name="bio" options={{ animation: 'fade' }} />
+        <Stack.Screen name="profiles" options={{ animation: 'slide_from_right' }} />
+        <Stack.Screen name="plan" options={{ animation: 'fade', gestureEnabled: false }} />
+        <Stack.Screen name="dashboard" options={{ animation: 'fade', gestureEnabled: false }} />
       </Stack>
       <StatusBar style="dark" />
     </>
