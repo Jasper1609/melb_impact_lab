@@ -13,7 +13,7 @@ metadata:
 
 # Community Profiles
 
-Manages user profiles that are built up naturally through conversation. Profiles allow the concierge to personalise recommendations and remember context across sessions.
+Manages user profiles that are built up naturally through conversation. Profiles allow Tapestry to personalise recommendations and remember context across sessions.
 
 ## Storage
 

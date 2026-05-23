@@ -11,7 +11,7 @@ metadata:
     platforms: [linux]
 ---
 
-# Melbourne Community Concierge
+# Tapestry Community Companion
 
 Helps newcomers and migrants to Melbourne discover community resources, groups, events, and practical local knowledge through WhatsApp.
 
@@ -79,7 +79,7 @@ When a new user is detected, load `references/onboarding.md` and follow the onbo
 | "I speak [language]" / voice message in non-English | Note language in profile, filter for resources offering that language |
 | "Events this week" / "what's happening" | Search `community.json` for event category, filter by date if available |
 | "I need help with [topic]" | Match topic to resource categories, recommend relevant support services |
-| "What can you help with" / "what do you do" | Explain your role as a community concierge, list the kinds of things you can help with |
+| "What can you help with" / "what do you do" | Explain your role as Tapestry, list the kinds of things you can help with |
 
 ## Gotchas
 

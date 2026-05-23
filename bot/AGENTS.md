@@ -1,13 +1,13 @@
-# Melbourne Impact Lab - Community Concierge Bot
+# Tapestry
 
-AI-powered WhatsApp concierge that helps newcomers and migrants settle into Melbourne. Built on the Hermes Agent platform.
+AI-powered WhatsApp companion that helps newcomers and migrants settle into Melbourne. Built on the Hermes Agent platform.
 
 ## Commands
 
 ```bash
 # Build and run
-docker build -t melb-concierge .
-docker run --rm -p 8642:8642 --env-file .env -v concierge-data:/opt/data melb-concierge
+docker build -t tapestry .
+docker run --rm -p 8642:8642 --env-file .env -v tapestry-data:/opt/data tapestry
 ```
 
 - First run: scan QR code from terminal output with WhatsApp > Settings > Linked Devices
@@ -30,11 +30,11 @@ WhatsApp (Baileys)  ──▶  Hermes Gateway  ──▶  Claude API (Anthropic)
 |---|---|
 | `Dockerfile` | Extends official Hermes image, copies skills and seeds community data |
 | `entrypoint.sh` | Validates env vars, seeds community JSON data to volume on first boot |
-| `SOUL.md` | Agent identity and behaviour for the concierge persona |
+| `SOUL.md` | Agent identity and behaviour for the Tapestry persona |
 | `config.yaml.example` | Hermes config: Claude Sonnet model, WhatsApp settings, session/memory tuning |
 | `.env.example` | Required and optional environment variables |
-| `skills/concierge/SKILL.md` | Core concierge skill: onboarding flow, community resource lookup, neighbourhood matching |
-| `skills/concierge/references/` | Reference docs loaded by the concierge skill (resource lists, conversation templates) |
+| `skills/concierge/SKILL.md` | Core skill: onboarding flow, community resource lookup, neighbourhood matching |
+| `skills/concierge/references/` | Reference docs loaded by the skill (resource lists, conversation templates) |
 | `skills/community-profiles/SKILL.md` | User profile skill: tracks language, neighbourhood, interests, onboarding progress |
 | `src/data/community.json` | Community resources database: groups, services, events, contacts (50+ entries) |
 | `src/data/neighbourhoods.json` | Melbourne neighbourhood profiles: demographics, transport, services, character (10 areas) |
@@ -59,7 +59,7 @@ To update after first boot:
 2. Either rebuild and redeploy (the entrypoint re-seeds if the files are missing), or:
 3. Copy the updated file directly to the running volume at `/opt/data/data/`.
 
-The concierge skill reads these files at runtime. Changes take effect on the next conversation.
+The skill reads these files at runtime. Changes take effect on the next conversation.
 
 ### community.json structure
 

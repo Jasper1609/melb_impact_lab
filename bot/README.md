@@ -1,6 +1,6 @@
-# Melbourne Impact Lab - Community Concierge Bot
+# Tapestry
 
-An AI-powered WhatsApp concierge that helps newcomers and migrants settle into Melbourne. Built for the Melbourne Impact Lab hackathon.
+An AI-powered WhatsApp companion that helps newcomers and migrants settle into Melbourne. Built for the Melbourne Impact Lab hackathon.
 
 Send a voice message in any language and get connected to community resources, groups, events, and local knowledge in your neighbourhood.
 
@@ -50,13 +50,13 @@ WhatsApp (Baileys)  ──▶  Hermes Gateway  ──▶  Claude API (Anthropic)
 3. Build the Docker image:
 
    ```bash
-   docker build -t melb-concierge .
+   docker build -t tapestry .
    ```
 
 4. Run the container:
 
    ```bash
-   docker run --rm -p 8642:8642 --env-file .env -v concierge-data:/opt/data melb-concierge
+   docker run --rm -p 8642:8642 --env-file .env -v tapestry-data:/opt/data tapestry
    ```
 
 5. Scan the QR code that appears in the terminal:
@@ -115,9 +115,9 @@ This bot uses [Baileys](https://github.com/WhiskeySockets/Baileys), an unofficia
 
 This project was built for the [Melbourne Impact Lab](https://www.melbourneimpactlab.org/) hackathon. The problem: newcomers and migrants arriving in Melbourne face isolation, language barriers, and difficulty navigating unfamiliar systems -- housing, employment, healthcare, transport, and social connections.
 
-Inspired by Shaun Tan's wordless graphic novel [*The Arrival*](https://www.shauntan.net/arrival-book) -- which depicts the disorientation, loneliness, and eventual human connection of an immigrant in a strange new city -- the concierge is designed to be that first small act of connection. Like the book's wordless format that transcends language, voice-first design means literacy and language are not barriers.
+Inspired by Shaun Tan's wordless graphic novel [*The Arrival*](https://www.shauntan.net/arrival-book) -- which depicts the disorientation, loneliness, and eventual human connection of an immigrant in a strange new city -- Tapestry is designed to be that first small act of connection. Like the book's wordless format that transcends language, voice-first design means literacy and language are not barriers.
 
-Our approach: meet people where they already are (WhatsApp) and in their own language (voice notes). Instead of building another website or app that requires discovery and downloads, the concierge bot is a single phone number that anyone can message. The community knowledge base is curated by locals and community organisations, not scraped from the internet.
+Our approach: meet people where they already are (WhatsApp) and in their own language (voice notes). Instead of building another website or app that requires discovery and downloads, Tapestry is a single phone number that anyone can message. The community knowledge base is curated by locals and community organisations, not scraped from the internet.
 
 ## License
 
