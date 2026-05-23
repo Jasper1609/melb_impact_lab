@@ -23,6 +23,17 @@ The loop that fuses them: *share your story, get your plan, get connected, contr
 
 Portable by design: a fixed engine plus a swappable city **data pack**. Melbourne is data pack #1.
 
+## Screenshots
+
+<table>
+  <tr>
+    <td align="center"><img src="docs/screenshots/01-welcome.jpeg" width="200" alt="Welcome screen"><br/><sub>Welcome (multilingual)</sub></td>
+    <td align="center"><img src="docs/screenshots/02-language.jpeg" width="200" alt="Choose your language"><br/><sub>Step 1 · Choose your language</sub></td>
+    <td align="center"><img src="docs/screenshots/03-neighbourhood.jpeg" width="200" alt="Your neighbourhood"><br/><sub>Step 6 · Your neighbourhood</sub></td>
+    <td align="center"><img src="docs/screenshots/04-looking-for.jpeg" width="200" alt="What are you looking for"><br/><sub>Step 7 · What are you looking for?</sub></td>
+  </tr>
+</table>
+
 ## How it fits together
 
 The mobile app and the WhatsApp bot are two front doors into the same brain. Both talk to the Python backend, where a Claude agent runs hybrid retrieval over real City of Melbourne open data and a curated profile database.
