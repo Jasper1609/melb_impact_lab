@@ -2,6 +2,8 @@
 
 *Verified against the actual CSVs in `/data` on 2026-05-23. Row counts and fields are real, not from the catalogue.*
 
+> **These are COMPLETE datasets, not samples.** Verified three ways: each local CSV row count exactly equals the catalogue's official `records_count`, and the live CoM API confirms the totals (e.g., childcare = 29, playgrounds = 45). The local 20k-row cap truncated only a few giants we don't use (e.g. `street-furniture`); cafés (66k) was a full pull. So "thin" numbers are **real**, caused by (a) the small inner-city LGA scope and (b) dataset *type* — e.g. `landmarks` is a curated points-of-interest list, **not** a school/GP registry, so "~13 schools" means 13 education *landmarks*, not 13 schools in existence.
+
 ## ⚠️ Read this first — the honest framing
 City of Melbourne open data covers **only the City of Melbourne LGA** (~38 km², the CBD + a ring of inner suburbs: Carlton, Docklands, Kensington, Parkville, North/East/West Melbourne, Southbank). It is **CBD-centric and small** — childcare = 29 records, schools = a handful, etc. A real relocating family needs **metro-wide** coverage, which CoM data alone does **not** provide.
 

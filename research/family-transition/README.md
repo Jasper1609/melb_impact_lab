@@ -11,6 +11,7 @@
 | `03-competitive-landscape.md` | What exists, what ChatGPT solves, and the defensible white space |
 | `04-reddit-voices.md` | Lived r/melbourne voices on the practical + cultural + social settling-in pain |
 | `05-melbourne-datasets.md` | Field-level inventory of which CoM datasets power the tool (+ honest coverage caveats) |
+| `06-direction-and-decisions.md` | **Decision history + constraints.** What we ruled out & why, the strategic anchors (EDS 2030, judging criteria), and how-to-get-up-to-speed for new sessions |
 
 ---
 
