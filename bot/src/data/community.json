@@ -1,0 +1,416 @@
+[
+  {
+    "name": "Myki Card",
+    "category": "getting-started",
+    "neighbourhood": null,
+    "description": "Melbourne's public transport smartcard for trains, trams, and buses. Buy at 7-Eleven, train stations, or online. Note: trams within the CBD Free Tram Zone don't require a Myki.",
+    "contact": "https://www.ptv.vic.gov.au/tickets/myki",
+    "languages": ["en"],
+    "tags": ["transport", "myki", "tram", "train", "bus", "public transport", "free tram zone"]
+  },
+  {
+    "name": "Medicare Enrollment",
+    "category": "getting-started",
+    "neighbourhood": null,
+    "description": "Australia's public healthcare system. Eligible residents and some visa holders can enrol for subsidised medical care. Bring your passport, visa, and proof of address to a Services Australia centre.",
+    "contact": "https://www.servicesaustralia.gov.au/medicare",
+    "languages": ["en", "zh", "ar", "vi", "it", "el", "ko", "tr"],
+    "tags": ["health", "medicare", "doctor", "hospital", "healthcare", "insurance", "medical"]
+  },
+  {
+    "name": "Opening a Bank Account",
+    "category": "getting-started",
+    "neighbourhood": null,
+    "description": "Major Australian banks include CommBank, NAB, ANZ, and Westpac. Within 6 weeks of arrival you only need your passport. After 6 weeks, additional ID (e.g. driver's licence) is required. Most banks allow you to start the process online before arriving.",
+    "contact": "https://moneysmart.gov.au/banking",
+    "languages": ["en"],
+    "tags": ["bank", "money", "finance", "account", "savings", "commbank", "nab", "anz", "westpac"]
+  },
+  {
+    "name": "Tax File Number (TFN)",
+    "category": "getting-started",
+    "neighbourhood": null,
+    "description": "A unique number issued by the Australian Taxation Office for tax and superannuation purposes. You need a TFN to work legally in Australia. Apply online if you hold a valid visa.",
+    "contact": "https://www.ato.gov.au/individuals-and-families/tax-file-number",
+    "languages": ["en"],
+    "tags": ["tax", "tfn", "work", "employment", "ato", "superannuation"]
+  },
+  {
+    "name": "Finding Rental Housing",
+    "category": "getting-started",
+    "neighbourhood": null,
+    "description": "Search for rental properties on realestate.com.au and domain.com.au, or find share accommodation on flatmates.com.au. Be prepared with references, ID, and proof of income. Rental inspections are common in Melbourne.",
+    "contact": "https://www.realestate.com.au",
+    "languages": ["en"],
+    "tags": ["housing", "rent", "apartment", "flat", "share house", "accommodation", "rental"]
+  },
+  {
+    "name": "Phone and SIM Card",
+    "category": "getting-started",
+    "neighbourhood": null,
+    "description": "Prepaid SIM cards are available from Telstra, Optus, Vodafone, and budget options like Aldi Mobile and Boost. Buy at supermarkets, convenience stores, or carrier shops. You'll need photo ID to activate.",
+    "contact": "https://www.whistleout.com.au/MobilePhones/Prepaid",
+    "languages": ["en"],
+    "tags": ["phone", "sim", "mobile", "prepaid", "telstra", "optus", "vodafone", "internet"]
+  },
+  {
+    "name": "Driver's Licence Conversion",
+    "category": "getting-started",
+    "neighbourhood": null,
+    "description": "If you hold an overseas licence, you may be able to convert it to a Victorian licence at VicRoads. Requirements vary by country. You must carry your licence (and an English translation if needed) while driving.",
+    "contact": "https://www.vicroads.vic.gov.au/licences/renew-replace-or-update/new-to-victoria/overseas-drivers",
+    "languages": ["en"],
+    "tags": ["driving", "licence", "license", "car", "vicroads", "id", "identification"]
+  },
+  {
+    "name": "Centrelink and Social Services",
+    "category": "getting-started",
+    "neighbourhood": null,
+    "description": "Services Australia provides welfare payments, concession cards, and support services including JobSeeker, Youth Allowance, and Family Tax Benefit. Eligibility depends on your visa and residency status.",
+    "contact": "https://www.servicesaustralia.gov.au",
+    "languages": ["en", "zh", "ar", "vi", "it", "el", "ko", "tr"],
+    "tags": ["centrelink", "welfare", "payment", "jobseeker", "concession", "support", "financial"]
+  },
+  {
+    "name": "Emergency and Safety Numbers",
+    "category": "getting-started",
+    "neighbourhood": null,
+    "description": "Call 000 for police, fire, or ambulance emergencies. For non-emergencies, contact Victoria Police on 131 444, or NURSE-ON-CALL on 1300 60 60 24 for health advice 24/7.",
+    "contact": "000",
+    "languages": ["en"],
+    "tags": ["emergency", "police", "fire", "ambulance", "000", "safety", "help", "urgent"]
+  },
+  {
+    "name": "Settle in Victoria Guide",
+    "category": "getting-started",
+    "neighbourhood": null,
+    "description": "The Victorian Government's comprehensive guide for new arrivals covering housing, employment, education, health, and community connections. Available in multiple languages.",
+    "contact": "https://www.vic.gov.au/settle-victoria",
+    "languages": ["en", "zh", "ar", "vi", "hi", "pa", "fa", "am", "sw"],
+    "tags": ["settle", "guide", "victoria", "government", "newcomer", "arrival", "information"]
+  },
+  {
+    "name": "Melbourne Newcomers Network",
+    "category": "community-group",
+    "neighbourhood": null,
+    "description": "Social events and meetups for people recently arrived in Melbourne. Regular dinners, weekend outings, and cultural activities to help newcomers build friendships.",
+    "contact": "https://www.meetup.com/melbourne-newcomers/",
+    "languages": ["en"],
+    "tags": ["social", "friends", "meetup", "newcomer", "events", "network"]
+  },
+  {
+    "name": "InterNations Melbourne",
+    "category": "community-group",
+    "neighbourhood": null,
+    "description": "Global expat community with regular social events, professional networking, and activity groups in Melbourne. Connects international residents with local communities.",
+    "contact": "https://www.internations.org/melbourne-expats",
+    "languages": ["en"],
+    "tags": ["expat", "international", "networking", "social", "professional", "events"]
+  },
+  {
+    "name": "Carlton Neighbourhood Learning Centre",
+    "category": "community-group",
+    "neighbourhood": "Carlton",
+    "description": "Community hub offering English language classes, computer skills, art workshops, and social programs. Welcoming space for people of all backgrounds in the Carlton area.",
+    "contact": "https://www.cnlc.org.au",
+    "languages": ["en"],
+    "tags": ["education", "english", "classes", "community", "learning", "carlton"]
+  },
+  {
+    "name": "Footscray Community Arts Centre",
+    "category": "community-group",
+    "neighbourhood": "Footscray",
+    "description": "Multi-arts centre celebrating cultural diversity through exhibitions, workshops, and performances. Strong focus on multicultural and First Nations arts programs.",
+    "contact": "https://footscrayarts.com",
+    "languages": ["en"],
+    "tags": ["arts", "culture", "exhibition", "workshop", "multicultural", "footscray"]
+  },
+  {
+    "name": "Brunswick Neighbourhood House",
+    "category": "community-group",
+    "neighbourhood": "Brunswick",
+    "description": "Community centre offering affordable classes, social groups, and support services. Programs include English conversation, cooking, yoga, and community garden activities.",
+    "contact": "https://www.bnhouse.org",
+    "languages": ["en"],
+    "tags": ["community", "classes", "social", "support", "brunswick", "activities"]
+  },
+  {
+    "name": "Fitzroy Learning Network",
+    "category": "community-group",
+    "neighbourhood": "Fitzroy",
+    "description": "Provides free and low-cost education, English classes, digital literacy, and employment support. Focused on helping migrants, refugees, and disadvantaged community members in Fitzroy.",
+    "contact": "https://www.fitzroylearning.org.au",
+    "languages": ["en"],
+    "tags": ["education", "english", "digital", "employment", "fitzroy", "free"]
+  },
+  {
+    "name": "Chinese Community Council of Australia (Victoria)",
+    "category": "community-group",
+    "neighbourhood": null,
+    "description": "Peak body representing the Chinese community in Victoria. Provides advocacy, cultural events, and community services including aged care and settlement support.",
+    "contact": "https://www.cccav.org.au",
+    "languages": ["en", "zh"],
+    "tags": ["chinese", "community", "cultural", "advocacy", "settlement", "aged care"]
+  },
+  {
+    "name": "Federation of Indian Associations of Victoria",
+    "category": "community-group",
+    "neighbourhood": null,
+    "description": "Umbrella organisation for Indian community groups in Victoria. Organises cultural festivals, community events, and provides a connection point for Indian newcomers.",
+    "contact": "https://www.fiav.com.au",
+    "languages": ["en", "hi"],
+    "tags": ["indian", "community", "cultural", "festival", "events", "association"]
+  },
+  {
+    "name": "Vietnamese Community in Australia (VCA Victoria)",
+    "category": "community-group",
+    "neighbourhood": null,
+    "description": "Supports the Vietnamese community through settlement services, aged care, youth programs, and cultural celebrations. Offices in Richmond and Footscray.",
+    "contact": "https://www.vcavictoria.org.au",
+    "languages": ["en", "vi"],
+    "tags": ["vietnamese", "community", "settlement", "youth", "aged care", "cultural"]
+  },
+  {
+    "name": "African Australian Multicultural Employment and Youth Services (AAMEYS)",
+    "category": "community-group",
+    "neighbourhood": null,
+    "description": "Provides employment support, youth programs, and community development for African Australians. Services include job readiness, mentoring, and cultural engagement.",
+    "contact": "https://www.aameys.com.au",
+    "languages": ["en"],
+    "tags": ["african", "employment", "youth", "mentoring", "community", "job"]
+  },
+  {
+    "name": "Asylum Seeker Resource Centre (ASRC)",
+    "category": "community-group",
+    "neighbourhood": "Footscray",
+    "description": "Australia's largest independent asylum seeker support organisation. Provides food, healthcare, legal aid, employment support, and community connection for people seeking asylum.",
+    "contact": "https://asrc.org.au",
+    "languages": ["en", "ar", "fa", "ta", "am"],
+    "tags": ["asylum", "refugee", "legal", "food", "healthcare", "support", "aid"]
+  },
+  {
+    "name": "Neighbourhood Houses Victoria",
+    "category": "community-group",
+    "neighbourhood": null,
+    "description": "Directory of over 400 neighbourhood houses across Victoria offering local community programs, classes, social connection, and support services. Find your nearest one.",
+    "contact": "https://www.nhvic.org.au",
+    "languages": ["en"],
+    "tags": ["neighbourhood house", "community", "directory", "local", "programs", "classes"]
+  },
+  {
+    "name": "GoVolunteer Melbourne",
+    "category": "community-group",
+    "neighbourhood": null,
+    "description": "Search platform for volunteer opportunities across Melbourne. Volunteering is a great way to build local networks, gain Australian experience, and contribute to your community.",
+    "contact": "https://govolunteer.com.au",
+    "languages": ["en"],
+    "tags": ["volunteer", "volunteering", "community", "experience", "network", "give back"]
+  },
+  {
+    "name": "Melbourne Social Sports",
+    "category": "community-group",
+    "neighbourhood": null,
+    "description": "Social sports leagues including soccer, netball, basketball, and volleyball designed for fun rather than competition. Great way for newcomers to meet people and stay active.",
+    "contact": "https://www.urbansports.com.au",
+    "languages": ["en"],
+    "tags": ["sport", "social", "soccer", "netball", "basketball", "fitness", "friends"]
+  },
+  {
+    "name": "Melbourne Library Network",
+    "category": "community-group",
+    "neighbourhood": null,
+    "description": "Free library membership across Melbourne's public libraries. Offers books in multiple languages, free Wi-Fi, English conversation groups, citizenship test preparation, and community events.",
+    "contact": "https://www.melbourne.vic.gov.au/community/libraries",
+    "languages": ["en", "zh", "vi", "ar", "hi", "el", "it"],
+    "tags": ["library", "books", "english", "wifi", "free", "study", "conversation", "citizenship"]
+  },
+  {
+    "name": "AMES Australia",
+    "category": "support-service",
+    "neighbourhood": null,
+    "description": "Australia's leading provider of settlement, education, and employment services for migrants and refugees. Offers English language courses, skills training, and employment pathways.",
+    "contact": "https://www.ames.net.au",
+    "languages": ["en", "ar", "zh", "vi", "fa", "am", "sw", "my", "ta", "hi"],
+    "tags": ["settlement", "education", "employment", "english", "training", "migrant", "refugee"]
+  },
+  {
+    "name": "Brotherhood of St Laurence",
+    "category": "support-service",
+    "neighbourhood": null,
+    "description": "Community organisation providing employment programs, financial counselling, aged care, and social enterprise opportunities. Strong focus on reducing poverty and disadvantage.",
+    "contact": "https://www.bsl.org.au",
+    "languages": ["en"],
+    "tags": ["employment", "financial", "counselling", "aged care", "poverty", "support"]
+  },
+  {
+    "name": "Adult Migrant English Program (AMEP)",
+    "category": "support-service",
+    "neighbourhood": null,
+    "description": "Free English language tuition for eligible migrants and humanitarian entrants. Up to 510 hours of English classes delivered at locations across Melbourne and online.",
+    "contact": "https://immi.homeaffairs.gov.au/settling-in-australia/amep",
+    "languages": ["en", "ar", "zh", "vi", "fa", "my", "ta", "ko", "th"],
+    "tags": ["english", "language", "classes", "free", "migrant", "education", "amep"]
+  },
+  {
+    "name": "Beyond Blue",
+    "category": "support-service",
+    "neighbourhood": null,
+    "description": "Mental health support for anxiety, depression, and suicide prevention. Free counselling via phone, webchat, and email. Multilingual resources and interpreter services available.",
+    "contact": "https://www.beyondblue.org.au | 1300 22 4636",
+    "languages": ["en", "ar", "zh", "vi", "hi", "el", "it", "ko", "fa"],
+    "tags": ["mental health", "depression", "anxiety", "counselling", "crisis", "support", "wellbeing"]
+  },
+  {
+    "name": "Lifeline Australia",
+    "category": "support-service",
+    "neighbourhood": null,
+    "description": "24/7 crisis support and suicide prevention service. Call 13 11 14 anytime for free, confidential phone counselling. Also available via text (0477 13 11 14) and online chat.",
+    "contact": "13 11 14 | https://www.lifeline.org.au",
+    "languages": ["en"],
+    "tags": ["crisis", "suicide", "24/7", "phone", "counselling", "mental health", "emergency"]
+  },
+  {
+    "name": "Victoria Legal Aid",
+    "category": "support-service",
+    "neighbourhood": null,
+    "description": "Free legal information, advice, and representation for people who cannot afford a lawyer. Covers family law, tenancy disputes, employment issues, immigration, and criminal matters.",
+    "contact": "https://www.legalaid.vic.gov.au | 1300 792 387",
+    "languages": ["en", "ar", "zh", "vi", "hi", "fa", "so", "am"],
+    "tags": ["legal", "lawyer", "free", "tenancy", "immigration", "family law", "rights"]
+  },
+  {
+    "name": "Refugee Council of Australia",
+    "category": "support-service",
+    "neighbourhood": null,
+    "description": "National advocacy body for refugees and people seeking humanitarian protection. Provides resources, policy information, and directories of local support services.",
+    "contact": "https://www.refugeecouncil.org.au",
+    "languages": ["en"],
+    "tags": ["refugee", "advocacy", "humanitarian", "protection", "resources", "policy"]
+  },
+  {
+    "name": "inTouch Multicultural Centre Against Family Violence",
+    "category": "support-service",
+    "neighbourhood": null,
+    "description": "Specialist family violence service for migrant and refugee women. Provides crisis support, case management, legal help, and counselling in over 100 languages.",
+    "contact": "1800 755 988 | https://intouch.org.au",
+    "languages": ["en", "ar", "zh", "vi", "hi", "fa", "so", "am", "ta", "my"],
+    "tags": ["family violence", "domestic violence", "women", "crisis", "safety", "multicultural", "legal"]
+  },
+  {
+    "name": "Translating and Interpreting Service (TIS National)",
+    "category": "support-service",
+    "neighbourhood": null,
+    "description": "Free interpreting service for non-English speakers accessing Australian government services. Available 24/7 in over 160 languages via phone. Also provides document translation.",
+    "contact": "131 450 | https://www.tisnational.gov.au",
+    "languages": ["en"],
+    "tags": ["interpreter", "translation", "language", "free", "government", "phone", "multilingual"]
+  },
+  {
+    "name": "Settlement Council of Australia",
+    "category": "support-service",
+    "neighbourhood": null,
+    "description": "Peak body for settlement services in Australia. Provides a directory to find local settlement organisations that help with housing, employment, education, and community connection.",
+    "contact": "https://scoa.org.au",
+    "languages": ["en"],
+    "tags": ["settlement", "directory", "housing", "employment", "education", "community"]
+  },
+  {
+    "name": "What's On Melbourne",
+    "category": "event",
+    "neighbourhood": null,
+    "description": "City of Melbourne's official events calendar featuring free and low-cost events, festivals, markets, and community activities happening across the city.",
+    "contact": "https://whatson.melbourne.vic.gov.au",
+    "languages": ["en"],
+    "tags": ["events", "free", "festival", "market", "activities", "calendar", "things to do"]
+  },
+  {
+    "name": "Melbourne Multicultural Festival",
+    "category": "event",
+    "neighbourhood": "CBD/Melbourne Central",
+    "description": "Annual celebration of Melbourne's cultural diversity featuring live performances, food stalls from around the world, cultural exhibitions, and community activities. Usually held in February/March.",
+    "contact": "https://www.multiculturalarts.com.au",
+    "languages": ["en"],
+    "tags": ["multicultural", "festival", "food", "music", "culture", "annual", "free"]
+  },
+  {
+    "name": "Library English Conversation Groups",
+    "category": "event",
+    "neighbourhood": null,
+    "description": "Free weekly English conversation practice sessions at public libraries across Melbourne. No booking required. Friendly, informal groups for all English levels.",
+    "contact": "https://www.melbourne.vic.gov.au/community/libraries",
+    "languages": ["en"],
+    "tags": ["english", "conversation", "free", "library", "practice", "weekly", "language"]
+  },
+  {
+    "name": "Meetup.com Melbourne Groups",
+    "category": "event",
+    "neighbourhood": null,
+    "description": "Community-run social groups for every interest including language exchange, hiking, photography, coding, board games, and cultural groups. Great way to meet locals and fellow newcomers.",
+    "contact": "https://www.meetup.com/cities/au/melbourne/",
+    "languages": ["en"],
+    "tags": ["meetup", "social", "groups", "hobby", "friends", "networking", "activities"]
+  },
+  {
+    "name": "Parks Victoria Guided Walks",
+    "category": "event",
+    "neighbourhood": null,
+    "description": "Free guided walks and nature programs in Melbourne's parks and gardens. Discover local wildlife, indigenous heritage, and beautiful landscapes with knowledgeable rangers.",
+    "contact": "https://www.parks.vic.gov.au",
+    "languages": ["en"],
+    "tags": ["nature", "parks", "walks", "free", "outdoors", "wildlife", "guided"]
+  },
+  {
+    "name": "Free Tram Zone",
+    "category": "transport",
+    "neighbourhood": "CBD/Melbourne Central",
+    "description": "Trams are free within Melbourne's CBD and Docklands area. The zone covers Spring Street to Docklands, and Flinders Street to Victoria Street. No Myki needed within this zone.",
+    "contact": "https://www.ptv.vic.gov.au/tickets/myki/travel-with-myki/free-tram-zone/",
+    "languages": ["en"],
+    "tags": ["free", "tram", "cbd", "docklands", "zone", "transport", "no myki"]
+  },
+  {
+    "name": "PTV Journey Planner",
+    "category": "transport",
+    "neighbourhood": null,
+    "description": "Plan your trips across Melbourne's train, tram, and bus network. The PTV app and website show real-time arrivals, service disruptions, and route maps.",
+    "contact": "https://www.ptv.vic.gov.au/journey",
+    "languages": ["en"],
+    "tags": ["journey", "planner", "route", "timetable", "ptv", "app", "real-time"]
+  },
+  {
+    "name": "Melbourne Bike Share",
+    "category": "transport",
+    "neighbourhood": "CBD/Melbourne Central",
+    "description": "Bike rental stations located across the CBD and inner suburbs. Options include Melbourne Bike Share docks and dockless e-bikes and e-scooters from providers like Lime and Neuron.",
+    "contact": "https://www.melbourne.vic.gov.au/parking-and-transport/cycling",
+    "languages": ["en"],
+    "tags": ["bike", "bicycle", "cycling", "rental", "e-scooter", "lime", "cbd"]
+  },
+  {
+    "name": "Myki Zones and Fares Explained",
+    "category": "transport",
+    "neighbourhood": null,
+    "description": "Melbourne's public transport uses two zones. Zone 1 covers the city and inner suburbs; Zone 1+2 extends to outer suburbs. A daily cap limits how much you pay per day. Myki Money is pay-as-you-go; Myki Pass is a pre-paid period pass.",
+    "contact": "https://www.ptv.vic.gov.au/tickets/myki",
+    "languages": ["en"],
+    "tags": ["myki", "zones", "fares", "zone 1", "zone 2", "daily cap", "money", "pass"]
+  },
+  {
+    "name": "V/Line Regional Trains",
+    "category": "transport",
+    "neighbourhood": null,
+    "description": "Regional train services connecting Melbourne to outer suburbs and regional Victorian cities like Geelong, Ballarat, and Bendigo. Use your Myki for nearby stations or purchase V/Line tickets for longer trips.",
+    "contact": "https://www.vline.com.au",
+    "languages": ["en"],
+    "tags": ["regional", "train", "v/line", "geelong", "ballarat", "bendigo", "country"]
+  },
+  {
+    "name": "The Arrival by Shaun Tan",
+    "category": "community-group",
+    "neighbourhood": null,
+    "description": "A wordless graphic novel about an immigrant arriving in a strange new city. Widely used in schools, libraries, and community groups across Melbourne to build empathy and start conversations about the migrant experience. Available at Melbourne libraries. A powerful shared reference for anyone working with newcomers.",
+    "contact": "https://www.shauntan.net/arrival-book",
+    "languages": ["en"],
+    "tags": ["book", "culture", "immigration", "empathy", "library", "education", "shaun-tan"]
+  }
+]

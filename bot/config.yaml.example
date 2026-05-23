@@ -1,0 +1,30 @@
+model:
+  provider: anthropic
+  default: claude-sonnet-4-20250514
+
+terminal:
+  working_dir: /opt/data
+  timeout: 60
+
+whatsapp:
+  unauthorized_dm_behavior: ignore
+  reply_prefix: ""
+
+session_reset:
+  mode: idle
+  idle_minutes: 1440
+
+memory:
+  memory_char_limit: 4400
+  user_char_limit: 2750
+
+skills:
+  creation_nudge_interval: 10
+
+agent:
+  max_turns: 80
+  reasoning_effort: medium
+
+cron:
+  enabled: false
+  delivery_platform: whatsapp

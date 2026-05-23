@@ -1,0 +1,8 @@
+node_modules/
+.env
+.env.local
+auth_state/
+data/profiles.json
+*.ogg
+*.mp3
+dist/

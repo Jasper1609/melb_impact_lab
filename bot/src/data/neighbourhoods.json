@@ -1,0 +1,92 @@
+[
+  {
+    "name": "Carlton",
+    "description": "Melbourne's historic Italian quarter, home to the University of Melbourne and the famous Lygon Street restaurant strip. A walkable inner-city neighbourhood with strong community connections and easy CBD access.",
+    "vibe": "Academic, multicultural, cafe culture, historic charm",
+    "transport": "Tram routes 1, 6, 8 along Swanston Street and Nicholson Street. Short walk or bike ride to CBD. Near Melbourne Central and Parliament stations.",
+    "keySpots": ["Lygon Street", "University of Melbourne", "Carlton Gardens", "Royal Exhibition Building", "Melbourne Museum", "La Mama Theatre"],
+    "communityGroups": ["Carlton Neighbourhood Learning Centre", "Carlton Primary School community", "University of Melbourne student groups"],
+    "demographics": "Large international student population alongside established Italian-Australian and East African communities. Mix of long-term residents and students."
+  },
+  {
+    "name": "Brunswick",
+    "description": "A vibrant, multicultural inner-north suburb known for its eclectic food scene along Sydney Road, independent shops, and thriving arts community. Popular with young professionals and creatives.",
+    "vibe": "Artsy, progressive, multicultural food hub, independent spirit",
+    "transport": "Route 19 tram along Sydney Road. Jewell, Brunswick, and Anstey stations on the Upfield train line. Well-connected cycling paths.",
+    "keySpots": ["Sydney Road", "Barkly Square", "CERES Community Environment Park", "Brunswick Music Festival venues", "Lygon Street (north end)"],
+    "communityGroups": ["Brunswick Neighbourhood House", "CERES community programs", "Brunswick Uniting Church community hub"],
+    "demographics": "Historically Turkish, Lebanese, and Greek communities. Now highly diverse with young professionals, families, and growing East African and South Asian populations."
+  },
+  {
+    "name": "Footscray",
+    "description": "One of Melbourne's most culturally diverse suburbs, featuring vibrant Vietnamese, African, and Indian communities. An affordable inner-west neighbourhood with an energetic food and arts scene and a strong community spirit.",
+    "vibe": "Gritty, diverse, authentic, rapidly evolving, community-driven",
+    "transport": "Footscray station is a major hub on multiple train lines (Werribee, Williamstown, Sunbury). Multiple bus routes. Short train ride to CBD.",
+    "keySpots": ["Footscray Market", "Little Saigon Market", "Footscray Community Arts Centre", "Maribyrnong River trails", "Footscray Park"],
+    "communityGroups": ["Footscray Community Arts Centre", "Asylum Seeker Resource Centre (ASRC)", "Western Bulldogs Community Foundation", "Maribyrnong City Council programs"],
+    "demographics": "Extremely diverse with established Vietnamese, Ethiopian, Eritrean, Somali, and Indian communities. Growing number of young professionals alongside long-standing migrant families."
+  },
+  {
+    "name": "Fitzroy",
+    "description": "Melbourne's bohemian heart and the birthplace of the city's street art and live music culture. While increasingly gentrified, it retains a strong community spirit with significant Aboriginal community presence and progressive social services.",
+    "vibe": "Bohemian, artistic, progressive, street art, live music",
+    "transport": "Tram routes 11, 86, and 96 along Brunswick Street, Smith Street, and Nicholson Street. Close to CBD by tram or bike.",
+    "keySpots": ["Brunswick Street", "Smith Street", "Gertrude Street", "Fitzroy Gardens (nearby)", "Centre for Contemporary Photography", "Rose Street Artists' Market"],
+    "communityGroups": ["Fitzroy Learning Network", "The Fitzroy Town Hall community programs", "Victorian Aboriginal Health Service", "Yarra City Council community programs"],
+    "demographics": "Historic Aboriginal community presence alongside established public housing residents, creative workers, and young professionals. Significant gentrification over the past two decades."
+  },
+  {
+    "name": "Richmond",
+    "description": "An inner-city suburb famous for its Vietnamese precinct on Victoria Street, with close proximity to the MCG and Melbourne's sporting precinct. Diverse dining, easy CBD access, and a mix of residential styles from public housing to renovated terraces.",
+    "vibe": "Sporty, foodie, diverse, convenient, energetic",
+    "transport": "Richmond, East Richmond, and Burnley train stations. Tram routes 70, 78, and 109. Walking distance to CBD and MCG.",
+    "keySpots": ["Victoria Street (Little Saigon)", "Bridge Road", "Swan Street", "Melbourne Cricket Ground (MCG)", "Yarra River trails", "Richmond Town Hall"],
+    "communityGroups": ["Vietnamese Community in Australia (VCA Victoria)", "Richmond Neighbourhood House", "Yarra City Council programs", "Richmond Union Bowling Club community"],
+    "demographics": "Established Vietnamese community on Victoria Street, alongside Greek and Chinese communities. Large public housing estates in the north. Mix of long-term residents and young professionals."
+  },
+  {
+    "name": "CBD/Melbourne Central",
+    "description": "The city centre and heart of Melbourne, home to the Free Tram Zone, Chinatown, and major cultural institutions. A hub for international students, workers, and visitors with extensive services, shopping, and dining options.",
+    "vibe": "Cosmopolitan, bustling, international, laneway culture, 24/7",
+    "transport": "Free Tram Zone covers the entire CBD. Flinders Street, Melbourne Central, Southern Cross, and Flagstaff stations. All metropolitan train lines converge here.",
+    "keySpots": ["Federation Square", "Flinders Street Station", "Chinatown", "Queen Victoria Market", "State Library of Victoria", "Bourke Street Mall", "Southbank and Arts Precinct"],
+    "communityGroups": ["Melbourne Library at the Dock", "City of Melbourne community programs", "Chinese Museum Melbourne", "Multicultural Hub on Elizabeth Street"],
+    "demographics": "Extremely international with large Chinese, Indian, South-East Asian, and Korean student and resident populations. Melbourne's Chinatown is the longest continuous Chinese settlement in the Western world."
+  },
+  {
+    "name": "St Kilda",
+    "description": "Melbourne's iconic beachside suburb with a colourful character, popular with backpackers, artists, and young professionals. Known for its foreshore, Luna Park, and Sunday markets. A lively community with strong support services.",
+    "vibe": "Beachside, eclectic, lively nightlife, artistic, community markets",
+    "transport": "Tram routes 3, 16, and 96 from the CBD (about 20-25 minutes). Limited direct train access; nearest station is Balaclava on the Sandringham line.",
+    "keySpots": ["St Kilda Beach and Pier", "Luna Park", "Acland Street", "Fitzroy Street", "St Kilda Esplanade Market (Sundays)", "Palais Theatre"],
+    "communityGroups": ["Sacred Heart Mission (community meals and support)", "St Kilda Community Housing", "Port Phillip Council community programs", "St Kilda Library programs"],
+    "demographics": "Mix of backpackers, international visitors, long-term residents, and people accessing community support services. Historically bohemian with an increasingly young professional population."
+  },
+  {
+    "name": "Dandenong",
+    "description": "One of Australia's most culturally diverse suburbs, located in Melbourne's south-east. Home to thriving Afghan, Indian, and Sri Lankan communities with an excellent multicultural food scene and affordable housing.",
+    "vibe": "Multicultural hub, market-driven, affordable, community-focused",
+    "transport": "Dandenong station on the Pakenham and Cranbourne train lines (about 40 minutes from CBD). Major bus interchange. Located on the Princes Highway.",
+    "keySpots": ["Dandenong Market", "Afghan Bazaar", "Dandenong Plaza", "Drum Theatre", "Harmony Square"],
+    "communityGroups": ["Greater Dandenong City Council multicultural programs", "South East Community Links", "Afghan Australian Association of Victoria", "Dandenong Neighbourhood House"],
+    "demographics": "Born-overseas residents from over 150 countries. Large Afghan, Indian, Sri Lankan, Chinese, and Pacific Islander communities. One of Australia's most diverse local government areas."
+  },
+  {
+    "name": "Clayton",
+    "description": "A south-eastern suburb anchored by Monash University's main campus. Strong South Asian and Chinese community presence with excellent Asian dining options along Clayton Road and Centre Road.",
+    "vibe": "University town, suburban, multicultural food scene, student-friendly",
+    "transport": "Clayton station on the Cranbourne and Pakenham train lines (about 30 minutes from CBD). Multiple bus routes including connections to Monash University.",
+    "keySpots": ["Monash University Clayton campus", "Clayton Road shopping strip", "Centre Road dining precinct", "Monash Medical Centre", "Clayton Community Centre"],
+    "communityGroups": ["Monash University student associations", "Monash City Council community programs", "Clayton Community Centre programs", "Monash Volunteer Resource Centre"],
+    "demographics": "Large Chinese, Indian, Sri Lankan, and Malaysian communities. Significant international student population from Monash University alongside established migrant families."
+  },
+  {
+    "name": "Sunshine",
+    "description": "A major hub in Melbourne's western suburbs with a diverse population, affordable housing, and improving transport connections. Growing rapidly with new developments while maintaining its multicultural community character.",
+    "vibe": "Diverse, affordable, community-oriented, developing, western suburbs hub",
+    "transport": "Sunshine station is a major rail hub on the Sunbury, Bendigo, and Ballarat lines (about 20 minutes from CBD). Multiple bus routes. Planned Melbourne Airport Rail Link will run through Sunshine.",
+    "keySpots": ["Hampshire Road shopping precinct", "Sunshine Marketplace", "Brimbank City Council offices", "Sunshine Leisure Centre", "Kororoit Creek Trail"],
+    "communityGroups": ["Brimbank City Council multicultural programs", "Sunshine Neighbourhood Centre", "Visy Cares Hub", "Brimbank Bicycle User Group"],
+    "demographics": "Established Vietnamese, Indian, Filipino, and South Sudanese communities. One of Melbourne's most diverse areas with residents from over 150 countries. Growing young professional population."
+  }
+]
