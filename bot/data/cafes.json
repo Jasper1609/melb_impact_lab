@@ -1,0 +1,3688 @@
+[
+  {
+    "id": "cafe_baru_91_105325",
+    "name": "baru",
+    "formatted_address": "373 King Street WEST MELBOURNE VIC 3003",
+    "geometry": {
+      "location": {
+        "lat": -37.81166257,
+        "lng": 144.953251433
+      }
+    },
+    "industry_anzsic4_code": "4511",
+    "industry_anzsic4_description": "Cafes and Restaurants",
+    "clue_small_area": "West Melbourne (Residential)",
+    "census_year": "2024",
+    "seats_indoor": 24,
+    "seats_outdoor": 0,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 24
+  },
+  {
+    "id": "cafe_the_dispensa_91_105325",
+    "name": "The Dispensa",
+    "formatted_address": "377 King Street WEST MELBOURNE VIC 3003",
+    "geometry": {
+      "location": {
+        "lat": -37.81166257,
+        "lng": 144.953251433
+      }
+    },
+    "industry_anzsic4_code": "4511",
+    "industry_anzsic4_description": "Cafes and Restaurants",
+    "clue_small_area": "West Melbourne (Residential)",
+    "census_year": "2024",
+    "seats_indoor": 19,
+    "seats_outdoor": 6,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 25
+  },
+  {
+    "id": "cafe_city_of_melbourne_bowls_club_inc_92_102945",
+    "name": "City Of Melbourne Bowls Club Inc",
+    "formatted_address": "City of Melbourne Bowls Club Inc. Flagstaff Gardens 3 Dudley Street WEST MELBOURNE VIC 3003",
+    "geometry": {
+      "location": {
+        "lat": -37.8104558,
+        "lng": 144.954434333
+      }
+    },
+    "industry_anzsic4_code": "9113",
+    "industry_anzsic4_description": "Sports and Physical Recreation Venues, Grounds and Facilities Operation",
+    "clue_small_area": "West Melbourne (Residential)",
+    "census_year": "2024",
+    "seats_indoor": 110,
+    "seats_outdoor": 24,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 134
+  },
+  {
+    "id": "cafe_courtyard_by_marriott_melbourne_flagstaff_gardens_111_100858",
+    "name": "Courtyard By Marriott Melbourne Flagstaff Gardens",
+    "formatted_address": "50-56 Batman Street WEST MELBOURNE VIC 3003",
+    "geometry": {
+      "location": {
+        "lat": -37.81046953,
+        "lng": 144.951215514
+      }
+    },
+    "industry_anzsic4_code": "4400",
+    "industry_anzsic4_description": "Accommodation",
+    "clue_small_area": "West Melbourne (Residential)",
+    "census_year": "2024",
+    "seats_indoor": 60,
+    "seats_outdoor": 0,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 60
+  },
+  {
+    "id": "cafe_phuoc_thanh_bakery_111_108947",
+    "name": "Phuoc Thanh Bakery",
+    "formatted_address": "424 Spencer Street WEST MELBOURNE VIC 3003",
+    "geometry": {
+      "location": {
+        "lat": -37.81026195,
+        "lng": 144.950593866
+      }
+    },
+    "industry_anzsic4_code": "1174",
+    "industry_anzsic4_description": "Bakery Product Manufacturing (Non-factory based)",
+    "clue_small_area": "West Melbourne (Residential)",
+    "census_year": "2024",
+    "seats_indoor": 22,
+    "seats_outdoor": 0,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 22
+  },
+  {
+    "id": "cafe_thyme_square_303_103859",
+    "name": "Thyme Square",
+    "formatted_address": "Part Ground 243-251 Flemington Road NORTH MELBOURNE VIC 3051",
+    "geometry": {
+      "location": {
+        "lat": -37.79358681,
+        "lng": 144.946696043
+      }
+    },
+    "industry_anzsic4_code": "4511",
+    "industry_anzsic4_description": "Cafes and Restaurants",
+    "clue_small_area": "North Melbourne",
+    "census_year": "2024",
+    "seats_indoor": 58,
+    "seats_outdoor": 0,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 58
+  },
+  {
+    "id": "cafe_the_humble_goat_309_101104",
+    "name": "The Humble Goat",
+    "formatted_address": "11 Boundary Road NORTH MELBOURNE VIC 3051",
+    "geometry": {
+      "location": {
+        "lat": -37.79589356,
+        "lng": 144.938522996
+      }
+    },
+    "industry_anzsic4_code": "4511",
+    "industry_anzsic4_description": "Cafes and Restaurants",
+    "clue_small_area": "North Melbourne",
+    "census_year": "2024",
+    "seats_indoor": 15,
+    "seats_outdoor": 4,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 19
+  },
+  {
+    "id": "cafe_functions_arden_310_628743",
+    "name": "Functions @ Arden",
+    "formatted_address": "42-48 Straker Street NORTH MELBOURNE VIC 3051",
+    "geometry": {
+      "location": {
+        "lat": -37.79654152,
+        "lng": 144.937226298
+      }
+    },
+    "industry_anzsic4_code": "6712",
+    "industry_anzsic4_description": "Non-Residential Property Operators",
+    "clue_small_area": "North Melbourne",
+    "census_year": "2024",
+    "seats_indoor": 160,
+    "seats_outdoor": 0,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 160
+  },
+  {
+    "id": "cafe_reynolds_street_sandwich_bar_312_108271",
+    "name": "Reynolds Street sandwich bar",
+    "formatted_address": "19 Reynolds Street NORTH MELBOURNE VIC 3051",
+    "geometry": {
+      "location": {
+        "lat": -37.79722779,
+        "lng": 144.937657299
+      }
+    },
+    "industry_anzsic4_code": "4512",
+    "industry_anzsic4_description": "Takeaway Food Services",
+    "clue_small_area": "North Melbourne",
+    "census_year": "2024",
+    "seats_indoor": 12,
+    "seats_outdoor": 8,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 20
+  },
+  {
+    "id": "cafe_pioneer_pizza_a_326_104588",
+    "name": "Pioneer Pizza A",
+    "formatted_address": "360 Abbotsford Street NORTH MELBOURNE VIC 3051",
+    "geometry": {
+      "location": {
+        "lat": -37.79823272,
+        "lng": 144.946696441
+      }
+    },
+    "industry_anzsic4_code": "4512",
+    "industry_anzsic4_description": "Takeaway Food Services",
+    "clue_small_area": "North Melbourne",
+    "census_year": "2024",
+    "seats_indoor": 12,
+    "seats_outdoor": 0,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 12
+  },
+  {
+    "id": "cafe_9_facethai_cuisine_326_104588",
+    "name": "9 FaceThai Cuisine",
+    "formatted_address": "362 Abbotsford Street NORTH MELBOURNE VIC 3051",
+    "geometry": {
+      "location": {
+        "lat": -37.79823272,
+        "lng": 144.946696441
+      }
+    },
+    "industry_anzsic4_code": "4512",
+    "industry_anzsic4_description": "Takeaway Food Services",
+    "clue_small_area": "North Melbourne",
+    "census_year": "2024",
+    "seats_indoor": 10,
+    "seats_outdoor": 0,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 10
+  },
+  {
+    "id": "cafe_palette_333_107975",
+    "name": "Palette",
+    "formatted_address": "Ground 610 Queensberry Street NORTH MELBOURNE VIC 3051",
+    "geometry": {
+      "location": {
+        "lat": -37.80252643,
+        "lng": 144.94713843
+      }
+    },
+    "industry_anzsic4_code": "4511",
+    "industry_anzsic4_description": "Cafes and Restaurants",
+    "clue_small_area": "North Melbourne",
+    "census_year": "2024",
+    "seats_indoor": 24,
+    "seats_outdoor": 8,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 32
+  },
+  {
+    "id": "cafe_get_on_the_coffees_344_109786",
+    "name": "Get On The Coffees",
+    "formatted_address": "Lobby 552-568 Victoria Street NORTH MELBOURNE VIC 3051",
+    "geometry": {
+      "location": {
+        "lat": -37.80457917,
+        "lng": 144.947435691
+      }
+    },
+    "industry_anzsic4_code": "4512",
+    "industry_anzsic4_description": "Takeaway Food Services",
+    "clue_small_area": "North Melbourne",
+    "census_year": "2024",
+    "seats_indoor": 16,
+    "seats_outdoor": 0,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 16
+  },
+  {
+    "id": "cafe_joe_taylor_345_103393",
+    "name": "Joe Taylor",
+    "formatted_address": "7 Errol Street NORTH MELBOURNE VIC 3051",
+    "geometry": {
+      "location": {
+        "lat": -37.80479755,
+        "lng": 144.949012678
+      }
+    },
+    "industry_anzsic4_code": "4520",
+    "industry_anzsic4_description": "Pubs, Taverns and Bars",
+    "clue_small_area": "North Melbourne",
+    "census_year": "2024",
+    "seats_indoor": 12,
+    "seats_outdoor": 16,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 28
+  },
+  {
+    "id": "cafe_the_hot_poppy_345_103394",
+    "name": "The Hot Poppy",
+    "formatted_address": "Ground 9 Errol Street NORTH MELBOURNE VIC 3051",
+    "geometry": {
+      "location": {
+        "lat": -37.80473151,
+        "lng": 144.948970536
+      }
+    },
+    "industry_anzsic4_code": "4511",
+    "industry_anzsic4_description": "Cafes and Restaurants",
+    "clue_small_area": "North Melbourne",
+    "census_year": "2024",
+    "seats_indoor": 16,
+    "seats_outdoor": 30,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 46
+  },
+  {
+    "id": "cafe_cielo_gelateria_345_103400",
+    "name": "Cielo Gelateria",
+    "formatted_address": "Ground 29 Errol Street NORTH MELBOURNE VIC 3051",
+    "geometry": {
+      "location": {
+        "lat": -37.80430342,
+        "lng": 144.949079409
+      }
+    },
+    "industry_anzsic4_code": "4511",
+    "industry_anzsic4_description": "Cafes and Restaurants",
+    "clue_small_area": "North Melbourne",
+    "census_year": "2024",
+    "seats_indoor": 28,
+    "seats_outdoor": 6,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 34
+  },
+  {
+    "id": "cafe_s_j_sushi_noodle_town_345_103401",
+    "name": "S & J Sushi Noodle Town",
+    "formatted_address": "31 Errol Street NORTH MELBOURNE VIC 3051",
+    "geometry": {
+      "location": {
+        "lat": -37.80430161,
+        "lng": 144.948881736
+      }
+    },
+    "industry_anzsic4_code": "4511",
+    "industry_anzsic4_description": "Cafes and Restaurants",
+    "clue_small_area": "North Melbourne",
+    "census_year": "2024",
+    "seats_indoor": 20,
+    "seats_outdoor": 24,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 44
+  },
+  {
+    "id": "cafe_char_siu_house_345_103403",
+    "name": "Char Siu House",
+    "formatted_address": "37 Errol Street NORTH MELBOURNE VIC 3051",
+    "geometry": {
+      "location": {
+        "lat": -37.80412429,
+        "lng": 144.949085065
+      }
+    },
+    "industry_anzsic4_code": "4511",
+    "industry_anzsic4_description": "Cafes and Restaurants",
+    "clue_small_area": "North Melbourne",
+    "census_year": "2024",
+    "seats_indoor": 38,
+    "seats_outdoor": 12,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 50
+  },
+  {
+    "id": "cafe_dong_xing_asian_food_sushi_noodle_bar_345_103408",
+    "name": "Dong Xing Asian Food & Sushi Noodle Bar",
+    "formatted_address": "49 Errol Street NORTH MELBOURNE VIC 3051",
+    "geometry": {
+      "location": {
+        "lat": -37.80386264,
+        "lng": 144.949041413
+      }
+    },
+    "industry_anzsic4_code": "4512",
+    "industry_anzsic4_description": "Takeaway Food Services",
+    "clue_small_area": "North Melbourne",
+    "census_year": "2024",
+    "seats_indoor": 4,
+    "seats_outdoor": 8,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 12
+  },
+  {
+    "id": "cafe_fandango_cafe_346_103424",
+    "name": "Fandango Cafe",
+    "formatted_address": "97 Errol Street NORTH MELBOURNE VIC 3051",
+    "geometry": {
+      "location": {
+        "lat": -37.80260762,
+        "lng": 144.949406198
+      }
+    },
+    "industry_anzsic4_code": "4511",
+    "industry_anzsic4_description": "Cafes and Restaurants",
+    "clue_small_area": "North Melbourne",
+    "census_year": "2024",
+    "seats_indoor": 16,
+    "seats_outdoor": 12,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 28
+  },
+  {
+    "id": "cafe_auction_rooms_cafe_346_103426",
+    "name": "Auction Rooms Cafe",
+    "formatted_address": "103-107 Errol Street NORTH MELBOURNE VIC 3051",
+    "geometry": {
+      "location": {
+        "lat": -37.8024571,
+        "lng": 144.949460849
+      }
+    },
+    "industry_anzsic4_code": "4511",
+    "industry_anzsic4_description": "Cafes and Restaurants",
+    "clue_small_area": "North Melbourne",
+    "census_year": "2024",
+    "seats_indoor": 104,
+    "seats_outdoor": 28,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 132
+  },
+  {
+    "id": "cafe_limerick_castle_hotel_restaurant_347_110920",
+    "name": "Limerick Castle Hotel & Restaurant",
+    "formatted_address": "Limerick Castle Hotel & Restaurant 161-163 Errol Street NORTH MELBOURNE VIC 3051",
+    "geometry": {
+      "location": {
+        "lat": -37.80114341,
+        "lng": 144.949613888
+      }
+    },
+    "industry_anzsic4_code": "4520",
+    "industry_anzsic4_description": "Pubs, Taverns and Bars",
+    "clue_small_area": "North Melbourne",
+    "census_year": "2024",
+    "seats_indoor": 32,
+    "seats_outdoor": 30,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 62
+  },
+  {
+    "id": "cafe_sublime_cafe_354_103524",
+    "name": "Sublime cafe",
+    "formatted_address": "16 Errol Street NORTH MELBOURNE VIC 3051",
+    "geometry": {
+      "location": {
+        "lat": -37.80471334,
+        "lng": 144.949646583
+      }
+    },
+    "industry_anzsic4_code": "4512",
+    "industry_anzsic4_description": "Takeaway Food Services",
+    "clue_small_area": "North Melbourne",
+    "census_year": "2024",
+    "seats_indoor": 8,
+    "seats_outdoor": 12,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 20
+  },
+  {
+    "id": "cafe_la_porchetta_north_melbourne_354_109794",
+    "name": "La Porchetta North Melbourne",
+    "formatted_address": "Ground 478-482 Victoria Street NORTH MELBOURNE VIC 3051",
+    "geometry": {
+      "location": {
+        "lat": -37.80496737,
+        "lng": 144.950145426
+      }
+    },
+    "industry_anzsic4_code": "4511",
+    "industry_anzsic4_description": "Cafes and Restaurants",
+    "clue_small_area": "North Melbourne",
+    "census_year": "2024",
+    "seats_indoor": 130,
+    "seats_outdoor": 0,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 130
+  },
+  {
+    "id": "cafe_code_black_howard_street_356_105024",
+    "name": "Code Black Howard Street",
+    "formatted_address": "119-121 Howard Street NORTH MELBOURNE VIC 3051",
+    "geometry": {
+      "location": {
+        "lat": -37.80422555,
+        "lng": 144.953673523
+      }
+    },
+    "industry_anzsic4_code": "4511",
+    "industry_anzsic4_description": "Cafes and Restaurants",
+    "clue_small_area": "North Melbourne",
+    "census_year": "2024",
+    "seats_indoor": 70,
+    "seats_outdoor": 26,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 96
+  },
+  {
+    "id": "cafe_ample_cafe_bar_356_105025",
+    "name": "Ample Cafe Bar",
+    "formatted_address": "123-129 Howard Street NORTH MELBOURNE VIC 3051",
+    "geometry": {
+      "location": {
+        "lat": -37.80409478,
+        "lng": 144.953696037
+      }
+    },
+    "industry_anzsic4_code": "4511",
+    "industry_anzsic4_description": "Cafes and Restaurants",
+    "clue_small_area": "North Melbourne",
+    "census_year": "2024",
+    "seats_indoor": 55,
+    "seats_outdoor": 8,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 63
+  },
+  {
+    "id": "cafe_le_toaster_356_107902",
+    "name": "Le Toaster",
+    "formatted_address": "Ground 445-447 Queensberry Street NORTH MELBOURNE VIC 3051",
+    "geometry": {
+      "location": {
+        "lat": -37.80357227,
+        "lng": 144.952776962
+      }
+    },
+    "industry_anzsic4_code": "4511",
+    "industry_anzsic4_description": "Cafes and Restaurants",
+    "clue_small_area": "North Melbourne",
+    "census_year": "2024",
+    "seats_indoor": 7,
+    "seats_outdoor": 22,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 29
+  },
+  {
+    "id": "cafe_le_bajo_357_105039",
+    "name": "Le Bajo",
+    "formatted_address": "Ground 8-14 Howard Street NORTH MELBOURNE VIC 3051",
+    "geometry": {
+      "location": {
+        "lat": -37.80509175,
+        "lng": 144.954243272
+      }
+    },
+    "industry_anzsic4_code": "4511",
+    "industry_anzsic4_description": "Cafes and Restaurants",
+    "clue_small_area": "North Melbourne",
+    "census_year": "2024",
+    "seats_indoor": 28,
+    "seats_outdoor": 24,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 52
+  },
+  {
+    "id": "cafe_prudence_bar_357_109822",
+    "name": "Prudence Bar",
+    "formatted_address": "368 Victoria Street NORTH MELBOURNE VIC 3051",
+    "geometry": {
+      "location": {
+        "lat": -37.80543619,
+        "lng": 144.954054815
+      }
+    },
+    "industry_anzsic4_code": "4520",
+    "industry_anzsic4_description": "Pubs, Taverns and Bars",
+    "clue_small_area": "North Melbourne",
+    "census_year": "2024",
+    "seats_indoor": 70,
+    "seats_outdoor": 0,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 70
+  },
+  {
+    "id": "cafe_sakedokoro_namara_357_109824",
+    "name": "Sakedokoro Namara",
+    "formatted_address": "360 Victoria Street NORTH MELBOURNE VIC 3051",
+    "geometry": {
+      "location": {
+        "lat": -37.80537801,
+        "lng": 144.954338535
+      }
+    },
+    "industry_anzsic4_code": "4511",
+    "industry_anzsic4_description": "Cafes and Restaurants",
+    "clue_small_area": "North Melbourne",
+    "census_year": "2024",
+    "seats_indoor": 40,
+    "seats_outdoor": 20,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 60
+  },
+  {
+    "id": "cafe_eat_all_359_107528",
+    "name": "Eat All",
+    "formatted_address": "156 Peel Street NORTH MELBOURNE VIC 3051",
+    "geometry": {
+      "location": {
+        "lat": -37.80444772,
+        "lng": 144.956661895
+      }
+    },
+    "industry_anzsic4_code": "4511",
+    "industry_anzsic4_description": "Cafes and Restaurants",
+    "clue_small_area": "North Melbourne",
+    "census_year": "2024",
+    "seats_indoor": 50,
+    "seats_outdoor": 0,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 50
+  },
+  {
+    "id": "cafe_cafe_on_o_connell_pty_ltd_361_573297",
+    "name": "CAFE ON O'CONNELL PTY LTD",
+    "formatted_address": "Unit 30, Ground 1 O'Connell Street NORTH MELBOURNE VIC 3051",
+    "geometry": {
+      "location": {
+        "lat": -37.80573205,
+        "lng": 144.958001458
+      }
+    },
+    "industry_anzsic4_code": "4512",
+    "industry_anzsic4_description": "Takeaway Food Services",
+    "clue_small_area": "North Melbourne",
+    "census_year": "2024",
+    "seats_indoor": 10,
+    "seats_outdoor": 0,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 10
+  },
+  {
+    "id": "cafe_classic_curry_company_362_103247",
+    "name": "Classic Curry Company",
+    "formatted_address": "597 Elizabeth Street MELBOURNE VIC 3000",
+    "geometry": {
+      "location": {
+        "lat": -37.80439443,
+        "lng": 144.958143026
+      }
+    },
+    "industry_anzsic4_code": "4511",
+    "industry_anzsic4_description": "Cafes and Restaurants",
+    "clue_small_area": "North Melbourne",
+    "census_year": "2024",
+    "seats_indoor": 30,
+    "seats_outdoor": 0,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 30
+  },
+  {
+    "id": "cafe_little_ivy_tea_and_coffee_365_102242",
+    "name": "Little Ivy Tea And Coffee",
+    "formatted_address": "4 Courtney Street NORTH MELBOURNE VIC 3051",
+    "geometry": {
+      "location": {
+        "lat": -37.80337398,
+        "lng": 144.95601867
+      }
+    },
+    "industry_anzsic4_code": "4511",
+    "industry_anzsic4_description": "Cafes and Restaurants",
+    "clue_small_area": "North Melbourne",
+    "census_year": "2024",
+    "seats_indoor": 16,
+    "seats_outdoor": 6,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 22
+  },
+  {
+    "id": "cafe_affinity_on_errol_369_103498",
+    "name": "Affinity On Errol",
+    "formatted_address": "116 Errol Street NORTH MELBOURNE VIC 3051",
+    "geometry": {
+      "location": {
+        "lat": -37.80223499,
+        "lng": 144.950095564
+      }
+    },
+    "industry_anzsic4_code": "4511",
+    "industry_anzsic4_description": "Cafes and Restaurants",
+    "clue_small_area": "North Melbourne",
+    "census_year": "2024",
+    "seats_indoor": 35,
+    "seats_outdoor": 14,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 49
+  },
+  {
+    "id": "cafe_st_cooper_cafe_376_103811",
+    "name": "St Cooper Cafe",
+    "formatted_address": "27 Blackwood Street NORTH MELBOURNE VIC 3051",
+    "geometry": {
+      "location": {
+        "lat": -37.80067768,
+        "lng": 144.955200107
+      }
+    },
+    "industry_anzsic4_code": "4512",
+    "industry_anzsic4_description": "Takeaway Food Services",
+    "clue_small_area": "North Melbourne",
+    "census_year": "2024",
+    "seats_indoor": 12,
+    "seats_outdoor": 9,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 21
+  },
+  {
+    "id": "cafe_new_lanna_thai_377_103816",
+    "name": "New Lanna Thai",
+    "formatted_address": "65 Flemington Road NORTH MELBOURNE VIC 3051",
+    "geometry": {
+      "location": {
+        "lat": -37.79936937,
+        "lng": 144.954000416
+      }
+    },
+    "industry_anzsic4_code": "4511",
+    "industry_anzsic4_description": "Cafes and Restaurants",
+    "clue_small_area": "North Melbourne",
+    "census_year": "2024",
+    "seats_indoor": 60,
+    "seats_outdoor": 8,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 68
+  },
+  {
+    "id": "cafe_mum_mum_asian_street_food_377_103816",
+    "name": "Mum Mum Asian Street Food",
+    "formatted_address": "67 Flemington Road NORTH MELBOURNE VIC 3051",
+    "geometry": {
+      "location": {
+        "lat": -37.79936937,
+        "lng": 144.954000416
+      }
+    },
+    "industry_anzsic4_code": "4511",
+    "industry_anzsic4_description": "Cafes and Restaurants",
+    "clue_small_area": "North Melbourne",
+    "census_year": "2024",
+    "seats_indoor": 42,
+    "seats_outdoor": 8,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 50
+  },
+  {
+    "id": "cafe_guzman_y_gomez_377_103817",
+    "name": "Guzman Y Gomez",
+    "formatted_address": "71 Flemington Road NORTH MELBOURNE VIC 3051",
+    "geometry": {
+      "location": {
+        "lat": -37.79930773,
+        "lng": 144.953791933
+      }
+    },
+    "industry_anzsic4_code": "4511",
+    "industry_anzsic4_description": "Cafes and Restaurants",
+    "clue_small_area": "North Melbourne",
+    "census_year": "2024",
+    "seats_indoor": 30,
+    "seats_outdoor": 0,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 30
+  },
+  {
+    "id": "cafe_jaspresso_378_103822",
+    "name": "Jaspresso",
+    "formatted_address": "91 Flemington Road NORTH MELBOURNE VIC 3051",
+    "geometry": {
+      "location": {
+        "lat": -37.79856463,
+        "lng": 144.952858592
+      }
+    },
+    "industry_anzsic4_code": "4511",
+    "industry_anzsic4_description": "Cafes and Restaurants",
+    "clue_small_area": "North Melbourne",
+    "census_year": "2024",
+    "seats_indoor": 30,
+    "seats_outdoor": 20,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 50
+  },
+  {
+    "id": "cafe_misty_pot_korean_grill_409_102784",
+    "name": "Misty Pot Korean Grill",
+    "formatted_address": "43 Dryburgh Street WEST MELBOURNE VIC 3003",
+    "geometry": {
+      "location": {
+        "lat": -37.80605115,
+        "lng": 144.942620969
+      }
+    },
+    "industry_anzsic4_code": "4511",
+    "industry_anzsic4_description": "Cafes and Restaurants",
+    "clue_small_area": "West Melbourne (Residential)",
+    "census_year": "2024",
+    "seats_indoor": 20,
+    "seats_outdoor": 0,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 20
+  },
+  {
+    "id": "cafe_hunters_and_disciples_414_108882",
+    "name": "Hunters And Disciples",
+    "formatted_address": "Part Unit 39, 617-643 Spencer Street WEST MELBOURNE VIC 3003",
+    "geometry": {
+      "location": {
+        "lat": -37.8068965,
+        "lng": 144.945352806
+      }
+    },
+    "industry_anzsic4_code": "4511",
+    "industry_anzsic4_description": "Cafes and Restaurants",
+    "clue_small_area": "West Melbourne (Residential)",
+    "census_year": "2024",
+    "seats_indoor": 100,
+    "seats_outdoor": 10,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 110
+  },
+  {
+    "id": "cafe_souvs_on_spencer_414_108885",
+    "name": "Souvs On Spencer",
+    "formatted_address": "655 Spencer Street WEST MELBOURNE VIC 3003",
+    "geometry": {
+      "location": {
+        "lat": -37.80643135,
+        "lng": 144.944905055
+      }
+    },
+    "industry_anzsic4_code": "4511",
+    "industry_anzsic4_description": "Cafes and Restaurants",
+    "clue_small_area": "West Melbourne (Residential)",
+    "census_year": "2024",
+    "seats_indoor": 28,
+    "seats_outdoor": 4,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 32
+  },
+  {
+    "id": "cafe_butcher_shop_cafe_415_104762",
+    "name": "Butcher Shop Cafe",
+    "formatted_address": "72 Hawke Street WEST MELBOURNE VIC 3003",
+    "geometry": {
+      "location": {
+        "lat": -37.8080043,
+        "lng": 144.945577948
+      }
+    },
+    "industry_anzsic4_code": "4511",
+    "industry_anzsic4_description": "Cafes and Restaurants",
+    "clue_small_area": "West Melbourne (Residential)",
+    "census_year": "2024",
+    "seats_indoor": 10,
+    "seats_outdoor": 8,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 18
+  },
+  {
+    "id": "cafe_apollo_cafe_419_104728",
+    "name": "Apollo Cafe",
+    "formatted_address": "Ground 109-111 Hawke Street WEST MELBOURNE VIC 3003",
+    "geometry": {
+      "location": {
+        "lat": -37.80784196,
+        "lng": 144.946624618
+      }
+    },
+    "industry_anzsic4_code": "4511",
+    "industry_anzsic4_description": "Cafes and Restaurants",
+    "clue_small_area": "West Melbourne (Residential)",
+    "census_year": "2024",
+    "seats_indoor": 44,
+    "seats_outdoor": 20,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 64
+  },
+  {
+    "id": "cafe_the_kathmandu_cottage_423_109716",
+    "name": "The Kathmandu Cottage",
+    "formatted_address": "Ground 349 Victoria Street WEST MELBOURNE VIC 3003",
+    "geometry": {
+      "location": {
+        "lat": -37.80539371,
+        "lng": 144.949792546
+      }
+    },
+    "industry_anzsic4_code": "4511",
+    "industry_anzsic4_description": "Cafes and Restaurants",
+    "clue_small_area": "West Melbourne (Residential)",
+    "census_year": "2024",
+    "seats_indoor": 60,
+    "seats_outdoor": 20,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 80
+  },
+  {
+    "id": "cafe_smile_thai_cuisine_423_109719",
+    "name": "Smile Thai Cuisine",
+    "formatted_address": "357 Victoria Street WEST MELBOURNE VIC 3003",
+    "geometry": {
+      "location": {
+        "lat": -37.80538852,
+        "lng": 144.94963128
+      }
+    },
+    "industry_anzsic4_code": "4511",
+    "industry_anzsic4_description": "Cafes and Restaurants",
+    "clue_small_area": "West Melbourne (Residential)",
+    "census_year": "2024",
+    "seats_indoor": 22,
+    "seats_outdoor": 4,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 26
+  },
+  {
+    "id": "cafe_three_crowns_hotel_423_109721",
+    "name": "Three Crowns Hotel",
+    "formatted_address": "361-365 Victoria Street WEST MELBOURNE VIC 3003",
+    "geometry": {
+      "location": {
+        "lat": -37.80539923,
+        "lng": 144.949466316
+      }
+    },
+    "industry_anzsic4_code": "4520",
+    "industry_anzsic4_description": "Pubs, Taverns and Bars",
+    "clue_small_area": "West Melbourne (Residential)",
+    "census_year": "2024",
+    "seats_indoor": 189,
+    "seats_outdoor": 96,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 285
+  },
+  {
+    "id": "cafe_b_cuz_coffee_eatery_430_108864",
+    "name": "B Cuz Coffee & Eatery",
+    "formatted_address": "Ground 505-507 Spencer Street WEST MELBOURNE VIC 3003",
+    "geometry": {
+      "location": {
+        "lat": -37.80883464,
+        "lng": 144.948632857
+      }
+    },
+    "industry_anzsic4_code": "4511",
+    "industry_anzsic4_description": "Cafes and Restaurants",
+    "clue_small_area": "West Melbourne (Residential)",
+    "census_year": "2024",
+    "seats_indoor": 16,
+    "seats_outdoor": 0,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 16
+  },
+  {
+    "id": "cafe_taiwan_cafe_melbourne_431_109005",
+    "name": "Taiwan Cafe Melbourne",
+    "formatted_address": "67-69 Stanley Street WEST MELBOURNE VIC 3003",
+    "geometry": {
+      "location": {
+        "lat": -37.80844834,
+        "lng": 144.949379147
+      }
+    },
+    "industry_anzsic4_code": "4511",
+    "industry_anzsic4_description": "Cafes and Restaurants",
+    "clue_small_area": "West Melbourne (Residential)",
+    "census_year": "2024",
+    "seats_indoor": 20,
+    "seats_outdoor": 0,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 20
+  },
+  {
+    "id": "cafe_myth_cafe_432_108443",
+    "name": "Myth Cafe",
+    "formatted_address": "48 Rosslyn Street WEST MELBOURNE VIC 3003",
+    "geometry": {
+      "location": {
+        "lat": -37.80739774,
+        "lng": 144.952572489
+      }
+    },
+    "industry_anzsic4_code": "4511",
+    "industry_anzsic4_description": "Cafes and Restaurants",
+    "clue_small_area": "West Melbourne (Residential)",
+    "census_year": "2024",
+    "seats_indoor": 12,
+    "seats_outdoor": 12,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 24
+  },
+  {
+    "id": "cafe_the_flour_melbourne_434_109687",
+    "name": "The Flour Melbourne",
+    "formatted_address": "Ground 199 Victoria Street WEST MELBOURNE VIC 3003",
+    "geometry": {
+      "location": {
+        "lat": -37.8059984,
+        "lng": 144.954768041
+      }
+    },
+    "industry_anzsic4_code": "4511",
+    "industry_anzsic4_description": "Cafes and Restaurants",
+    "clue_small_area": "West Melbourne (Residential)",
+    "census_year": "2024",
+    "seats_indoor": 24,
+    "seats_outdoor": 0,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 24
+  },
+  {
+    "id": "cafe_little_africa_434_109697",
+    "name": "Little Africa",
+    "formatted_address": "223 Victoria Street WEST MELBOURNE VIC 3003",
+    "geometry": {
+      "location": {
+        "lat": -37.80590009,
+        "lng": 144.954044804
+      }
+    },
+    "industry_anzsic4_code": "4511",
+    "industry_anzsic4_description": "Cafes and Restaurants",
+    "clue_small_area": "West Melbourne (Residential)",
+    "census_year": "2024",
+    "seats_indoor": 28,
+    "seats_outdoor": 12,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 40
+  },
+  {
+    "id": "cafe_hello_jose_435_107486",
+    "name": "Hello Jose",
+    "formatted_address": "Ground 85 Peel Street WEST MELBOURNE VIC 3003",
+    "geometry": {
+      "location": {
+        "lat": -37.80619737,
+        "lng": 144.955584299
+      }
+    },
+    "industry_anzsic4_code": "4511",
+    "industry_anzsic4_description": "Cafes and Restaurants",
+    "clue_small_area": "West Melbourne (Residential)",
+    "census_year": "2024",
+    "seats_indoor": 20,
+    "seats_outdoor": 40,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 60
+  },
+  {
+    "id": "cafe_korean_bbq_matzip_435_109682",
+    "name": "Korean BBQ Matzip",
+    "formatted_address": "179-181 Victoria Street WEST MELBOURNE VIC 3003",
+    "geometry": {
+      "location": {
+        "lat": -37.80606639,
+        "lng": 144.955603657
+      }
+    },
+    "industry_anzsic4_code": "4511",
+    "industry_anzsic4_description": "Cafes and Restaurants",
+    "clue_small_area": "West Melbourne (Residential)",
+    "census_year": "2024",
+    "seats_indoor": 25,
+    "seats_outdoor": 8,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 33
+  },
+  {
+    "id": "cafe_sanhe_congee_435_109683",
+    "name": "Sanhe Congee",
+    "formatted_address": "Part Ground 185 Victoria Street WEST MELBOURNE VIC 3003",
+    "geometry": {
+      "location": {
+        "lat": -37.80604868,
+        "lng": 144.955442178
+      }
+    },
+    "industry_anzsic4_code": "4511",
+    "industry_anzsic4_description": "Cafes and Restaurants",
+    "clue_small_area": "West Melbourne (Residential)",
+    "census_year": "2024",
+    "seats_indoor": 28,
+    "seats_outdoor": 0,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 28
+  },
+  {
+    "id": "cafe_royal_standard_hotel_437_110111",
+    "name": "Royal Standard Hotel",
+    "formatted_address": "Royal Standard Hotel 333-337 William Street WEST MELBOURNE VIC 3003",
+    "geometry": {
+      "location": {
+        "lat": -37.80781408,
+        "lng": 144.954253706
+      }
+    },
+    "industry_anzsic4_code": "4520",
+    "industry_anzsic4_description": "Pubs, Taverns and Bars",
+    "clue_small_area": "West Melbourne (Residential)",
+    "census_year": "2024",
+    "seats_indoor": 150,
+    "seats_outdoor": 6,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 156
+  },
+  {
+    "id": "cafe_my_bao_handmade_pastry_440_679272",
+    "name": "My Bao Handmade Pastry",
+    "formatted_address": "142 Dudley Street WEST MELBOURNE VIC 3003",
+    "geometry": {
+      "location": {
+        "lat": -37.80951681,
+        "lng": 144.950604342
+      }
+    },
+    "industry_anzsic4_code": "4511",
+    "industry_anzsic4_description": "Cafes and Restaurants",
+    "clue_small_area": "West Melbourne (Residential)",
+    "census_year": "2024",
+    "seats_indoor": 26,
+    "seats_outdoor": 0,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 26
+  },
+  {
+    "id": "cafe_roslyn_thai_cafe_440_105333",
+    "name": "Roslyn Thai Cafe",
+    "formatted_address": "477 King Street WEST MELBOURNE VIC 3003",
+    "geometry": {
+      "location": {
+        "lat": -37.80886049,
+        "lng": 144.951685372
+      }
+    },
+    "industry_anzsic4_code": "4511",
+    "industry_anzsic4_description": "Cafes and Restaurants",
+    "clue_small_area": "West Melbourne (Residential)",
+    "census_year": "2024",
+    "seats_indoor": 45,
+    "seats_outdoor": 0,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 45
+  },
+  {
+    "id": "cafe_hotel_spencer_bar_grill_441_108856",
+    "name": "Hotel Spencer Bar & Grill",
+    "formatted_address": "Ground 475 Spencer Street WEST MELBOURNE VIC 3003",
+    "geometry": {
+      "location": {
+        "lat": -37.80956913,
+        "lng": 144.949250302
+      }
+    },
+    "industry_anzsic4_code": "4520",
+    "industry_anzsic4_description": "Pubs, Taverns and Bars",
+    "clue_small_area": "West Melbourne (Residential)",
+    "census_year": "2024",
+    "seats_indoor": 90,
+    "seats_outdoor": 12,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 102
+  },
+  {
+    "id": "cafe_co_ground_443_102953",
+    "name": "Co-Ground",
+    "formatted_address": "Part Ground 100-154 Batman Street WEST MELBOURNE VIC 3003",
+    "geometry": {
+      "location": {
+        "lat": -37.81102736,
+        "lng": 144.948907786
+      }
+    },
+    "industry_anzsic4_code": "4512",
+    "industry_anzsic4_description": "Takeaway Food Services",
+    "clue_small_area": "West Melbourne (Residential)",
+    "census_year": "2024",
+    "seats_indoor": 8,
+    "seats_outdoor": 0,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 8
+  },
+  {
+    "id": "cafe_willo_co_502_105226",
+    "name": "Willo & Co",
+    "formatted_address": "207 Kensington Road WEST MELBOURNE VIC 3003",
+    "geometry": {
+      "location": {
+        "lat": -37.80087212,
+        "lng": 144.91650741
+      }
+    },
+    "industry_anzsic4_code": "4512",
+    "industry_anzsic4_description": "Takeaway Food Services",
+    "clue_small_area": "West Melbourne (Industrial)",
+    "census_year": "2024",
+    "seats_indoor": 45,
+    "seats_outdoor": 16,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 61
+  },
+  {
+    "id": "cafe_kensington_canteen_503_612530",
+    "name": "Kensington Canteen",
+    "formatted_address": "100 McClure Road KENSINGTON VIC 3031",
+    "geometry": {
+      "location": {
+        "lat": -37.79956864,
+        "lng": 144.93036435
+      }
+    },
+    "industry_anzsic4_code": "4511",
+    "industry_anzsic4_description": "Cafes and Restaurants",
+    "clue_small_area": "Kensington",
+    "census_year": "2024",
+    "seats_indoor": 30,
+    "seats_outdoor": 12,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 42
+  },
+  {
+    "id": "cafe_cafe_1565_523_104380",
+    "name": "Cafe 1565",
+    "formatted_address": "3 Gower Street KENSINGTON VIC 3031",
+    "geometry": {
+      "location": {
+        "lat": -37.79470942,
+        "lng": 144.930071271
+      }
+    },
+    "industry_anzsic4_code": "4512",
+    "industry_anzsic4_description": "Takeaway Food Services",
+    "clue_small_area": "Kensington",
+    "census_year": "2024",
+    "seats_indoor": 20,
+    "seats_outdoor": 0,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 20
+  },
+  {
+    "id": "cafe_grounded_house_524_106321",
+    "name": "Grounded House",
+    "formatted_address": "499 MacAulay Road KENSINGTON VIC 3031",
+    "geometry": {
+      "location": {
+        "lat": -37.79458129,
+        "lng": 144.929445017
+      }
+    },
+    "industry_anzsic4_code": "4511",
+    "industry_anzsic4_description": "Cafes and Restaurants",
+    "clue_small_area": "Kensington",
+    "census_year": "2024",
+    "seats_indoor": 16,
+    "seats_outdoor": 3,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 19
+  },
+  {
+    "id": "cafe_clay_oven_pizza_524_106322",
+    "name": "Clay Oven Pizza",
+    "formatted_address": "501 MacAulay Road KENSINGTON VIC 3031",
+    "geometry": {
+      "location": {
+        "lat": -37.79452502,
+        "lng": 144.929351654
+      }
+    },
+    "industry_anzsic4_code": "4512",
+    "industry_anzsic4_description": "Takeaway Food Services",
+    "clue_small_area": "Kensington",
+    "census_year": "2024",
+    "seats_indoor": 14,
+    "seats_outdoor": 12,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 26
+  },
+  {
+    "id": "cafe_rick_s_place_524_106323",
+    "name": "Rick's Place",
+    "formatted_address": "507 MacAulay Road KENSINGTON VIC 3031",
+    "geometry": {
+      "location": {
+        "lat": -37.79454041,
+        "lng": 144.929242857
+      }
+    },
+    "industry_anzsic4_code": "4511",
+    "industry_anzsic4_description": "Cafes and Restaurants",
+    "clue_small_area": "Kensington",
+    "census_year": "2024",
+    "seats_indoor": 70,
+    "seats_outdoor": 0,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 70
+  },
+  {
+    "id": "cafe_hardimans_hotel_525_106329",
+    "name": "Hardimans Hotel",
+    "formatted_address": "Hardimans Hotel 521-535 Macaulay Road KENSINGTON VIC 3031",
+    "geometry": {
+      "location": {
+        "lat": -37.79442112,
+        "lng": 144.928355246
+      }
+    },
+    "industry_anzsic4_code": "4520",
+    "industry_anzsic4_description": "Pubs, Taverns and Bars",
+    "clue_small_area": "Kensington",
+    "census_year": "2024",
+    "seats_indoor": 230,
+    "seats_outdoor": 187,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 417
+  },
+  {
+    "id": "cafe_local_folk_cafe_547_103380",
+    "name": "Local Folk Cafe",
+    "formatted_address": "43 Epsom Road KENSINGTON VIC 3031",
+    "geometry": {
+      "location": {
+        "lat": -37.79223674,
+        "lng": 144.925609612
+      }
+    },
+    "industry_anzsic4_code": "4511",
+    "industry_anzsic4_description": "Cafes and Restaurants",
+    "clue_small_area": "Kensington",
+    "census_year": "2024",
+    "seats_indoor": 45,
+    "seats_outdoor": 15,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 60
+  },
+  {
+    "id": "cafe_rye_cafe_571_602256",
+    "name": "Rye Cafe",
+    "formatted_address": "Shop 16, 320-380 Epsom Road FLEMINGTON VIC 3031",
+    "geometry": {
+      "location": {
+        "lat": -37.78257295,
+        "lng": 144.915521168
+      }
+    },
+    "industry_anzsic4_code": "4511",
+    "industry_anzsic4_description": "Cafes and Restaurants",
+    "clue_small_area": "Kensington",
+    "census_year": "2024",
+    "seats_indoor": 30,
+    "seats_outdoor": 16,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 46
+  },
+  {
+    "id": "cafe_bamboo_garden_571_602256",
+    "name": "Bamboo Garden",
+    "formatted_address": "Shop 26, 320-380 Epsom Road FLEMINGTON VIC 3031",
+    "geometry": {
+      "location": {
+        "lat": -37.78257295,
+        "lng": 144.915521168
+      }
+    },
+    "industry_anzsic4_code": "4512",
+    "industry_anzsic4_description": "Takeaway Food Services",
+    "clue_small_area": "Kensington",
+    "census_year": "2024",
+    "seats_indoor": 12,
+    "seats_outdoor": 0,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 12
+  },
+  {
+    "id": "cafe_pacinos_italian_restaurant_571_602256",
+    "name": "Pacinos Italian Restaurant",
+    "formatted_address": "Shop 28, 320-380 Epsom Road FLEMINGTON VIC 3031",
+    "geometry": {
+      "location": {
+        "lat": -37.78257295,
+        "lng": 144.915521168
+      }
+    },
+    "industry_anzsic4_code": "4511",
+    "industry_anzsic4_description": "Cafes and Restaurants",
+    "clue_small_area": "Kensington",
+    "census_year": "2024",
+    "seats_indoor": 130,
+    "seats_outdoor": 34,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 164
+  },
+  {
+    "id": "cafe_urban_foodies_pty_ltd_2385_616892",
+    "name": "URBAN FOODIES PTY LTD",
+    "formatted_address": "Part Ground 64 Sutton Street NORTH MELBOURNE VIC 3051",
+    "geometry": {
+      "location": {
+        "lat": -37.79165579,
+        "lng": 144.937871966
+      }
+    },
+    "industry_anzsic4_code": "4511",
+    "industry_anzsic4_description": "Cafes and Restaurants",
+    "clue_small_area": "North Melbourne",
+    "census_year": "2024",
+    "seats_indoor": 28,
+    "seats_outdoor": 0,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 28
+  },
+  {
+    "id": "cafe_melrose_place_nm_2392_617402",
+    "name": "Melrose Place NM",
+    "formatted_address": "15 Melrose Street NORTH MELBOURNE VIC 3051",
+    "geometry": {
+      "location": {
+        "lat": -37.79501722,
+        "lng": 144.941402664
+      }
+    },
+    "industry_anzsic4_code": "4512",
+    "industry_anzsic4_description": "Takeaway Food Services",
+    "clue_small_area": "North Melbourne",
+    "census_year": "2024",
+    "seats_indoor": 8,
+    "seats_outdoor": 6,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 14
+  },
+  {
+    "id": "cafe_melrose_takeaway_2392_617402",
+    "name": "Melrose Takeaway",
+    "formatted_address": "35 Melrose Street NORTH MELBOURNE VIC 3051",
+    "geometry": {
+      "location": {
+        "lat": -37.79501722,
+        "lng": 144.941402664
+      }
+    },
+    "industry_anzsic4_code": "4512",
+    "industry_anzsic4_description": "Takeaway Food Services",
+    "clue_small_area": "North Melbourne",
+    "census_year": "2024",
+    "seats_indoor": 4,
+    "seats_outdoor": 4,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 8
+  },
+  {
+    "id": "cafe_mr_tucker_2392_617402",
+    "name": "Mr Tucker",
+    "formatted_address": "17-19 Melrose Street NORTH MELBOURNE VIC 3051",
+    "geometry": {
+      "location": {
+        "lat": -37.79501722,
+        "lng": 144.941402664
+      }
+    },
+    "industry_anzsic4_code": "4511",
+    "industry_anzsic4_description": "Cafes and Restaurants",
+    "clue_small_area": "North Melbourne",
+    "census_year": "2024",
+    "seats_indoor": 40,
+    "seats_outdoor": 28,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 68
+  },
+  {
+    "id": "cafe_new_bakerhouse_and_coffee_2524_615952",
+    "name": "New Bakerhouse And Coffee",
+    "formatted_address": "506 Macaulay Road KENSINGTON VIC 3031",
+    "geometry": {
+      "location": {
+        "lat": -37.79409415,
+        "lng": 144.929315278
+      }
+    },
+    "industry_anzsic4_code": "1174",
+    "industry_anzsic4_description": "Bakery Product Manufacturing (Non-factory based)",
+    "clue_small_area": "Kensington",
+    "census_year": "2024",
+    "seats_indoor": 20,
+    "seats_outdoor": 6,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 26
+  },
+  {
+    "id": "cafe_the_premises_espresso_2524_616022",
+    "name": "The Premises Espresso",
+    "formatted_address": "202 Bellair Street KENSINGTON VIC 3031",
+    "geometry": {
+      "location": {
+        "lat": -37.79426147,
+        "lng": 144.93017684
+      }
+    },
+    "industry_anzsic4_code": "4511",
+    "industry_anzsic4_description": "Cafes and Restaurants",
+    "clue_small_area": "Kensington",
+    "census_year": "2024",
+    "seats_indoor": 70,
+    "seats_outdoor": 16,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 86
+  },
+  {
+    "id": "cafe_fruits_of_passion_2524_616034",
+    "name": "Fruits Of Passion",
+    "formatted_address": "188 Bellair Street KENSINGTON VIC 3031",
+    "geometry": {
+      "location": {
+        "lat": -37.79392952,
+        "lng": 144.92999321
+      }
+    },
+    "industry_anzsic4_code": "4511",
+    "industry_anzsic4_description": "Cafes and Restaurants",
+    "clue_small_area": "Kensington",
+    "census_year": "2024",
+    "seats_indoor": 40,
+    "seats_outdoor": 33,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 73
+  },
+  {
+    "id": "cafe_white_rabbit_record_bar_2524_616043",
+    "name": "White Rabbit Record Bar",
+    "formatted_address": "176 Bellair Street KENSINGTON VIC 3031",
+    "geometry": {
+      "location": {
+        "lat": -37.7936563,
+        "lng": 144.929934732
+      }
+    },
+    "industry_anzsic4_code": "4511",
+    "industry_anzsic4_description": "Cafes and Restaurants",
+    "clue_small_area": "Kensington",
+    "census_year": "2024",
+    "seats_indoor": 35,
+    "seats_outdoor": 41,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 76
+  },
+  {
+    "id": "cafe_la_galeria_cafe_and_tapas_2524_616045",
+    "name": "La Galeria Cafe And Tapas",
+    "formatted_address": "174 Bellair Street KENSINGTON VIC 3031",
+    "geometry": {
+      "location": {
+        "lat": -37.79360999,
+        "lng": 144.929929238
+      }
+    },
+    "industry_anzsic4_code": "4511",
+    "industry_anzsic4_description": "Cafes and Restaurants",
+    "clue_small_area": "Kensington",
+    "census_year": "2024",
+    "seats_indoor": 16,
+    "seats_outdoor": 6,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 22
+  },
+  {
+    "id": "cafe_pimm_thai_cafe_2524_616049",
+    "name": "Pimm Thai Cafe",
+    "formatted_address": "170 Bellair Street KENSINGTON VIC 3031",
+    "geometry": {
+      "location": {
+        "lat": -37.79353782,
+        "lng": 144.929915372
+      }
+    },
+    "industry_anzsic4_code": "4511",
+    "industry_anzsic4_description": "Cafes and Restaurants",
+    "clue_small_area": "Kensington",
+    "census_year": "2024",
+    "seats_indoor": 22,
+    "seats_outdoor": 10,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 32
+  },
+  {
+    "id": "cafe_luncheonette_cafe_2546_615281",
+    "name": "Luncheonette Cafe",
+    "formatted_address": "173 Rankins Road KENSINGTON VIC 3031",
+    "geometry": {
+      "location": {
+        "lat": -37.79436218,
+        "lng": 144.931113097
+      }
+    },
+    "industry_anzsic4_code": "4511",
+    "industry_anzsic4_description": "Cafes and Restaurants",
+    "clue_small_area": "Kensington",
+    "census_year": "2024",
+    "seats_indoor": 12,
+    "seats_outdoor": 8,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 20
+  },
+  {
+    "id": "cafe_hansang_91_105322",
+    "name": "Hansang",
+    "formatted_address": "Part Lot 1, Ground 347 King Street WEST MELBOURNE VIC 3003",
+    "geometry": {
+      "location": {
+        "lat": -37.81214526,
+        "lng": 144.953514179
+      }
+    },
+    "industry_anzsic4_code": "4511",
+    "industry_anzsic4_description": "Cafes and Restaurants",
+    "clue_small_area": "West Melbourne (Residential)",
+    "census_year": "2024",
+    "seats_indoor": 32,
+    "seats_outdoor": 0,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 32
+  },
+  {
+    "id": "cafe_the_moghals_91_105325",
+    "name": "The Moghals",
+    "formatted_address": "369-371 King Street WEST MELBOURNE VIC 3003",
+    "geometry": {
+      "location": {
+        "lat": -37.81166257,
+        "lng": 144.953251433
+      }
+    },
+    "industry_anzsic4_code": "4511",
+    "industry_anzsic4_description": "Cafes and Restaurants",
+    "clue_small_area": "West Melbourne (Residential)",
+    "census_year": "2024",
+    "seats_indoor": 26,
+    "seats_outdoor": 0,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 26
+  },
+  {
+    "id": "cafe_biryani_house_91_598268",
+    "name": "Biryani House",
+    "formatted_address": "339 King Street WEST MELBOURNE VIC 3003",
+    "geometry": {
+      "location": {
+        "lat": -37.81236188,
+        "lng": 144.953629457
+      }
+    },
+    "industry_anzsic4_code": "4511",
+    "industry_anzsic4_description": "Cafes and Restaurants",
+    "clue_small_area": "West Melbourne (Residential)",
+    "census_year": "2024",
+    "seats_indoor": 42,
+    "seats_outdoor": 0,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 42
+  },
+  {
+    "id": "cafe_impresso_cafe_91_598269",
+    "name": "Impresso Cafe",
+    "formatted_address": "Ground 341 King Street WEST MELBOURNE VIC 3003",
+    "geometry": {
+      "location": {
+        "lat": -37.81229603,
+        "lng": 144.953598901
+      }
+    },
+    "industry_anzsic4_code": "4511",
+    "industry_anzsic4_description": "Cafes and Restaurants",
+    "clue_small_area": "West Melbourne (Residential)",
+    "census_year": "2024",
+    "seats_indoor": 16,
+    "seats_outdoor": 8,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 24
+  },
+  {
+    "id": "cafe_north_end_deli_309_106299",
+    "name": "North End Deli",
+    "formatted_address": "257 Macaulay Road NORTH MELBOURNE VIC 3051",
+    "geometry": {
+      "location": {
+        "lat": -37.79557662,
+        "lng": 144.938197912
+      }
+    },
+    "industry_anzsic4_code": "4511",
+    "industry_anzsic4_description": "Cafes and Restaurants",
+    "clue_small_area": "North Melbourne",
+    "census_year": "2024",
+    "seats_indoor": 15,
+    "seats_outdoor": 8,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 23
+  },
+  {
+    "id": "cafe_ezistreat_309_106302",
+    "name": "EziStreat",
+    "formatted_address": "Part 275-285 MacAulay Road NORTH MELBOURNE VIC 3051",
+    "geometry": {
+      "location": {
+        "lat": -37.79551317,
+        "lng": 144.937630321
+      }
+    },
+    "industry_anzsic4_code": "6712",
+    "industry_anzsic4_description": "Non-Residential Property Operators",
+    "clue_small_area": "North Melbourne",
+    "census_year": "2024",
+    "seats_indoor": 60,
+    "seats_outdoor": 140,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 200
+  },
+  {
+    "id": "cafe_shuji_sushi_319_703218",
+    "name": "Shuji Sushi",
+    "formatted_address": "Shop G9, 129 Canning Street NORTH MELBOURNE VIC 3051",
+    "geometry": {
+      "location": {
+        "lat": -37.79616005,
+        "lng": 144.940736597
+      }
+    },
+    "industry_anzsic4_code": "4512",
+    "industry_anzsic4_description": "Takeaway Food Services",
+    "clue_small_area": "North Melbourne",
+    "census_year": "2024",
+    "seats_indoor": 24,
+    "seats_outdoor": 0,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 24
+  },
+  {
+    "id": "cafe_north_melbourne_fish_chips_326_104588",
+    "name": "North Melbourne Fish & Chips",
+    "formatted_address": "38 Haines Street NORTH MELBOURNE VIC 3051",
+    "geometry": {
+      "location": {
+        "lat": -37.79823272,
+        "lng": 144.946696441
+      }
+    },
+    "industry_anzsic4_code": "4512",
+    "industry_anzsic4_description": "Takeaway Food Services",
+    "clue_small_area": "North Melbourne",
+    "census_year": "2024",
+    "seats_indoor": 7,
+    "seats_outdoor": 0,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 7
+  },
+  {
+    "id": "cafe_albion_hotel_327_102352",
+    "name": "Albion Hotel",
+    "formatted_address": "171-173 Curzon Street NORTH MELBOURNE VIC 3051",
+    "geometry": {
+      "location": {
+        "lat": -37.79889904,
+        "lng": 144.948550483
+      }
+    },
+    "industry_anzsic4_code": "4520",
+    "industry_anzsic4_description": "Pubs, Taverns and Bars",
+    "clue_small_area": "North Melbourne",
+    "census_year": "2024",
+    "seats_indoor": 40,
+    "seats_outdoor": 35,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 75
+  },
+  {
+    "id": "cafe_twenty_six_espresso_333_107981",
+    "name": "Twenty & Six Espresso",
+    "formatted_address": "594 Queensberry Street NORTH MELBOURNE VIC 3051",
+    "geometry": {
+      "location": {
+        "lat": -37.80257071,
+        "lng": 144.947539147
+      }
+    },
+    "industry_anzsic4_code": "4511",
+    "industry_anzsic4_description": "Cafes and Restaurants",
+    "clue_small_area": "North Melbourne",
+    "census_year": "2024",
+    "seats_indoor": 17,
+    "seats_outdoor": 20,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 37
+  },
+  {
+    "id": "cafe_salt_seafood_and_burger_bar_345_103395",
+    "name": "Salt Seafood and Burger Bar",
+    "formatted_address": "11 Errol Street NORTH MELBOURNE VIC 3051",
+    "geometry": {
+      "location": {
+        "lat": -37.80470159,
+        "lng": 144.94903156
+      }
+    },
+    "industry_anzsic4_code": "4512",
+    "industry_anzsic4_description": "Takeaway Food Services",
+    "clue_small_area": "North Melbourne",
+    "census_year": "2024",
+    "seats_indoor": 16,
+    "seats_outdoor": 18,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 34
+  },
+  {
+    "id": "cafe_toast_kitchen_cafe_345_103396",
+    "name": "Toast Kitchen Cafe",
+    "formatted_address": "Ground 13 Errol Street NORTH MELBOURNE VIC 3051",
+    "geometry": {
+      "location": {
+        "lat": -37.80463699,
+        "lng": 144.94904224
+      }
+    },
+    "industry_anzsic4_code": "4511",
+    "industry_anzsic4_description": "Cafes and Restaurants",
+    "clue_small_area": "North Melbourne",
+    "census_year": "2024",
+    "seats_indoor": 34,
+    "seats_outdoor": 24,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 58
+  },
+  {
+    "id": "cafe_townhall_hotel_north_melbourne_345_103402",
+    "name": "Townhall Hotel North Melbourne",
+    "formatted_address": "33 Errol Street NORTH MELBOURNE VIC 3051",
+    "geometry": {
+      "location": {
+        "lat": -37.80414139,
+        "lng": 144.948906749
+      }
+    },
+    "industry_anzsic4_code": "4520",
+    "industry_anzsic4_description": "Pubs, Taverns and Bars",
+    "clue_small_area": "North Melbourne",
+    "census_year": "2024",
+    "seats_indoor": 56,
+    "seats_outdoor": 34,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 90
+  },
+  {
+    "id": "cafe_wonky_trolley_345_103407",
+    "name": "Wonky Trolley",
+    "formatted_address": "47 Errol Street NORTH MELBOURNE VIC 3051",
+    "geometry": {
+      "location": {
+        "lat": -37.80390823,
+        "lng": 144.94904753
+      }
+    },
+    "industry_anzsic4_code": "4511",
+    "industry_anzsic4_description": "Cafes and Restaurants",
+    "clue_small_area": "North Melbourne",
+    "census_year": "2024",
+    "seats_indoor": 30,
+    "seats_outdoor": 18,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 48
+  },
+  {
+    "id": "cafe_bistro_de_paris_345_103413",
+    "name": "Bistro De Paris",
+    "formatted_address": "63 Errol Street NORTH MELBOURNE VIC 3051",
+    "geometry": {
+      "location": {
+        "lat": -37.80360299,
+        "lng": 144.949205167
+      }
+    },
+    "industry_anzsic4_code": "4511",
+    "industry_anzsic4_description": "Cafes and Restaurants",
+    "clue_small_area": "North Melbourne",
+    "census_year": "2024",
+    "seats_indoor": 32,
+    "seats_outdoor": 10,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 42
+  },
+  {
+    "id": "cafe_errol_s_cafe_345_103415",
+    "name": "Errol's Cafe",
+    "formatted_address": "69-71 Errol Street NORTH MELBOURNE VIC 3051",
+    "geometry": {
+      "location": {
+        "lat": -37.80345572,
+        "lng": 144.949083435
+      }
+    },
+    "industry_anzsic4_code": "4511",
+    "industry_anzsic4_description": "Cafes and Restaurants",
+    "clue_small_area": "North Melbourne",
+    "census_year": "2024",
+    "seats_indoor": 40,
+    "seats_outdoor": 30,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 70
+  },
+  {
+    "id": "cafe_snax_cafe_345_103419",
+    "name": "Snax Cafe",
+    "formatted_address": "81 Errol Street NORTH MELBOURNE VIC 3051",
+    "geometry": {
+      "location": {
+        "lat": -37.80323404,
+        "lng": 144.94928705
+      }
+    },
+    "industry_anzsic4_code": "4511",
+    "industry_anzsic4_description": "Cafes and Restaurants",
+    "clue_small_area": "North Melbourne",
+    "census_year": "2024",
+    "seats_indoor": 36,
+    "seats_outdoor": 18,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 54
+  },
+  {
+    "id": "cafe_lumen_people_345_570824",
+    "name": "Lumen People",
+    "formatted_address": "522 Victoria Street NORTH MELBOURNE VIC 3051",
+    "geometry": {
+      "location": {
+        "lat": -37.80474738,
+        "lng": 144.94871348
+      }
+    },
+    "industry_anzsic4_code": "4511",
+    "industry_anzsic4_description": "Cafes and Restaurants",
+    "clue_small_area": "North Melbourne",
+    "census_year": "2024",
+    "seats_indoor": 25,
+    "seats_outdoor": 4,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 29
+  },
+  {
+    "id": "cafe_french_quarter_patisserie_346_107986",
+    "name": "French Quarter Patisserie",
+    "formatted_address": "568 Queensberry Street NORTH MELBOURNE VIC 3051",
+    "geometry": {
+      "location": {
+        "lat": -37.80271264,
+        "lng": 144.948475718
+      }
+    },
+    "industry_anzsic4_code": "4511",
+    "industry_anzsic4_description": "Cafes and Restaurants",
+    "clue_small_area": "North Melbourne",
+    "census_year": "2024",
+    "seats_indoor": 24,
+    "seats_outdoor": 14,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 38
+  },
+  {
+    "id": "cafe_kl_bunga_raya_354_103520",
+    "name": "KL Bunga Raya",
+    "formatted_address": "Ground 34 Errol Street NORTH MELBOURNE VIC 3051",
+    "geometry": {
+      "location": {
+        "lat": -37.80435713,
+        "lng": 144.949722464
+      }
+    },
+    "industry_anzsic4_code": "4511",
+    "industry_anzsic4_description": "Cafes and Restaurants",
+    "clue_small_area": "North Melbourne",
+    "census_year": "2024",
+    "seats_indoor": 30,
+    "seats_outdoor": 15,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 45
+  },
+  {
+    "id": "cafe_the_comics_lounge_354_103523",
+    "name": "The Comics Lounge",
+    "formatted_address": "Part Level 1 26 Errol Street NORTH MELBOURNE VIC 3051",
+    "geometry": {
+      "location": {
+        "lat": -37.80459297,
+        "lng": 144.949917927
+      }
+    },
+    "industry_anzsic4_code": "4530",
+    "industry_anzsic4_description": "Clubs (Hospitality)",
+    "clue_small_area": "North Melbourne",
+    "census_year": "2024",
+    "seats_indoor": 350,
+    "seats_outdoor": 0,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 350
+  },
+  {
+    "id": "cafe_sosta_cucina_354_103525",
+    "name": "Sosta Cucina",
+    "formatted_address": "12-14 Errol Street NORTH MELBOURNE VIC 3051",
+    "geometry": {
+      "location": {
+        "lat": -37.80483255,
+        "lng": 144.949568839
+      }
+    },
+    "industry_anzsic4_code": "4511",
+    "industry_anzsic4_description": "Cafes and Restaurants",
+    "clue_small_area": "North Melbourne",
+    "census_year": "2024",
+    "seats_indoor": 60,
+    "seats_outdoor": 22,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 82
+  },
+  {
+    "id": "cafe_arbutus_354_103526",
+    "name": "Arbutus",
+    "formatted_address": "8 Errol Street NORTH MELBOURNE VIC 3051",
+    "geometry": {
+      "location": {
+        "lat": -37.80489365,
+        "lng": 144.949580943
+      }
+    },
+    "industry_anzsic4_code": "4511",
+    "industry_anzsic4_description": "Cafes and Restaurants",
+    "clue_small_area": "North Melbourne",
+    "census_year": "2024",
+    "seats_indoor": 18,
+    "seats_outdoor": 12,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 30
+  },
+  {
+    "id": "cafe_roasting_warehouse_354_105606",
+    "name": "Roasting Warehouse",
+    "formatted_address": "19-21 Leveson Street NORTH MELBOURNE VIC 3051",
+    "geometry": {
+      "location": {
+        "lat": -37.80447359,
+        "lng": 144.950594501
+      }
+    },
+    "industry_anzsic4_code": "4511",
+    "industry_anzsic4_description": "Cafes and Restaurants",
+    "clue_small_area": "North Melbourne",
+    "census_year": "2024",
+    "seats_indoor": 60,
+    "seats_outdoor": 48,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 108
+  },
+  {
+    "id": "cafe_el_sabor_354_109790",
+    "name": "El Sabor",
+    "formatted_address": "500 Victoria Street NORTH MELBOURNE VIC 3051",
+    "geometry": {
+      "location": {
+        "lat": -37.804917,
+        "lng": 144.949681151
+      }
+    },
+    "industry_anzsic4_code": "4511",
+    "industry_anzsic4_description": "Cafes and Restaurants",
+    "clue_small_area": "North Melbourne",
+    "census_year": "2024",
+    "seats_indoor": 70,
+    "seats_outdoor": 4,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 74
+  },
+  {
+    "id": "cafe_pho_victoria_357_109821",
+    "name": "Pho Victoria",
+    "formatted_address": "372 Victoria Street NORTH MELBOURNE VIC 3051",
+    "geometry": {
+      "location": {
+        "lat": -37.80542263,
+        "lng": 144.953960605
+      }
+    },
+    "industry_anzsic4_code": "4511",
+    "industry_anzsic4_description": "Cafes and Restaurants",
+    "clue_small_area": "North Melbourne",
+    "census_year": "2024",
+    "seats_indoor": 38,
+    "seats_outdoor": 6,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 44
+  },
+  {
+    "id": "cafe_path_melbourne_357_109824",
+    "name": "Path Melbourne",
+    "formatted_address": "Shop Ground 362 Victoria Street NORTH MELBOURNE VIC 3051",
+    "geometry": {
+      "location": {
+        "lat": -37.80537801,
+        "lng": 144.954338535
+      }
+    },
+    "industry_anzsic4_code": "4512",
+    "industry_anzsic4_description": "Takeaway Food Services",
+    "clue_small_area": "North Melbourne",
+    "census_year": "2024",
+    "seats_indoor": 15,
+    "seats_outdoor": 0,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 15
+  },
+  {
+    "id": "cafe_nahm_tao_thai_kitchen_357_109825",
+    "name": "Nahm Tao Thai Kitchen",
+    "formatted_address": "348 Victoria Street NORTH MELBOURNE VIC 3051",
+    "geometry": {
+      "location": {
+        "lat": -37.80542551,
+        "lng": 144.954763334
+      }
+    },
+    "industry_anzsic4_code": "4512",
+    "industry_anzsic4_description": "Takeaway Food Services",
+    "clue_small_area": "North Melbourne",
+    "census_year": "2024",
+    "seats_indoor": 15,
+    "seats_outdoor": 0,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 15
+  },
+  {
+    "id": "cafe_kebab_connection_358_109827",
+    "name": "Kebab Connection",
+    "formatted_address": "Ground 320 Victoria Street NORTH MELBOURNE VIC 3051",
+    "geometry": {
+      "location": {
+        "lat": -37.80560889,
+        "lng": 144.955494804
+      }
+    },
+    "industry_anzsic4_code": "4512",
+    "industry_anzsic4_description": "Takeaway Food Services",
+    "clue_small_area": "North Melbourne",
+    "census_year": "2024",
+    "seats_indoor": 17,
+    "seats_outdoor": 0,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 17
+  },
+  {
+    "id": "cafe_maria_s_trattoria_360_107531",
+    "name": "Maria's Trattoria",
+    "formatted_address": "122-124 Peel Street NORTH MELBOURNE VIC 3051",
+    "geometry": {
+      "location": {
+        "lat": -37.80519937,
+        "lng": 144.956459859
+      }
+    },
+    "industry_anzsic4_code": "4511",
+    "industry_anzsic4_description": "Cafes and Restaurants",
+    "clue_small_area": "North Melbourne",
+    "census_year": "2024",
+    "seats_indoor": 80,
+    "seats_outdoor": 4,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 84
+  },
+  {
+    "id": "cafe_melbourne_toodouri_361_109839",
+    "name": "Melbourne Toodouri",
+    "formatted_address": "260 Victoria Street NORTH MELBOURNE VIC 3051",
+    "geometry": {
+      "location": {
+        "lat": -37.80583959,
+        "lng": 144.957723661
+      }
+    },
+    "industry_anzsic4_code": "4511",
+    "industry_anzsic4_description": "Cafes and Restaurants",
+    "clue_small_area": "North Melbourne",
+    "census_year": "2024",
+    "seats_indoor": 60,
+    "seats_outdoor": 0,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 60
+  },
+  {
+    "id": "cafe_dancing_flame_charcoal_grill_362_103242",
+    "name": "Dancing Flame Charcoal Grill",
+    "formatted_address": "Ground 579-581 Elizabeth Street MELBOURNE VIC 3000",
+    "geometry": {
+      "location": {
+        "lat": -37.80471151,
+        "lng": 144.958291779
+      }
+    },
+    "industry_anzsic4_code": "4511",
+    "industry_anzsic4_description": "Cafes and Restaurants",
+    "clue_small_area": "North Melbourne",
+    "census_year": "2024",
+    "seats_indoor": 50,
+    "seats_outdoor": 8,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 58
+  },
+  {
+    "id": "cafe_big_bang_yogurt_362_103250",
+    "name": "Big Bang Yogurt",
+    "formatted_address": "Unit 1, 605 Elizabeth Street MELBOURNE VIC 3000",
+    "geometry": {
+      "location": {
+        "lat": -37.80418791,
+        "lng": 144.958025893
+      }
+    },
+    "industry_anzsic4_code": "4512",
+    "industry_anzsic4_description": "Takeaway Food Services",
+    "clue_small_area": "North Melbourne",
+    "census_year": "2024",
+    "seats_indoor": 20,
+    "seats_outdoor": 0,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 20
+  },
+  {
+    "id": "cafe_gai_wong_375_103810",
+    "name": "Gai Wong",
+    "formatted_address": "Shop 1, 5-17 Flemington Road NORTH MELBOURNE VIC 3051",
+    "geometry": {
+      "location": {
+        "lat": -37.80140031,
+        "lng": 144.955871244
+      }
+    },
+    "industry_anzsic4_code": "4511",
+    "industry_anzsic4_description": "Cafes and Restaurants",
+    "clue_small_area": "North Melbourne",
+    "census_year": "2024",
+    "seats_indoor": 40,
+    "seats_outdoor": 18,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 58
+  },
+  {
+    "id": "cafe_sinjeon_376_103811",
+    "name": "Sinjeon",
+    "formatted_address": "31 Blackwood Street NORTH MELBOURNE VIC 3051",
+    "geometry": {
+      "location": {
+        "lat": -37.80067768,
+        "lng": 144.955200107
+      }
+    },
+    "industry_anzsic4_code": "4511",
+    "industry_anzsic4_description": "Cafes and Restaurants",
+    "clue_small_area": "North Melbourne",
+    "census_year": "2024",
+    "seats_indoor": 20,
+    "seats_outdoor": 0,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 20
+  },
+  {
+    "id": "cafe_a_treat_of_france_376_103812",
+    "name": "A Treat of France",
+    "formatted_address": "37 Flemington Road NORTH MELBOURNE VIC 3051",
+    "geometry": {
+      "location": {
+        "lat": -37.80032188,
+        "lng": 144.955169656
+      }
+    },
+    "industry_anzsic4_code": "4511",
+    "industry_anzsic4_description": "Cafes and Restaurants",
+    "clue_small_area": "North Melbourne",
+    "census_year": "2024",
+    "seats_indoor": 32,
+    "seats_outdoor": 4,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 36
+  },
+  {
+    "id": "cafe_the_castle_hotel_377_102236",
+    "name": "The Castle Hotel",
+    "formatted_address": "56-58 Courtney Street NORTH MELBOURNE VIC 3051",
+    "geometry": {
+      "location": {
+        "lat": -37.8008985,
+        "lng": 144.953034953
+      }
+    },
+    "industry_anzsic4_code": "4520",
+    "industry_anzsic4_description": "Pubs, Taverns and Bars",
+    "clue_small_area": "North Melbourne",
+    "census_year": "2024",
+    "seats_indoor": 160,
+    "seats_outdoor": 57,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 217
+  },
+  {
+    "id": "cafe_joe_s_eatery_377_103814",
+    "name": "Joe's Eatery",
+    "formatted_address": "Unit 9, Ground 55 Flemington Road NORTH MELBOURNE VIC 3051",
+    "geometry": {
+      "location": {
+        "lat": -37.7997297,
+        "lng": 144.954318992
+      }
+    },
+    "industry_anzsic4_code": "4511",
+    "industry_anzsic4_description": "Cafes and Restaurants",
+    "clue_small_area": "North Melbourne",
+    "census_year": "2024",
+    "seats_indoor": 72,
+    "seats_outdoor": 60,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 132
+  },
+  {
+    "id": "cafe_eat_pizza_377_103814",
+    "name": "Eat Pizza",
+    "formatted_address": "Unit 3, Ground 55 Flemington Road NORTH MELBOURNE VIC 3051",
+    "geometry": {
+      "location": {
+        "lat": -37.7997297,
+        "lng": 144.954318992
+      }
+    },
+    "industry_anzsic4_code": "4512",
+    "industry_anzsic4_description": "Takeaway Food Services",
+    "clue_small_area": "North Melbourne",
+    "census_year": "2024",
+    "seats_indoor": 0,
+    "seats_outdoor": 10,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 10
+  },
+  {
+    "id": "cafe_baguette_studios_377_110257",
+    "name": "Baguette Studios",
+    "formatted_address": "Part 15-27 Wreckyn Street NORTH MELBOURNE VIC 3051",
+    "geometry": {
+      "location": {
+        "lat": -37.80037867,
+        "lng": 144.953582587
+      }
+    },
+    "industry_anzsic4_code": "1174",
+    "industry_anzsic4_description": "Bakery Product Manufacturing (Non-factory based)",
+    "clue_small_area": "North Melbourne",
+    "census_year": "2024",
+    "seats_indoor": 10,
+    "seats_outdoor": 10,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 20
+  },
+  {
+    "id": "cafe_avist_cafe_378_103824",
+    "name": "Avist Cafe",
+    "formatted_address": "101 Flemington Road NORTH MELBOURNE VIC 3051",
+    "geometry": {
+      "location": {
+        "lat": -37.79844294,
+        "lng": 144.952705279
+      }
+    },
+    "industry_anzsic4_code": "4511",
+    "industry_anzsic4_description": "Cafes and Restaurants",
+    "clue_small_area": "North Melbourne",
+    "census_year": "2024",
+    "seats_indoor": 40,
+    "seats_outdoor": 34,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 74
+  },
+  {
+    "id": "cafe_sassy_italian_restaurant_410_105083",
+    "name": "Sassy Italian Restaurant",
+    "formatted_address": "1-7 Dryburgh Street WEST MELBOURNE VIC 3003",
+    "geometry": {
+      "location": {
+        "lat": -37.80671459,
+        "lng": 144.942416906
+      }
+    },
+    "industry_anzsic4_code": "4511",
+    "industry_anzsic4_description": "Cafes and Restaurants",
+    "clue_small_area": "West Melbourne (Residential)",
+    "census_year": "2024",
+    "seats_indoor": 100,
+    "seats_outdoor": 0,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 100
+  },
+  {
+    "id": "cafe_tong_fu_garden_melbourne_413_568593",
+    "name": "Tong Fu Garden Melbourne",
+    "formatted_address": "661-663 Spencer Street WEST MELBOURNE VIC 3003",
+    "geometry": {
+      "location": {
+        "lat": -37.80624547,
+        "lng": 144.944447036
+      }
+    },
+    "industry_anzsic4_code": "4511",
+    "industry_anzsic4_description": "Cafes and Restaurants",
+    "clue_small_area": "West Melbourne (Residential)",
+    "census_year": "2024",
+    "seats_indoor": 60,
+    "seats_outdoor": 36,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 96
+  },
+  {
+    "id": "cafe_miami_hotel_melbourne_420_104711",
+    "name": "Miami Hotel Melbourne",
+    "formatted_address": "13-25 Hawke Street WEST MELBOURNE VIC 3003",
+    "geometry": {
+      "location": {
+        "lat": -37.80608976,
+        "lng": 144.948597379
+      }
+    },
+    "industry_anzsic4_code": "4400",
+    "industry_anzsic4_description": "Accommodation",
+    "clue_small_area": "West Melbourne (Residential)",
+    "census_year": "2024",
+    "seats_indoor": 30,
+    "seats_outdoor": 12,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 42
+  },
+  {
+    "id": "cafe_279_424_109699",
+    "name": "279",
+    "formatted_address": "279 Victoria Street WEST MELBOURNE VIC 3003",
+    "geometry": {
+      "location": {
+        "lat": -37.80566937,
+        "lng": 144.951970327
+      }
+    },
+    "industry_anzsic4_code": "4511",
+    "industry_anzsic4_description": "Cafes and Restaurants",
+    "clue_small_area": "West Melbourne (Residential)",
+    "census_year": "2024",
+    "seats_indoor": 25,
+    "seats_outdoor": 6,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 31
+  },
+  {
+    "id": "cafe_willows_wine_424_109710",
+    "name": "Willows & Wine",
+    "formatted_address": "Ground 315 Victoria Street WEST MELBOURNE VIC 3003",
+    "geometry": {
+      "location": {
+        "lat": -37.80556767,
+        "lng": 144.951047512
+      }
+    },
+    "industry_anzsic4_code": "4520",
+    "industry_anzsic4_description": "Pubs, Taverns and Bars",
+    "clue_small_area": "West Melbourne (Residential)",
+    "census_year": "2024",
+    "seats_indoor": 26,
+    "seats_outdoor": 8,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 34
+  },
+  {
+    "id": "cafe_le_taj_restaurant_432_108434",
+    "name": "Le Taj Restaurant",
+    "formatted_address": "70-74 Rosslyn Street WEST MELBOURNE VIC 3003",
+    "geometry": {
+      "location": {
+        "lat": -37.80775631,
+        "lng": 144.952039324
+      }
+    },
+    "industry_anzsic4_code": "4511",
+    "industry_anzsic4_description": "Cafes and Restaurants",
+    "clue_small_area": "West Melbourne (Residential)",
+    "census_year": "2024",
+    "seats_indoor": 50,
+    "seats_outdoor": 4,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 54
+  },
+  {
+    "id": "cafe_so_thai_tapas_street_food_435_107473",
+    "name": "So Thai Tapas & Street Food",
+    "formatted_address": "Ground 27-31 Peel Street WEST MELBOURNE VIC 3003",
+    "geometry": {
+      "location": {
+        "lat": -37.80759351,
+        "lng": 144.955351089
+      }
+    },
+    "industry_anzsic4_code": "4511",
+    "industry_anzsic4_description": "Cafes and Restaurants",
+    "clue_small_area": "West Melbourne (Residential)",
+    "census_year": "2024",
+    "seats_indoor": 55,
+    "seats_outdoor": 0,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 55
+  },
+  {
+    "id": "cafe_the_drunken_poet_435_107481",
+    "name": "The Drunken Poet",
+    "formatted_address": "Ground 65 Peel Street WEST MELBOURNE VIC 3003",
+    "geometry": {
+      "location": {
+        "lat": -37.8066672,
+        "lng": 144.955497945
+      }
+    },
+    "industry_anzsic4_code": "4520",
+    "industry_anzsic4_description": "Pubs, Taverns and Bars",
+    "clue_small_area": "West Melbourne (Residential)",
+    "census_year": "2024",
+    "seats_indoor": 50,
+    "seats_outdoor": 16,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 66
+  },
+  {
+    "id": "cafe_kare_435_109682",
+    "name": "Kare",
+    "formatted_address": "173-177 Victoria Street WEST MELBOURNE VIC 3003",
+    "geometry": {
+      "location": {
+        "lat": -37.80606639,
+        "lng": 144.955603657
+      }
+    },
+    "industry_anzsic4_code": "4511",
+    "industry_anzsic4_description": "Cafes and Restaurants",
+    "clue_small_area": "West Melbourne (Residential)",
+    "census_year": "2024",
+    "seats_indoor": 25,
+    "seats_outdoor": 0,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 25
+  },
+  {
+    "id": "cafe_pretty_sichuan_taste_435_109682",
+    "name": "Pretty Sichuan Taste",
+    "formatted_address": "89 Peel Street WEST MELBOURNE VIC 3003",
+    "geometry": {
+      "location": {
+        "lat": -37.80606639,
+        "lng": 144.955603657
+      }
+    },
+    "industry_anzsic4_code": "4511",
+    "industry_anzsic4_description": "Cafes and Restaurants",
+    "clue_small_area": "West Melbourne (Residential)",
+    "census_year": "2024",
+    "seats_indoor": 20,
+    "seats_outdoor": 0,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 20
+  },
+  {
+    "id": "cafe_witches_in_britches_pty_ltd_439_102962",
+    "name": "Witches In Britches Pty Ltd",
+    "formatted_address": "78-86 Dudley Street WEST MELBOURNE VIC 3003",
+    "geometry": {
+      "location": {
+        "lat": -37.80890192,
+        "lng": 144.952635933
+      }
+    },
+    "industry_anzsic4_code": "4520",
+    "industry_anzsic4_description": "Pubs, Taverns and Bars",
+    "clue_small_area": "West Melbourne (Residential)",
+    "census_year": "2024",
+    "seats_indoor": 180,
+    "seats_outdoor": 0,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 180
+  },
+  {
+    "id": "cafe_fuumi_fuumi_440_108411",
+    "name": "Fuumi Fuumi",
+    "formatted_address": "113 Rosslyn Street WEST MELBOURNE VIC 3003",
+    "geometry": {
+      "location": {
+        "lat": -37.80906098,
+        "lng": 144.950650784
+      }
+    },
+    "industry_anzsic4_code": "4511",
+    "industry_anzsic4_description": "Cafes and Restaurants",
+    "clue_small_area": "West Melbourne (Residential)",
+    "census_year": "2024",
+    "seats_indoor": 20,
+    "seats_outdoor": 8,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 28
+  },
+  {
+    "id": "cafe_shiraaz_by_rajputana_441_714408",
+    "name": "Shiraaz By Rajputana",
+    "formatted_address": "110 Adderley Street WEST MELBOURNE VIC 3003",
+    "geometry": {
+      "location": {
+        "lat": -37.81025507,
+        "lng": 144.948450986
+      }
+    },
+    "industry_anzsic4_code": "4511",
+    "industry_anzsic4_description": "Cafes and Restaurants",
+    "clue_small_area": "West Melbourne (Residential)",
+    "census_year": "2024",
+    "seats_indoor": 80,
+    "seats_outdoor": 0,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 80
+  },
+  {
+    "id": "cafe_the_studio_beans_441_714410",
+    "name": "The Studio Beans",
+    "formatted_address": "197 Rosslyn Street WEST MELBOURNE VIC 3003",
+    "geometry": {
+      "location": {
+        "lat": -37.81025507,
+        "lng": 144.948450986
+      }
+    },
+    "industry_anzsic4_code": "4511",
+    "industry_anzsic4_description": "Cafes and Restaurants",
+    "clue_small_area": "West Melbourne (Residential)",
+    "census_year": "2024",
+    "seats_indoor": 30,
+    "seats_outdoor": 6,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 36
+  },
+  {
+    "id": "cafe_angkor_444_705841",
+    "name": "Angkor",
+    "formatted_address": "389 Spencer Street WEST MELBOURNE VIC 3003",
+    "geometry": {
+      "location": {
+        "lat": -37.81158829,
+        "lng": 144.949895376
+      }
+    },
+    "industry_anzsic4_code": "4511",
+    "industry_anzsic4_description": "Cafes and Restaurants",
+    "clue_small_area": "West Melbourne (Residential)",
+    "census_year": "2024",
+    "seats_indoor": 39,
+    "seats_outdoor": 0,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 39
+  },
+  {
+    "id": "cafe_spencer_heritage_444_598605",
+    "name": "Spencer Heritage",
+    "formatted_address": "Part Ground 355 Spencer Street WEST MELBOURNE VIC 3003",
+    "geometry": {
+      "location": {
+        "lat": -37.81191139,
+        "lng": 144.950434294
+      }
+    },
+    "industry_anzsic4_code": "4512",
+    "industry_anzsic4_description": "Takeaway Food Services",
+    "clue_small_area": "West Melbourne (Residential)",
+    "census_year": "2024",
+    "seats_indoor": 8,
+    "seats_outdoor": 0,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 8
+  },
+  {
+    "id": "cafe_the_famished_wolf_505_100508",
+    "name": "The Famished Wolf",
+    "formatted_address": "Part 330 Arden Street KENSINGTON VIC 3031",
+    "geometry": {
+      "location": {
+        "lat": -37.79900382,
+        "lng": 144.934941083
+      }
+    },
+    "industry_anzsic4_code": "4512",
+    "industry_anzsic4_description": "Takeaway Food Services",
+    "clue_small_area": "Kensington",
+    "census_year": "2024",
+    "seats_indoor": 12,
+    "seats_outdoor": 0,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 12
+  },
+  {
+    "id": "cafe_kenny_s_charcoal_chicken_524_106320",
+    "name": "Kenny's Charcoal Chicken",
+    "formatted_address": "497 Macaulay Road KENSINGTON VIC 3031",
+    "geometry": {
+      "location": {
+        "lat": -37.79455811,
+        "lng": 144.929507098
+      }
+    },
+    "industry_anzsic4_code": "4512",
+    "industry_anzsic4_description": "Takeaway Food Services",
+    "clue_small_area": "Kensington",
+    "census_year": "2024",
+    "seats_indoor": 12,
+    "seats_outdoor": 0,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 12
+  },
+  {
+    "id": "cafe_the_grazing_paddock_cafe_570_613981",
+    "name": "The Grazing Paddock Cafe",
+    "formatted_address": "Part Block A, Racing Victoria Centre 400 Epsom Road FLEMINGTON VIC 3031",
+    "geometry": {
+      "location": {
+        "lat": -37.78417751,
+        "lng": 144.916890323
+      }
+    },
+    "industry_anzsic4_code": "4511",
+    "industry_anzsic4_description": "Cafes and Restaurants",
+    "clue_small_area": "Kensington",
+    "census_year": "2024",
+    "seats_indoor": 38,
+    "seats_outdoor": 0,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 38
+  },
+  {
+    "id": "cafe_headquarters_tavern_570_108810",
+    "name": "Headquarters Tavern",
+    "formatted_address": "Part 448 Epsom Road FLEMINGTON VIC 3031",
+    "geometry": {
+      "location": {
+        "lat": -37.78909021,
+        "lng": 144.912696182
+      }
+    },
+    "industry_anzsic4_code": "9209",
+    "industry_anzsic4_description": "Other Gambling Activities",
+    "clue_small_area": "Kensington",
+    "census_year": "2024",
+    "seats_indoor": 100,
+    "seats_outdoor": 0,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 100
+  },
+  {
+    "id": "cafe_flemington_racecourse_570_108810",
+    "name": "Flemington Racecourse",
+    "formatted_address": "VRC Administration Offices 448 Epsom Road FLEMINGTON VIC 3031",
+    "geometry": {
+      "location": {
+        "lat": -37.78909021,
+        "lng": 144.912696182
+      }
+    },
+    "industry_anzsic4_code": "9121",
+    "industry_anzsic4_description": "Horse and Dog Racing Administration and Track Operation",
+    "clue_small_area": "Kensington",
+    "census_year": "2024",
+    "seats_indoor": 3660,
+    "seats_outdoor": 0,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 3660
+  },
+  {
+    "id": "cafe_hem_27_571_602256",
+    "name": "Hem 27",
+    "formatted_address": "Shop 27, 320-380 Epsom Road FLEMINGTON VIC 3031",
+    "geometry": {
+      "location": {
+        "lat": -37.78257295,
+        "lng": 144.915521168
+      }
+    },
+    "industry_anzsic4_code": "4511",
+    "industry_anzsic4_description": "Cafes and Restaurants",
+    "clue_small_area": "Kensington",
+    "census_year": "2024",
+    "seats_indoor": 40,
+    "seats_outdoor": 0,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 40
+  },
+  {
+    "id": "cafe_crust_gourmet_pizza_bar_kensington_2523_614821",
+    "name": "Crust Gourmet Pizza Bar Kensington",
+    "formatted_address": "Shop Ground 532-534 Macaulay Road KENSINGTON VIC 3031",
+    "geometry": {
+      "location": {
+        "lat": -37.79401627,
+        "lng": 144.928433661
+      }
+    },
+    "industry_anzsic4_code": "4512",
+    "industry_anzsic4_description": "Takeaway Food Services",
+    "clue_small_area": "Kensington",
+    "census_year": "2024",
+    "seats_indoor": 7,
+    "seats_outdoor": 8,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 15
+  },
+  {
+    "id": "cafe_chicken_episode_2_5_2523_614831",
+    "name": "Chicken Episode 2.5",
+    "formatted_address": "Ground 522 Macaulay Road KENSINGTON VIC 3031",
+    "geometry": {
+      "location": {
+        "lat": -37.79404907,
+        "lng": 144.928699415
+      }
+    },
+    "industry_anzsic4_code": "4511",
+    "industry_anzsic4_description": "Cafes and Restaurants",
+    "clue_small_area": "Kensington",
+    "census_year": "2024",
+    "seats_indoor": 24,
+    "seats_outdoor": 0,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 24
+  },
+  {
+    "id": "cafe_la_tortilleria_2539_614669",
+    "name": "La Tortilleria",
+    "formatted_address": "72 Stubbs Street KENSINGTON VIC 3031",
+    "geometry": {
+      "location": {
+        "lat": -37.79142188,
+        "lng": 144.93530104
+      }
+    },
+    "industry_anzsic4_code": "4511",
+    "industry_anzsic4_description": "Cafes and Restaurants",
+    "clue_small_area": "Kensington",
+    "census_year": "2024",
+    "seats_indoor": 30,
+    "seats_outdoor": 10,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 40
+  },
+  {
+    "id": "cafe_mr_gonzo_306_106539",
+    "name": "Mr Gonzo",
+    "formatted_address": "Ground 28 Melrose Street NORTH MELBOURNE VIC 3051",
+    "geometry": {
+      "location": {
+        "lat": -37.79471105,
+        "lng": 144.942131824
+      }
+    },
+    "industry_anzsic4_code": "4512",
+    "industry_anzsic4_description": "Takeaway Food Services",
+    "clue_small_area": "North Melbourne",
+    "census_year": "2024",
+    "seats_indoor": 8,
+    "seats_outdoor": 0,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 8
+  },
+  {
+    "id": "cafe_papa_giuseppe_pizza_pasta_327_100112",
+    "name": "Papa Giuseppe Pizza & Pasta",
+    "formatted_address": "340 Abbotsford Street NORTH MELBOURNE VIC 3051",
+    "geometry": {
+      "location": {
+        "lat": -37.798728,
+        "lng": 144.946506857
+      }
+    },
+    "industry_anzsic4_code": "4512",
+    "industry_anzsic4_description": "Takeaway Food Services",
+    "clue_small_area": "North Melbourne",
+    "census_year": "2024",
+    "seats_indoor": 8,
+    "seats_outdoor": 0,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 8
+  },
+  {
+    "id": "cafe_temple_arden_334_100483",
+    "name": "Temple Arden",
+    "formatted_address": "135 Arden Street NORTH MELBOURNE VIC 3051",
+    "geometry": {
+      "location": {
+        "lat": -37.80085798,
+        "lng": 144.945468682
+      }
+    },
+    "industry_anzsic4_code": "4511",
+    "industry_anzsic4_description": "Cafes and Restaurants",
+    "clue_small_area": "North Melbourne",
+    "census_year": "2024",
+    "seats_indoor": 40,
+    "seats_outdoor": 0,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 40
+  },
+  {
+    "id": "cafe_north_melbourne_takeaway_340_102788",
+    "name": "North Melbourne Takeaway",
+    "formatted_address": "95 Dryburgh Street NORTH MELBOURNE VIC 3051",
+    "geometry": {
+      "location": {
+        "lat": -37.80428921,
+        "lng": 144.942910523
+      }
+    },
+    "industry_anzsic4_code": "4512",
+    "industry_anzsic4_description": "Takeaway Food Services",
+    "clue_small_area": "North Melbourne",
+    "census_year": "2024",
+    "seats_indoor": 7,
+    "seats_outdoor": 4,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 11
+  },
+  {
+    "id": "cafe_manze_345_103392",
+    "name": "Manze",
+    "formatted_address": "Shop 2, 1-5 Errol Street NORTH MELBOURNE VIC 3051",
+    "geometry": {
+      "location": {
+        "lat": -37.80488638,
+        "lng": 144.948978856
+      }
+    },
+    "industry_anzsic4_code": "4511",
+    "industry_anzsic4_description": "Cafes and Restaurants",
+    "clue_small_area": "North Melbourne",
+    "census_year": "2024",
+    "seats_indoor": 24,
+    "seats_outdoor": 0,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 24
+  },
+  {
+    "id": "cafe_cindy_s_kitchen_345_570824",
+    "name": "Cindy's Kitchen",
+    "formatted_address": "526 Victoria Street NORTH MELBOURNE VIC 3051",
+    "geometry": {
+      "location": {
+        "lat": -37.80474738,
+        "lng": 144.94871348
+      }
+    },
+    "industry_anzsic4_code": "4512",
+    "industry_anzsic4_description": "Takeaway Food Services",
+    "clue_small_area": "North Melbourne",
+    "census_year": "2024",
+    "seats_indoor": 15,
+    "seats_outdoor": 0,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 15
+  },
+  {
+    "id": "cafe_masala_jo_345_570824",
+    "name": "Masala Jo",
+    "formatted_address": "528 Victoria Street NORTH MELBOURNE VIC 3051",
+    "geometry": {
+      "location": {
+        "lat": -37.80474738,
+        "lng": 144.94871348
+      }
+    },
+    "industry_anzsic4_code": "4512",
+    "industry_anzsic4_description": "Takeaway Food Services",
+    "clue_small_area": "North Melbourne",
+    "census_year": "2024",
+    "seats_indoor": 11,
+    "seats_outdoor": 0,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 11
+  },
+  {
+    "id": "cafe_mercure_north_melbourne_353_103466",
+    "name": "Mercure North Melbourne",
+    "formatted_address": "265-281 Errol Street NORTH MELBOURNE VIC 3051",
+    "geometry": {
+      "location": {
+        "lat": -37.79681785,
+        "lng": 144.950270099
+      }
+    },
+    "industry_anzsic4_code": "4400",
+    "industry_anzsic4_description": "Accommodation",
+    "clue_small_area": "North Melbourne",
+    "census_year": "2024",
+    "seats_indoor": 50,
+    "seats_outdoor": 0,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 50
+  },
+  {
+    "id": "cafe_royal_kebab_cafe_353_103842",
+    "name": "Royal Kebab Cafe",
+    "formatted_address": "193 Flemington Road NORTH MELBOURNE VIC 3051",
+    "geometry": {
+      "location": {
+        "lat": -37.79508314,
+        "lng": 144.948423728
+      }
+    },
+    "industry_anzsic4_code": "4511",
+    "industry_anzsic4_description": "Cafes and Restaurants",
+    "clue_small_area": "North Melbourne",
+    "census_year": "2024",
+    "seats_indoor": 15,
+    "seats_outdoor": 0,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 15
+  },
+  {
+    "id": "cafe_flava_korean_bbq_354_103518",
+    "name": "Flava Korean Bbq",
+    "formatted_address": "50 Errol Street NORTH MELBOURNE VIC 3051",
+    "geometry": {
+      "location": {
+        "lat": -37.80411038,
+        "lng": 144.950043914
+      }
+    },
+    "industry_anzsic4_code": "4511",
+    "industry_anzsic4_description": "Cafes and Restaurants",
+    "clue_small_area": "North Melbourne",
+    "census_year": "2024",
+    "seats_indoor": 70,
+    "seats_outdoor": 0,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 70
+  },
+  {
+    "id": "cafe_cc_wok_354_109798",
+    "name": "CC Wok",
+    "formatted_address": "Ground 464-466 Victoria Street NORTH MELBOURNE VIC 3051",
+    "geometry": {
+      "location": {
+        "lat": -37.80500905,
+        "lng": 144.950540687
+      }
+    },
+    "industry_anzsic4_code": "4511",
+    "industry_anzsic4_description": "Cafes and Restaurants",
+    "clue_small_area": "North Melbourne",
+    "census_year": "2024",
+    "seats_indoor": 28,
+    "seats_outdoor": 0,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 28
+  },
+  {
+    "id": "cafe_kathmandu_banquet_357_109823",
+    "name": "KATHMANDU BANQUET",
+    "formatted_address": "364-366 Victoria Street NORTH MELBOURNE VIC 3051",
+    "geometry": {
+      "location": {
+        "lat": -37.80544377,
+        "lng": 144.954134039
+      }
+    },
+    "industry_anzsic4_code": "4511",
+    "industry_anzsic4_description": "Cafes and Restaurants",
+    "clue_small_area": "North Melbourne",
+    "census_year": "2024",
+    "seats_indoor": 200,
+    "seats_outdoor": 0,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 200
+  },
+  {
+    "id": "cafe_basic_buns_357_109824",
+    "name": "Basic Buns",
+    "formatted_address": "358 Victoria Street NORTH MELBOURNE VIC 3051",
+    "geometry": {
+      "location": {
+        "lat": -37.80537801,
+        "lng": 144.954338535
+      }
+    },
+    "industry_anzsic4_code": "4512",
+    "industry_anzsic4_description": "Takeaway Food Services",
+    "clue_small_area": "North Melbourne",
+    "census_year": "2024",
+    "seats_indoor": 10,
+    "seats_outdoor": 0,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 10
+  },
+  {
+    "id": "cafe_bobbie_peels_358_107887",
+    "name": "Bobbie Peels",
+    "formatted_address": "Sir Robert Peel Hotel 351-359 Queensberry Street NORTH MELBOURNE VIC 3051",
+    "geometry": {
+      "location": {
+        "lat": -37.80395471,
+        "lng": 144.955953175
+      }
+    },
+    "industry_anzsic4_code": "4520",
+    "industry_anzsic4_description": "Pubs, Taverns and Bars",
+    "clue_small_area": "North Melbourne",
+    "census_year": "2024",
+    "seats_indoor": 70,
+    "seats_outdoor": 40,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 110
+  },
+  {
+    "id": "cafe_yeonga_360_102034",
+    "name": "Yeonga",
+    "formatted_address": "1-3 Cobden Street NORTH MELBOURNE VIC 3051",
+    "geometry": {
+      "location": {
+        "lat": -37.80560474,
+        "lng": 144.956922989
+      }
+    },
+    "industry_anzsic4_code": "4511",
+    "industry_anzsic4_description": "Cafes and Restaurants",
+    "clue_small_area": "North Melbourne",
+    "census_year": "2024",
+    "seats_indoor": 150,
+    "seats_outdoor": 0,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 150
+  },
+  {
+    "id": "cafe_hallah_361_109837",
+    "name": "Hallah",
+    "formatted_address": "268 Victoria Street NORTH MELBOURNE VIC 3051",
+    "geometry": {
+      "location": {
+        "lat": -37.80580455,
+        "lng": 144.957390153
+      }
+    },
+    "industry_anzsic4_code": "4511",
+    "industry_anzsic4_description": "Cafes and Restaurants",
+    "clue_small_area": "North Melbourne",
+    "census_year": "2024",
+    "seats_indoor": 60,
+    "seats_outdoor": 0,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 60
+  },
+  {
+    "id": "cafe_donwoori_361_109837",
+    "name": "Donwoori",
+    "formatted_address": "276 Victoria Street NORTH MELBOURNE VIC 3051",
+    "geometry": {
+      "location": {
+        "lat": -37.80580455,
+        "lng": 144.957390153
+      }
+    },
+    "industry_anzsic4_code": "4511",
+    "industry_anzsic4_description": "Cafes and Restaurants",
+    "clue_small_area": "North Melbourne",
+    "census_year": "2024",
+    "seats_indoor": 36,
+    "seats_outdoor": 16,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 52
+  },
+  {
+    "id": "cafe_the_galbi_361_109837",
+    "name": "The Galbi",
+    "formatted_address": "270 Victoria Street NORTH MELBOURNE VIC 3051",
+    "geometry": {
+      "location": {
+        "lat": -37.80580455,
+        "lng": 144.957390153
+      }
+    },
+    "industry_anzsic4_code": "4511",
+    "industry_anzsic4_description": "Cafes and Restaurants",
+    "clue_small_area": "North Melbourne",
+    "census_year": "2024",
+    "seats_indoor": 45,
+    "seats_outdoor": 0,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 45
+  },
+  {
+    "id": "cafe_bbq_brothers_10_362_103244",
+    "name": "BBQ Brothers 10",
+    "formatted_address": "Shop 1-2, 589 Elizabeth Street MELBOURNE VIC 3000",
+    "geometry": {
+      "location": {
+        "lat": -37.80460731,
+        "lng": 144.958123243
+      }
+    },
+    "industry_anzsic4_code": "4511",
+    "industry_anzsic4_description": "Cafes and Restaurants",
+    "clue_small_area": "North Melbourne",
+    "census_year": "2024",
+    "seats_indoor": 76,
+    "seats_outdoor": 12,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 88
+  },
+  {
+    "id": "cafe_i_wrap_cafe_362_103246",
+    "name": "I Wrap Cafe",
+    "formatted_address": "Ground 595 Elizabeth Street MELBOURNE VIC 3000",
+    "geometry": {
+      "location": {
+        "lat": -37.8044425,
+        "lng": 144.958148416
+      }
+    },
+    "industry_anzsic4_code": "4511",
+    "industry_anzsic4_description": "Cafes and Restaurants",
+    "clue_small_area": "North Melbourne",
+    "census_year": "2024",
+    "seats_indoor": 24,
+    "seats_outdoor": 6,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 30
+  },
+  {
+    "id": "cafe_the_courthouse_hotel_north_melbourne_369_103507",
+    "name": "The Courthouse Hotel North Melbourne",
+    "formatted_address": "Court House Hotel 86-90 Errol Street NORTH MELBOURNE VIC 3051",
+    "geometry": {
+      "location": {
+        "lat": -37.80287732,
+        "lng": 144.949955701
+      }
+    },
+    "industry_anzsic4_code": "4520",
+    "industry_anzsic4_description": "Pubs, Taverns and Bars",
+    "clue_small_area": "North Melbourne",
+    "census_year": "2024",
+    "seats_indoor": 100,
+    "seats_outdoor": 0,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 100
+  },
+  {
+    "id": "cafe_m_rk_chocolate_brew_house_370_103492",
+    "name": "M\u00f6rk Chocolate Brew House",
+    "formatted_address": "148-150 Errol Street NORTH MELBOURNE VIC 3051",
+    "geometry": {
+      "location": {
+        "lat": -37.80154511,
+        "lng": 144.950189192
+      }
+    },
+    "industry_anzsic4_code": "4511",
+    "industry_anzsic4_description": "Cafes and Restaurants",
+    "clue_small_area": "North Melbourne",
+    "census_year": "2024",
+    "seats_indoor": 20,
+    "seats_outdoor": 20,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 40
+  },
+  {
+    "id": "cafe_the_rice_cooker_376_103811",
+    "name": "The Rice Cooker",
+    "formatted_address": "27 Flemington Road NORTH MELBOURNE VIC 3051",
+    "geometry": {
+      "location": {
+        "lat": -37.80067768,
+        "lng": 144.955200107
+      }
+    },
+    "industry_anzsic4_code": "4511",
+    "industry_anzsic4_description": "Cafes and Restaurants",
+    "clue_small_area": "North Melbourne",
+    "census_year": "2024",
+    "seats_indoor": 50,
+    "seats_outdoor": 10,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 60
+  },
+  {
+    "id": "cafe_penny_dane_377_109865",
+    "name": "Penny Dane",
+    "formatted_address": "Part 38 Villiers Street NORTH MELBOURNE VIC 3051",
+    "geometry": {
+      "location": {
+        "lat": -37.79977985,
+        "lng": 144.953165587
+      }
+    },
+    "industry_anzsic4_code": "4512",
+    "industry_anzsic4_description": "Takeaway Food Services",
+    "clue_small_area": "North Melbourne",
+    "census_year": "2024",
+    "seats_indoor": 0,
+    "seats_outdoor": 8,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 8
+  },
+  {
+    "id": "cafe_wreckyn_street_coffee_377_110255",
+    "name": "Wreckyn Street Coffee",
+    "formatted_address": "11 Wreckyn Street NORTH MELBOURNE VIC 3051",
+    "geometry": {
+      "location": {
+        "lat": -37.80068232,
+        "lng": 144.953309961
+      }
+    },
+    "industry_anzsic4_code": "4512",
+    "industry_anzsic4_description": "Takeaway Food Services",
+    "clue_small_area": "North Melbourne",
+    "census_year": "2024",
+    "seats_indoor": 14,
+    "seats_outdoor": 0,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 14
+  },
+  {
+    "id": "cafe_udom_house_423_109713",
+    "name": "Udom House",
+    "formatted_address": "Ground 343 Victoria Street WEST MELBOURNE VIC 3003",
+    "geometry": {
+      "location": {
+        "lat": -37.80547842,
+        "lng": 144.950026368
+      }
+    },
+    "industry_anzsic4_code": "4511",
+    "industry_anzsic4_description": "Cafes and Restaurants",
+    "clue_small_area": "West Melbourne (Residential)",
+    "census_year": "2024",
+    "seats_indoor": 26,
+    "seats_outdoor": 0,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 26
+  },
+  {
+    "id": "cafe_amiconi_423_109720",
+    "name": "Amiconi",
+    "formatted_address": "Ground 359 Victoria Street WEST MELBOURNE VIC 3003",
+    "geometry": {
+      "location": {
+        "lat": -37.80538446,
+        "lng": 144.949585089
+      }
+    },
+    "industry_anzsic4_code": "4511",
+    "industry_anzsic4_description": "Cafes and Restaurants",
+    "clue_small_area": "West Melbourne (Residential)",
+    "census_year": "2024",
+    "seats_indoor": 60,
+    "seats_outdoor": 8,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 68
+  },
+  {
+    "id": "cafe_warung_agus_424_109706",
+    "name": "Warung Agus",
+    "formatted_address": "Part Ground 305-307 Victoria Street WEST MELBOURNE VIC 3003",
+    "geometry": {
+      "location": {
+        "lat": -37.80562951,
+        "lng": 144.951366386
+      }
+    },
+    "industry_anzsic4_code": "4511",
+    "industry_anzsic4_description": "Cafes and Restaurants",
+    "clue_small_area": "West Melbourne (Residential)",
+    "census_year": "2024",
+    "seats_indoor": 60,
+    "seats_outdoor": 0,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 60
+  },
+  {
+    "id": "cafe_embassy_cafe_427_108871",
+    "name": "Embassy Cafe",
+    "formatted_address": "Ground 541-547 Spencer Street WEST MELBOURNE VIC 3003",
+    "geometry": {
+      "location": {
+        "lat": -37.80811131,
+        "lng": 144.947787012
+      }
+    },
+    "industry_anzsic4_code": "4511",
+    "industry_anzsic4_description": "Cafes and Restaurants",
+    "clue_small_area": "West Melbourne (Residential)",
+    "census_year": "2024",
+    "seats_indoor": 40,
+    "seats_outdoor": 24,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 64
+  },
+  {
+    "id": "cafe_the_secret_recipe_430_108861",
+    "name": "The Secret Recipe",
+    "formatted_address": "495-497 Spencer Street WEST MELBOURNE VIC 3003",
+    "geometry": {
+      "location": {
+        "lat": -37.80897146,
+        "lng": 144.948789522
+      }
+    },
+    "industry_anzsic4_code": "4511",
+    "industry_anzsic4_description": "Cafes and Restaurants",
+    "clue_small_area": "West Melbourne (Residential)",
+    "census_year": "2024",
+    "seats_indoor": 32,
+    "seats_outdoor": 0,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 32
+  },
+  {
+    "id": "cafe_jusik_the_korean_restaurant_435_107475",
+    "name": "Jusik The Korean Restaurant",
+    "formatted_address": "Shop 1, 39-47 Peel Street WEST MELBOURNE VIC 3003",
+    "geometry": {
+      "location": {
+        "lat": -37.80718433,
+        "lng": 144.955423427
+      }
+    },
+    "industry_anzsic4_code": "4511",
+    "industry_anzsic4_description": "Cafes and Restaurants",
+    "clue_small_area": "West Melbourne (Residential)",
+    "census_year": "2024",
+    "seats_indoor": 20,
+    "seats_outdoor": 0,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 20
+  },
+  {
+    "id": "cafe_lukumades_435_107485",
+    "name": "Lukumades",
+    "formatted_address": "Ground 81-83 Peel Street WEST MELBOURNE VIC 3003",
+    "geometry": {
+      "location": {
+        "lat": -37.8062869,
+        "lng": 144.955574354
+      }
+    },
+    "industry_anzsic4_code": "4512",
+    "industry_anzsic4_description": "Takeaway Food Services",
+    "clue_small_area": "West Melbourne (Residential)",
+    "census_year": "2024",
+    "seats_indoor": 8,
+    "seats_outdoor": 12,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 20
+  },
+  {
+    "id": "cafe_cassette_512_106306",
+    "name": "Cassette",
+    "formatted_address": "399 Macaulay Road KENSINGTON VIC 3031",
+    "geometry": {
+      "location": {
+        "lat": -37.79511706,
+        "lng": 144.933807982
+      }
+    },
+    "industry_anzsic4_code": "4511",
+    "industry_anzsic4_description": "Cafes and Restaurants",
+    "clue_small_area": "Kensington",
+    "census_year": "2024",
+    "seats_indoor": 80,
+    "seats_outdoor": 0,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 80
+  },
+  {
+    "id": "cafe_sahara_restaurant_513_103033",
+    "name": "Sahara Restaurant",
+    "formatted_address": "Ground 465 Macaulay Road KENSINGTON VIC 3031",
+    "geometry": {
+      "location": {
+        "lat": -37.79484451,
+        "lng": 144.931523215
+      }
+    },
+    "industry_anzsic4_code": "4511",
+    "industry_anzsic4_description": "Cafes and Restaurants",
+    "clue_small_area": "Kensington",
+    "census_year": "2024",
+    "seats_indoor": 60,
+    "seats_outdoor": 0,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 60
+  },
+  {
+    "id": "cafe_mang_korn_thai_restaurant_513_597960",
+    "name": "MANG KORN Thai Restaurant",
+    "formatted_address": "431 Macaulay Road KENSINGTON VIC 3031",
+    "geometry": {
+      "location": {
+        "lat": -37.79496478,
+        "lng": 144.932491422
+      }
+    },
+    "industry_anzsic4_code": "4512",
+    "industry_anzsic4_description": "Takeaway Food Services",
+    "clue_small_area": "Kensington",
+    "census_year": "2024",
+    "seats_indoor": 12,
+    "seats_outdoor": 0,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 12
+  },
+  {
+    "id": "cafe_hungry_jack_s_pty_ltd_559_108812",
+    "name": "Hungry Jack's Pty Ltd",
+    "formatted_address": "Tenancy 2, 301 Smithfield Road KENSINGTON VIC 3031",
+    "geometry": {
+      "location": {
+        "lat": -37.79214606,
+        "lng": 144.91876537
+      }
+    },
+    "industry_anzsic4_code": "4511",
+    "industry_anzsic4_description": "Cafes and Restaurants",
+    "clue_small_area": "Kensington",
+    "census_year": "2024",
+    "seats_indoor": 36,
+    "seats_outdoor": 0,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 36
+  },
+  {
+    "id": "cafe_mia_riverside_takeaway_1005_108797",
+    "name": "Mia Riverside Takeaway",
+    "formatted_address": "Part 93-111 Sims Street WEST MELBOURNE VIC 3003",
+    "geometry": {
+      "location": {
+        "lat": -37.80395168,
+        "lng": 144.910826458
+      }
+    },
+    "industry_anzsic4_code": "4512",
+    "industry_anzsic4_description": "Takeaway Food Services",
+    "clue_small_area": "West Melbourne (Industrial)",
+    "census_year": "2024",
+    "seats_indoor": 0,
+    "seats_outdoor": 8,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 8
+  },
+  {
+    "id": "cafe_melbourne_kebab_box_2384_617689",
+    "name": "Melbourne Kebab Box",
+    "formatted_address": "Adjacent Kiosk 27 Racecourse Road NORTH MELBOURNE VIC 3051",
+    "geometry": {
+      "location": {
+        "lat": -37.78974399,
+        "lng": 144.940961645
+      }
+    },
+    "industry_anzsic4_code": "4512",
+    "industry_anzsic4_description": "Takeaway Food Services",
+    "clue_small_area": "North Melbourne",
+    "census_year": "2024",
+    "seats_indoor": 0,
+    "seats_outdoor": 10,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 10
+  },
+  {
+    "id": "cafe_on_the_third_day_2390_617411",
+    "name": "On The Third Day",
+    "formatted_address": "288-294 Macaulay Road NORTH MELBOURNE VIC 3051",
+    "geometry": {
+      "location": {
+        "lat": -37.79486104,
+        "lng": 144.936688605
+      }
+    },
+    "industry_anzsic4_code": "6712",
+    "industry_anzsic4_description": "Non-Residential Property Operators",
+    "clue_small_area": "North Melbourne",
+    "census_year": "2024",
+    "seats_indoor": 300,
+    "seats_outdoor": 0,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 300
+  },
+  {
+    "id": "cafe_melba_social_2523_614830",
+    "name": "Melba Social",
+    "formatted_address": "524 Macaulay Road KENSINGTON VIC 3031",
+    "geometry": {
+      "location": {
+        "lat": -37.79404162,
+        "lng": 144.928633019
+      }
+    },
+    "industry_anzsic4_code": "4511",
+    "industry_anzsic4_description": "Cafes and Restaurants",
+    "clue_small_area": "Kensington",
+    "census_year": "2024",
+    "seats_indoor": 80,
+    "seats_outdoor": 0,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 80
+  },
+  {
+    "id": "cafe_argi_cafe_by_lady_g_2524_615808",
+    "name": "Argi Cafe By Lady G",
+    "formatted_address": "512 Macaulay Road KENSINGTON VIC 3031",
+    "geometry": {
+      "location": {
+        "lat": -37.79407422,
+        "lng": 144.9291382
+      }
+    },
+    "industry_anzsic4_code": "4511",
+    "industry_anzsic4_description": "Cafes and Restaurants",
+    "clue_small_area": "Kensington",
+    "census_year": "2024",
+    "seats_indoor": 24,
+    "seats_outdoor": 4,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 28
+  },
+  {
+    "id": "cafe_london_k_burgers_2524_616011",
+    "name": "London K Burgers",
+    "formatted_address": "482 Macaulay Road KENSINGTON VIC 3031",
+    "geometry": {
+      "location": {
+        "lat": -37.79424521,
+        "lng": 144.929970327
+      }
+    },
+    "industry_anzsic4_code": "4511",
+    "industry_anzsic4_description": "Cafes and Restaurants",
+    "clue_small_area": "Kensington",
+    "census_year": "2024",
+    "seats_indoor": 18,
+    "seats_outdoor": 0,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 18
+  },
+  {
+    "id": "cafe_the_quiet_man_irishman_pub_2530_616160",
+    "name": "The Quiet Man Irishman Pub",
+    "formatted_address": "The Quiet Man Hotel 265-271 Racecourse Road KENSINGTON VIC 3031",
+    "geometry": {
+      "location": {
+        "lat": -37.78860982,
+        "lng": 144.932355831
+      }
+    },
+    "industry_anzsic4_code": "4520",
+    "industry_anzsic4_description": "Pubs, Taverns and Bars",
+    "clue_small_area": "Kensington",
+    "census_year": "2024",
+    "seats_indoor": 150,
+    "seats_outdoor": 81,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 231
+  },
+  {
+    "id": "cafe_brewtech_2533_615050",
+    "name": "Brewtech",
+    "formatted_address": "36 Stubbs Street KENSINGTON VIC 3031",
+    "geometry": {
+      "location": {
+        "lat": -37.79000411,
+        "lng": 144.935277724
+      }
+    },
+    "industry_anzsic4_code": "4511",
+    "industry_anzsic4_description": "Cafes and Restaurants",
+    "clue_small_area": "Kensington",
+    "census_year": "2024",
+    "seats_indoor": 24,
+    "seats_outdoor": 0,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 24
+  },
+  {
+    "id": "cafe_mama_le_2540_617955",
+    "name": "Mama Le",
+    "formatted_address": "31 Stubbs Street KENSINGTON VIC 3031",
+    "geometry": {
+      "location": {
+        "lat": -37.7914562,
+        "lng": 144.935841738
+      }
+    },
+    "industry_anzsic4_code": "4511",
+    "industry_anzsic4_description": "Cafes and Restaurants",
+    "clue_small_area": "Kensington",
+    "census_year": "2024",
+    "seats_indoor": 94,
+    "seats_outdoor": 0,
+    "source": "CoM CLUE - cafes-and-restaurants-with-seating-capacity",
+    "seats_total": 94
+  }
+]

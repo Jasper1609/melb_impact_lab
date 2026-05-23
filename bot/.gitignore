@@ -2,7 +2,9 @@ node_modules/
 .env
 .env.local
 auth_state/
-data/profiles.json
+# data/profiles.json was the legacy bot's runtime-written user store. With the
+# Option A consolidation, bot/data/profiles.json is the seed file (writes go
+# to the Docker volume at BOT_DATA_DIR=/opt/data/tapestry/profiles.json).
 *.ogg
 *.mp3
 dist/

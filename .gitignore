@@ -219,6 +219,13 @@ __marimo__/
 
 # Tapestry — derived/cached data that any consumer can regenerate locally.
 # Embedded JSONs are recomputed on first run after a _NARRATIVE_VERSION bump
-# (see BE/db.py). The raw CoM datasets are downloaded by data/fetch_datasets.py.
+# (see BE/db.py + bot/scripts/lib/db.py). The raw CoM datasets are downloaded
+# by data/fetch_datasets.py.
 BE/data/*.embedded.json
+bot/data/*.embedded.json
 data/datasets/
+
+# The standard Python `lib/` rule above is too aggressive — it accidentally
+# matches our Python source at bot/scripts/lib/. Un-ignore that path.
+!bot/scripts/lib/
+!bot/scripts/lib/**

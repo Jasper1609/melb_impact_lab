@@ -26,9 +26,15 @@ from typing import Any, Iterable
 
 import numpy as np
 
-from embeddings import embed, embed_one
+from .embeddings import embed, embed_one
 
-_DATA_DIR = Path(__file__).parent / "data"
+# Resolve data dir from env var so the same module works both:
+#  - locally (BOT_DATA_DIR unset → bot/data sibling to scripts/)
+#  - inside the Hermes container (BOT_DATA_DIR=/opt/data set by entrypoint)
+_DATA_DIR = Path(os.environ.get(
+    "BOT_DATA_DIR",
+    str(Path(__file__).resolve().parent.parent.parent / "data"),
+))
 _PROFILES_RAW = _DATA_DIR / "profiles.json"
 _BUSINESSES_RAW = _DATA_DIR / "businesses.json"
 _EVENTS_RAW = _DATA_DIR / "events.json"
@@ -300,8 +306,11 @@ def _haversine_km(lat1: float, lng1: float, lat2: float, lng2: float) -> float:
 def _cosine_sim(query_vec: np.ndarray, doc_vecs: np.ndarray) -> np.ndarray:
     """Cosine similarity between a query vector and a stack of document vectors.
 
-    Suppresses spurious BLAS warnings on float32 matmuls — verified the
-    output is valid (no NaN, similarity in [-1, 1]).
+    Suppresses spurious BLAS warnings (`divide by zero / overflow / invalid
+    value in matmul`) that numpy sometimes emits on float32 matmuls even
+    when the result is mathematically clean. Verified the output is valid
+    (no NaN, similarity in [-1, 1]) — the warnings are noise from the
+    underlying BLAS implementation.
     """
     q = query_vec / (np.linalg.norm(query_vec) + 1e-12)
     d_norms = np.linalg.norm(doc_vecs, axis=1, keepdims=True) + 1e-12
@@ -370,7 +379,12 @@ def normalise_phone(raw: str) -> str:
 
 
 def _load_profiles_raw() -> list[dict[str, Any]]:
-    """Lightweight read of profiles.json — no embedding, no OpenAI required."""
+    """Lightweight read of profiles.json — no embedding, no OpenAI required.
+
+    Use this for profile read/write paths (lookup_profile_by_phone,
+    upsert_profile_by_phone) so the WhatsApp bot can identify a sender
+    without triggering a full embedding rebuild.
+    """
     if not _PROFILES_RAW.exists():
         return []
     return json.loads(_PROFILES_RAW.read_text())
@@ -395,6 +409,89 @@ def lookup_profile_by_phone(phone: str) -> dict[str, Any] | None:
         if stored and stored == target:
             return {k: v for k, v in p.items() if not k.startswith("_")}
     return None
+
+
+def upsert_profile_by_phone(phone: str, updates: dict[str, Any]) -> dict[str, Any]:
+    """Create or update a profile keyed by phone number.
+
+    - Normalises the phone to digits-only international form before lookup.
+    - If a profile exists, merges `updates` into it (top-level overwrite).
+    - If not, creates a new profile with sensible defaults.
+    - Writes the updated profiles.json atomically (temp file + rename).
+    - Invalidates the profiles embedding cache so the narrative rebuilds
+      on next retrieval.
+
+    Defaults for NEW profiles (so they don't break the rest of the system):
+        id              : uuid
+        name            : "" (caller is expected to fill via conversation)
+        languages       : ["en"]  (so the language-intersection filter doesn't
+                                   exclude this user from every search)
+        opt_in_matching : false   (do NOT make new users discoverable until
+                                   they explicitly opt in)
+
+    Returns the resulting raw profile (no _narrative / _embedding fields).
+    """
+    import uuid
+
+    norm = normalise_phone(phone)
+    if not norm:
+        raise ValueError(f"Could not normalise phone: {phone!r}")
+
+    # Lightweight read — no embedding required for the write path.
+    raw_profiles = _load_profiles_raw()
+
+    # Find an existing record (by normalised phone).
+    target_idx: int | None = None
+    for idx, p in enumerate(raw_profiles):
+        if normalise_phone(p.get("phone_number", "")) == norm:
+            target_idx = idx
+            break
+
+    if target_idx is not None:
+        # Update in place — merge top-level fields.
+        raw_profiles[target_idx].update(updates)
+        result = raw_profiles[target_idx]
+    else:
+        # Create a new profile with safe defaults + caller's overrides.
+        new_profile: dict[str, Any] = {
+            "id": str(uuid.uuid4()),
+            "name": "",
+            "email": None,
+            "phone_number": norm,
+            "age": None,
+            "postcode": None,
+            "suburb": None,
+            "lat": None,
+            "lng": None,
+            "country_of_origin": None,
+            "languages": ["en"],
+            "occupation": None,
+            "background": "",
+            "interests": "",
+            "offering": "",
+            "opt_in_matching": False,
+        }
+        new_profile.update(updates)
+        # Always ensure normalised phone is stored.
+        new_profile["phone_number"] = norm
+        raw_profiles.append(new_profile)
+        result = new_profile
+
+    # Atomic write — temp file then rename.
+    tmp = _PROFILES_RAW.with_suffix(".json.tmp")
+    tmp.write_text(json.dumps(raw_profiles, indent=2))
+    tmp.replace(_PROFILES_RAW)
+
+    # Invalidate the embedding cache so it rebuilds on next query.
+    if _PROFILES_EMBEDDED.exists():
+        _PROFILES_EMBEDDED.unlink()
+
+    # Reset in-memory state so the next _ensure_loaded() picks up the change.
+    global _profiles, _profile_embeddings
+    _profiles = []
+    _profile_embeddings = None
+
+    return {k: v for k, v in result.items() if not k.startswith("_")}
 
 
 # ---------------------------------------------------------------------------

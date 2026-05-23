@@ -18,11 +18,12 @@ WHATSAPP_HOME_CHANNEL=${WHATSAPP_HOME_CHANNEL:-dummy}
 WHATSAPP_DEBUG=${WHATSAPP_DEBUG:-false}
 TZ=${TZ:-Australia/Melbourne}
 ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY}
+OPENAI_API_KEY=${OPENAI_API_KEY:-}
 API_SERVER_ENABLED=${API_SERVER_ENABLED:-true}
 API_SERVER_KEY=${API_SERVER_KEY:-}
 API_SERVER_HOST=0.0.0.0
 API_SERVER_PORT=${API_PORT}
-BE_URL=${BE_URL:-http://host.docker.internal:8765}
+BOT_DATA_DIR=${BOT_DATA_DIR:-/opt/data/tapestry}
 EOF
 chown 10000:10000 "$HERMES_HOME/.env"
 umask 022
@@ -47,6 +48,34 @@ fi
 if [ ! -f "$HERMES_HOME/profiles.json" ]; then
   echo '{}' > "$HERMES_HOME/profiles.json"
   chown 10000:10000 "$HERMES_HOME/profiles.json"
+fi
+
+# ---------------------------------------------------------------------------
+# Tapestry: seed retrieval data + warm the embedding cache.
+# ---------------------------------------------------------------------------
+#
+# Data lives on the persistent volume so edits survive restarts. On first
+# boot, copy the baked-in seed (from `data/` in the image) onto the volume.
+
+TAPESTRY_DATA_DIR="${BOT_DATA_DIR:-/opt/data/tapestry}"
+mkdir -p "$TAPESTRY_DATA_DIR"
+
+if [ -d /opt/tapestry/data-seed ]; then
+  for f in /opt/tapestry/data-seed/*.json; do
+    name=$(basename "$f")
+    if [ ! -f "$TAPESTRY_DATA_DIR/$name" ]; then
+      cp "$f" "$TAPESTRY_DATA_DIR/$name"
+      chown 10000:10000 "$TAPESTRY_DATA_DIR/$name"
+    fi
+  done
+fi
+
+# Build the embedding cache so the first WhatsApp message isn't slow.
+# Idempotent: if cache exists and matches, returns instantly.
+if [ -f /opt/tapestry/scripts/warm_embeddings.py ] && [ -n "${OPENAI_API_KEY:-}" ]; then
+  echo "[tapestry] warming embedding cache..."
+  BOT_DATA_DIR="$TAPESTRY_DATA_DIR" \
+    /opt/hermes/.venv/bin/python /opt/tapestry/scripts/warm_embeddings.py || true
 fi
 
 exec /opt/hermes/docker/entrypoint.sh "$@"

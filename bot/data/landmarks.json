@@ -1,0 +1,2180 @@
+[
+  {
+    "id": "landmark_0000_railway_good_shed_no_2",
+    "feature_name": "Railway Good Shed No 2",
+    "theme": "Vacant Land",
+    "sub_theme": "Current Construction Site - Commercial",
+    "lat": -37.8211371302179,
+    "lng": 144.951378883631,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0001_parliament_railway_station",
+    "feature_name": "Parliament Railway Station",
+    "theme": "Transport",
+    "sub_theme": "Railway Station",
+    "lat": -37.8116061787171,
+    "lng": 144.973017263156,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0002_north_melbourne_recreation_reserve",
+    "feature_name": "North Melbourne Recreation Reserve",
+    "theme": "Leisure/Recreation",
+    "sub_theme": "Informal Outdoor Facility (Park/Garden/Reserve)",
+    "lat": -37.7988345257153,
+    "lng": 144.941452061463,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0003_princes_park",
+    "feature_name": "Princes Park",
+    "theme": "Leisure/Recreation",
+    "sub_theme": "Informal Outdoor Facility (Park/Garden/Reserve)",
+    "lat": -37.7870161727156,
+    "lng": 144.961115214367,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0004_donor_tissue_bank_of_victoria",
+    "feature_name": "Donor Tissue Bank of Victoria",
+    "theme": "Office",
+    "sub_theme": "Office",
+    "lat": -37.8248231859563,
+    "lng": 144.965169035668,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0005_melbourne_central_railway_station",
+    "feature_name": "Melbourne Central Railway Station",
+    "theme": "Transport",
+    "sub_theme": "Railway Station",
+    "lat": -37.8100167030855,
+    "lng": 144.963789344893,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0006_argyle_square",
+    "feature_name": "Argyle Square",
+    "theme": "Leisure/Recreation",
+    "sub_theme": "Informal Outdoor Facility (Park/Garden/Reserve)",
+    "lat": -37.8031480577285,
+    "lng": 144.965761295089,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0007_westpac_centre",
+    "feature_name": "Westpac Centre",
+    "theme": "Leisure/Recreation",
+    "sub_theme": "Major Sports & Recreation Facility",
+    "lat": -37.8242456858593,
+    "lng": 144.979720306309,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0008_melbourne_girls_grammar_school",
+    "feature_name": "Melbourne Girls Grammar School",
+    "theme": "Education Centre",
+    "sub_theme": "School - Primary and Secondary Education",
+    "lat": -37.8315364518803,
+    "lng": 144.985089428348,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0009_mercy_private_hospital",
+    "feature_name": "Mercy Private Hospital",
+    "theme": "Health Services",
+    "sub_theme": "Medical Services",
+    "lat": -37.811896809802,
+    "lng": 144.984435746587,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0010_carlton_football_club",
+    "feature_name": "Carlton Football Club",
+    "theme": "Leisure/Recreation",
+    "sub_theme": "Major Sports & Recreation Facility",
+    "lat": -37.7840864379557,
+    "lng": 144.961967841559,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0011_carlton_gardens_primary_school",
+    "feature_name": "Carlton Gardens Primary School",
+    "theme": "Education Centre",
+    "sub_theme": "Primary Schools",
+    "lat": -37.8020953835112,
+    "lng": 144.969406272035,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0012_kings_domain",
+    "feature_name": "Kings Domain",
+    "theme": "Leisure/Recreation",
+    "sub_theme": "Informal Outdoor Facility (Park/Garden/Reserve)",
+    "lat": -37.8255239795833,
+    "lng": 144.974107925144,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0013_melbourne_grammar_school",
+    "feature_name": "Melbourne Grammar School",
+    "theme": "Education Centre",
+    "sub_theme": "Secondary Schools",
+    "lat": -37.8342561018747,
+    "lng": 144.976285045233,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0014_southgate_arts_and_leisure_precinct",
+    "feature_name": "Southgate Arts and Leisure Precinct",
+    "theme": "Mixed Use",
+    "sub_theme": "Retail/Office/Carpark",
+    "lat": -37.8202245786597,
+    "lng": 144.965989052839,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0015_australian_centre_for_contemporary_art",
+    "feature_name": "Australian Centre for Contemporary Art",
+    "theme": "Place Of Assembly",
+    "sub_theme": "Art Gallery/Museum",
+    "lat": -37.8266045432686,
+    "lng": 144.967252924593,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0016_sbs_special_broadcasting_service",
+    "feature_name": "SBS (Special Broadcasting Service)",
+    "theme": "Office",
+    "sub_theme": "Office",
+    "lat": -37.8176921210305,
+    "lng": 144.968740597156,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0017_federation_square",
+    "feature_name": "Federation Square",
+    "theme": "Leisure/Recreation",
+    "sub_theme": "Informal Outdoor Facility (Park/Garden/Reserve)",
+    "lat": -37.8178516571684,
+    "lng": 144.968963600783,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0018_royal_womens_hospital",
+    "feature_name": "Royal Womens Hospital",
+    "theme": "Health Services",
+    "sub_theme": "Public Hospital",
+    "lat": -37.7988892460088,
+    "lng": 144.954897253856,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0019_south_kensington_railway_station",
+    "feature_name": "South Kensington Railway Station",
+    "theme": "Transport",
+    "sub_theme": "Railway Station",
+    "lat": -37.7997270537735,
+    "lng": 144.925837749713,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0020_national_sports_museum",
+    "feature_name": "National Sports Museum",
+    "theme": "Place Of Assembly",
+    "sub_theme": "Art Gallery/Museum",
+    "lat": -37.8189544909462,
+    "lng": 144.984669809381,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0021_flagstaff_gardens",
+    "feature_name": "Flagstaff Gardens",
+    "theme": "Leisure/Recreation",
+    "sub_theme": "Informal Outdoor Facility (Park/Garden/Reserve)",
+    "lat": -37.8111222889277,
+    "lng": 144.954696055235,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0022_north_melbourne_primary_school",
+    "feature_name": "North Melbourne Primary School",
+    "theme": "Education Centre",
+    "sub_theme": "Primary Schools",
+    "lat": -37.7986737155551,
+    "lng": 144.951065772876,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0023_westgate_park",
+    "feature_name": "Westgate Park",
+    "theme": "Leisure/Recreation",
+    "sub_theme": "Informal Outdoor Facility (Park/Garden/Reserve)",
+    "lat": -37.8314918578874,
+    "lng": 144.908824792698,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0024_st_mary_s_anglican_church",
+    "feature_name": "St Mary's Anglican Church",
+    "theme": "Place of Worship",
+    "sub_theme": "Church",
+    "lat": -37.8031663672997,
+    "lng": 144.953761537074,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0025_flagstaff_railway_station",
+    "feature_name": "Flagstaff Railway Station",
+    "theme": "Transport",
+    "sub_theme": "Railway Station",
+    "lat": -37.8122356514626,
+    "lng": 144.956318211113,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0026_newmarket_reserve",
+    "feature_name": "Newmarket Reserve",
+    "theme": "Leisure/Recreation",
+    "sub_theme": "Informal Outdoor Facility (Park/Garden/Reserve)",
+    "lat": -37.7878473341234,
+    "lng": 144.922972125346,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0027_j_j_holland_park",
+    "feature_name": "J.J Holland Park",
+    "theme": "Leisure/Recreation",
+    "sub_theme": "Informal Outdoor Facility (Park/Garden/Reserve)",
+    "lat": -37.7982358832177,
+    "lng": 144.923837074813,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0028_royal_childrens_hospital",
+    "feature_name": "Royal Childrens Hospital",
+    "theme": "Health Services",
+    "sub_theme": "Public Hospital",
+    "lat": -37.7942060847278,
+    "lng": 144.950048264678,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0029_riverside_park",
+    "feature_name": "Riverside Park",
+    "theme": "Leisure/Recreation",
+    "sub_theme": "Outdoor Recreation Facility (Zoo, Golf Course)",
+    "lat": -37.7948375315825,
+    "lng": 144.915607065132,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0030_fitzroy_gardens",
+    "feature_name": "Fitzroy Gardens",
+    "theme": "Leisure/Recreation",
+    "sub_theme": "Informal Outdoor Facility (Park/Garden/Reserve)",
+    "lat": -37.8129616331579,
+    "lng": 144.980455714669,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0031_peter_maccallum_cancer_institute",
+    "feature_name": "Peter Maccallum Cancer Institute",
+    "theme": "Health Services",
+    "sub_theme": "Public Hospital",
+    "lat": -37.8114766732026,
+    "lng": 144.977400949063,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0032_the_melbourne_athenaeum_library",
+    "feature_name": "The Melbourne Athenaeum Library",
+    "theme": "Place Of Assembly",
+    "sub_theme": "Library",
+    "lat": -37.8148855756416,
+    "lng": 144.967291289941,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0033_romanian_orthodox",
+    "feature_name": "Romanian Orthodox",
+    "theme": "Place of Worship",
+    "sub_theme": "Church",
+    "lat": -37.8052307297468,
+    "lng": 144.966986444597,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0034_st_michaels",
+    "feature_name": "St Michaels",
+    "theme": "Place of Worship",
+    "sub_theme": "Church",
+    "lat": -37.7940512679297,
+    "lng": 144.945399480629,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0035_ukranian_catholic_cathedral",
+    "feature_name": "Ukranian Catholic Cathedral",
+    "theme": "Place of Worship",
+    "sub_theme": "Church",
+    "lat": -37.7963084580345,
+    "lng": 144.944313454028,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0036_the_parish_of_christ_church_south_yarra",
+    "feature_name": "The Parish of Christ Church South Yarra",
+    "theme": "Place of Worship",
+    "sub_theme": "Church",
+    "lat": -37.8386270533576,
+    "lng": 144.986009385387,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0037_queen_victoria_market",
+    "feature_name": "Queen Victoria Market",
+    "theme": "Retail",
+    "sub_theme": "Retail",
+    "lat": -37.8075002018073,
+    "lng": 144.957158515056,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0038_state_library_victoria",
+    "feature_name": "State Library Victoria",
+    "theme": "Community Use",
+    "sub_theme": "Public Buildings",
+    "lat": -37.8099852201226,
+    "lng": 144.964330322397,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0039_regent_theatre",
+    "feature_name": "Regent Theatre",
+    "theme": "Place Of Assembly",
+    "sub_theme": "Theatre Live",
+    "lat": -37.8160014744179,
+    "lng": 144.967916735261,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0040_old_treasury_building",
+    "feature_name": "Old Treasury Building",
+    "theme": "Office",
+    "sub_theme": "Office",
+    "lat": -37.8132371662585,
+    "lng": 144.974423610255,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0041_supreme_court",
+    "feature_name": "Supreme Court",
+    "theme": "Community Use",
+    "sub_theme": "Public Buildings",
+    "lat": -37.8141494182814,
+    "lng": 144.957894024264,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0042_richmond_football_club",
+    "feature_name": "Richmond Football Club",
+    "theme": "Leisure/Recreation",
+    "sub_theme": "Informal Outdoor Facility (Park/Garden/Reserve)",
+    "lat": -37.8216740022008,
+    "lng": 144.988156318781,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0043_melbourne_convention_centre",
+    "feature_name": "Melbourne Convention Centre",
+    "theme": "Place Of Assembly",
+    "sub_theme": "Function/Conference/Exhibition Centre",
+    "lat": -37.8249040484653,
+    "lng": 144.952288281644,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0044_melbourne_international_shooting_club",
+    "feature_name": "Melbourne International Shooting Club",
+    "theme": "Leisure/Recreation",
+    "sub_theme": "Private Sports Club/Facility",
+    "lat": -37.8292844929826,
+    "lng": 144.913415802464,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0045_crown_entertainment_complex",
+    "feature_name": "Crown Entertainment Complex",
+    "theme": "Purpose Built",
+    "sub_theme": "Casino",
+    "lat": -37.8235761092516,
+    "lng": 144.957312880653,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0046_kensington_primary_school",
+    "feature_name": "Kensington Primary School",
+    "theme": "Education Centre",
+    "sub_theme": "Primary Schools",
+    "lat": -37.7925235045455,
+    "lng": 144.927108735461,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0047_fox_classic_car_collection",
+    "feature_name": "Fox Classic Car Collection",
+    "theme": "Place Of Assembly",
+    "sub_theme": "Art Gallery/Museum",
+    "lat": -37.8213744301481,
+    "lng": 144.948496661709,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0048_anz_gothic_bank",
+    "feature_name": "ANZ 'Gothic' Bank",
+    "theme": "Mixed Use",
+    "sub_theme": "Retail/Office/Carpark",
+    "lat": -37.8161580666029,
+    "lng": 144.961673719242,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0049_st_augustines_church",
+    "feature_name": "St Augustines Church",
+    "theme": "Place of Worship",
+    "sub_theme": "Church",
+    "lat": -37.8169741358546,
+    "lng": 144.954862000132,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0050_melbourne_unitarian_church",
+    "feature_name": "Melbourne Unitarian Church",
+    "theme": "Place of Worship",
+    "sub_theme": "Church",
+    "lat": -37.8114487773394,
+    "lng": 144.984664890999,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0051_our_lady_of_lebanon_church",
+    "feature_name": "Our Lady of Lebanon Church",
+    "theme": "Place of Worship",
+    "sub_theme": "Church",
+    "lat": -37.8025766539683,
+    "lng": 144.969334720932,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0052_st_alban_anglican_church",
+    "feature_name": "St Alban Anglican Church",
+    "theme": "Place of Worship",
+    "sub_theme": "Church",
+    "lat": -37.7942169477929,
+    "lng": 144.94161451392,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0053_playhouse",
+    "feature_name": "Playhouse",
+    "theme": "Place Of Assembly",
+    "sub_theme": "Theatre Live",
+    "lat": -37.8218124583016,
+    "lng": 144.968337832721,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0054_victorian_arts_centre",
+    "feature_name": "Victorian Arts Centre",
+    "theme": "Place Of Assembly",
+    "sub_theme": "Art Gallery/Museum",
+    "lat": -37.8219947335768,
+    "lng": 144.968837288153,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0055_the_royal_victorian_eye_ear_hospital",
+    "feature_name": "The Royal Victorian Eye & Ear Hospital",
+    "theme": "Health Services",
+    "sub_theme": "Public Hospital",
+    "lat": -37.8087522829868,
+    "lng": 144.976268275082,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0056_central_pier",
+    "feature_name": "Central Pier",
+    "theme": "Place Of Assembly",
+    "sub_theme": "Function/Conference/Exhibition Centre",
+    "lat": -37.8165177307702,
+    "lng": 144.943475014215,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0057_ngv_international",
+    "feature_name": "NGV International",
+    "theme": "Community Use",
+    "sub_theme": "Public Buildings",
+    "lat": -37.8230135000869,
+    "lng": 144.969342535451,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0058_macaulay_railway_station_north_melbourne_train_stop",
+    "feature_name": "Macaulay Railway Station (North Melbourne) - Train stop",
+    "theme": "Transport",
+    "sub_theme": "Railway Station",
+    "lat": -37.794964001386,
+    "lng": 144.936190756632,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0059_kensington_railway_station",
+    "feature_name": "Kensington Railway Station",
+    "theme": "Transport",
+    "sub_theme": "Railway Station",
+    "lat": -37.7939140126373,
+    "lng": 144.930710207518,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0060_royal_botanic_gardens",
+    "feature_name": "Royal Botanic Gardens",
+    "theme": "Leisure/Recreation",
+    "sub_theme": "Informal Outdoor Facility (Park/Garden/Reserve)",
+    "lat": -37.8306631583233,
+    "lng": 144.980850432751,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0061_coronial_services_centre_of_victoria",
+    "feature_name": "Coronial Services Centre of Victoria",
+    "theme": "Office",
+    "sub_theme": "Office",
+    "lat": -37.8243437355246,
+    "lng": 144.96447462898,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0062_darling_square",
+    "feature_name": "Darling Square",
+    "theme": "Leisure/Recreation",
+    "sub_theme": "Informal Outdoor Facility (Park/Garden/Reserve)",
+    "lat": -37.81299206932,
+    "lng": 144.989062559512,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0063_melbourne_wholesale_fish_market",
+    "feature_name": "Melbourne Wholesale Fish Market",
+    "theme": "Warehouse/Store",
+    "sub_theme": "Store Yard",
+    "lat": -37.8083471006041,
+    "lng": 144.930613255612,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0064_the_ian_potter_museum_of_art",
+    "feature_name": "The Ian Potter Museum Of Art",
+    "theme": "Place Of Assembly",
+    "sub_theme": "Art Gallery/Museum",
+    "lat": -37.7973939595503,
+    "lng": 144.964156669702,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0065_university_of_melbourne",
+    "feature_name": "University of Melbourne",
+    "theme": "Education Centre",
+    "sub_theme": "Tertiary (University)",
+    "lat": -37.7982892284927,
+    "lng": 144.96099520158,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0066_qv_village",
+    "feature_name": "QV Village",
+    "theme": "Mixed Use",
+    "sub_theme": "Retail/Office/Residential/Carpark",
+    "lat": -37.8106891897454,
+    "lng": 144.965714574014,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0067_parliament_reserve",
+    "feature_name": "Parliament Reserve",
+    "theme": "Leisure/Recreation",
+    "sub_theme": "Informal Outdoor Facility (Park/Garden/Reserve)",
+    "lat": -37.809852620638,
+    "lng": 144.973462202839,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0068_north_melbourne_football_club",
+    "feature_name": "North Melbourne Football Club",
+    "theme": "Office",
+    "sub_theme": "Office",
+    "lat": -37.799771364073,
+    "lng": 144.940963510723,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0069_north_melbourne_recreation_centre_gymnasium",
+    "feature_name": "North Melbourne Recreation Centre (Gymnasium)",
+    "theme": "Leisure/Recreation",
+    "sub_theme": "Gymnasium/Health Club",
+    "lat": -37.7997051197931,
+    "lng": 144.940368286395,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0070_conservatory",
+    "feature_name": "Conservatory",
+    "theme": "Community Use",
+    "sub_theme": "Public Buildings",
+    "lat": -37.814002127195,
+    "lng": 144.9785597431,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0071_freshwater_place",
+    "feature_name": "Freshwater Place",
+    "theme": "Mixed Use",
+    "sub_theme": "Retail/Office/Residential/Carpark",
+    "lat": -37.8219745489446,
+    "lng": 144.96246144843,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0072_metropolitan_fire_brigade_mfb",
+    "feature_name": "Metropolitan Fire Brigade (MFB)",
+    "theme": "Community Use",
+    "sub_theme": "Fire Station",
+    "lat": -37.8092318636838,
+    "lng": 144.975247619376,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0073_koorie_heritage_trust_inc",
+    "feature_name": "Koorie Heritage Trust Inc",
+    "theme": "Place Of Assembly",
+    "sub_theme": "Art Gallery/Museum",
+    "lat": -37.8133854259085,
+    "lng": 144.954027907736,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0074_rmit_university",
+    "feature_name": "RMIT University",
+    "theme": "Education Centre",
+    "sub_theme": "Tertiary (University)",
+    "lat": -37.8080795360545,
+    "lng": 144.964452974798,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0075_macarthur_square",
+    "feature_name": "Macarthur Square",
+    "theme": "Leisure/Recreation",
+    "sub_theme": "Informal Outdoor Facility (Park/Garden/Reserve)",
+    "lat": -37.7983318676737,
+    "lng": 144.971514146104,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0076_north_melbourne_railway_station",
+    "feature_name": "North Melbourne Railway Station",
+    "theme": "Transport",
+    "sub_theme": "Railway Station",
+    "lat": -37.8073823625058,
+    "lng": 144.942429848025,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0077_cooks_cottage",
+    "feature_name": "Cooks' Cottage",
+    "theme": "Place Of Assembly",
+    "sub_theme": "Art Gallery/Museum",
+    "lat": -37.8144604899837,
+    "lng": 144.979471339826,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0078_royal_exhibition_building",
+    "feature_name": "Royal Exhibition Building",
+    "theme": "Place Of Assembly",
+    "sub_theme": "Art Gallery/Museum",
+    "lat": -37.80460262432,
+    "lng": 144.971521914952,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0079_melbourne_childrens_court",
+    "feature_name": "Melbourne Childrens Court",
+    "theme": "Community Use",
+    "sub_theme": "Public Buildings",
+    "lat": -37.8125077646598,
+    "lng": 144.958298873269,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0080_eureka_skydeck_88",
+    "feature_name": "Eureka Skydeck 88",
+    "theme": "Leisure/Recreation",
+    "sub_theme": "Observation Tower/Wheel",
+    "lat": -37.8216187583314,
+    "lng": 144.964622218598,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0081_county_court_melbourne",
+    "feature_name": "County Court Melbourne",
+    "theme": "Community Use",
+    "sub_theme": "Public Buildings",
+    "lat": -37.8132011619962,
+    "lng": 144.957734246387,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0082_epworth_freemasons_hospital",
+    "feature_name": "Epworth Freemasons Hospital",
+    "theme": "Health Services",
+    "sub_theme": "Private Hospital",
+    "lat": -37.8109710654051,
+    "lng": 144.98370007659,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0083_church_of_christ",
+    "feature_name": "Church of Christ",
+    "theme": "Place of Worship",
+    "sub_theme": "Church",
+    "lat": -37.8104524079085,
+    "lng": 144.96388920294,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0084_holy_trinity",
+    "feature_name": "Holy Trinity",
+    "theme": "Place of Worship",
+    "sub_theme": "Church",
+    "lat": -37.8140667110854,
+    "lng": 144.983197322289,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0085_holy_rosary",
+    "feature_name": "Holy Rosary",
+    "theme": "Place of Worship",
+    "sub_theme": "Church",
+    "lat": -37.7948087414394,
+    "lng": 144.928362125005,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0086_victoria_police",
+    "feature_name": "Victoria Police",
+    "theme": "Community Use",
+    "sub_theme": "Police Station",
+    "lat": -37.8219773910249,
+    "lng": 144.953398014034,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0087_old_melbourne_gaol_crime_justice_experience",
+    "feature_name": "Old Melbourne Gaol Crime & Justice Experience",
+    "theme": "Place Of Assembly",
+    "sub_theme": "Art Gallery/Museum",
+    "lat": -37.8077644149636,
+    "lng": 144.965463853978,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0088_melbourne_exhibition_centre",
+    "feature_name": "Melbourne Exhibition Centre",
+    "theme": "Place Of Assembly",
+    "sub_theme": "Function/Conference/Exhibition Centre",
+    "lat": -37.8252455123297,
+    "lng": 144.95435243249,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0089_mtc_theatre",
+    "feature_name": "MTC Theatre",
+    "theme": "Place Of Assembly",
+    "sub_theme": "Theatre Live",
+    "lat": -37.8242661832902,
+    "lng": 144.968174400274,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0090_shrine_of_rembrance_reserve",
+    "feature_name": "Shrine of Rembrance Reserve",
+    "theme": "Leisure/Recreation",
+    "sub_theme": "Informal Outdoor Facility (Park/Garden/Reserve)",
+    "lat": -37.8320733992876,
+    "lng": 144.973628364465,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0091_icehouse",
+    "feature_name": "Icehouse",
+    "theme": "Leisure/Recreation",
+    "sub_theme": "Indoor Recreation Facility",
+    "lat": -37.8121881194053,
+    "lng": 144.935684018873,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0092_parliament_railway_station",
+    "feature_name": "Parliament Railway Station",
+    "theme": "Transport",
+    "sub_theme": "Railway Station",
+    "lat": -37.8127621113552,
+    "lng": 144.973433796529,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0093_flemington_racecourse_railway_station",
+    "feature_name": "Flemington Racecourse Railway Station",
+    "theme": "Transport",
+    "sub_theme": "Railway Station",
+    "lat": -37.7869105822519,
+    "lng": 144.908190706069,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0094_carlton_baths",
+    "feature_name": "Carlton Baths",
+    "theme": "Leisure/Recreation",
+    "sub_theme": "Indoor Recreation Facility",
+    "lat": -37.7934377042609,
+    "lng": 144.971696548624,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0095_dallas_brooks_centre",
+    "feature_name": "Dallas Brooks Centre",
+    "theme": "Place Of Assembly",
+    "sub_theme": "Function/Conference/Exhibition Centre",
+    "lat": -37.8097374138234,
+    "lng": 144.981383411592,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0096_st_james_church",
+    "feature_name": "St James Church",
+    "theme": "Place of Worship",
+    "sub_theme": "Church",
+    "lat": -37.8101281201969,
+    "lng": 144.952468571683,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0097_st_michael_s_uniting_church",
+    "feature_name": "St Michael's Uniting Church",
+    "theme": "Place of Worship",
+    "sub_theme": "Church",
+    "lat": -37.8143851324913,
+    "lng": 144.969174036096,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0098_east_melbourne_synagogue",
+    "feature_name": "East Melbourne Synagogue",
+    "theme": "Place of Worship",
+    "sub_theme": "Synagogue",
+    "lat": -37.809113728917,
+    "lng": 144.97422190954,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0099_flemington_racecourse",
+    "feature_name": "Flemington Racecourse",
+    "theme": "Leisure/Recreation",
+    "sub_theme": "Major Sports & Recreation Facility",
+    "lat": -37.7908082646624,
+    "lng": 144.912142987372,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0100_treasury_gardens",
+    "feature_name": "Treasury Gardens",
+    "theme": "Leisure/Recreation",
+    "sub_theme": "Informal Outdoor Facility (Park/Garden/Reserve)",
+    "lat": -37.8143993575938,
+    "lng": 144.975952335785,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0101_melbourne_magistrates_court",
+    "feature_name": "Melbourne Magistrates Court",
+    "theme": "Community Use",
+    "sub_theme": "Government Building",
+    "lat": -37.8136147671606,
+    "lng": 144.956846193891,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0102_melbourne_cricket_ground_mcg",
+    "feature_name": "Melbourne Cricket Ground (MCG)",
+    "theme": "Leisure/Recreation",
+    "sub_theme": "Major Sports & Recreation Facility",
+    "lat": -37.8194921618419,
+    "lng": 144.983402879078,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0103_melbourne_international_karting_complex",
+    "feature_name": "Melbourne International Karting Complex",
+    "theme": "Vacant Land",
+    "sub_theme": "Vacant Land - Undeveloped Site",
+    "lat": -37.8310746380616,
+    "lng": 144.913822928701,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0104_st_patricks_cathedral",
+    "feature_name": "St Patricks Cathedral",
+    "theme": "Place of Worship",
+    "sub_theme": "Church",
+    "lat": -37.8101140950474,
+    "lng": 144.975901529712,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0105_parliament_house",
+    "feature_name": "Parliament House",
+    "theme": "Office",
+    "sub_theme": "Office",
+    "lat": -37.811246655376,
+    "lng": 144.97372641185,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0106_former_royal_mint",
+    "feature_name": "Former Royal Mint",
+    "theme": "Office",
+    "sub_theme": "Office",
+    "lat": -37.8121838748712,
+    "lng": 144.957055454136,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0107_queen_victoria_gardens",
+    "feature_name": "Queen Victoria Gardens",
+    "theme": "Leisure/Recreation",
+    "sub_theme": "Informal Outdoor Facility (Park/Garden/Reserve)",
+    "lat": -37.8216381244891,
+    "lng": 144.971049530478,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0108_new_quay",
+    "feature_name": "New Quay",
+    "theme": "Leisure/Recreation",
+    "sub_theme": "Informal Outdoor Facility (Park/Garden/Reserve)",
+    "lat": -37.8152178789077,
+    "lng": 144.941617889032,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0109_central_city_studios",
+    "feature_name": "Central City Studios",
+    "theme": "Purpose Built",
+    "sub_theme": "Film & RV Studio",
+    "lat": -37.8142318521296,
+    "lng": 144.935655305362,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0110_new_quay_marina",
+    "feature_name": "New Quay Marina",
+    "theme": "Transport",
+    "sub_theme": "Marina",
+    "lat": -37.8152925454954,
+    "lng": 144.942283726231,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0111_rod_laver_arena",
+    "feature_name": "Rod Laver Arena",
+    "theme": "Leisure/Recreation",
+    "sub_theme": "Major Sports & Recreation Facility",
+    "lat": -37.8220456119807,
+    "lng": 144.978487173787,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0112_melbourne_park",
+    "feature_name": "Melbourne Park",
+    "theme": "Leisure/Recreation",
+    "sub_theme": "Major Sports & Recreation Facility",
+    "lat": -37.8209085970021,
+    "lng": 144.978735802793,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0113_hisense_arena",
+    "feature_name": "Hisense Arena",
+    "theme": "Leisure/Recreation",
+    "sub_theme": "Major Sports & Recreation Facility",
+    "lat": -37.823110002667,
+    "lng": 144.981834802535,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0114_melbourne_museum",
+    "feature_name": "Melbourne Museum",
+    "theme": "Place Of Assembly",
+    "sub_theme": "Art Gallery/Museum",
+    "lat": -37.8035518129299,
+    "lng": 144.971690718887,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0115_elisabeth_murdoch_hall",
+    "feature_name": "Elisabeth Murdoch Hall",
+    "theme": "Community Use",
+    "sub_theme": "Public Buildings",
+    "lat": -37.8239733704282,
+    "lng": 144.967450979234,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0116_melbourne_recital_centre",
+    "feature_name": "Melbourne Recital Centre",
+    "theme": "Community Use",
+    "sub_theme": "Public Buildings",
+    "lat": -37.8238327885805,
+    "lng": 144.967682729667,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0117_hamer_hall",
+    "feature_name": "Hamer Hall",
+    "theme": "Place Of Assembly",
+    "sub_theme": "Theatre Live",
+    "lat": -37.8199901009015,
+    "lng": 144.967992144257,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0118_royal_park_railway_station",
+    "feature_name": "Royal Park Railway Station",
+    "theme": "Transport",
+    "sub_theme": "Railway Station",
+    "lat": -37.7812684282825,
+    "lng": 144.951667833921,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0119_flagstaff_railway_station",
+    "feature_name": "Flagstaff Railway Station",
+    "theme": "Transport",
+    "sub_theme": "Railway Station",
+    "lat": -37.8116384403974,
+    "lng": 144.9561186805,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0120_athanaeum_theatre",
+    "feature_name": "Athanaeum Theatre",
+    "theme": "Place Of Assembly",
+    "sub_theme": "Theatre Live",
+    "lat": -37.814954347831,
+    "lng": 144.96732254212,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0121_her_majesty_s_theatre",
+    "feature_name": "Her Majesty's Theatre",
+    "theme": "Place Of Assembly",
+    "sub_theme": "Theatre Live",
+    "lat": -37.8109975612842,
+    "lng": 144.969520183129,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0122_flinders_street_railway_station",
+    "feature_name": "Flinders Street Railway Station",
+    "theme": "Transport",
+    "sub_theme": "Railway Station",
+    "lat": -37.8179063007545,
+    "lng": 144.967064817875,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0123_sandridge_rail_bridge",
+    "feature_name": "Sandridge Rail Bridge",
+    "theme": "Leisure/Recreation",
+    "sub_theme": "Informal Outdoor Facility (Park/Garden/Reserve)",
+    "lat": -37.8201763042794,
+    "lng": 144.96298113724,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0124_the_museum_of_australian_chinese_history",
+    "feature_name": "The Museum Of Australian Chinese History",
+    "theme": "Place Of Assembly",
+    "sub_theme": "Art Gallery/Museum",
+    "lat": -37.8107686127655,
+    "lng": 144.96923385414,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0125_all_nations_uniting_church",
+    "feature_name": "All Nations Uniting Church",
+    "theme": "Place of Worship",
+    "sub_theme": "Church",
+    "lat": -37.7959155303946,
+    "lng": 144.968981110942,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0126_royal_park_golf_course",
+    "feature_name": "Royal Park Golf Course",
+    "theme": "Leisure/Recreation",
+    "sub_theme": "Private Sports Club/Facility",
+    "lat": -37.7819171308558,
+    "lng": 144.956309119368,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0127_sidney_myer_music_bowl",
+    "feature_name": "Sidney Myer Music Bowl",
+    "theme": "Community Use",
+    "sub_theme": "Public Buildings",
+    "lat": -37.8233471608733,
+    "lng": 144.974686151365,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0128_harbour_town",
+    "feature_name": "Harbour Town",
+    "theme": "Vacant Land",
+    "sub_theme": "Current Construction Site",
+    "lat": -37.8139256326845,
+    "lng": 144.938123825625,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0129_melbourne_star_observation_wheel",
+    "feature_name": "Melbourne Star Observation Wheel",
+    "theme": "Leisure/Recreation",
+    "sub_theme": "Observation Tower/Wheel",
+    "lat": -37.8116163666726,
+    "lng": 144.937588920436,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0130_birrarung_marr",
+    "feature_name": "Birrarung Marr",
+    "theme": "Leisure/Recreation",
+    "sub_theme": "Informal Outdoor Facility (Park/Garden/Reserve)",
+    "lat": -37.81806108403,
+    "lng": 144.97314667014,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0131_artplay",
+    "feature_name": "Artplay",
+    "theme": "Leisure/Recreation",
+    "sub_theme": "Indoor Recreation Facility",
+    "lat": -37.8184198800044,
+    "lng": 144.971542586509,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0132_parliament_railway_station",
+    "feature_name": "Parliament Railway Station",
+    "theme": "Transport",
+    "sub_theme": "Railway Station",
+    "lat": -37.8095762219384,
+    "lng": 144.972330132127,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0133_immigration_museum",
+    "feature_name": "Immigration Museum",
+    "theme": "Place Of Assembly",
+    "sub_theme": "Art Gallery/Museum",
+    "lat": -37.8191798798062,
+    "lng": 144.960426777129,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0134_fire_services_museum_victoria",
+    "feature_name": "Fire Services Museum Victoria",
+    "theme": "Place Of Assembly",
+    "sub_theme": "Art Gallery/Museum",
+    "lat": -37.8085761281612,
+    "lng": 144.975373745366,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0135_north_melbourne_recreation_centre_aquatic",
+    "feature_name": "North Melbourne Recreation Centre (Aquatic)",
+    "theme": "Leisure/Recreation",
+    "sub_theme": "Major Sports & Recreation Facility",
+    "lat": -37.7999470049655,
+    "lng": 144.943290801869,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0136_eureka_tower",
+    "feature_name": "Eureka Tower",
+    "theme": "Mixed Use",
+    "sub_theme": "Retail/Residential",
+    "lat": -37.8215157539717,
+    "lng": 144.964456721965,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0137_welsh_presbyterian_church",
+    "feature_name": "Welsh Presbyterian Church",
+    "theme": "Place of Worship",
+    "sub_theme": "Church",
+    "lat": -37.8104478768313,
+    "lng": 144.959873260087,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0138_lutheran_trinity_church",
+    "feature_name": "Lutheran Trinity Church",
+    "theme": "Place of Worship",
+    "sub_theme": "Church",
+    "lat": -37.8109757054396,
+    "lng": 144.975729473552,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0139_st_johns_lutheran_church",
+    "feature_name": "St Johns Lutheran Church",
+    "theme": "Place of Worship",
+    "sub_theme": "Church",
+    "lat": -37.8209399677168,
+    "lng": 144.967121099857,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0140_victoria_police",
+    "feature_name": "Victoria Police",
+    "theme": "Community Use",
+    "sub_theme": "Police Station",
+    "lat": -37.8164849024046,
+    "lng": 144.966486801188,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0141_state_netball_hockey_centre",
+    "feature_name": "State Netball Hockey Centre",
+    "theme": "Leisure/Recreation",
+    "sub_theme": "Major Sports & Recreation Facility",
+    "lat": -37.7857860016289,
+    "lng": 144.947580972027,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0142_university_square",
+    "feature_name": "University Square",
+    "theme": "Leisure/Recreation",
+    "sub_theme": "Informal Outdoor Facility (Park/Garden/Reserve)",
+    "lat": -37.800410711209,
+    "lng": 144.960398319302,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0143_melbourne_general_cemetery",
+    "feature_name": "Melbourne General Cemetery",
+    "theme": "Community Use",
+    "sub_theme": "Cemetery",
+    "lat": -37.7891890023616,
+    "lng": 144.965785979892,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0144_wesley_college",
+    "feature_name": "Wesley College",
+    "theme": "Education Centre",
+    "sub_theme": "School - Primary and Secondary Education",
+    "lat": -37.8485201804496,
+    "lng": 144.982227770988,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0145_southern_cross_railway_station",
+    "feature_name": "Southern Cross Railway Station",
+    "theme": "Transport",
+    "sub_theme": "Railway Station",
+    "lat": -37.8181633057171,
+    "lng": 144.952944748845,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0146_princess_theatre",
+    "feature_name": "Princess Theatre",
+    "theme": "Place Of Assembly",
+    "sub_theme": "Theatre Live",
+    "lat": -37.8107257091302,
+    "lng": 144.9723265962,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0147_university_high_school",
+    "feature_name": "University High School",
+    "theme": "Education Centre",
+    "sub_theme": "Secondary Schools",
+    "lat": -37.7973136216903,
+    "lng": 144.956034449946,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0148_melbourne_zoo",
+    "feature_name": "Melbourne Zoo",
+    "theme": "Leisure/Recreation",
+    "sub_theme": "Outdoor Recreation Facility (Zoo, Golf Course)",
+    "lat": -37.7844449253712,
+    "lng": 144.951371205938,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0149_malthouse_theatre",
+    "feature_name": "Malthouse Theatre",
+    "theme": "Place Of Assembly",
+    "sub_theme": "Theatre Live",
+    "lat": -37.8271768001126,
+    "lng": 144.966936821789,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0150_thoroughbred_racing_gallery",
+    "feature_name": "Thoroughbred Racing Gallery",
+    "theme": "Place Of Assembly",
+    "sub_theme": "Art Gallery/Museum",
+    "lat": -37.8188662730911,
+    "lng": 144.9839700954,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0151_docklands_park",
+    "feature_name": "Docklands Park",
+    "theme": "Leisure/Recreation",
+    "sub_theme": "Informal Outdoor Facility (Park/Garden/Reserve)",
+    "lat": -37.8209956785618,
+    "lng": 144.946781702342,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0152_waterfront_city",
+    "feature_name": "Waterfront City",
+    "theme": "Mixed Use",
+    "sub_theme": "Retail/Office",
+    "lat": -37.815056661803,
+    "lng": 144.939136876334,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0153_point_park",
+    "feature_name": "Point Park",
+    "theme": "Leisure/Recreation",
+    "sub_theme": "Informal Outdoor Facility (Park/Garden/Reserve)",
+    "lat": -37.8233522700646,
+    "lng": 144.942102276731,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0154_melbourne_theatre_company",
+    "feature_name": "Melbourne Theatre Company",
+    "theme": "Community Use",
+    "sub_theme": "Public Buildings",
+    "lat": -37.823930384816,
+    "lng": 144.968297429894,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0155_alexandra_gardens",
+    "feature_name": "Alexandra Gardens",
+    "theme": "Leisure/Recreation",
+    "sub_theme": "Informal Outdoor Facility (Park/Garden/Reserve)",
+    "lat": -37.8206051404251,
+    "lng": 144.971796067365,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0156_jolimont_mcg_railway_station_east_melbourne_train_stop",
+    "feature_name": "Jolimont-MCG Railway Station (East Melbourne) - Train stop",
+    "theme": "Transport",
+    "sub_theme": "Railway Station",
+    "lat": -37.8165651811668,
+    "lng": 144.983641003377,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0157_shrine_of_remembrance",
+    "feature_name": "Shrine of Remembrance",
+    "theme": "Community Use",
+    "sub_theme": "Public Buildings",
+    "lat": -37.8302080020387,
+    "lng": 144.973441913623,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0158_newmarket_railway_station",
+    "feature_name": "Newmarket Railway Station",
+    "theme": "Transport",
+    "sub_theme": "Railway Station",
+    "lat": -37.7872726241965,
+    "lng": 144.929059958114,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0159_carlton_courthouse_theatre",
+    "feature_name": "Carlton Courthouse Theatre",
+    "theme": "Place Of Assembly",
+    "sub_theme": "Theatre Live",
+    "lat": -37.7976589943217,
+    "lng": 144.968750113566,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0160_melbourne_showgrounds",
+    "feature_name": "Melbourne Showgrounds",
+    "theme": "Leisure/Recreation",
+    "sub_theme": "Outdoor Recreation Facility (Zoo, Golf Course)",
+    "lat": -37.7823097850883,
+    "lng": 144.910822117306,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0161_kraft",
+    "feature_name": "Kraft",
+    "theme": "Industrial",
+    "sub_theme": "Industrial (Manufacturing)",
+    "lat": -37.8262313085528,
+    "lng": 144.923475698195,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0162_melbourne_wholesale_fruit_vegetable_flower_market",
+    "feature_name": "Melbourne Wholesale Fruit, Vegetable & Flower Market",
+    "theme": "Mixed Use",
+    "sub_theme": "Retail/Office/Carpark",
+    "lat": -37.80687252157,
+    "lng": 144.923287444259,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0163_melbourne_central",
+    "feature_name": "Melbourne Central",
+    "theme": "Mixed Use",
+    "sub_theme": "Retail/Office/Carpark",
+    "lat": -37.8105371797142,
+    "lng": 144.962749729496,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0164_piazza_italia",
+    "feature_name": "Piazza Italia",
+    "theme": "Leisure/Recreation",
+    "sub_theme": "Informal Outdoor Facility (Park/Garden/Reserve)",
+    "lat": -37.8025164192523,
+    "lng": 144.965863092947,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0165_murchinson_square",
+    "feature_name": "Murchinson Square",
+    "theme": "Leisure/Recreation",
+    "sub_theme": "Informal Outdoor Facility (Park/Garden/Reserve)",
+    "lat": -37.8002735025371,
+    "lng": 144.973059252203,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0166_melbourne_aquarium",
+    "feature_name": "Melbourne Aquarium",
+    "theme": "Purpose Built",
+    "sub_theme": "Aquarium",
+    "lat": -37.8209627824685,
+    "lng": 144.958425696055,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0167_myer",
+    "feature_name": "Myer",
+    "theme": "Retail",
+    "sub_theme": "Department Store",
+    "lat": -37.8135911985281,
+    "lng": 144.963855087868,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0168_st_francis_church",
+    "feature_name": "St Francis Church",
+    "theme": "Place of Worship",
+    "sub_theme": "Church",
+    "lat": -37.8118847831837,
+    "lng": 144.962422614541,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0169_greek_orthodox_church",
+    "feature_name": "Greek Orthodox Church",
+    "theme": "Place of Worship",
+    "sub_theme": "Church",
+    "lat": -37.8088064667555,
+    "lng": 144.978259089269,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0170_north_melbourne_uniting",
+    "feature_name": "North Melbourne Uniting",
+    "theme": "Place of Worship",
+    "sub_theme": "Church",
+    "lat": -37.8035538471344,
+    "lng": 144.947671538375,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0171_carlton_gardens_north",
+    "feature_name": "Carlton Gardens North",
+    "theme": "Leisure/Recreation",
+    "sub_theme": "Informal Outdoor Facility (Park/Garden/Reserve)",
+    "lat": -37.8017690847403,
+    "lng": 144.971997551189,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0172_treasury_reserve",
+    "feature_name": "Treasury Reserve",
+    "theme": "Mixed Use",
+    "sub_theme": "Retail/Office",
+    "lat": -37.8129178793082,
+    "lng": 144.975236759799,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0173_the_mission_to_seafarers_victoria",
+    "feature_name": "The Mission To Seafarers Victoria",
+    "theme": "Specialist Residential Accommodation",
+    "sub_theme": "Hostel",
+    "lat": -37.8224995970811,
+    "lng": 144.951254841448,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0174_wonderland_park",
+    "feature_name": "Wonderland Park",
+    "theme": "Leisure/Recreation",
+    "sub_theme": "Outdoor Recreation Facility (Zoo, Golf Course)",
+    "lat": -37.8116945351989,
+    "lng": 144.936833674975,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0175_state_coroners_office",
+    "feature_name": "State Coroners Office",
+    "theme": "Office",
+    "sub_theme": "Office",
+    "lat": -37.8244982228756,
+    "lng": 144.964675254819,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0176_fawkner_park",
+    "feature_name": "Fawkner Park",
+    "theme": "Leisure/Recreation",
+    "sub_theme": "Informal Outdoor Facility (Park/Garden/Reserve)",
+    "lat": -37.8413996708186,
+    "lng": 144.981625667877,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0177_bio_21_institute",
+    "feature_name": "BIO 21 Institute",
+    "theme": "Education Centre",
+    "sub_theme": "Tertiary (University)",
+    "lat": -37.7978743305343,
+    "lng": 144.953780325865,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0178_enterprize_park",
+    "feature_name": "Enterprize Park",
+    "theme": "Leisure/Recreation",
+    "sub_theme": "Informal Outdoor Facility (Park/Garden/Reserve)",
+    "lat": -37.820210269629,
+    "lng": 144.959276859602,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0179_royal_melbourne_hospital",
+    "feature_name": "Royal Melbourne Hospital",
+    "theme": "Health Services",
+    "sub_theme": "Public Hospital",
+    "lat": -37.7993071664096,
+    "lng": 144.956389746765,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0180_commonwealth_law_courts",
+    "feature_name": "Commonwealth Law Courts",
+    "theme": "Community Use",
+    "sub_theme": "Public Buildings",
+    "lat": -37.8123961677596,
+    "lng": 144.955823833257,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0181_city_baths",
+    "feature_name": "City Baths",
+    "theme": "Leisure/Recreation",
+    "sub_theme": "Major Sports & Recreation Facility",
+    "lat": -37.8071585350561,
+    "lng": 144.963189789721,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0182_flemington_bridge_railway_station",
+    "feature_name": "Flemington Bridge Railway Station",
+    "theme": "Transport",
+    "sub_theme": "Railway Station",
+    "lat": -37.7881645889621,
+    "lng": 144.939277838304,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0183_council_house_2_ch2",
+    "feature_name": "Council House 2 (CH2)",
+    "theme": "Mixed Use",
+    "sub_theme": "Retail/Office/Carpark",
+    "lat": -37.8142591432011,
+    "lng": 144.966638432727,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0184_carlton_gardens_south",
+    "feature_name": "Carlton Gardens South",
+    "theme": "Leisure/Recreation",
+    "sub_theme": "Informal Outdoor Facility (Park/Garden/Reserve)",
+    "lat": -37.8060684577258,
+    "lng": 144.971266479841,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0185_wesley_church",
+    "feature_name": "Wesley Church",
+    "theme": "Place of Worship",
+    "sub_theme": "Church",
+    "lat": -37.8101576446961,
+    "lng": 144.968168215633,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0186_christ_church_kensington",
+    "feature_name": "Christ Church Kensington",
+    "theme": "Place of Worship",
+    "sub_theme": "Church",
+    "lat": -37.7932109480553,
+    "lng": 144.92729572288,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0187_melbourne_private_hospital",
+    "feature_name": "Melbourne Private Hospital",
+    "theme": "Health Services",
+    "sub_theme": "Private Hospital",
+    "lat": -37.7983111309698,
+    "lng": 144.95728837725,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0188_victoria_police",
+    "feature_name": "Victoria Police",
+    "theme": "Community Use",
+    "sub_theme": "Police Station",
+    "lat": -37.8003121288849,
+    "lng": 144.954697453742,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0189_visy_park",
+    "feature_name": "Visy Park",
+    "theme": "Leisure/Recreation",
+    "sub_theme": "Major Sports & Recreation Facility",
+    "lat": -37.7834303940347,
+    "lng": 144.961982577553,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0190_batman_park",
+    "feature_name": "Batman Park",
+    "theme": "Leisure/Recreation",
+    "sub_theme": "Informal Outdoor Facility (Park/Garden/Reserve)",
+    "lat": -37.8218460949601,
+    "lng": 144.956665812218,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0191_australian_red_cross",
+    "feature_name": "Australian Red Cross",
+    "theme": "Office",
+    "sub_theme": "Office",
+    "lat": -37.7990921023192,
+    "lng": 144.952635945774,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0192_polly_woodside",
+    "feature_name": "Polly Woodside",
+    "theme": "Place Of Assembly",
+    "sub_theme": "Art Gallery/Museum",
+    "lat": -37.8242574266145,
+    "lng": 144.953478052064,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0193_melbourne_town_hall",
+    "feature_name": "Melbourne Town Hall",
+    "theme": "Community Use",
+    "sub_theme": "Public Buildings",
+    "lat": -37.8150754791411,
+    "lng": 144.966542722283,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0194_dfo_south_wharf",
+    "feature_name": "DFO South Wharf",
+    "theme": "Mixed Use",
+    "sub_theme": "Retail/Office",
+    "lat": -37.824887401234,
+    "lng": 144.949794297819,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0195_the_ian_potter_centre_ngv_australia",
+    "feature_name": "The Ian Potter Centre: NGV Australia",
+    "theme": "Place Of Assembly",
+    "sub_theme": "Art Gallery/Museum",
+    "lat": -37.8174831423197,
+    "lng": 144.969899048343,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0196_channel_7_melbourne_broadcast_centre",
+    "feature_name": "Channel 7 - Melbourne Broadcast Centre",
+    "theme": "Purpose Built",
+    "sub_theme": "Film & RV Studio",
+    "lat": -37.8158572333481,
+    "lng": 144.94582326909,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0197_aami_park",
+    "feature_name": "AAMI Park",
+    "theme": "Leisure/Recreation",
+    "sub_theme": "Major Sports & Recreation Facility",
+    "lat": -37.8247252673963,
+    "lng": 144.98380297866,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0198_kangan_batman_tafe",
+    "feature_name": "Kangan Batman Tafe",
+    "theme": "Education Centre",
+    "sub_theme": "Further Education",
+    "lat": -37.8221818203024,
+    "lng": 144.948908460665,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0199_margaret_court_arena",
+    "feature_name": "Margaret Court Arena",
+    "theme": "Leisure/Recreation",
+    "sub_theme": "Major Sports & Recreation Facility",
+    "lat": -37.8213252086842,
+    "lng": 144.977591098955,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0200_riverslide_skate_park",
+    "feature_name": "Riverslide Skate Park",
+    "theme": "Leisure/Recreation",
+    "sub_theme": "Informal Outdoor Facility (Park/Garden/Reserve)",
+    "lat": -37.8207887122448,
+    "lng": 144.972951789291,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0201_royal_park",
+    "feature_name": "Royal Park",
+    "theme": "Leisure/Recreation",
+    "sub_theme": "Informal Outdoor Facility (Park/Garden/Reserve)",
+    "lat": -37.7906174256581,
+    "lng": 144.953834240647,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0202_government_house",
+    "feature_name": "Government House",
+    "theme": "Residential Accommodation",
+    "sub_theme": "Dwelling (House)",
+    "lat": -37.8275635886174,
+    "lng": 144.976655130464,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0203_yarra_park",
+    "feature_name": "Yarra Park",
+    "theme": "Leisure/Recreation",
+    "sub_theme": "Informal Outdoor Facility (Park/Garden/Reserve)",
+    "lat": -37.820469374101,
+    "lng": 144.986671109615,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0204_melbourne_central_railway_station",
+    "feature_name": "Melbourne Central Railway Station",
+    "theme": "Transport",
+    "sub_theme": "Railway Station",
+    "lat": -37.8097759325888,
+    "lng": 144.962670059539,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0205_victoria_police_museum",
+    "feature_name": "Victoria Police Museum",
+    "theme": "Place Of Assembly",
+    "sub_theme": "Art Gallery/Museum",
+    "lat": -37.8222182774409,
+    "lng": 144.954039975197,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0206_st_pauls_cathedral",
+    "feature_name": "St Pauls Cathedral",
+    "theme": "Place of Worship",
+    "sub_theme": "Church",
+    "lat": -37.8169549012399,
+    "lng": 144.967681647402,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0207_melbourne_visitor_centre",
+    "feature_name": "Melbourne Visitor Centre",
+    "theme": "Community Use",
+    "sub_theme": "Visitor Centre",
+    "lat": -37.8177352402006,
+    "lng": 144.967937138226,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0208_australian_centre_for_the_moving_image_acmi",
+    "feature_name": "Australian Centre For The Moving Image (ACMI)",
+    "theme": "Place Of Assembly",
+    "sub_theme": "Art Gallery/Museum",
+    "lat": -37.8176107327202,
+    "lng": 144.969070431323,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0209_sinclair_s_cottage",
+    "feature_name": "Sinclair's Cottage",
+    "theme": "Place Of Assembly",
+    "sub_theme": "Art Gallery/Museum",
+    "lat": -37.8145407488014,
+    "lng": 144.980554992725,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0210_etihad_stadium",
+    "feature_name": "Etihad Stadium",
+    "theme": "Leisure/Recreation",
+    "sub_theme": "Major Sports & Recreation Facility",
+    "lat": -37.8161760471742,
+    "lng": 144.947496254547,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0211_lincoln_square",
+    "feature_name": "Lincoln Square",
+    "theme": "Leisure/Recreation",
+    "sub_theme": "Informal Outdoor Facility (Park/Garden/Reserve)",
+    "lat": -37.8027919689732,
+    "lng": 144.962760852233,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0212_bishopscourt",
+    "feature_name": "Bishopscourt",
+    "theme": "Residential Accommodation",
+    "sub_theme": "Dwelling (House)",
+    "lat": -37.8132921649416,
+    "lng": 144.98350690799,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0213_st_peter_s_eastern_hill",
+    "feature_name": "St Peter's Eastern Hill",
+    "theme": "Place of Worship",
+    "sub_theme": "Church",
+    "lat": -37.8097086714637,
+    "lng": 144.975259178609,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0214_scots_church",
+    "feature_name": "Scots Church",
+    "theme": "Place of Worship",
+    "sub_theme": "Church",
+    "lat": -37.8145687802664,
+    "lng": 144.96855105335,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0215_south_yarra_presbyterian_church",
+    "feature_name": "South Yarra Presbyterian Church",
+    "theme": "Place of Worship",
+    "sub_theme": "Church",
+    "lat": -37.8407473645397,
+    "lng": 144.98562699348,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0216_port_of_melbourne",
+    "feature_name": "Port of Melbourne",
+    "theme": "Transport",
+    "sub_theme": "Transport Terminal",
+    "lat": -37.8137384362671,
+    "lng": 144.91753432375,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0217_fairfax_studio",
+    "feature_name": "FairFax Studio",
+    "theme": "Place Of Assembly",
+    "sub_theme": "Theatre Live",
+    "lat": -37.8216684581887,
+    "lng": 144.968836241692,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0218_epworth_freemasons_hospital_medical_centre",
+    "feature_name": "Epworth Freemasons Hospital : Medical Centre",
+    "theme": "Health Services",
+    "sub_theme": "Private Hospital",
+    "lat": -37.8093444587231,
+    "lng": 144.982336768182,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0219_melbourne_central_railway_station",
+    "feature_name": "Melbourne Central Railway Station",
+    "theme": "Transport",
+    "sub_theme": "Railway Station",
+    "lat": -37.8105992402369,
+    "lng": 144.96169061383,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0220_melbourne_central_railway_station",
+    "feature_name": "Melbourne Central Railway Station",
+    "theme": "Transport",
+    "sub_theme": "Railway Station",
+    "lat": -37.8108930047401,
+    "lng": 144.963100728702,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0221_collins_street_baptist_church",
+    "feature_name": "Collins Street Baptist Church",
+    "theme": "Place of Worship",
+    "sub_theme": "Church",
+    "lat": -37.8147011904647,
+    "lng": 144.968072486031,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0222_st_thomas_aquinas_church",
+    "feature_name": "St Thomas Aquinas Church",
+    "theme": "Place of Worship",
+    "sub_theme": "Church",
+    "lat": -37.8353076902578,
+    "lng": 144.976809080472,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0223_melbourne_visitor_booth",
+    "feature_name": "Melbourne Visitor Booth",
+    "theme": "Community Use",
+    "sub_theme": "Visitor Centre",
+    "lat": -37.8139525061193,
+    "lng": 144.964425882562,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0224_powlett_reserve",
+    "feature_name": "Powlett Reserve",
+    "theme": "Leisure/Recreation",
+    "sub_theme": "Informal Outdoor Facility (Park/Garden/Reserve)",
+    "lat": -37.8116929882498,
+    "lng": 144.987275671763,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0225_carlton_primary_school",
+    "feature_name": "Carlton Primary School",
+    "theme": "Education Centre",
+    "sub_theme": "Primary Schools",
+    "lat": -37.7959079757171,
+    "lng": 144.970147317976,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0226_state_theatre",
+    "feature_name": "State Theatre",
+    "theme": "Place Of Assembly",
+    "sub_theme": "Theatre Live",
+    "lat": -37.8212806349773,
+    "lng": 144.968469643744,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0227_university_of_melbourne_vca_and_music",
+    "feature_name": "University of Melbourne (VCA and Music)",
+    "theme": "Education Centre",
+    "sub_theme": "Tertiary (University)",
+    "lat": -37.8241137662047,
+    "lng": 144.96933253996,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0228_st_martins_youth_arts_centre",
+    "feature_name": "St Martins Youth Arts Centre",
+    "theme": "Place Of Assembly",
+    "sub_theme": "Theatre Live",
+    "lat": -37.8352429531289,
+    "lng": 144.98114217385,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0229_australian_broadcasting_corporation_abc",
+    "feature_name": "Australian Broadcasting Corporation (ABC)",
+    "theme": "Office",
+    "sub_theme": "Office",
+    "lat": -37.823813323734,
+    "lng": 144.966551401578,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0230_imax_melbourne",
+    "feature_name": "IMAX Melbourne",
+    "theme": "Place Of Assembly",
+    "sub_theme": "Cinema",
+    "lat": -37.8034315561903,
+    "lng": 144.970639929886,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0231_richmond_railway_station_richmond_train_stop",
+    "feature_name": "Richmond Railway Station (Richmond) - Train stop",
+    "theme": "Transport",
+    "sub_theme": "Railway Station",
+    "lat": -37.8238992659834,
+    "lng": 144.989400751664,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0232_victorian_insitute_of_forensic_medicine",
+    "feature_name": "Victorian Insitute of Forensic Medicine",
+    "theme": "Office",
+    "sub_theme": "Office",
+    "lat": -37.8246924089335,
+    "lng": 144.964979061564,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0233_parliament_railway_station",
+    "feature_name": "Parliament Railway Station",
+    "theme": "Transport",
+    "sub_theme": "Railway Station",
+    "lat": -37.8121572789173,
+    "lng": 144.973742010011,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0234_showgrounds_railway_station_flemington",
+    "feature_name": "Showgrounds Railway Station (Flemington)",
+    "theme": "Transport",
+    "sub_theme": "Railway Station",
+    "lat": -37.7834651216244,
+    "lng": 144.914902626775,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0235_alfred_hospital",
+    "feature_name": "Alfred Hospital",
+    "theme": "Health Services",
+    "sub_theme": "Public Hospital",
+    "lat": -37.8462631206461,
+    "lng": 144.981786260765,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0236_comedy_theatre",
+    "feature_name": "Comedy Theatre",
+    "theme": "Place Of Assembly",
+    "sub_theme": "Theatre Live",
+    "lat": -37.8102053945163,
+    "lng": 144.97013311862,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0237_la_mama_theatre",
+    "feature_name": "La Mama Theatre",
+    "theme": "Place Of Assembly",
+    "sub_theme": "Theatre Live",
+    "lat": -37.7991304956733,
+    "lng": 144.967669503083,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0238_forum_theatre",
+    "feature_name": "Forum Theatre",
+    "theme": "Place Of Assembly",
+    "sub_theme": "Theatre Live",
+    "lat": -37.816485409696,
+    "lng": 144.969386556998,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0239_royal_dental_hospital",
+    "feature_name": "Royal Dental Hospital",
+    "theme": "Health Services",
+    "sub_theme": "Public Hospital",
+    "lat": -37.7995065904416,
+    "lng": 144.964526842767,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0240_webb_bridge",
+    "feature_name": "Webb Bridge",
+    "theme": "Transport",
+    "sub_theme": "Bridge",
+    "lat": -37.8232052384507,
+    "lng": 144.947291011905,
+    "source": "CoM Landmarks and Places of Interest"
+  },
+  {
+    "id": "landmark_0241_david_jones",
+    "feature_name": "David Jones",
+    "theme": "Retail",
+    "sub_theme": "Department Store",
+    "lat": -37.8133127260638,
+    "lng": 144.964373486798,
+    "source": "CoM Landmarks and Places of Interest"
+  }
+]
