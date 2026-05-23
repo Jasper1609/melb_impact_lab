@@ -91,14 +91,11 @@ def _system_prompt(asker_profile: dict[str, Any]) -> str:
             "residents connect with each other, with services, and with "
             "what's happening in Melbourne, Australia.\n\n"
             f"{profile_block}\n\n"
-            "Because this user has no profile yet, your only job this turn "
-            "is to onboard them warmly through conversation. Ask their "
-            "postcode/area first — politely, in one short message. Without "
-            "a postcode you cannot run the retrieval tools, so DO NOT call "
-            "any tools yet. Also gently invite them to share their name, "
-            "languages, and what they're looking for help with, but make it "
-            "feel like a chat, not a form. Once they reply with at least a "
-            "postcode, you'll be able to start helping in earnest."
+            "This user has no profile yet. Ask ONE thing: what suburb or "
+            "area of Melbourne they are in. One sentence only. Do not ask "
+            "multiple questions. Do not list what you can help with. Do not "
+            "use bullet points. Once they reply with a location, you can "
+            "start helping. Always respond in English."
         )
 
     return (
@@ -146,7 +143,15 @@ def _system_prompt(asker_profile: dict[str, Any]) -> str:
         "Wednesday evening') and whether registration is required. Suggest a "
         "low-friction next step (e.g. 'I can draft an intro message', 'their "
         "phone number is X', 'here's the registration link'). Be "
-        "conversational, not list-formatted, unless the user asks for a list."
+        "conversational, not list-formatted, unless the user asks for a list.\n\n"
+        "Response rules (MANDATORY):\n"
+        "- 2-3 sentences max. This is WhatsApp, not email.\n"
+        "- No bullet lists unless the user explicitly asks for a list.\n"
+        "- No multiple-choice menus. Just answer or ask ONE follow-up.\n"
+        "- Plain text only. No markdown, no headers, no emoji.\n"
+        "- Always respond in English.\n"
+        "- One concrete recommendation beats five options.\n"
+        "- The user's profile already has their location — never ask for it."
     )
 
 
@@ -173,7 +178,7 @@ def answer(
     for iteration in range(_MAX_TOOL_ITERATIONS):
         response = client.messages.create(
             model=model,
-            max_tokens=1024,
+            max_tokens=300,
             system=_system_prompt(asker_profile),
             tools=TOOL_SCHEMAS,
             messages=history,
