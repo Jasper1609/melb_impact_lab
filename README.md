@@ -23,6 +23,16 @@ The loop that fuses them: *share your story, get your plan, get connected, contr
 
 Portable by design: a fixed engine plus a swappable city **data pack**. Melbourne is data pack #1.
 
+## How it fits together
+
+The mobile app and the WhatsApp bot are two front doors into the same brain. Both talk to the Python backend, where a Claude agent runs hybrid retrieval over real City of Melbourne open data and a curated profile database.
+
+```
+fe/  (mobile app)   ┐
+                    ├──▶  BE/  (Claude agent loop + hybrid filter/semantic retrieval)  ──▶  City of Melbourne open data + community profiles
+bot/ (WhatsApp)     ┘
+```
+
 ## Repo structure
 
 ```
@@ -39,6 +49,14 @@ data/    City of Melbourne open-data catalogue + the Kensington extraction pipel
          (fetch_datasets.py, extract_kensington.py). See data/README.md
 ```
 
+## Tech stack
+
+- **AI:** Claude (Anthropic) for the agent loop and tool use; OpenAI `text-embedding-3-small` for semantic retrieval; `faster-whisper` for on-device multilingual voice transcription.
+- **Frontend:** React Native + Expo (TypeScript).
+- **Backend:** Python + FastAPI, with an in-memory hybrid retriever (structured filter plus cosine-similarity rank).
+- **Bot:** WhatsApp (Baileys) via a Hermes gateway, packaged as a single Docker container.
+- **Data:** City of Melbourne Open Data Portal.
+
 ## Running it
 
 Each component is self-contained. See its own README for setup and scripts:
@@ -47,11 +65,24 @@ Each component is self-contained. See its own README for setup and scripts:
 - **Backend (`BE/`):** Python + FastAPI. `cd BE`, install `requirements.txt`, run `main.py` (CLI) or `server.py` (HTTP).
 - **WhatsApp bot (`bot/`):** Docker. See `bot/README.md` for the quick start.
 
+## Data and licence
+
+All datasets come from the **City of Melbourne Open Data Portal** under **CC BY 4.0**. Core datasets include the multicultural community profile (2016), residents profiles by CLUE small area, social indicators (2023), CLUE business and cafe registers, and landmarks/places of interest. Most join on `clue_small_area`. See `data/README.md` for the full catalogue and fetch scripts.
+
+## Demo
+
+- Demo walkthrough video: *(link to be added)*
+- Built around demo persona **Jesse**, who recently moved from Hong Kong to Kensington with her partner and two kids.
+
 ## Key facts (sourced)
 
 - 54.2% of skilled-migration places go to secondary applicants. [Home Affairs, Migration Trends 2024–25](https://www.homeaffairs.gov.au/research-and-stats/files/migration-trends-2024-25.pdf)
 - The accompanying partner's failure to settle is a leading cause of a relocation failing. [Sterle et al. 2018, Frontiers in Psychology](https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2018.01207/full)
 - Social connection predicts who survives a shock: a 10× heat-wave death gap between otherwise-identical neighbourhoods (Klinenberg, *Heat Wave*).
+
+## Team
+
+Built at the Melbourne | Claude Impact Lab, 2026. *(team members to be added)*
 
 ---
 
