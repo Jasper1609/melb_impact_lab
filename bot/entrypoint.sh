@@ -45,11 +45,7 @@ if [ -d /opt/hermes/docker/data ] && [ ! -d "$HERMES_HOME/data" ]; then
 fi
 
 if [ ! -f "$HERMES_HOME/profiles.json" ]; then
-  if [ -f /opt/hermes/docker/data/profiles.json ]; then
-    cp /opt/hermes/docker/data/profiles.json "$HERMES_HOME/profiles.json"
-  else
-    echo '{}' > "$HERMES_HOME/profiles.json"
-  fi
+  echo '{}' > "$HERMES_HOME/profiles.json"
   chown 10000:10000 "$HERMES_HOME/profiles.json"
 fi
 

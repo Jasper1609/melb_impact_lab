@@ -88,5 +88,23 @@
     "interests": "Helping migrant families navigate the Victorian school system, homework club, Vietnamese-Australian community history, dragon boat racing at Albert Park.",
     "offering": "Free guidance for migrant parents on enrolling kids in Victorian primary/secondary schools, navigating NAPLAN, accessing free tutoring. Vietnamese and English. Open invitation to the Saturday homework club at Kensington Library — bring your kids.",
     "opt_in_matching": true
+  },
+  {
+    "id": "k6f9bdd7-7a6c-4b8f-cj1i-6f7a8b9c0d1e",
+    "name": "Matthew Blode",
+    "email": "matthew.blode@example.com",
+    "phone_number": "61456455551",
+    "age": 35,
+    "postcode": "3031",
+    "suburb": "Kensington",
+    "lat": -37.7940,
+    "lng": 144.9270,
+    "country_of_origin": "Egypt",
+    "languages": ["ar"],
+    "occupation": "Carpenter (seeking trade qualification recognition)",
+    "background": "Arrived in Kensington three weeks ago from Cairo with his wife and three young children (ages 2, 5, and 7). Trained as a carpenter and furniture maker with 12 years' experience building custom kitchens and cabinetry in Cairo. Speaks very little English. Trying to get his Egyptian trade qualifications recognised so he can work as a carpenter in Victoria. The two older kids need to start school.",
+    "interests": "Getting carpentry qualifications recognised in Australia, enrolling kids in primary school, finding Arabic-speaking families nearby, English classes, football at JJ Holland Park.",
+    "offering": "Skilled carpenter and furniture maker. Can build or repair wooden furniture, shelving, cabinetry. Happy to help neighbours with small woodwork projects. Makes traditional Egyptian food — koshari, ful medames, molokhia — and loves to share.",
+    "opt_in_matching": true
   }
 ]
