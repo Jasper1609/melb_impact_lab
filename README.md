@@ -110,3 +110,16 @@ Built at the Melbourne | Claude Impact Lab, 2026. *(team members to be added)*
 - Fiona Lai
 - Georgio Liapakis
 
+
+---
+
+## Appendix: Talking to users
+
+We took Tapestry out of the building and showed it to real people around Melbourne, including commuters on the street and a Metro station officer. Quick, informal validation that the problem and the product land with the people living it.
+
+<table>
+  <tr>
+    <td align="center"><img src="docs/user-research/01-street-testing.jpeg" width="420" alt="Showing Tapestry to people on the street in Melbourne"><br/><sub>Showing Tapestry to people on the street in Melbourne</sub></td>
+    <td align="center"><img src="docs/user-research/02-metro-officer.jpeg" width="270" alt="Walking a Metro station officer through the app"><br/><sub>Walking a Metro station officer through the app</sub></td>
+  </tr>
+</table>
