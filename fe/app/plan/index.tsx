@@ -10,7 +10,7 @@ import {
 } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { router } from 'expo-router';
-import { shared, colors } from '@/constants/onboarding-styles';
+import { shared, colors, fonts } from '@/constants/onboarding-styles';
 import { CATEGORIES, type PlanCategory } from '@/constants/plan-data';
 
 type CardState = 'empty' | 'working' | 'complete';
@@ -212,38 +212,45 @@ const styles = StyleSheet.create({
   badge: {
     alignSelf: 'flex-start',
     backgroundColor: colors.text,
-    borderRadius: 20,
+    borderRadius: 9999,
     paddingHorizontal: 14,
     paddingVertical: 6,
     marginBottom: 20,
   },
   badgeText: {
     fontSize: 13,
-    fontWeight: '600',
-    color: '#fff',
+    fontWeight: '500',
+    color: '#fdfcfc',
+    letterSpacing: 0.1,
   },
   title: {
-    fontSize: 34,
-    fontWeight: '700',
+    fontSize: 36,
+    fontWeight: '300',
+    fontFamily: fonts.display,
     color: colors.text,
-    letterSpacing: -0.5,
+    letterSpacing: -0.72,
+    lineHeight: 36 * 1.13,
     marginBottom: 12,
   },
   subtitle: {
-    fontSize: 17,
+    fontSize: 16,
     color: colors.textSecondary,
     lineHeight: 24,
+    letterSpacing: 0.1,
     marginBottom: 28,
   },
   cardList: {
-    gap: 16,
+    gap: 12,
   },
   card: {
     backgroundColor: colors.cardBg,
     borderRadius: 16,
     padding: 20,
-    borderWidth: 1,
-    borderColor: colors.border,
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 0 },
+    shadowOpacity: 0.08,
+    shadowRadius: 1,
+    elevation: 1,
   },
   cardHeader: {
     flexDirection: 'row',
@@ -255,23 +262,24 @@ const styles = StyleSheet.create({
     fontSize: 20,
   },
   cardTitle: {
-    fontSize: 18,
-    fontWeight: '700',
+    fontSize: 16,
+    fontWeight: '500',
     color: colors.text,
     flex: 1,
+    letterSpacing: 0.1,
   },
   doneBadge: {
     width: 24,
     height: 24,
     borderRadius: 12,
-    backgroundColor: '#4CAF50',
+    backgroundColor: colors.text,
     alignItems: 'center',
     justifyContent: 'center',
   },
   doneBadgeText: {
-    color: '#fff',
+    color: '#fdfcfc',
     fontSize: 14,
-    fontWeight: '700',
+    fontWeight: '500',
   },
   emptyBody: {
     gap: 8,
@@ -286,7 +294,7 @@ const styles = StyleSheet.create({
     gap: 10,
   },
   workingBar: {
-    height: 4,
+    height: 3,
     borderRadius: 2,
     backgroundColor: colors.text,
   },
@@ -294,13 +302,15 @@ const styles = StyleSheet.create({
     fontSize: 14,
     color: colors.textSecondary,
     fontStyle: 'italic',
+    letterSpacing: 0.1,
   },
   completeBody: {},
   summaryText: {
     fontSize: 15,
-    fontWeight: '600',
+    fontWeight: '500',
     color: colors.text,
     marginBottom: 8,
+    letterSpacing: 0.1,
   },
   exploreRow: {
     flexDirection: 'row',
@@ -309,7 +319,7 @@ const styles = StyleSheet.create({
   },
   exploreText: {
     fontSize: 14,
-    fontWeight: '600',
+    fontWeight: '500',
     color: colors.textSecondary,
   },
   exploreArrow: {

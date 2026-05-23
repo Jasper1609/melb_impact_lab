@@ -46,7 +46,7 @@ export default function InterestsScreen() {
                   onPress={() => toggle(opt.id)}
                   activeOpacity={0.7}
                 >
-                  <Text style={[styles.optionLabel, active && styles.optionLabelSelected]}>
+                  <Text style={styles.optionLabel}>
                     {opt.label}
                   </Text>
                   <Text style={styles.optionDesc}>{opt.desc}</Text>
@@ -60,7 +60,7 @@ export default function InterestsScreen() {
         <TouchableOpacity
           style={[shared.button, selected.length === 0 && shared.buttonDisabled]}
           disabled={selected.length === 0}
-          onPress={() => router.push('/loading')}
+          onPress={() => router.push('/onboarding/contacts')}
           activeOpacity={0.8}
         >
           <Text style={[shared.buttonText, selected.length === 0 && shared.buttonTextDisabled]}>
@@ -79,26 +79,31 @@ const styles = StyleSheet.create({
   },
   option: {
     backgroundColor: colors.cardBg,
-    borderRadius: 14,
+    borderRadius: 16,
     padding: 18,
-    borderWidth: 1.5,
-    borderColor: colors.border,
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 0 },
+    shadowOpacity: 0.08,
+    shadowRadius: 1,
+    elevation: 1,
   },
   optionSelected: {
+    borderWidth: 1,
     borderColor: colors.selectedBorder,
     backgroundColor: colors.selectedBg,
+    shadowOpacity: 0,
+    elevation: 0,
   },
   optionLabel: {
-    fontSize: 17,
-    fontWeight: '600',
+    fontSize: 16,
+    fontWeight: '500',
     color: colors.text,
-  },
-  optionLabelSelected: {
-    color: colors.text,
+    letterSpacing: 0.1,
   },
   optionDesc: {
     fontSize: 14,
     color: colors.textSecondary,
     marginTop: 2,
+    letterSpacing: 0.1,
   },
 });

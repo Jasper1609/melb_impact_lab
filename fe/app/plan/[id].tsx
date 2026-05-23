@@ -9,7 +9,7 @@ import {
   View,
 } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import { shared, colors } from '@/constants/onboarding-styles';
+import { shared, colors, fonts } from '@/constants/onboarding-styles';
 import { CATEGORIES, type PlanItem } from '@/constants/plan-data';
 
 /* ──────────────────────────────────────────────
@@ -34,7 +34,14 @@ function PersonCard({
 
   return (
     <View style={styles.itemCard}>
-      <Text style={styles.itemLabel}>{item.label}</Text>
+      <View style={styles.personHeader}>
+        <Text style={styles.itemLabel}>{item.label}</Text>
+        {item.isContact && (
+          <View style={styles.contactBadge}>
+            <Text style={styles.contactBadgeText}>In your contacts</Text>
+          </View>
+        )}
+      </View>
       <Text style={styles.itemDetail}>{item.detail}</Text>
 
       <TouchableOpacity
@@ -159,7 +166,7 @@ function RequestCard({ item }: { item: PlanItem }) {
    ────────────────────────────────────────────── */
 
 export default function PlanDetailScreen() {
-  const { id } = useLocalSearchParams<{ id: string }>();
+  const { id, from } = useLocalSearchParams<{ id: string; from?: string }>();
   const [expandedIndex, setExpandedIndex] = useState<number | null>(null);
 
   const categoryIndex = CATEGORIES.findIndex((c) => c.id === id);
@@ -218,32 +225,34 @@ export default function PlanDetailScreen() {
           </View>
         </ScrollView>
 
-        <View style={styles.footer}>
-          {nextCategory ? (
-            <TouchableOpacity
-              style={shared.button}
-              onPress={() =>
-                router.replace({
-                  pathname: '/plan/[id]',
-                  params: { id: nextCategory.id },
-                })
-              }
-              activeOpacity={0.8}
-            >
-              <Text style={shared.buttonText}>
-                Next: {nextCategory.title} {'\u2192'}
-              </Text>
-            </TouchableOpacity>
-          ) : (
-            <TouchableOpacity
-              style={shared.button}
-              onPress={() => router.replace('/dashboard')}
-              activeOpacity={0.8}
-            >
-              <Text style={shared.buttonText}>Finish your plan</Text>
-            </TouchableOpacity>
-          )}
-        </View>
+        {from !== 'dashboard' && (
+          <View style={styles.footer}>
+            {nextCategory ? (
+              <TouchableOpacity
+                style={shared.button}
+                onPress={() =>
+                  router.replace({
+                    pathname: '/plan/[id]',
+                    params: { id: nextCategory.id },
+                  })
+                }
+                activeOpacity={0.8}
+              >
+                <Text style={shared.buttonText}>
+                  Next: {nextCategory.title} {'\u2192'}
+                </Text>
+              </TouchableOpacity>
+            ) : (
+              <TouchableOpacity
+                style={shared.button}
+                onPress={() => router.replace('/dashboard')}
+                activeOpacity={0.8}
+              >
+                <Text style={shared.buttonText}>Finish your plan</Text>
+              </TouchableOpacity>
+            )}
+          </View>
+        )}
       </View>
     </SafeAreaView>
   );
@@ -273,16 +282,19 @@ const styles = StyleSheet.create({
     marginBottom: 12,
   },
   title: {
-    fontSize: 34,
-    fontWeight: '700',
+    fontSize: 36,
+    fontWeight: '300',
+    fontFamily: fonts.display,
     color: colors.text,
-    letterSpacing: -0.5,
+    letterSpacing: -0.72,
+    lineHeight: 36 * 1.13,
     marginBottom: 8,
   },
   summary: {
-    fontSize: 17,
+    fontSize: 16,
     color: colors.textSecondary,
     lineHeight: 24,
+    letterSpacing: 0.1,
     marginBottom: 28,
   },
   itemList: {
@@ -290,42 +302,67 @@ const styles = StyleSheet.create({
   },
   itemCard: {
     backgroundColor: colors.cardBg,
-    borderRadius: 12,
+    borderRadius: 16,
     padding: 16,
-    borderWidth: 1,
-    borderColor: colors.border,
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 0 },
+    shadowOpacity: 0.08,
+    shadowRadius: 1,
+    elevation: 1,
   },
   itemLabel: {
     fontSize: 16,
-    fontWeight: '600',
+    fontWeight: '500',
     color: colors.text,
     marginBottom: 4,
+    letterSpacing: 0.1,
   },
   itemDetail: {
     fontSize: 14,
     color: colors.textSecondary,
     lineHeight: 20,
+    letterSpacing: 0.1,
+  },
+  personHeader: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    marginBottom: 4,
+  },
+  contactBadge: {
+    backgroundColor: '#e8f5e9',
+    borderRadius: 9999,
+    paddingHorizontal: 8,
+    paddingVertical: 3,
+  },
+  contactBadgeText: {
+    fontSize: 11,
+    fontWeight: '500',
+    color: '#2e7d32',
+    letterSpacing: 0.1,
   },
   actionButton: {
-    borderWidth: 1.5,
-    borderColor: colors.text,
-    borderRadius: 8,
-    paddingHorizontal: 14,
+    borderWidth: 1,
+    borderColor: colors.border,
+    backgroundColor: colors.cardBg,
+    borderRadius: 9999,
+    paddingHorizontal: 16,
     paddingVertical: 8,
     alignSelf: 'flex-start',
     marginTop: 12,
   },
   actionButtonText: {
     fontSize: 13,
-    fontWeight: '600',
+    fontWeight: '500',
     color: colors.text,
+    letterSpacing: 0.1,
   },
 
   // Email preview
   emailPreview: {
     marginTop: 16,
     backgroundColor: colors.bg,
-    borderRadius: 10,
+    borderRadius: 12,
     padding: 14,
     borderWidth: 1,
     borderColor: colors.border,
@@ -334,9 +371,10 @@ const styles = StyleSheet.create({
     fontSize: 13,
     color: colors.textSecondary,
     marginBottom: 4,
+    letterSpacing: 0.1,
   },
   emailFieldLabel: {
-    fontWeight: '600',
+    fontWeight: '500',
     color: colors.text,
   },
   emailDivider: {
@@ -348,6 +386,7 @@ const styles = StyleSheet.create({
     fontSize: 14,
     color: colors.text,
     lineHeight: 20,
+    letterSpacing: 0.1,
   },
   sendButton: {
     marginTop: 14,
@@ -362,7 +401,7 @@ const styles = StyleSheet.create({
   },
   eventDate: {
     fontSize: 13,
-    fontWeight: '600',
+    fontWeight: '500',
     color: colors.text,
   },
   eventDot: {
@@ -382,8 +421,8 @@ const styles = StyleSheet.create({
   sourceBadge: {
     alignSelf: 'flex-start',
     backgroundColor: colors.selectedBg,
-    borderRadius: 6,
-    paddingHorizontal: 8,
+    borderRadius: 9999,
+    paddingHorizontal: 10,
     paddingVertical: 4,
   },
   sourceBadgeText: {

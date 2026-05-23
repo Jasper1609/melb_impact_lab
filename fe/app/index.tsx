@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { Animated, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { router } from 'expo-router';
-import { colors } from '@/constants/onboarding-styles';
+import { colors, fonts } from '@/constants/onboarding-styles';
 
 const greetings = [
   { welcome: 'Welcome', cta: 'Get Started' },
@@ -94,48 +94,56 @@ const styles = StyleSheet.create({
     gap: 16,
   },
   brand: {
-    fontSize: 17,
-    fontWeight: '600',
-    color: colors.textTertiary,
+    fontSize: 14,
+    fontWeight: '500',
+    color: colors.textSecondary,
+    letterSpacing: 0.7,
     textTransform: 'uppercase',
-    letterSpacing: 2,
     marginBottom: 8,
   },
   welcome: {
     fontSize: 48,
-    fontWeight: '700',
+    fontWeight: '300',
+    fontFamily: fonts.display,
     color: colors.text,
-    letterSpacing: -1,
+    letterSpacing: -0.96,
+    lineHeight: 48 * 1.08,
   },
   subtitle: {
-    fontSize: 19,
+    fontSize: 16,
     color: colors.textSecondary,
-    lineHeight: 28,
+    lineHeight: 24,
+    letterSpacing: 0.1,
   },
   buttonGroup: {
     gap: 12,
   },
   button: {
     backgroundColor: colors.buttonActive,
-    borderRadius: 14,
-    paddingVertical: 16,
+    borderRadius: 9999,
+    paddingVertical: 14,
+    paddingHorizontal: 24,
     alignItems: 'center',
   },
   buttonText: {
-    fontSize: 17,
-    fontWeight: '600',
-    color: '#fff',
+    fontSize: 15,
+    fontWeight: '500',
+    color: '#fdfcfc',
+    letterSpacing: 0.1,
   },
   dashboardButton: {
-    borderWidth: 1.5,
+    borderWidth: 1,
     borderColor: colors.border,
-    borderRadius: 14,
-    paddingVertical: 14,
+    backgroundColor: colors.cardBg,
+    borderRadius: 9999,
+    paddingVertical: 12,
+    paddingHorizontal: 24,
     alignItems: 'center',
   },
   dashboardButtonText: {
     fontSize: 15,
-    fontWeight: '600',
-    color: colors.textSecondary,
+    fontWeight: '500',
+    color: colors.text,
+    letterSpacing: 0.1,
   },
 });

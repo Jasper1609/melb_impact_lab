@@ -11,7 +11,7 @@ import {
 } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { router } from 'expo-router';
-import { shared, colors } from '@/constants/onboarding-styles';
+import { shared, colors, fonts } from '@/constants/onboarding-styles';
 
 const DUMMY_TRANSCRIPT =
   "I just moved to Melbourne from Vietnam with my wife and two kids. We're looking for a good primary school nearby, and I'd love to find a local community group where we can meet other families. I also need help setting up a bank account and understanding public transport.";
@@ -23,7 +23,6 @@ export default function BioScreen() {
 
   const handleVoicePress = () => {
     if (isRecording) {
-      // Stop recording — simulate transcription
       setIsRecording(false);
       setHasRecorded(true);
       setBio(DUMMY_TRANSCRIPT);
@@ -142,39 +141,48 @@ const styles = StyleSheet.create({
   badge: {
     alignSelf: 'flex-start',
     backgroundColor: colors.text,
-    borderRadius: 20,
+    borderRadius: 9999,
     paddingHorizontal: 14,
     paddingVertical: 6,
     marginBottom: 20,
   },
   badgeText: {
     fontSize: 13,
-    fontWeight: '600',
-    color: '#fff',
+    fontWeight: '500',
+    color: '#fdfcfc',
+    letterSpacing: 0.1,
   },
   title: {
-    fontSize: 34,
-    fontWeight: '700',
+    fontSize: 36,
+    fontWeight: '300',
+    fontFamily: fonts.display,
     color: colors.text,
-    letterSpacing: -0.5,
+    letterSpacing: -0.72,
+    lineHeight: 36 * 1.13,
     marginBottom: 12,
   },
   subtitle: {
-    fontSize: 17,
+    fontSize: 16,
     color: colors.textSecondary,
     lineHeight: 24,
+    letterSpacing: 0.1,
     marginBottom: 24,
   },
   textArea: {
-    fontSize: 17,
+    fontSize: 16,
     color: colors.text,
     backgroundColor: colors.cardBg,
-    borderRadius: 14,
-    borderWidth: 1,
-    borderColor: colors.border,
+    borderRadius: 16,
     padding: 16,
     minHeight: 120,
     lineHeight: 24,
+    letterSpacing: 0.1,
+    // Hairline shadow instead of border
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 0 },
+    shadowOpacity: 0.08,
+    shadowRadius: 1,
+    elevation: 1,
   },
   divider: {
     flexDirection: 'row',
@@ -195,17 +203,22 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     backgroundColor: colors.cardBg,
-    borderRadius: 14,
-    borderWidth: 1.5,
-    borderColor: colors.border,
+    borderRadius: 16,
     padding: 16,
     gap: 14,
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 0 },
+    shadowOpacity: 0.08,
+    shadowRadius: 1,
+    elevation: 1,
   },
   voiceButtonActive: {
+    borderWidth: 1,
     borderColor: '#E53935',
     backgroundColor: '#FFF5F5',
   },
   voiceButtonDone: {
+    borderWidth: 1,
     borderColor: colors.selectedBorder,
     backgroundColor: colors.selectedBg,
   },
@@ -231,13 +244,15 @@ const styles = StyleSheet.create({
     gap: 2,
   },
   voiceLabel: {
-    fontSize: 16,
-    fontWeight: '600',
+    fontSize: 15,
+    fontWeight: '500',
     color: colors.text,
+    letterSpacing: 0.1,
   },
   voiceDesc: {
     fontSize: 14,
     color: colors.textSecondary,
+    letterSpacing: 0.1,
   },
   waveform: {
     flexDirection: 'row',

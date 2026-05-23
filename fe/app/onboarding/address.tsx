@@ -98,19 +98,21 @@ const styles = StyleSheet.create({
     marginTop: 8,
   },
   label: {
-    fontSize: 13,
-    fontWeight: '600',
+    fontSize: 14,
+    fontWeight: '400',
     color: colors.textSecondary,
     marginTop: 8,
+    letterSpacing: 0.1,
   },
   countryRow: {
-    borderBottomWidth: 1.5,
-    borderBottomColor: colors.border,
+    borderBottomWidth: 1,
+    borderBottomColor: colors.text,
     paddingVertical: 12,
   },
   countryText: {
-    fontSize: 17,
+    fontSize: 16,
     color: colors.text,
+    letterSpacing: 0.1,
   },
   footer: {
     paddingHorizontal: 24,

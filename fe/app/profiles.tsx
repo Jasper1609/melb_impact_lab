@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import {
-  Image,
   ScrollView,
   StyleSheet,
   Text,
@@ -9,7 +8,7 @@ import {
 } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { router } from 'expo-router';
-import { shared, colors } from '@/constants/onboarding-styles';
+import { shared, colors, fonts } from '@/constants/onboarding-styles';
 
 interface Profile {
   id: string;
@@ -59,7 +58,6 @@ export default function ProfilesScreen() {
   const [profiles, setProfiles] = useState<Profile[]>(EXTRACTED_PROFILES);
 
   const handleAddPhoto = (id: string) => {
-    // Placeholder — would open image picker
     setProfiles((prev) =>
       prev.map((p) =>
         p.id === id ? { ...p, photo: 'placeholder' } : p
@@ -149,31 +147,35 @@ const styles = StyleSheet.create({
   badge: {
     alignSelf: 'flex-start',
     backgroundColor: colors.text,
-    borderRadius: 20,
+    borderRadius: 9999,
     paddingHorizontal: 14,
     paddingVertical: 6,
     marginBottom: 20,
   },
   badgeText: {
     fontSize: 13,
-    fontWeight: '600',
-    color: '#fff',
+    fontWeight: '500',
+    color: '#fdfcfc',
+    letterSpacing: 0.1,
   },
   title: {
-    fontSize: 34,
-    fontWeight: '700',
+    fontSize: 36,
+    fontWeight: '300',
+    fontFamily: fonts.display,
     color: colors.text,
-    letterSpacing: -0.5,
+    letterSpacing: -0.72,
+    lineHeight: 36 * 1.13,
     marginBottom: 12,
   },
   subtitle: {
-    fontSize: 17,
+    fontSize: 16,
     color: colors.textSecondary,
     lineHeight: 24,
+    letterSpacing: 0.1,
     marginBottom: 28,
   },
   profileList: {
-    gap: 16,
+    gap: 12,
   },
   profileCard: {
     flexDirection: 'row',
@@ -181,9 +183,12 @@ const styles = StyleSheet.create({
     backgroundColor: colors.cardBg,
     borderRadius: 16,
     padding: 16,
-    borderWidth: 1,
-    borderColor: colors.border,
     gap: 16,
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 0 },
+    shadowOpacity: 0.08,
+    shadowRadius: 1,
+    elevation: 1,
   },
   avatarWrap: {
     position: 'relative',
@@ -193,7 +198,7 @@ const styles = StyleSheet.create({
     height: 64,
     borderRadius: 32,
     backgroundColor: colors.selectedBg,
-    borderWidth: 2,
+    borderWidth: 1,
     borderColor: colors.border,
     alignItems: 'center',
     justifyContent: 'center',
@@ -204,12 +209,12 @@ const styles = StyleSheet.create({
   },
   avatarInitials: {
     fontSize: 18,
-    fontWeight: '700',
+    fontWeight: '500',
     color: colors.textSecondary,
   },
   avatarCheck: {
     fontSize: 24,
-    color: '#fff',
+    color: '#fdfcfc',
   },
   cameraButton: {
     position: 'absolute',
@@ -226,7 +231,7 @@ const styles = StyleSheet.create({
   },
   cameraIcon: {
     fontSize: 12,
-    color: '#fff',
+    color: '#fdfcfc',
   },
   profileInfo: {
     flex: 1,
@@ -238,13 +243,14 @@ const styles = StyleSheet.create({
     gap: 8,
   },
   profileName: {
-    fontSize: 18,
-    fontWeight: '600',
+    fontSize: 16,
+    fontWeight: '500',
     color: colors.text,
+    letterSpacing: 0.1,
   },
   relationBadge: {
     backgroundColor: colors.selectedBg,
-    borderRadius: 8,
+    borderRadius: 9999,
     paddingHorizontal: 8,
     paddingVertical: 2,
   },
@@ -257,6 +263,7 @@ const styles = StyleSheet.create({
     fontSize: 14,
     color: colors.textSecondary,
     lineHeight: 20,
+    letterSpacing: 0.1,
   },
   footer: {
     paddingHorizontal: 24,

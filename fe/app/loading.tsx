@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import { Animated, Easing, StyleSheet, Text, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { router } from 'expo-router';
-import { colors } from '@/constants/onboarding-styles';
+import { colors, fonts } from '@/constants/onboarding-styles';
 
 const steps = [
   'Analysing your interests...',
@@ -81,18 +81,21 @@ const styles = StyleSheet.create({
     width: 48,
     height: 48,
     borderRadius: 24,
-    borderWidth: 3,
+    borderWidth: 2,
     borderColor: colors.border,
     borderTopColor: colors.text,
   },
   title: {
-    fontSize: 24,
-    fontWeight: '700',
+    fontSize: 32,
+    fontWeight: '300',
+    fontFamily: fonts.display,
     color: colors.text,
-    letterSpacing: -0.3,
+    letterSpacing: -0.64,
+    lineHeight: 32 * 1.17,
   },
   step: {
     fontSize: 16,
     color: colors.textSecondary,
+    letterSpacing: 0.1,
   },
 });

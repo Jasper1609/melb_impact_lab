@@ -1,7 +1,7 @@
 import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { router } from 'expo-router';
-import { shared, colors } from '@/constants/onboarding-styles';
+import { shared, colors, fonts } from '@/constants/onboarding-styles';
 
 const stats = [
   { label: 'People nearby', value: '12,340' },
@@ -59,21 +59,26 @@ const styles = StyleSheet.create({
   },
   card: {
     backgroundColor: colors.cardBg,
-    borderRadius: 14,
+    borderRadius: 16,
     padding: 20,
     width: '47%',
-    borderWidth: 1,
-    borderColor: colors.border,
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 0 },
+    shadowOpacity: 0.08,
+    shadowRadius: 1,
+    elevation: 1,
   },
   statValue: {
-    fontSize: 28,
-    fontWeight: '700',
+    fontSize: 32,
+    fontWeight: '300',
+    fontFamily: fonts.display,
     color: colors.text,
-    letterSpacing: -0.5,
+    letterSpacing: -0.64,
   },
   statLabel: {
     fontSize: 13,
     color: colors.textSecondary,
     marginTop: 4,
+    letterSpacing: 0.1,
   },
 });

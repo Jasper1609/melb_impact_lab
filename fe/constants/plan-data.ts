@@ -2,6 +2,7 @@ export interface PlanItem {
   label: string;
   detail: string;
   // People
+  isContact?: boolean;
   email?: string;
   emailSubject?: string;
   emailBody?: string;
@@ -40,6 +41,7 @@ export const CATEGORIES: PlanCategory[] = [
       {
         label: 'Minh Tran',
         detail: 'Also from Vietnam, lives 2 streets away',
+        isContact: true,
         email: 'minh.tran@email.com',
         emailSubject: 'Hi from your new neighbour!',
         emailBody:
@@ -48,6 +50,7 @@ export const CATEGORIES: PlanCategory[] = [
       {
         label: 'Sarah Chen',
         detail: 'Parent at Westfield Primary',
+        isContact: true,
         email: 'sarah.chen@email.com',
         emailSubject: 'Fellow Westfield Primary parent',
         emailBody:
@@ -64,6 +67,7 @@ export const CATEGORIES: PlanCategory[] = [
       {
         label: 'Priya Sharma',
         detail: 'New to the area, has kids same age',
+        isContact: true,
         email: 'priya.sharma@email.com',
         emailSubject: 'New neighbour \u2014 kids around the same age!',
         emailBody:
